@@ -1,0 +1,1132 @@
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchOpsRequest">ElasticsearchOpsRequest
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+ops.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ElasticsearchOpsRequest</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">
+ElasticsearchOpsRequestSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the Elasticsearch reference</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">
+OpsRequestType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the ops request type: Upgrade, HorizontalScaling, VerticalScaling etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgrade</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchUpgradeSpec">
+ElasticsearchUpgradeSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for upgrading Elasticsearch</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>horizontalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchHorizontalScalingSpec">
+ElasticsearchHorizontalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for horizontal scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verticalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVerticalScalingSpec">
+ElasticsearchVerticalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for vertical scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeExpansion</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVolumeExpansionSpec">
+ElasticsearchVolumeExpansionSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for volume expansion</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>configuration</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchCustomConfigurationSpec">
+ElasticsearchCustomConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for custom configuration of Elasticsearch</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tls</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.TLSSpec">
+TLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for configuring TLS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>restart</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">
+RestartSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for restarting database</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<p>Timeout for each step of the ops request in second. If a step doesn't finish within the specified timeout, the ops request will result in failure.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestStatus">
+ElasticsearchOpsRequestStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">
+OpsRequestPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the current phase of the ops request</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchCustomConfigurationSpec">ElasticsearchCustomConfigurationSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>)
+</p>
+<div>
+<p>ElasticsearchCustomConfigurationSpec is the spec for Reconfiguring the Elasticsearch Settings</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>configSecret</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ConfigSecret is an optional field to provide custom configuration file for database.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secureConfigSecret</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>SecureConfigSecret is an optional field to provide secure settings for database.
+- Ref: https://www.elastic.co/guide/en/elasticsearch/reference/7.14/secure-settings.html</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>applyConfig</code><br/>
+<em>
+map[string]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ApplyConfig is an optional field to provide Elasticsearch configuration.
+Provided configuration will be applied to config files stored in ConfigSecret.
+If the ConfigSecret is missing, the operator will create a new k8s secret by the
+following naming convention: {db-name}-user-config .
+Expected input format:
+applyConfig:
+file-name.yml: |
+key: value
+elasticsearch.yml: |
+thread_pool:
+write:
+size: 30</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>removeCustomConfig</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If set to &quot;true&quot;, the user provided configuration will be removed.
+The Elasticsearch cluster will start will default configuration that is generated by the operator.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>removeSecureCustomConfig</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If set to &quot;true&quot;, the user provided secure settings will be removed.
+The elasticsearch.keystore will start will default password (i.e. &quot;&quot;).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchHorizontalScalingSpec">ElasticsearchHorizontalScalingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>)
+</p>
+<div>
+<p>ElasticsearchHorizontalScalingSpec contains the horizontal scaling information of an Elasticsearch cluster</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>node</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<p>Number of combined (i.e. master, data, ingest) node</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>topology</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchHorizontalScalingTopologySpec">
+ElasticsearchHorizontalScalingTopologySpec
+</a>
+</em>
+</td>
+<td>
+<p>Node topology specification</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchHorizontalScalingTopologySpec">ElasticsearchHorizontalScalingTopologySpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchHorizontalScalingSpec">ElasticsearchHorizontalScalingSpec</a>)
+</p>
+<div>
+<p>ElasticsearchHorizontalScalingTopologySpec contains the horizontal scaling information in cluster topology mode</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>master</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<p>Number of master nodes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ingest</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<p>Number of ingest nodes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>data</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<p>Number of data nodes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataContent</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataHot</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataWarm</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataCold</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataFrozen</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>ml</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>transform</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinating</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequest">ElasticsearchOpsRequest</a>)
+</p>
+<div>
+<p>ElasticsearchOpsRequestSpec is the spec for ElasticsearchOpsRequest</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the Elasticsearch reference</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">
+OpsRequestType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the ops request type: Upgrade, HorizontalScaling, VerticalScaling etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgrade</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchUpgradeSpec">
+ElasticsearchUpgradeSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for upgrading Elasticsearch</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>horizontalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchHorizontalScalingSpec">
+ElasticsearchHorizontalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for horizontal scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verticalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVerticalScalingSpec">
+ElasticsearchVerticalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for vertical scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeExpansion</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVolumeExpansionSpec">
+ElasticsearchVolumeExpansionSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for volume expansion</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>configuration</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchCustomConfigurationSpec">
+ElasticsearchCustomConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for custom configuration of Elasticsearch</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tls</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.TLSSpec">
+TLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for configuring TLS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>restart</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">
+RestartSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for restarting database</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<p>Timeout for each step of the ops request in second. If a step doesn't finish within the specified timeout, the ops request will result in failure.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestStatus">ElasticsearchOpsRequestStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequest">ElasticsearchOpsRequest</a>)
+</p>
+<div>
+<p>ElasticsearchOpsRequestStatus is the status for ElasticsearchOpsRequest</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">
+OpsRequestPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the current phase of the ops request</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchUpgradeSpec">ElasticsearchUpgradeSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetVersion</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Specifies the target version name from catalog</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchVerticalScalingSpec">ElasticsearchVerticalScalingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>)
+</p>
+<div>
+<p>ElasticsearchVerticalScalingSpec is the spec for Elasticsearch vertical scaling</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>node</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+<p>Resource spec for combined nodes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+<p>Resource spec for exporter sidecar</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>topology</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVerticalScalingTopologySpec">
+ElasticsearchVerticalScalingTopologySpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the resource spec for cluster in topology mode</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchVerticalScalingTopologySpec">ElasticsearchVerticalScalingTopologySpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchVerticalScalingSpec">ElasticsearchVerticalScalingSpec</a>)
+</p>
+<div>
+<p>ElasticsearchVerticalScalingTopologySpec is the resource spec in the cluster topology mode</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>master</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>ingest</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>data</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataContent</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataHot</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataWarm</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataCold</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataFrozen</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>ml</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>transform</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinating</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchVolumeExpansionSpec">ElasticsearchVolumeExpansionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>)
+</p>
+<div>
+<p>ElasticsearchVolumeExpansionSpec is the spec for Elasticsearch volume expansion</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>node</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+<p>volume specification for combined nodes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>topology</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVolumeExpansionTopologySpec">
+ElasticsearchVolumeExpansionTopologySpec
+</a>
+</em>
+</td>
+<td>
+<p>volume specification for nodes in cluster topology</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.ElasticsearchVolumeExpansionTopologySpec">ElasticsearchVolumeExpansionTopologySpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchVolumeExpansionSpec">ElasticsearchVolumeExpansionSpec</a>)
+</p>
+<div>
+<p>ElasticsearchVolumeExpansionTopologySpec is the spec for Elasticsearch volume expansion in topology mode</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>master</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+<p>volume specification for master nodes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ingest</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+<p>volume specification for ingest nodes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>data</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+<p>volume specification for data nodes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataContent</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataHot</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataWarm</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataCold</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataFrozen</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>ml</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>transform</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinating</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

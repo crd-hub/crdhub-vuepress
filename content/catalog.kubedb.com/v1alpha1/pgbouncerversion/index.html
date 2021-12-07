@@ -1,0 +1,237 @@
+<h3 id="catalog.kubedb.com/v1alpha1.PgBouncerVersion">PgBouncerVersion
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+catalog.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>PgBouncerVersion</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.PgBouncerVersionSpec">
+PgBouncerVersionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>server</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.PgBouncerServerVersion">
+PgBouncerServerVersion
+</a>
+</em>
+</td>
+<td>
+<p>Database Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.PgBouncerVersionExporter">
+PgBouncerVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.PgBouncerServerVersion">PgBouncerServerVersion
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.PgBouncerVersionSpec">PgBouncerVersionSpec</a>)
+</p>
+<div>
+<p>PgBouncerServerVersion is the PgBouncer Database image</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.PgBouncerVersionExporter">PgBouncerVersionExporter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.PgBouncerVersionSpec">PgBouncerVersionSpec</a>)
+</p>
+<div>
+<p>PostgresVersionExporter is the image for the Postgres exporter</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.PgBouncerVersionSpec">PgBouncerVersionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.PgBouncerVersion">PgBouncerVersion</a>)
+</p>
+<div>
+<p>PgBouncerVersionSpec is the spec for pgbouncer version</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>server</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.PgBouncerServerVersion">
+PgBouncerServerVersion
+</a>
+</em>
+</td>
+<td>
+<p>Database Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.PgBouncerVersionExporter">
+PgBouncerVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

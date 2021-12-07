@@ -1,0 +1,569 @@
+<h3 id="bigquery.google.kubeform.com/v1alpha1.Routine">Routine
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+bigquery.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Routine</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpec">
+RoutineSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpecResource">
+RoutineSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpecResource">
+RoutineSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineStatus">
+RoutineStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.RoutineSpec">RoutineSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.Routine">Routine</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpecResource">
+RoutineSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpecResource">
+RoutineSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.RoutineSpecArguments">RoutineSpecArguments
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpecResource">RoutineSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>argumentKind</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defaults to FIXED_TYPE. Default value: &quot;FIXED_TYPE&quot; Possible values: [&quot;FIXED_TYPE&quot;, &quot;ANY_TYPE&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A JSON schema for the data type. Required unless argumentKind = ANY_TYPE.
+~&gt;<strong>NOTE</strong>: Because this field expects a JSON string, any changes to the string
+will create a diff, even if the JSON itself hasn't changed. If the API returns
+a different value for the same schema, e.g. it switched the order of values
+or replaced STRUCT field type with RECORD field type, we currently cannot
+suppress the recurring diff this causes. As a workaround, we recommend using
+the schema as returned by the API.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>mode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies whether the argument is input or output. Can be set for procedures only. Possible values: [&quot;IN&quot;, &quot;OUT&quot;, &quot;INOUT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The name of this argument. Can be absent for function return argument.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.RoutineSpecResource">RoutineSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpec">RoutineSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>arguments</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpecArguments">
+[]RoutineSpecArguments
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Input/output argument of a function or a stored procedure.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>creationTime</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time when this routine was created, in milliseconds since the
+epoch.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>datasetID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The ID of the dataset containing this routine</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>definitionBody</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The body of the routine. For functions, this is the expression in the AS clause.
+If language=SQL, it is the substring inside (but excluding) the parentheses.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The description of the routine if defined.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>determinismLevel</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The determinism level of the JavaScript UDF if defined. Possible values: [&quot;DETERMINISM_LEVEL_UNSPECIFIED&quot;, &quot;DETERMINISTIC&quot;, &quot;NOT_DETERMINISTIC&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>importedLibraries</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Optional. If language = &quot;JAVASCRIPT&quot;, this field stores the path of the
+imported JAVASCRIPT libraries.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>language</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The language of the routine. Possible values: [&quot;SQL&quot;, &quot;JAVASCRIPT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>lastModifiedTime</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time when this routine was modified, in milliseconds since the
+epoch.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>returnType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A JSON schema for the return type. Optional if language = &quot;SQL&quot;; required otherwise.
+If absent, the return type is inferred from definitionBody at query time in each query
+that references this routine. If present, then the evaluated result will be cast to
+the specified returned type at query time. ~&gt;<strong>NOTE</strong>: Because this field expects a JSON
+string, any changes to the string will create a diff, even if the JSON itself hasn't
+changed. If the API returns a different value for the same schema, e.g. it switche
+d the order of values or replaced STRUCT field type with RECORD field type, we currently
+cannot suppress the recurring diff this causes. As a workaround, we recommend using
+the schema as returned by the API.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>routineID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The ID of the the routine. The ID must contain only letters (a-z, A-Z), numbers (0-9), or underscores (_). The maximum length is 256 characters.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>routineType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The type of routine. Possible values: [&quot;SCALAR_FUNCTION&quot;, &quot;PROCEDURE&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.RoutineStatus">RoutineStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.Routine">Routine</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

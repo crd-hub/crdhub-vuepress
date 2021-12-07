@@ -1,0 +1,637 @@
+<h2 id="/v1">/v1</h2>
+<div>
+</div>
+Resource Types:
+<ul></ul>
+All Types:
+<ul><li>
+<a href="#/v1.CertificatePrivateKey">CertificatePrivateKey</a>
+</li><li>
+<a href="#/v1.CertificateSpec">CertificateSpec</a>
+</li><li>
+<a href="#/v1.Condition">Condition</a>
+</li><li>
+<a href="#/v1.ObjectReference">ObjectReference</a>
+</li><li>
+<a href="#/v1.PrivateKeyEncoding">PrivateKeyEncoding</a>
+</li><li>
+<a href="#/v1.ResourceID">ResourceID</a>
+</li><li>
+<a href="#/v1.ResourceScope">ResourceScope</a>
+</li><li>
+<a href="#/v1.TLSConfig">TLSConfig</a>
+</li><li>
+<a href="#/v1.X509Subject">X509Subject</a>
+</li></ul>
+<h3 id="/v1.CertificatePrivateKey">CertificatePrivateKey
+</h3>
+<p>
+(<em>Appears on:</em><a href="#/v1.CertificateSpec">CertificateSpec</a>)
+</p>
+<div>
+<p>CertificatePrivateKey contains configuration options for private keys
+used by the Certificate controller.
+This allows control of how private keys are rotated.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>encoding</code><br/>
+<em>
+<a href="#/v1.PrivateKeyEncoding">
+PrivateKeyEncoding
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The private key cryptography standards (PKCS) encoding for this
+certificate's private key to be encoded in.
+If provided, allowed values are &quot;pkcs1&quot; and &quot;pkcs8&quot; standing for PKCS#1
+and PKCS#8, respectively.
+Defaults to PKCS#1 if not specified.
+See here for the difference between the formats: https://stackoverflow.com/a/48960291</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="/v1.CertificateSpec">CertificateSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#/v1.TLSConfig">TLSConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>alias</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Alias represents the identifier of the certificate.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>issuerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#typedlocalobjectreference-v1-core">
+Kubernetes core/v1.TypedLocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>IssuerRef is a reference to a Certificate Issuer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secretName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the k8s secret name that holds the certificates.
+Default to <!-- raw HTML omitted -->-<!-- raw HTML omitted -->-cert.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>subject</code><br/>
+<em>
+<a href="#/v1.X509Subject">
+X509Subject
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Full X509 name specification (https://golang.org/pkg/crypto/x509/pkix/#Name).</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>duration</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Certificate default Duration</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>renewBefore</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Certificate renew before expiration duration</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dnsNames</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>DNSNames is a list of subject alt names to be used on the Certificate.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ipAddresses</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>IPAddresses is a list of IP addresses to be used on the Certificate</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>uris</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>URIs is a list of URI subjectAltNames to be set on the Certificate.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>emailAddresses</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>EmailAddresses is a list of email subjectAltNames to be set on the Certificate.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>privateKey</code><br/>
+<em>
+<a href="#/v1.CertificatePrivateKey">
+CertificatePrivateKey
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Options to control private keys used for the Certificate.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="/v1.Condition">Condition
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Type of condition in CamelCase or in foo.example.com/CamelCase.
+Many .condition.type values are consistent across resources like Available, but because arbitrary conditions can be
+useful (see .node.status.conditions), the ability to deconflict is important.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#conditionstatus-v1-core">
+Kubernetes core/v1.ConditionStatus
+</a>
+</em>
+</td>
+<td>
+<p>Status of the condition, one of True, False, Unknown.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If set, this represents the .metadata.generation that the condition was set based upon.
+For instance, if .metadata.generation is currently 12, but the .status.condition[x].observedGeneration is 9, the condition is out of date
+with respect to the current state of the instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>lastTransitionTime</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#time-v1-meta">
+Kubernetes meta/v1.Time
+</a>
+</em>
+</td>
+<td>
+<p>Last time the condition transitioned from one status to another.
+This should be when the underlying condition changed.  If that is not known, then using the time when the API field changed is acceptable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>reason</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The reason for the condition's last transition in CamelCase.
+The specific API may choose whether or not this field is considered a guaranteed API.
+This field may not be empty.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>message</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A human readable message indicating details about the transition.
+This field may be empty.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="/v1.ObjectReference">ObjectReference
+</h3>
+<div>
+<p>ObjectReference contains enough information to let you inspect or modify the referred object.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>namespace</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Namespace of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the referent.
+More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="/v1.PrivateKeyEncoding">PrivateKeyEncoding
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#/v1.CertificatePrivateKey">CertificatePrivateKey</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;PKCS1&#34;</p></td>
+<td><p>PKCS1 key encoding will produce PEM files that include the type of
+private key as part of the PEM header, e.g. &quot;BEGIN RSA PRIVATE KEY&quot;.
+If the keyAlgorithm is set to 'ECDSA', this will produce private keys
+that use the &quot;BEGIN EC PRIVATE KEY&quot; header.</p>
+</td>
+</tr><tr><td><p>&#34;PKCS8&#34;</p></td>
+<td><p>PKCS8 key encoding will produce PEM files with the &quot;BEGIN PRIVATE KEY&quot;
+header. It encodes the keyAlgorithm of the private key as part of the
+DER encoded PEM block.</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="/v1.ResourceID">ResourceID
+</h3>
+<div>
+<p>ResourceID identifies a resource</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>group</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name is the plural name of the resource to serve.  It must match the name of the CustomResourceDefinition-registration
+too: plural.group and it must be all lowercase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Kind is the serialized kind of the resource.  It is normally CamelCase and singular.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scope</code><br/>
+<em>
+<a href="#/v1.ResourceScope">
+ResourceScope
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="/v1.ResourceScope">ResourceScope
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#/v1.ResourceID">ResourceID</a>)
+</p>
+<div>
+<p>ResourceScope is an enum defining the different scopes available to a custom resource</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Cluster&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Namespaced&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="/v1.TLSConfig">TLSConfig
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>issuerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#typedlocalobjectreference-v1-core">
+Kubernetes core/v1.TypedLocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>IssuerRef is a reference to a Certificate Issuer.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>certificates</code><br/>
+<em>
+<a href="#/v1.CertificateSpec">
+[]CertificateSpec
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Certificate provides server and/or client certificate options used by application pods.
+These options are passed to a cert-manager Certificate object.
+xref: https://github.com/jetstack/cert-manager/blob/v0.16.0/pkg/apis/certmanager/v1beta1/types_certificate.go#L82-L162</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="/v1.X509Subject">X509Subject
+</h3>
+<p>
+(<em>Appears on:</em><a href="#/v1.CertificateSpec">CertificateSpec</a>)
+</p>
+<div>
+<p>X509Subject Full X509 name specification</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>organizations</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Organizations to be used on the Certificate.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>countries</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Countries to be used on the CertificateSpec.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>organizationalUnits</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Organizational Units to be used on the CertificateSpec.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>localities</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Cities to be used on the CertificateSpec.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>provinces</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>State/Provinces to be used on the CertificateSpec.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>streetAddresses</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Street addresses to be used on the CertificateSpec.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>postalCodes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Postal codes to be used on the CertificateSpec.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serialNumber</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Serial number to be used on the CertificateSpec.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>ebcf54c4d</code>.
+</em></p>

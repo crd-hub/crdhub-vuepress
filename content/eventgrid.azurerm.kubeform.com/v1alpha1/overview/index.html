@@ -1,0 +1,232 @@
+<h2 id="eventgrid.azurerm.kubeform.com/v1alpha1">eventgrid.azurerm.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.Domain">Domain</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainTopic">DomainTopic</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscription">EventSubscription</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopic">SystemTopic</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscription">SystemTopicEventSubscription</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.Topic">Topic</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.Domain">Domain</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainTopic">DomainTopic</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscription">EventSubscription</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopic">SystemTopic</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscription">SystemTopicEventSubscription</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.Topic">Topic</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainSpec">DomainSpec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainSpecInboundIPRule">DomainSpecInboundIPRule</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainSpecInputMappingDefaultValues">DomainSpecInputMappingDefaultValues</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainSpecInputMappingDefaultValuesCodec">DomainSpecInputMappingDefaultValuesCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainSpecInputMappingFields">DomainSpecInputMappingFields</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainSpecInputMappingFieldsCodec">DomainSpecInputMappingFieldsCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainSpecResource">DomainSpecResource</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainStatus">DomainStatus</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainTopicSpec">DomainTopicSpec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainTopicSpecResource">DomainTopicSpecResource</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.DomainTopicStatus">DomainTopicStatus</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpec">EventSubscriptionSpec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilter">EventSubscriptionSpecAdvancedFilter</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterBoolEquals">EventSubscriptionSpecAdvancedFilterBoolEquals</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterCodec">EventSubscriptionSpecAdvancedFilterCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterIsNotNull">EventSubscriptionSpecAdvancedFilterIsNotNull</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterIsNullOrUndefined">EventSubscriptionSpecAdvancedFilterIsNullOrUndefined</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterNumberGreaterThan">EventSubscriptionSpecAdvancedFilterNumberGreaterThan</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterNumberGreaterThanOrEquals">EventSubscriptionSpecAdvancedFilterNumberGreaterThanOrEquals</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterNumberIn">EventSubscriptionSpecAdvancedFilterNumberIn</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterNumberInRange">EventSubscriptionSpecAdvancedFilterNumberInRange</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterNumberLessThan">EventSubscriptionSpecAdvancedFilterNumberLessThan</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterNumberLessThanOrEquals">EventSubscriptionSpecAdvancedFilterNumberLessThanOrEquals</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterNumberNotIn">EventSubscriptionSpecAdvancedFilterNumberNotIn</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterNumberNotInRange">EventSubscriptionSpecAdvancedFilterNumberNotInRange</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterStringBeginsWith">EventSubscriptionSpecAdvancedFilterStringBeginsWith</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterStringContains">EventSubscriptionSpecAdvancedFilterStringContains</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterStringEndsWith">EventSubscriptionSpecAdvancedFilterStringEndsWith</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterStringIn">EventSubscriptionSpecAdvancedFilterStringIn</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterStringNotBeginsWith">EventSubscriptionSpecAdvancedFilterStringNotBeginsWith</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterStringNotContains">EventSubscriptionSpecAdvancedFilterStringNotContains</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterStringNotEndsWith">EventSubscriptionSpecAdvancedFilterStringNotEndsWith</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAdvancedFilterStringNotIn">EventSubscriptionSpecAdvancedFilterStringNotIn</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAzureFunctionEndpoint">EventSubscriptionSpecAzureFunctionEndpoint</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecAzureFunctionEndpointCodec">EventSubscriptionSpecAzureFunctionEndpointCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecEventhubEndpoint">EventSubscriptionSpecEventhubEndpoint</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecEventhubEndpointCodec">EventSubscriptionSpecEventhubEndpointCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecHybridConnectionEndpoint">EventSubscriptionSpecHybridConnectionEndpoint</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecHybridConnectionEndpointCodec">EventSubscriptionSpecHybridConnectionEndpointCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecResource">EventSubscriptionSpecResource</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecRetryPolicy">EventSubscriptionSpecRetryPolicy</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecRetryPolicyCodec">EventSubscriptionSpecRetryPolicyCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecStorageBlobDeadLetterDestination">EventSubscriptionSpecStorageBlobDeadLetterDestination</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecStorageBlobDeadLetterDestinationCodec">EventSubscriptionSpecStorageBlobDeadLetterDestinationCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecStorageQueueEndpoint">EventSubscriptionSpecStorageQueueEndpoint</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecStorageQueueEndpointCodec">EventSubscriptionSpecStorageQueueEndpointCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecSubjectFilter">EventSubscriptionSpecSubjectFilter</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecSubjectFilterCodec">EventSubscriptionSpecSubjectFilterCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecWebhookEndpoint">EventSubscriptionSpecWebhookEndpoint</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionSpecWebhookEndpointCodec">EventSubscriptionSpecWebhookEndpointCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.EventSubscriptionStatus">EventSubscriptionStatus</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpec">SystemTopicEventSubscriptionSpec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilter">SystemTopicEventSubscriptionSpecAdvancedFilter</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterBoolEquals">SystemTopicEventSubscriptionSpecAdvancedFilterBoolEquals</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterCodec">SystemTopicEventSubscriptionSpecAdvancedFilterCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterIsNotNull">SystemTopicEventSubscriptionSpecAdvancedFilterIsNotNull</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterIsNullOrUndefined">SystemTopicEventSubscriptionSpecAdvancedFilterIsNullOrUndefined</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterNumberGreaterThan">SystemTopicEventSubscriptionSpecAdvancedFilterNumberGreaterThan</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterNumberGreaterThanOrEquals">SystemTopicEventSubscriptionSpecAdvancedFilterNumberGreaterThanOrEquals</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterNumberIn">SystemTopicEventSubscriptionSpecAdvancedFilterNumberIn</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterNumberInRange">SystemTopicEventSubscriptionSpecAdvancedFilterNumberInRange</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterNumberLessThan">SystemTopicEventSubscriptionSpecAdvancedFilterNumberLessThan</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterNumberLessThanOrEquals">SystemTopicEventSubscriptionSpecAdvancedFilterNumberLessThanOrEquals</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterNumberNotIn">SystemTopicEventSubscriptionSpecAdvancedFilterNumberNotIn</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterNumberNotInRange">SystemTopicEventSubscriptionSpecAdvancedFilterNumberNotInRange</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterStringBeginsWith">SystemTopicEventSubscriptionSpecAdvancedFilterStringBeginsWith</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterStringContains">SystemTopicEventSubscriptionSpecAdvancedFilterStringContains</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterStringEndsWith">SystemTopicEventSubscriptionSpecAdvancedFilterStringEndsWith</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterStringIn">SystemTopicEventSubscriptionSpecAdvancedFilterStringIn</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterStringNotBeginsWith">SystemTopicEventSubscriptionSpecAdvancedFilterStringNotBeginsWith</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterStringNotContains">SystemTopicEventSubscriptionSpecAdvancedFilterStringNotContains</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterStringNotEndsWith">SystemTopicEventSubscriptionSpecAdvancedFilterStringNotEndsWith</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAdvancedFilterStringNotIn">SystemTopicEventSubscriptionSpecAdvancedFilterStringNotIn</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAzureFunctionEndpoint">SystemTopicEventSubscriptionSpecAzureFunctionEndpoint</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecAzureFunctionEndpointCodec">SystemTopicEventSubscriptionSpecAzureFunctionEndpointCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecResource">SystemTopicEventSubscriptionSpecResource</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecRetryPolicy">SystemTopicEventSubscriptionSpecRetryPolicy</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecRetryPolicyCodec">SystemTopicEventSubscriptionSpecRetryPolicyCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecStorageBlobDeadLetterDestination">SystemTopicEventSubscriptionSpecStorageBlobDeadLetterDestination</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecStorageBlobDeadLetterDestinationCodec">SystemTopicEventSubscriptionSpecStorageBlobDeadLetterDestinationCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecStorageQueueEndpoint">SystemTopicEventSubscriptionSpecStorageQueueEndpoint</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecStorageQueueEndpointCodec">SystemTopicEventSubscriptionSpecStorageQueueEndpointCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecSubjectFilter">SystemTopicEventSubscriptionSpecSubjectFilter</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecSubjectFilterCodec">SystemTopicEventSubscriptionSpecSubjectFilterCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecWebhookEndpoint">SystemTopicEventSubscriptionSpecWebhookEndpoint</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionSpecWebhookEndpointCodec">SystemTopicEventSubscriptionSpecWebhookEndpointCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicEventSubscriptionStatus">SystemTopicEventSubscriptionStatus</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicSpec">SystemTopicSpec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicSpecResource">SystemTopicSpecResource</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.SystemTopicStatus">SystemTopicStatus</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.TopicSpec">TopicSpec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.TopicSpecInboundIPRule">TopicSpecInboundIPRule</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.TopicSpecInputMappingDefaultValues">TopicSpecInputMappingDefaultValues</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.TopicSpecInputMappingDefaultValuesCodec">TopicSpecInputMappingDefaultValuesCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.TopicSpecInputMappingFields">TopicSpecInputMappingFields</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.TopicSpecInputMappingFieldsCodec">TopicSpecInputMappingFieldsCodec</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.TopicSpecResource">TopicSpecResource</a>
+</li><li>
+<a href="#eventgrid.azurerm.kubeform.com/v1alpha1.TopicStatus">TopicStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>d6ee7ab</code>.
+</em></p>

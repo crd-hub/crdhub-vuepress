@@ -1,0 +1,692 @@
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBOpsRequest">MariaDBOpsRequest
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+ops.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>MariaDBOpsRequest</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">
+MariaDBOpsRequestSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the MariaDB reference</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">
+OpsRequestType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the ops request type: Upgrade, HorizontalScaling, VerticalScaling etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgrade</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBUpgradeSpec">
+MariaDBUpgradeSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for upgrading MariaDB</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>horizontalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBHorizontalScalingSpec">
+MariaDBHorizontalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for horizontal scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verticalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBVerticalScalingSpec">
+MariaDBVerticalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for vertical scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeExpansion</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBVolumeExpansionSpec">
+MariaDBVolumeExpansionSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for volume expansion</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>configuration</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBCustomConfigurationSpec">
+MariaDBCustomConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for custom configuration of MariaDB</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tls</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBTLSSpec">
+MariaDBTLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for configuring TLS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>restart</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">
+RestartSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for restarting database</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<p>Timeout for each step of the ops request in second. If a step doesn't finish within the specified timeout, the ops request will result in failure.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestStatus">
+MariaDBOpsRequestStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">
+OpsRequestPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBCustomConfigurationSpec">MariaDBCustomConfigurationSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>configSecret</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>inlineConfig</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>removeCustomConfig</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBHorizontalScalingSpec">MariaDBHorizontalScalingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>member</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<p>Number of nodes/members of the group</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>memberWeight</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<p>specifies the weight of the current member/Node</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequest">MariaDBOpsRequest</a>)
+</p>
+<div>
+<p>MariaDBOpsRequestSpec is the spec for MariaDBOpsRequest</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the MariaDB reference</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">
+OpsRequestType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the ops request type: Upgrade, HorizontalScaling, VerticalScaling etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgrade</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBUpgradeSpec">
+MariaDBUpgradeSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for upgrading MariaDB</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>horizontalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBHorizontalScalingSpec">
+MariaDBHorizontalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for horizontal scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verticalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBVerticalScalingSpec">
+MariaDBVerticalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for vertical scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeExpansion</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBVolumeExpansionSpec">
+MariaDBVolumeExpansionSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for volume expansion</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>configuration</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBCustomConfigurationSpec">
+MariaDBCustomConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for custom configuration of MariaDB</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tls</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBTLSSpec">
+MariaDBTLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for configuring TLS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>restart</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">
+RestartSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for restarting database</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<p>Timeout for each step of the ops request in second. If a step doesn't finish within the specified timeout, the ops request will result in failure.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBOpsRequestStatus">MariaDBOpsRequestStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequest">MariaDBOpsRequest</a>)
+</p>
+<div>
+<p>MariaDBOpsRequestStatus is the status for MariaDBOpsRequest</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">
+OpsRequestPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBTLSSpec">MariaDBTLSSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>TLSSpec</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.TLSSpec">
+TLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>
+(Members of <code>TLSSpec</code> are embedded into this type.)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requireSSL</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Indicates that the database server need to be encrypted connections(ssl)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBUpgradeSpec">MariaDBUpgradeSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetVersion</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Specifies the target version name from catalog</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBVerticalScalingSpec">MariaDBVerticalScalingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>mariadb</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinator</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.MariaDBVolumeExpansionSpec">MariaDBVolumeExpansionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>)
+</p>
+<div>
+<p>MariaDBVolumeExpansionSpec is the spec for MariaDB volume expansion</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>mariadb</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

@@ -1,0 +1,402 @@
+<h3 id="stash.appscode.com/v1alpha1.Recovery">Recovery
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+stash.appscode.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Recovery</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#stash.appscode.com/v1alpha1.RecoverySpec">
+RecoverySpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>repository</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectreference-v1-core">
+Kubernetes core/v1.ObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>snapshot</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Snapshot to recover. Default is latest snapshot.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>paths</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>recoveredVolumes</code><br/>
+<em>
+[]kmodules.xyz/objectstore-api/api/v1.LocalSpec
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>imagePullSecrets</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+[]Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>nodeSelector</code><br/>
+<em>
+map[string]string
+</em>
+</td>
+<td>
+<p>NodeSelector is a selector which must be true for the pod to fit on a node.
+Selector which must match a node's labels for the pod to be scheduled on that node.
+More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#stash.appscode.com/v1alpha1.RecoveryStatus">
+RecoveryStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#stash.appscode.com/v1alpha1.RecoveryPhase">
+RecoveryPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>stats</code><br/>
+<em>
+<a href="#stash.appscode.com/v1alpha1.RestoreStats">
+[]RestoreStats
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1alpha1.RecoveryPhase">RecoveryPhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1alpha1.RecoveryStatus">RecoveryStatus</a>, <a href="#stash.appscode.com/v1alpha1.RestoreStats">RestoreStats</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Failed&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Pending&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Running&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Succeeded&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Unknown&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="stash.appscode.com/v1alpha1.RecoverySpec">RecoverySpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1alpha1.Recovery">Recovery</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>repository</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectreference-v1-core">
+Kubernetes core/v1.ObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>snapshot</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Snapshot to recover. Default is latest snapshot.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>paths</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>recoveredVolumes</code><br/>
+<em>
+[]kmodules.xyz/objectstore-api/api/v1.LocalSpec
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>imagePullSecrets</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+[]Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>nodeSelector</code><br/>
+<em>
+map[string]string
+</em>
+</td>
+<td>
+<p>NodeSelector is a selector which must be true for the pod to fit on a node.
+Selector which must match a node's labels for the pod to be scheduled on that node.
+More info: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1alpha1.RecoveryStatus">RecoveryStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1alpha1.Recovery">Recovery</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#stash.appscode.com/v1alpha1.RecoveryPhase">
+RecoveryPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>stats</code><br/>
+<em>
+<a href="#stash.appscode.com/v1alpha1.RestoreStats">
+[]RestoreStats
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1alpha1.RestoreStats">RestoreStats
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1alpha1.RecoveryStatus">RecoveryStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#stash.appscode.com/v1alpha1.RecoveryPhase">
+RecoveryPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>duration</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>dce6be25</code>.
+</em></p>

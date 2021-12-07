@@ -1,0 +1,579 @@
+<h3 id="accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelCondition">ManagerAccessLevelCondition
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+accesscontext.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ManagerAccessLevelCondition</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpec">
+ManagerAccessLevelConditionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecResource">
+ManagerAccessLevelConditionSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecResource">
+ManagerAccessLevelConditionSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionStatus">
+ManagerAccessLevelConditionStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpec">ManagerAccessLevelConditionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelCondition">ManagerAccessLevelCondition</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecResource">
+ManagerAccessLevelConditionSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecResource">
+ManagerAccessLevelConditionSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecDevicePolicy">ManagerAccessLevelConditionSpecDevicePolicy
+</h3>
+<p>
+(<em>Appears on:</em><a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecResource">ManagerAccessLevelConditionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>allowedDeviceManagementLevels</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of allowed device management levels.
+An empty list allows all management levels. Possible values: [&quot;MANAGEMENT_UNSPECIFIED&quot;, &quot;NONE&quot;, &quot;BASIC&quot;, &quot;COMPLETE&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>allowedEncryptionStatuses</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of allowed encryptions statuses.
+An empty list allows all statuses. Possible values: [&quot;ENCRYPTION_UNSPECIFIED&quot;, &quot;ENCRYPTION_UNSUPPORTED&quot;, &quot;UNENCRYPTED&quot;, &quot;ENCRYPTED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>osConstraints</code><br/>
+<em>
+<a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecDevicePolicyOsConstraints">
+[]ManagerAccessLevelConditionSpecDevicePolicyOsConstraints
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of allowed OS versions.
+An empty list allows all types and all versions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requireAdminApproval</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether the device needs to be approved by the customer admin.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requireCorpOwned</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether the device needs to be corp owned.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requireScreenLock</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether or not screenlock is required for the DevicePolicy
+to be true. Defaults to false.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecDevicePolicyOsConstraints">ManagerAccessLevelConditionSpecDevicePolicyOsConstraints
+</h3>
+<p>
+(<em>Appears on:</em><a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecDevicePolicy">ManagerAccessLevelConditionSpecDevicePolicy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>minimumVersion</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The minimum allowed OS version. If not set, any version
+of this OS satisfies the constraint.
+Format: &quot;major.minor.patch&quot; such as &quot;10.5.301&quot;, &quot;9.2.1&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>osType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The operating system type of the device. Possible values: [&quot;OS_UNSPECIFIED&quot;, &quot;DESKTOP_MAC&quot;, &quot;DESKTOP_WINDOWS&quot;, &quot;DESKTOP_LINUX&quot;, &quot;DESKTOP_CHROME_OS&quot;, &quot;ANDROID&quot;, &quot;IOS&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecResource">ManagerAccessLevelConditionSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpec">ManagerAccessLevelConditionSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>accessLevel</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name of the Access Level to add this condition to.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>devicePolicy</code><br/>
+<em>
+<a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionSpecDevicePolicy">
+ManagerAccessLevelConditionSpecDevicePolicy
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Device specific restrictions, all restrictions must hold for
+the Condition to be true. If not specified, all devices are
+allowed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ipSubnetworks</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of CIDR block IP subnetwork specification. May be IPv4
+or IPv6.
+Note that for a CIDR IP address block, the specified IP address
+portion must be properly truncated (i.e. all the host bits must
+be zero) or the input is considered malformed. For example,
+&quot;192.0.2.0/24&quot; is accepted but &quot;192.0.2.1/24&quot; is not. Similarly,
+for IPv6, &quot;2001:db8::/32&quot; is accepted whereas &quot;2001:db8::1/32&quot;
+is not. The originating IP of a request must be in one of the
+listed subnets in order for this Condition to be true.
+If empty, all IP addresses are allowed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>members</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An allowed list of members (users, service accounts).
+Using groups is not supported yet.</p>
+<p>The signed-in user originating the request must be a part of one
+of the provided members. If not specified, a request may come
+from any user (logged in/not logged in, not present in any
+groups, etc.).
+Formats: 'user:{emailid}', 'serviceAccount:{emailid}'</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>negate</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether to negate the Condition. If true, the Condition becomes
+a NAND over its non-empty fields, each field must be false for
+the Condition overall to be satisfied. Defaults to false.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>regions</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The request must originate from one of the provided
+countries/regions.
+Format: A valid ISO 3166-1 alpha-2 code.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requiredAccessLevels</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of other access levels defined in the same Policy,
+referenced by resource name. Referencing an AccessLevel which
+does not exist is an error. All access levels listed must be
+granted for the Condition to be true.
+Format: accessPolicies/{policy_id}/accessLevels/{short_name}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelConditionStatus">ManagerAccessLevelConditionStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#accesscontext.google.kubeform.com/v1alpha1.ManagerAccessLevelCondition">ManagerAccessLevelCondition</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

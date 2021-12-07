@@ -1,0 +1,2961 @@
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetric">ServiceMetric
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+calculated.dynatrace.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ServiceMetric</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpec">
+ServiceMetricSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecResource">
+ServiceMetricSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecResource">
+ServiceMetricSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricStatus">
+ServiceMetricStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpec">ServiceMetricSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetric">ServiceMetric</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecResource">
+ServiceMetricSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecResource">
+ServiceMetricSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditions">ServiceMetricSpecConditions
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecResource">ServiceMetricSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>condition</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsCondition">
+[]ServiceMetricSpecConditionsCondition
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A conditions for the metric usage</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsCondition">ServiceMetricSpecConditionsCondition
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditions">ServiceMetricSpecConditions</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>attribute</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The attribute to be matched.  Note that for a service property attribute you must use the comparison of the <code>FAST_STRING</code> type. Possible values are <code>ACTOR_SYSTEM</code>, <code>AKKA_ACTOR_CLASS_NAME</code>, <code>AKKA_ACTOR_MESSAGE_TYPE</code>, <code>AKKA_ACTOR_PATH</code>, <code>APPLICATION_BUILD_VERSION</code>, <code>APPLICATION_RELEASE_VERSION</code>, <code>AZURE_FUNCTIONS_FUNCTION_NAME</code>, <code>AZURE_FUNCTIONS_SITE_NAME</code>, <code>CICS_PROGRAM_NAME</code>, <code>CICS_SYSTEM_ID</code>, <code>CICS_TASK_ID</code>, <code>CICS_TRANSACTION_ID</code>, <code>CICS_USER_ID</code>, <code>CPU_TIME</code>, <code>CTG_GATEWAY_URL</code>, <code>CTG_PROGRAM</code>, <code>CTG_SERVER_NAME</code>, <code>CTG_TRANSACTION_ID</code>, <code>CUSTOMSERVICE_CLASS</code>, <code>CUSTOMSERVICE_METHOD</code>, <code>DATABASE_CHILD_CALL_COUNT</code>, <code>DATABASE_CHILD_CALL_TIME</code>, <code>DATABASE_HOST</code>, <code>DATABASE_NAME</code>, <code>DATABASE_TYPE</code>, <code>DATABASE_URL</code>, <code>DISK_IO_TIME</code>, <code>ERROR_COUNT</code>, <code>ESB_APPLICATION_NAME</code>, <code>ESB_INPUT_TYPE</code>, <code>ESB_LIBRARY_NAME</code>, <code>ESB_MESSAGE_FLOW_NAME</code>, <code>EXCEPTION_CLASS</code>, <code>EXCEPTION_MESSAGE</code>, <code>FAILED_STATE</code>, <code>FAILURE_REASON</code>, <code>FLAW_STATE</code>, <code>HTTP_REQUEST_METHOD</code>, <code>HTTP_STATUS</code>, <code>HTTP_STATUS_CLASS</code>, <code>IMS_PROGRAM_NAME</code>, <code>IMS_TRANSACTION_ID</code>, <code>IMS_USER_ID</code>, <code>IO_TIME</code>, <code>IS_KEY_REQUEST</code>, <code>LAMBDA_COLDSTART</code>, <code>LOCK_TIME</code>, <code>MESSAGING_DESTINATION_TYPE</code>, <code>MESSAGING_IS_TEMPORARY_QUEUE</code>, <code>MESSAGING_QUEUE_NAME</code>, <code>MESSAGING_QUEUE_VENDOR</code>, <code>NETWORK_IO_TIME</code>, <code>NON_DATABASE_CHILD_CALL_COUNT</code>, <code>NON_DATABASE_CHILD_CALL_TIME</code>, <code>PROCESS_GROUP_NAME</code>, <code>PROCESS_GROUP_TAG</code>, <code>REMOTE_ENDPOINT</code>, <code>REMOTE_METHOD</code>, <code>REMOTE_SERVICE_NAME</code>, <code>REQUEST_NAME</code>, <code>REQUEST_TYPE</code>, <code>RESPONSE_TIME</code>, <code>RESPONSE_TIME_CLIENT</code>, <code>RMI_CLASS</code>, <code>RMI_METHOD</code>, <code>SERVICE_DISPLAY_NAME</code>, <code>SERVICE_NAME</code>, <code>SERVICE_PORT</code>, <code>SERVICE_PUBLIC_DOMAIN_NAME</code>, <code>SERVICE_REQUEST_ATTRIBUTE</code>, <code>SERVICE_TAG</code>, <code>SERVICE_TYPE</code>, <code>SERVICE_WEB_APPLICATION_ID</code>, <code>SERVICE_WEB_CONTEXT_ROOT</code>, <code>SERVICE_WEB_SERVER_NAME</code>, <code>SERVICE_WEB_SERVICE_NAME</code>, <code>SERVICE_WEB_SERVICE_NAMESPACE</code>, <code>SUSPENSION_TIME</code>, <code>TOTAL_PROCESSING_TIME</code>, <code>WAIT_TIME</code>, <code>WEBREQUEST_QUERY</code>, <code>WEBREQUEST_RELATIVE_URL</code>, <code>WEBREQUEST_URL</code>, <code>WEBREQUEST_URL_HOST</code>, <code>WEBREQUEST_URL_PATH</code>, <code>WEBREQUEST_URL_PORT</code>, <code>WEBSERVICE_ENDPOINT</code>, <code>WEBSERVICE_METHOD</code> and <code>ZOS_CALL_TYPE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>comparison</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">
+ServiceMetricSpecConditionsConditionComparison
+</a>
+</em>
+</td>
+<td>
+<p>Type-specific comparison for attributes</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsCondition">ServiceMetricSpecConditionsCondition</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>boolean</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonBoolean">
+ServiceMetricSpecConditionsConditionComparisonBoolean
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Boolean Comparison for <code>BOOLEAN</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>esbInputNodeType</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonEsbInputNodeType">
+ServiceMetricSpecConditionsConditionComparisonEsbInputNodeType
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Type-specific comparison information for attributes of type 'ESB_INPUT_NODE_TYPE'</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>failedState</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonFailedState">
+ServiceMetricSpecConditionsConditionComparisonFailedState
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>FAILED_STATE</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>failureReason</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonFailureReason">
+ServiceMetricSpecConditionsConditionComparisonFailureReason
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>FAILURE_REASON</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>fastString</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonFastString">
+ServiceMetricSpecConditionsConditionComparisonFastString
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>FAST_STRING</code> attributes. Use it for all service property attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>flawState</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonFlawState">
+ServiceMetricSpecConditionsConditionComparisonFlawState
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>FLAW_STATE</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>generic</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonGeneric">
+ServiceMetricSpecConditionsConditionComparisonGeneric
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>NUMBER</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>httpMethod</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonHttpMethod">
+ServiceMetricSpecConditionsConditionComparisonHttpMethod
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>HTTP_METHOD</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>httpStatusClass</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonHttpStatusClass">
+ServiceMetricSpecConditionsConditionComparisonHttpStatusClass
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>HTTP_STATUS_CLASS</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>iibInputNodeType</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonIibInputNodeType">
+ServiceMetricSpecConditionsConditionComparisonIibInputNodeType
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>IIB_INPUT_NODE_TYPE</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>negate</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Reverse the comparison <strong>operator</strong>. For example, it turns <strong>equals</strong> into <strong>does not equal</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>number</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumber">
+ServiceMetricSpecConditionsConditionComparisonNumber
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>NUMBER</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>numberRequestAttribute</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttribute">
+ServiceMetricSpecConditionsConditionComparisonNumberRequestAttribute
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>NUMBER_REQUEST_ATTRIBUTE</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serviceType</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonServiceType">
+ServiceMetricSpecConditionsConditionComparisonServiceType
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>SERVICE_TYPE</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>string</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonString">
+ServiceMetricSpecConditionsConditionComparisonString
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>STRING</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stringRequestAttribute</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttribute">
+ServiceMetricSpecConditionsConditionComparisonStringRequestAttribute
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>STRING_REQUEST_ATTRIBUTE</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tag</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTag">
+ServiceMetricSpecConditionsConditionComparisonTag
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>TAG</code> attributes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>zosCallType</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonZosCallType">
+ServiceMetricSpecConditionsConditionComparisonZosCallType
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Comparison for <code>ZOS_CALL_TYPE</code> attributes</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonBoolean">ServiceMetricSpecConditionsConditionComparisonBoolean
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonEsbInputNodeType">ServiceMetricSpecConditionsConditionComparisonEsbInputNodeType
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>CALLABLE_FLOW_ASYNC_RESPONSE_NODE</code>, <code>CALLABLE_FLOW_INPUT_NODE</code>, <code>DATABASE_INPUT_NODE</code>, <code>DOTNET_INPUT_NODE</code>, <code>EMAIL_INPUT_NODE</code>, <code>EVENT_INPUT</code>, <code>EVENT_INPUT_NODE</code>, <code>FILE_INPUT_NODE</code>, <code>FTE_INPUT_NODE</code>, <code>HTTP_ASYNC_RESPONSE</code>, <code>JD_EDWARDS_INPUT_NODE</code>, <code>JMS_CLIENT_INPUT_NODE</code>, <code>LABEL_NODE</code>, <code>MQ_INPUT_NODE</code>, <code>PEOPLE_SOFT_INPUT_NODE</code>, <code>REST_ASYNC_RESPONSE</code>, <code>REST_REQUEST</code>, <code>SAP_INPUT_NODE</code>, <code>SCA_ASYNC_RESPONSE_NODE</code>, <code>SCA_INPUT_NODE</code>, <code>SIEBEL_INPUT_NODE</code>, <code>SOAP_INPUT_NODE</code>, <code>TCPIP_CLIENT_INPUT_NODE</code>, <code>TCPIP_CLIENT_REQUEST_NODE</code>, <code>TCPIP_SERVER_INPUT_NODE</code>, <code>TCPIP_SERVER_REQUEST_NODE</code>, <code>TIMEOUT_NOTIFICATION_NODE</code> and <code>WS_INPUT_NODE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>CALLABLE_FLOW_ASYNC_RESPONSE_NODE</code>, <code>CALLABLE_FLOW_INPUT_NODE</code>, <code>DATABASE_INPUT_NODE</code>, <code>DOTNET_INPUT_NODE</code>, <code>EMAIL_INPUT_NODE</code>, <code>EVENT_INPUT</code>, <code>EVENT_INPUT_NODE</code>, <code>FILE_INPUT_NODE</code>, <code>FTE_INPUT_NODE</code>, <code>HTTP_ASYNC_RESPONSE</code>, <code>JD_EDWARDS_INPUT_NODE</code>, <code>JMS_CLIENT_INPUT_NODE</code>, <code>LABEL_NODE</code>, <code>MQ_INPUT_NODE</code>, <code>PEOPLE_SOFT_INPUT_NODE</code>, <code>REST_ASYNC_RESPONSE</code>, <code>REST_REQUEST</code>, <code>SAP_INPUT_NODE</code>, <code>SCA_ASYNC_RESPONSE_NODE</code>, <code>SCA_INPUT_NODE</code>, <code>SIEBEL_INPUT_NODE</code>, <code>SOAP_INPUT_NODE</code>, <code>TCPIP_CLIENT_INPUT_NODE</code>, <code>TCPIP_CLIENT_REQUEST_NODE</code>, <code>TCPIP_SERVER_INPUT_NODE</code>, <code>TCPIP_SERVER_REQUEST_NODE</code>, <code>TIMEOUT_NOTIFICATION_NODE</code> and <code>WS_INPUT_NODE</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonFailedState">ServiceMetricSpecConditionsConditionComparisonFailedState
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>FAILED</code> and <code>FAILED</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>FAILED</code> and <code>FAILED</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonFailureReason">ServiceMetricSpecConditionsConditionComparisonFailureReason
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>EXCEPTION_AT_ENTRY_NODE</code>, <code>EXCEPTION_ON_ANY_NODE</code>, <code>HTTP_CODE</code> and <code>REQUEST_ATTRIBUTE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>EXCEPTION_AT_ENTRY_NODE</code>, <code>EXCEPTION_ON_ANY_NODE</code>, <code>HTTP_CODE</code> and <code>REQUEST_ATTRIBUTE</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonFastString">ServiceMetricSpecConditionsConditionComparisonFastString
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>caseSensitive</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The comparison is case-sensitive (<code>true</code>) or not case-sensitive (<code>false</code>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>CONTAINS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonFlawState">ServiceMetricSpecConditionsConditionComparisonFlawState
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>FLAWED</code> and <code>NOT_FLAWED</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>FLAWED</code> and <code>NOT_FLAWED</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonGeneric">ServiceMetricSpecConditionsConditionComparisonGeneric
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Defines the actual set of fields depending on the value</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonHttpMethod">ServiceMetricSpecConditionsConditionComparisonHttpMethod
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>CONNECT</code>, <code>DELETE</code>, <code>GET</code>, <code>HEAD</code>, <code>OPTIONS</code>, <code>PATCH</code>, <code>POST</code>, <code>PUT</code> and <code>TRACE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>CONNECT</code>, <code>DELETE</code>, <code>GET</code>, <code>HEAD</code>, <code>OPTIONS</code>, <code>PATCH</code>, <code>POST</code>, <code>PUT</code> and <code>TRACE</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonHttpStatusClass">ServiceMetricSpecConditionsConditionComparisonHttpStatusClass
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>C_1XX</code>, <code>C_2XX</code>, <code>C_3XX</code>, <code>C_4XX</code>, <code>C_5XX</code> and <code>NO_RESPONSE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>C_1XX</code>, <code>C_2XX</code>, <code>C_3XX</code>, <code>C_4XX</code>, <code>C_5XX</code> and <code>NO_RESPONSE</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonIibInputNodeType">ServiceMetricSpecConditionsConditionComparisonIibInputNodeType
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>CALLABLE_FLOW_ASYNC_RESPONSE_NODE</code>, <code>CALLABLE_FLOW_INPUT_NODE</code>, <code>DATABASE_INPUT_NODE</code>, <code>DOTNET_INPUT_NODE</code>, <code>EMAIL_INPUT_NODE</code>, <code>EVENT_INPUT</code>, <code>EVENT_INPUT_NODE</code>, <code>FILE_INPUT_NODE</code>, <code>FTE_INPUT_NODE</code>, <code>HTTP_ASYNC_RESPONSE</code>, <code>JD_EDWARDS_INPUT_NODE</code>, <code>JMS_CLIENT_INPUT_NODE</code>, <code>LABEL_NODE</code>, <code>MQ_INPUT_NODE</code>, <code>PEOPLE_SOFT_INPUT_NODE</code>, <code>REST_ASYNC_RESPONSE</code>, <code>REST_REQUEST</code>, <code>SAP_INPUT_NODE</code>, <code>SCA_ASYNC_RESPONSE_NODE</code>, <code>SCA_INPUT_NODE</code>, <code>SIEBEL_INPUT_NODE</code>, <code>SOAP_INPUT_NODE</code>, <code>TCPIP_CLIENT_INPUT_NODE</code>, <code>TCPIP_CLIENT_REQUEST_NODE</code>, <code>TCPIP_SERVER_INPUT_NODE</code>, <code>TCPIP_SERVER_REQUEST_NODE</code>, <code>TIMEOUT_NOTIFICATION_NODE</code> and <code>WS_INPUT_NODE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>CALLABLE_FLOW_ASYNC_RESPONSE_NODE</code>, <code>CALLABLE_FLOW_INPUT_NODE</code>, <code>DATABASE_INPUT_NODE</code>, <code>DOTNET_INPUT_NODE</code>, <code>EMAIL_INPUT_NODE</code>, <code>EVENT_INPUT</code>, <code>EVENT_INPUT_NODE</code>, <code>FILE_INPUT_NODE</code>, <code>FTE_INPUT_NODE</code>, <code>HTTP_ASYNC_RESPONSE</code>, <code>JD_EDWARDS_INPUT_NODE</code>, <code>JMS_CLIENT_INPUT_NODE</code>, <code>LABEL_NODE</code>, <code>MQ_INPUT_NODE</code>, <code>PEOPLE_SOFT_INPUT_NODE</code>, <code>REST_ASYNC_RESPONSE</code>, <code>REST_REQUEST</code>, <code>SAP_INPUT_NODE</code>, <code>SCA_ASYNC_RESPONSE_NODE</code>, <code>SCA_INPUT_NODE</code>, <code>SIEBEL_INPUT_NODE</code>, <code>SOAP_INPUT_NODE</code>, <code>TCPIP_CLIENT_INPUT_NODE</code>, <code>TCPIP_CLIENT_REQUEST_NODE</code>, <code>TCPIP_SERVER_INPUT_NODE</code>, <code>TCPIP_SERVER_REQUEST_NODE</code>, <code>TIMEOUT_NOTIFICATION_NODE</code> and <code>WS_INPUT_NODE</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumber">ServiceMetricSpecConditionsConditionComparisonNumber
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code>, <code>EXISTS</code>, <code>GREATER_THAN</code>, <code>GREATER_THAN_OR_EQUAL</code>, <code>LOWER_THAN</code> and <code>LOWER_THAN_OR_EQUAL</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttribute">ServiceMetricSpecConditionsConditionComparisonNumberRequestAttribute
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>matchOnChildCalls</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If <code>true</code>, the request attribute is matched on child service calls. Default is <code>false</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code>, <code>EXISTS</code>, <code>GREATER_THAN</code>, <code>GREATER_THAN_OR_EQUAL</code>, <code>LOWER_THAN</code> and <code>LOWER_THAN_OR_EQUAL</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestAttribute</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>No documentation available for this attribute</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>source</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSource">
+ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSource
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines valid sources of request attributes for conditions or placeholders</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSource">ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttribute">ServiceMetricSpecConditionsConditionComparisonNumberRequestAttribute</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>managementZone</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use only request attributes from services that belong to this management zone.. Use either this or <code>serviceTag</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serviceTag</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTag">
+ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTag
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use only request attributes from services that have this tag. Use either this or <code>managementZone</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTag">ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTag
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSource">ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The origin of the tag, such as AWS or Cloud Foundry. For custom tags use the <code>CONTEXTLESS</code> value. The context is set for tags that are automatically imported by OneAgent (for example, from the AWS console or environment variables). It’s useful for determining the origin of tags when not manually defined, and it also helps to prevent clashes with other existing tags. If the tag is not automatically imported, <code>CONTEXTLESS</code> set. Possible values are <code>AWS</code>, <code>AWS_GENERIC</code>, <code>AZURE</code>, <code>CLOUD_FOUNDRY</code>, <code>CONTEXTLESS</code>, <code>ENVIRONMENT</code>, <code>GOOGLE_COMPUTE_ENGINE</code> and <code>KUBERNETES</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The key of the tag. For custom tags, put the tag value here. The key allows categorization of multiple tags. It is possible that there are multiple values for a single key which will all be represented as standalone tags. Therefore, the key does not have the semantic of a map key but is more like a key of a key-value tuple. In some cases, for example custom tags, the key represents the actual tag value and the value field is not set – those are called valueless tags</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tagKey</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTagTagKey">
+ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTagTagKey
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the tag. Not applicable to custom tags. If a tag does have a separate key and value (in the textual representation they are split by the colon ‘:’), this field is set with the actual value. Key-value pairs can occur for automatically imported tags and tags set by rules if extractors are used</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTagTagKey">ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTagTagKey
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTag">ServiceMetricSpecConditionsConditionComparisonNumberRequestAttributeSourceServiceTag</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonServiceType">ServiceMetricSpecConditionsConditionComparisonServiceType
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>BACKGROUND_ACTIVITY</code>, <code>CICS_SERVICE</code>, <code>CUSTOM_SERVICE</code>, <code>DATABASE_SERVICE</code>, <code>ENTERPRISE_SERVICE_BUS_SERVICE</code>, <code>EXTERNAL</code>, <code>IBM_INTEGRATION_BUS_SERVICE</code>, <code>IMS_SERVICE</code>, <code>MESSAGING_SERVICE</code>, <code>RMI_SERVICE</code>, <code>RPC_SERVICE</code>, <code>WEB_REQUEST_SERVICE</code> and <code>WEB_SERVICE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>BACKGROUND_ACTIVITY</code>, <code>CICS_SERVICE</code>, <code>CUSTOM_SERVICE</code>, <code>DATABASE_SERVICE</code>, <code>ENTERPRISE_SERVICE_BUS_SERVICE</code>, <code>EXTERNAL</code>, <code>IBM_INTEGRATION_BUS_SERVICE</code>, <code>IMS_SERVICE</code>, <code>MESSAGING_SERVICE</code>, <code>RMI_SERVICE</code>, <code>RPC_SERVICE</code>, <code>WEB_REQUEST_SERVICE</code> and <code>WEB_SERVICE</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonString">ServiceMetricSpecConditionsConditionComparisonString
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>caseSensitive</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The comparison is case-sensitive (<code>true</code>) or not case-sensitive (<code>false</code>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>BEGINS_WITH</code>, <code>BEGINS_WITH_ANY_OF</code>, <code>CONTAINS</code>, <code>ENDS_WITH</code>, <code>ENDS_WITH_ANY_OF</code>, <code>EQUALS</code>, <code>EQUALS_ANY_OF</code>, <code>EXISTS</code> and <code>REGEX_MATCHES</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttribute">ServiceMetricSpecConditionsConditionComparisonStringRequestAttribute
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>caseSensitive</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The comparison is case-sensitive (<code>true</code>) or not case-sensitive (<code>false</code>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>matchOnChildCalls</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If <code>true</code>, the request attribute is matched on child service calls. Default is <code>false</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>BEGINS_WITH</code>, <code>BEGINS_WITH_ANY_OF</code>, <code>CONTAINS</code>, <code>ENDS_WITH</code>, <code>ENDS_WITH_ANY_OF</code>, <code>EQUALS</code>, <code>EQUALS_ANY_OF</code>, <code>EXISTS</code> and <code>REGEX_MATCHES</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestAttribute</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>No documentation available for this attribute</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>source</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSource">
+ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSource
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines valid sources of request attributes for conditions or placeholders</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSource">ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttribute">ServiceMetricSpecConditionsConditionComparisonStringRequestAttribute</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>managementZone</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use only request attributes from services that belong to this management zone.. Use either this or <code>serviceTag</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serviceTag</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTag">
+ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTag
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use only request attributes from services that have this tag. Use either this or <code>managementZone</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTag">ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTag
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSource">ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The origin of the tag, such as AWS or Cloud Foundry. For custom tags use the <code>CONTEXTLESS</code> value. The context is set for tags that are automatically imported by OneAgent (for example, from the AWS console or environment variables). It’s useful for determining the origin of tags when not manually defined, and it also helps to prevent clashes with other existing tags. If the tag is not automatically imported, <code>CONTEXTLESS</code> set. Possible values are <code>AWS</code>, <code>AWS_GENERIC</code>, <code>AZURE</code>, <code>CLOUD_FOUNDRY</code>, <code>CONTEXTLESS</code>, <code>ENVIRONMENT</code>, <code>GOOGLE_COMPUTE_ENGINE</code> and <code>KUBERNETES</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The key of the tag. For custom tags, put the tag value here. The key allows categorization of multiple tags. It is possible that there are multiple values for a single key which will all be represented as standalone tags. Therefore, the key does not have the semantic of a map key but is more like a key of a key-value tuple. In some cases, for example custom tags, the key represents the actual tag value and the value field is not set – those are called valueless tags</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tagKey</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTagTagKey">
+ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTagTagKey
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the tag. Not applicable to custom tags. If a tag does have a separate key and value (in the textual representation they are split by the colon ‘:’), this field is set with the actual value. Key-value pairs can occur for automatically imported tags and tags set by rules if extractors are used</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTagTagKey">ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTagTagKey
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTag">ServiceMetricSpecConditionsConditionComparisonStringRequestAttributeSourceServiceTag</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTag">ServiceMetricSpecConditionsConditionComparisonTag
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code>, <code>TAG_KEY_EQUALS</code> and <code>TAG_KEY_EQUALS_ANY_OF</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTagValue">
+ServiceMetricSpecConditionsConditionComparisonTagValue
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTagValues">
+ServiceMetricSpecConditionsConditionComparisonTagValues
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTagValue">ServiceMetricSpecConditionsConditionComparisonTagValue
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTag">ServiceMetricSpecConditionsConditionComparisonTag</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The origin of the tag, such as AWS or Cloud Foundry. Custom tags use the <code>CONTEXTLESS</code> value. Possible values are <code>AWS</code>, <code>AWS_GENERIC</code>, <code>AZURE</code>, <code>CLOUD_FOUNDRY</code>, <code>CONTEXTLESS</code>, <code>ENVIRONMENT</code>, <code>GOOGLE_CLOUD</code> and <code>KUBERNETES</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The key of the tag. Custom tags have the tag value here</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the tag. Not applicable to custom tags</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTagValues">ServiceMetricSpecConditionsConditionComparisonTagValues
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTag">ServiceMetricSpecConditionsConditionComparisonTag</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTagValuesValue">
+[]ServiceMetricSpecConditionsConditionComparisonTagValuesValue
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTagValuesValue">ServiceMetricSpecConditionsConditionComparisonTagValuesValue
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonTagValues">ServiceMetricSpecConditionsConditionComparisonTagValues</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The origin of the tag, such as AWS or Cloud Foundry. Custom tags use the <code>CONTEXTLESS</code> value. Possible values are <code>AWS</code>, <code>AWS_GENERIC</code>, <code>AZURE</code>, <code>CLOUD_FOUNDRY</code>, <code>CONTEXTLESS</code>, <code>ENVIRONMENT</code>, <code>GOOGLE_CLOUD</code> and <code>KUBERNETES</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The key of the tag. Custom tags have the tag value here</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the tag. Not applicable to custom tags</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparisonZosCallType">ServiceMetricSpecConditionsConditionComparisonZosCallType
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditionsConditionComparison">ServiceMetricSpecConditionsConditionComparison</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Operator of the comparison. You can reverse it by setting <code>negate</code> to <code>true</code>. Possible values are <code>EQUALS</code>, <code>EQUALS_ANY_OF</code> and <code>EXISTS</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value to compare to. Possible values are <code>CTG</code>, <code>DPL</code>, <code>EXPLICIT_ADK</code>, <code>IMS_CONNECT</code>, <code>IMS_CONNECT_API</code>, <code>IMS_ITRA</code>, <code>IMS_MSC</code>, <code>IMS_PGM_SWITCH</code>, <code>IMS_SHARED_QUEUES</code>, <code>IMS_TRANS_EXEC</code>, <code>MQ</code>, <code>SOAP</code>, <code>START</code>, <code>TX</code> and <code>UNKNOWN</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The values to compare to. Possible values are <code>CTG</code>, <code>DPL</code>, <code>EXPLICIT_ADK</code>, <code>IMS_CONNECT</code>, <code>IMS_CONNECT_API</code>, <code>IMS_ITRA</code>, <code>IMS_MSC</code>, <code>IMS_PGM_SWITCH</code>, <code>IMS_SHARED_QUEUES</code>, <code>IMS_TRANS_EXEC</code>, <code>MQ</code>, <code>SOAP</code>, <code>START</code>, <code>TX</code> and <code>UNKNOWN</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinition">ServiceMetricSpecDimensionDefinition
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecResource">ServiceMetricSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>dimension</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The dimension value pattern. You can define custom placeholders in the <code>placeholders</code> field and use them here</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name of the dimension</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>placeholders</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholders">
+ServiceMetricSpecDimensionDefinitionPlaceholders
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The list of custom placeholders to be used in a dimension value pattern</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>topX</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The number of top values to be calculated</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>topXAggregation</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The aggregation of the dimension. Possible values are <code>AVERAGE</code>, <code>COUNT</code>, <code>MAX</code>, <code>MIN</code>, <code>OF_INTEREST_RATIO</code>, <code>OTHER_RATIO</code>, <code>SINGLE_VALUE</code> and <code>SUM</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>topXDirection</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>How to calculate the <strong>topX</strong> values. Possible values are <code>ASCENDING</code> and <code>DESCENDING</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholders">ServiceMetricSpecDimensionDefinitionPlaceholders
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinition">ServiceMetricSpecDimensionDefinition</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>placeholder</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholder">
+[]ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholder
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A custom placeholder to be used in a dimension value pattern</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholder">ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholder
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholders">ServiceMetricSpecDimensionDefinitionPlaceholders</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>aggregation</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Which value of the request attribute must be used when it occurs across multiple child requests. Only applicable for the <code>SERVICE_REQUEST_ATTRIBUTE</code> attribute, when <strong>useFromChildCalls</strong> is <code>true</code>. For the <code>COUNT</code> aggregation, the <strong>kind</strong> field is not applicable. Possible values are <code>COUNT</code>, <code>FIRST</code> and <code>LAST</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>attribute</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The attribute to extract from. You can only use attributes of the <strong>string</strong> type. Possible values are <code>ACTOR_SYSTEM</code>, <code>AKKA_ACTOR_CLASS_NAME</code>, <code>AKKA_ACTOR_MESSAGE_TYPE</code>, <code>AKKA_ACTOR_PATH</code>, <code>APPLICATION_BUILD_VERSION</code>, <code>APPLICATION_RELEASE_VERSION</code>, <code>AZURE_FUNCTIONS_FUNCTION_NAME</code>, <code>AZURE_FUNCTIONS_SITE_NAME</code>, <code>CICS_PROGRAM_NAME</code>, <code>CICS_SYSTEM_ID</code>, <code>CICS_TASK_ID</code>, <code>CICS_TRANSACTION_ID</code>, <code>CICS_USER_ID</code>, <code>CPU_TIME</code>, <code>CTG_GATEWAY_URL</code>, <code>CTG_PROGRAM</code>, <code>CTG_SERVER_NAME</code>, <code>CTG_TRANSACTION_ID</code>, <code>CUSTOMSERVICE_CLASS</code>, <code>CUSTOMSERVICE_METHOD</code>, <code>DATABASE_CHILD_CALL_COUNT</code>, <code>DATABASE_CHILD_CALL_TIME</code>, <code>DATABASE_HOST</code>, <code>DATABASE_NAME</code>, <code>DATABASE_TYPE</code>, <code>DATABASE_URL</code>, <code>DISK_IO_TIME</code>, <code>ERROR_COUNT</code>, <code>ESB_APPLICATION_NAME</code>, <code>ESB_INPUT_TYPE</code>, <code>ESB_LIBRARY_NAME</code>, <code>ESB_MESSAGE_FLOW_NAME</code>, <code>EXCEPTION_CLASS</code>, <code>EXCEPTION_MESSAGE</code>, <code>FAILED_STATE</code>, <code>FAILURE_REASON</code>, <code>FLAW_STATE</code>, <code>HTTP_REQUEST_METHOD</code>, <code>HTTP_STATUS</code>, <code>HTTP_STATUS_CLASS</code>, <code>IMS_PROGRAM_NAME</code>, <code>IMS_TRANSACTION_ID</code>, <code>IMS_USER_ID</code>, <code>IO_TIME</code>, <code>IS_KEY_REQUEST</code>, <code>LAMBDA_COLDSTART</code>, <code>LOCK_TIME</code>, <code>MESSAGING_DESTINATION_TYPE</code>, <code>MESSAGING_IS_TEMPORARY_QUEUE</code>, <code>MESSAGING_QUEUE_NAME</code>, <code>MESSAGING_QUEUE_VENDOR</code>, <code>NETWORK_IO_TIME</code>, <code>NON_DATABASE_CHILD_CALL_COUNT</code>, <code>NON_DATABASE_CHILD_CALL_TIME</code>, <code>PROCESS_GROUP_NAME</code>, <code>PROCESS_GROUP_TAG</code>, <code>REMOTE_ENDPOINT</code>, <code>REMOTE_METHOD</code>, <code>REMOTE_SERVICE_NAME</code>, <code>REQUEST_NAME</code>, <code>REQUEST_TYPE</code>, <code>RESPONSE_TIME</code>, <code>RESPONSE_TIME_CLIENT</code>, <code>RMI_CLASS</code>, <code>RMI_METHOD</code>, <code>SERVICE_DISPLAY_NAME</code>, <code>SERVICE_NAME</code>, <code>SERVICE_PORT</code>, <code>SERVICE_PUBLIC_DOMAIN_NAME</code>, <code>SERVICE_REQUEST_ATTRIBUTE</code>, <code>SERVICE_TAG</code>, <code>SERVICE_TYPE</code>, <code>SERVICE_WEB_APPLICATION_ID</code>, <code>SERVICE_WEB_CONTEXT_ROOT</code>, <code>SERVICE_WEB_SERVER_NAME</code>, <code>SERVICE_WEB_SERVICE_NAME</code>, <code>SERVICE_WEB_SERVICE_NAMESPACE</code>, <code>SUSPENSION_TIME</code>, <code>TOTAL_PROCESSING_TIME</code>, <code>WAIT_TIME</code>, <code>WEBREQUEST_QUERY</code>, <code>WEBREQUEST_RELATIVE_URL</code>, <code>WEBREQUEST_URL</code>, <code>WEBREQUEST_URL_HOST</code>, <code>WEBREQUEST_URL_PATH</code>, <code>WEBREQUEST_URL_PORT</code>, <code>WEBSERVICE_ENDPOINT</code>, <code>WEBSERVICE_METHOD</code> and <code>ZOS_CALL_TYPE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>delimiterOrRegex</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Depending on the <code>kind</code> value:</p>
+<ul>
+<li>
+<p><code>REGEX_EXTRACTION</code>: The regular expression.</p>
+</li>
+<li>
+<p><code>BETWEEN_DELIMITER</code>: The opening delimiter string to look for.</p>
+</li>
+<li>
+<p>All other values: The delimiter string to look for</p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<code>endDelimiter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The closing delimiter string to look for. Required if the <code>kind</code> value is <code>BETWEEN_DELIMITER</code>. Not applicable otherwise</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The type of extraction. Defines either usage of regular expression (<code>regex</code>) or the position of request attribute value to be extracted. When the <code>attribute</code> is <code>SERVICE_REQUEST_ATTRIBUTE</code> attribute and <code>aggregation</code> is <code>COUNT</code>, needs to be set to <code>ORIGINAL_TEXT</code>. Possible values are 	<code>AFTER_DELIMITER</code>, <code>BEFORE_DELIMITER</code>, <code>BETWEEN_DELIMITER</code>, <code>ORIGINAL_TEXT</code> and <code>REGEX_EXTRACTION</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name of the placeholder. Use it in the naming pattern as <code>{name}</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>normalization</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The format of the extracted string. Possible values are <code>ORIGINAL</code>, <code>TO_LOWER_CASE</code> and <code>TO_UPPER_CASE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestAttribute</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The request attribute to extract from. Required if the <code>kind</code> value is <code>SERVICE_REQUEST_ATTRIBUTE</code>. Not applicable otherwise</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>source</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSource">
+ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSource
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines valid sources of request attributes for conditions or placeholders</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>useFromChildCalls</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If <code>true</code> request attribute will be taken from a child service call. Only applicable for the <code>SERVICE_REQUEST_ATTRIBUTE</code> attribute. Defaults to <code>false</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSource">ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholder">ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholder</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>managementZone</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use only request attributes from services that belong to this management zone.. Use either this or <code>serviceTag</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serviceTag</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTag">
+ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTag
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use only request attributes from services that have this tag. Use either this or <code>managementZone</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTag">ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTag
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSource">ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The origin of the tag, such as AWS or Cloud Foundry. For custom tags use the <code>CONTEXTLESS</code> value. The context is set for tags that are automatically imported by OneAgent (for example, from the AWS console or environment variables). It’s useful for determining the origin of tags when not manually defined, and it also helps to prevent clashes with other existing tags. If the tag is not automatically imported, <code>CONTEXTLESS</code> set. Possible values are <code>AWS</code>, <code>AWS_GENERIC</code>, <code>AZURE</code>, <code>CLOUD_FOUNDRY</code>, <code>CONTEXTLESS</code>, <code>ENVIRONMENT</code>, <code>GOOGLE_COMPUTE_ENGINE</code> and <code>KUBERNETES</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The key of the tag. For custom tags, put the tag value here. The key allows categorization of multiple tags. It is possible that there are multiple values for a single key which will all be represented as standalone tags. Therefore, the key does not have the semantic of a map key but is more like a key of a key-value tuple. In some cases, for example custom tags, the key represents the actual tag value and the value field is not set – those are called valueless tags</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tagKey</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTagTagKey">
+ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTagTagKey
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the tag. Not applicable to custom tags. If a tag does have a separate key and value (in the textual representation they are split by the colon ‘:’), this field is set with the actual value. Key-value pairs can occur for automatically imported tags and tags set by rules if extractors are used</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTagTagKey">ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTagTagKey
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTag">ServiceMetricSpecDimensionDefinitionPlaceholdersPlaceholderSourceServiceTag</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>has no documentation</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecMetricDefinition">ServiceMetricSpecMetricDefinition
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecResource">ServiceMetricSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>metric</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The metric to be captured. Possible values are <code>CPU_TIME</code>, <code>DATABASE_CHILD_CALL_COUNT</code>, <code>DATABASE_CHILD_CALL_TIME</code>, <code>DISK_IO_TIME</code>, <code>EXCEPTION_COUNT</code>, <code>FAILED_REQUEST_COUNT</code>, <code>FAILED_REQUEST_COUNT_CLIENT</code>, <code>FAILURE_RATE</code>, <code>FAILURE_RATE_CLIENT</code>, <code>HTTP_4XX_ERROR_COUNT</code>, <code>HTTP_4XX_ERROR_COUNT_CLIENT</code>, <code>HTTP_5XX_ERROR_COUNT</code>, <code>HTTP_5XX_ERROR_COUNT_CLIENT</code>, <code>IO_TIME</code>, <code>LOCK_TIME</code>, <code>NETWORK_IO_TIME</code>, <code>NON_DATABASE_CHILD_CALL_COUNT</code>, <code>NON_DATABASE_CHILD_CALL_TIME</code>, <code>PROCESSING_TIME</code>, <code>REQUEST_ATTRIBUTE</code>, <code>REQUEST_COUNT</code>, <code>RESPONSE_TIME</code>, <code>RESPONSE_TIME_CLIENT</code>, <code>SUCCESSFUL_REQUEST_COUNT</code>, <code>SUCCESSFUL_REQUEST_COUNT_CLIENT</code> and <code>WAIT_TIME</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestAttribute</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The request attribute to be captured. Only applicable when the <strong>metric</strong> parameter is set to <code>REQUEST_ATTRIBUTE</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecResource">ServiceMetricSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpec">ServiceMetricSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecConditions">
+[]ServiceMetricSpecConditions
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The set of conditions for the metric usage. <strong>All</strong> the specified conditions must be fulfilled to use the metric</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dimensionDefinition</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecDimensionDefinition">
+ServiceMetricSpecDimensionDefinition
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Parameters of a definition of a calculated service metric</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>enabled</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The metric is enabled (<code>true</code>) or disabled (<code>false</code>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>entityID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Restricts the metric usage to the specified service. This field is mutually exclusive with the <code>management_zones</code> field</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>managementZones</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Restricts the metric usage to specified management zones. This field is mutually exclusive with the <code>entity_id</code> field</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metricDefinition</code><br/>
+<em>
+<a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricSpecMetricDefinition">
+ServiceMetricSpecMetricDefinition
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The definition of a calculated service metric</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metricKey</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The key of the calculated service metric</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The displayed name of the metric</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unit</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The unit of the metric. Possible values are <code>BIT</code>, <code>BIT_PER_HOUR</code>, <code>BIT_PER_MINUTE</code>, <code>BIT_PER_SECOND</code>, <code>BYTE</code>, <code>BYTE_PER_HOUR</code>, <code>BYTE_PER_MINUTE</code>, <code>BYTE_PER_SECOND</code>, <code>CORES</code>, <code>COUNT</code>, <code>DAY</code>, <code>DECIBEL_MILLI_WATT</code>, <code>GIBI_BYTE</code>, <code>GIGA</code>, <code>GIGA_BYTE</code>, <code>HOUR</code>, <code>KIBI_BYTE</code>, <code>KIBI_BYTE_PER_HOUR</code>, <code>KIBI_BYTE_PER_MINUTE</code>, <code>KIBI_BYTE_PER_SECOND</code>, <code>KILO</code>, <code>KILO_BYTE</code>, <code>KILO_BYTE_PER_HOUR</code>, <code>KILO_BYTE_PER_MINUTE</code>, <code>KILO_BYTE_PER_SECOND</code>, <code>MEBI_BYTE</code>, <code>MEBI_BYTE_PER_HOUR</code>, <code>MEBI_BYTE_PER_MINUTE</code>, <code>MEBI_BYTE_PER_SECOND</code>, <code>MEGA</code>, <code>MEGA_BYTE</code>, <code>MEGA_BYTE_PER_HOUR</code>, <code>MEGA_BYTE_PER_MINUTE</code>, <code>MEGA_BYTE_PER_SECOND</code>, <code>MICRO_SECOND</code>, <code>MILLI_CORES</code>, <code>MILLI_SECOND</code>, <code>MILLI_SECOND_PER_MINUTE</code>, <code>MINUTE</code>, <code>MONTH</code>, <code>MSU</code>, <code>NANO_SECOND</code>, <code>NANO_SECOND_PER_MINUTE</code>, <code>NOT_APPLICABLE</code>, <code>PERCENT</code>, <code>PER_HOUR</code>, <code>PER_MINUTE</code>, <code>PER_SECOND</code>, <code>PIXEL</code>, <code>PROMILLE</code>, <code>RATIO</code>, <code>SECOND</code>, <code>STATE</code>, <code>UNSPECIFIED</code>, <code>WEEK</code> and <code>YEAR</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unitDisplayName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The display name of the metric's unit. Only applicable when the <strong>unit</strong> parameter is set to <code>UNSPECIFIED</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetricStatus">ServiceMetricStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#calculated.dynatrace.kubeform.com/v1alpha1.ServiceMetric">ServiceMetric</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>e4a0042</code>.
+</em></p>

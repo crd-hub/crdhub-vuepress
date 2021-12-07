@@ -1,0 +1,198 @@
+<h2 id="iot.aws.kubeform.com/v1alpha1">iot.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.Certificate">Certificate</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.Policy">Policy</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.PolicyAttachment">PolicyAttachment</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.RoleAlias">RoleAlias</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.Thing">Thing</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingPrincipalAttachment">ThingPrincipalAttachment</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingType">ThingType</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRule">TopicRule</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.Certificate">Certificate</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.Policy">Policy</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.PolicyAttachment">PolicyAttachment</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.RoleAlias">RoleAlias</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.Thing">Thing</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingPrincipalAttachment">ThingPrincipalAttachment</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingType">ThingType</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRule">TopicRule</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.CertificateSpec">CertificateSpec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.CertificateSpecResource">CertificateSpecResource</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.CertificateStatus">CertificateStatus</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.PolicyAttachmentSpec">PolicyAttachmentSpec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.PolicyAttachmentSpecResource">PolicyAttachmentSpecResource</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.PolicyAttachmentStatus">PolicyAttachmentStatus</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.PolicySpec">PolicySpec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.PolicySpecResource">PolicySpecResource</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.PolicyStatus">PolicyStatus</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.RoleAliasSpec">RoleAliasSpec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.RoleAliasSpecResource">RoleAliasSpecResource</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.RoleAliasStatus">RoleAliasStatus</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingPrincipalAttachmentSpec">ThingPrincipalAttachmentSpec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingPrincipalAttachmentSpecResource">ThingPrincipalAttachmentSpecResource</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingPrincipalAttachmentStatus">ThingPrincipalAttachmentStatus</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingSpec">ThingSpec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingSpecResource">ThingSpecResource</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingStatus">ThingStatus</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingTypeSpec">ThingTypeSpec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingTypeSpecProperties">ThingTypeSpecProperties</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingTypeSpecPropertiesCodec">ThingTypeSpecPropertiesCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingTypeSpecResource">ThingTypeSpecResource</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.ThingTypeStatus">ThingTypeStatus</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpec">TopicRuleSpec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecCloudwatchAlarm">TopicRuleSpecCloudwatchAlarm</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecCloudwatchMetric">TopicRuleSpecCloudwatchMetric</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecDynamodb">TopicRuleSpecDynamodb</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecDynamodbv2">TopicRuleSpecDynamodbv2</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecDynamodbv2PutItem">TopicRuleSpecDynamodbv2PutItem</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecDynamodbv2PutItemCodec">TopicRuleSpecDynamodbv2PutItemCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecElasticsearch">TopicRuleSpecElasticsearch</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorAction">TopicRuleSpecErrorAction</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionCloudwatchAlarm">TopicRuleSpecErrorActionCloudwatchAlarm</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionCloudwatchAlarmCodec">TopicRuleSpecErrorActionCloudwatchAlarmCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionCloudwatchMetric">TopicRuleSpecErrorActionCloudwatchMetric</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionCloudwatchMetricCodec">TopicRuleSpecErrorActionCloudwatchMetricCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionCodec">TopicRuleSpecErrorActionCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionDynamodb">TopicRuleSpecErrorActionDynamodb</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionDynamodbCodec">TopicRuleSpecErrorActionDynamodbCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionDynamodbv2">TopicRuleSpecErrorActionDynamodbv2</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionDynamodbv2Codec">TopicRuleSpecErrorActionDynamodbv2Codec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionDynamodbv2PutItem">TopicRuleSpecErrorActionDynamodbv2PutItem</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionDynamodbv2PutItemCodec">TopicRuleSpecErrorActionDynamodbv2PutItemCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionElasticsearch">TopicRuleSpecErrorActionElasticsearch</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionElasticsearchCodec">TopicRuleSpecErrorActionElasticsearchCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionFirehose">TopicRuleSpecErrorActionFirehose</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionFirehoseCodec">TopicRuleSpecErrorActionFirehoseCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionIotAnalytics">TopicRuleSpecErrorActionIotAnalytics</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionIotAnalyticsCodec">TopicRuleSpecErrorActionIotAnalyticsCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionIotEvents">TopicRuleSpecErrorActionIotEvents</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionIotEventsCodec">TopicRuleSpecErrorActionIotEventsCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionKinesis">TopicRuleSpecErrorActionKinesis</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionKinesisCodec">TopicRuleSpecErrorActionKinesisCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionLambda">TopicRuleSpecErrorActionLambda</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionLambdaCodec">TopicRuleSpecErrorActionLambdaCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionRepublish">TopicRuleSpecErrorActionRepublish</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionRepublishCodec">TopicRuleSpecErrorActionRepublishCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionS3">TopicRuleSpecErrorActionS3</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionS3Codec">TopicRuleSpecErrorActionS3Codec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionSns">TopicRuleSpecErrorActionSns</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionSnsCodec">TopicRuleSpecErrorActionSnsCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionSqs">TopicRuleSpecErrorActionSqs</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionSqsCodec">TopicRuleSpecErrorActionSqsCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionStepFunctions">TopicRuleSpecErrorActionStepFunctions</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecErrorActionStepFunctionsCodec">TopicRuleSpecErrorActionStepFunctionsCodec</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecFirehose">TopicRuleSpecFirehose</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecIotAnalytics">TopicRuleSpecIotAnalytics</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecIotEvents">TopicRuleSpecIotEvents</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecKinesis">TopicRuleSpecKinesis</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecLambda">TopicRuleSpecLambda</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecRepublish">TopicRuleSpecRepublish</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecResource">TopicRuleSpecResource</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecS3">TopicRuleSpecS3</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecSns">TopicRuleSpecSns</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecSqs">TopicRuleSpecSqs</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleSpecStepFunctions">TopicRuleSpecStepFunctions</a>
+</li><li>
+<a href="#iot.aws.kubeform.com/v1alpha1.TopicRuleStatus">TopicRuleStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

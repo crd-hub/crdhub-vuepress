@@ -1,0 +1,577 @@
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.Policy">Policy
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+binaryauthorization.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Policy</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpec">
+PolicySpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecResource">
+PolicySpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecResource">
+PolicySpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicyStatus">
+PolicyStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.PolicySpec">PolicySpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.Policy">Policy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecResource">
+PolicySpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecResource">
+PolicySpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecAdmissionWhitelistPatterns">PolicySpecAdmissionWhitelistPatterns
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecResource">PolicySpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>namePattern</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>An image name pattern to whitelist, in the form
+'registry/path/to/image'. This supports a trailing * as a
+wildcard, but this is allowed only in text after the registry/
+part.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecClusterAdmissionRules">PolicySpecClusterAdmissionRules
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecResource">PolicySpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>cluster</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>enforcementMode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The action when a pod creation is denied by the admission rule. Possible values: [&quot;ENFORCED_BLOCK_AND_AUDIT_LOG&quot;, &quot;DRYRUN_AUDIT_LOG_ONLY&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>evaluationMode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>How this admission rule will be evaluated. Possible values: [&quot;ALWAYS_ALLOW&quot;, &quot;REQUIRE_ATTESTATION&quot;, &quot;ALWAYS_DENY&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requireAttestationsBy</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The resource names of the attestors that must attest to a
+container image. If the attestor is in a different project from the
+policy, it should be specified in the format 'projects/<em>/attestors/</em>'.
+Each attestor must exist before a policy can reference it. To add an
+attestor to a policy the principal issuing the policy change
+request must be able to read the attestor resource.</p>
+<p>Note: this field must be non-empty when the evaluation_mode field
+specifies REQUIRE_ATTESTATION, otherwise it must be empty.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecDefaultAdmissionRule">PolicySpecDefaultAdmissionRule
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecResource">PolicySpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>enforcementMode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The action when a pod creation is denied by the admission rule. Possible values: [&quot;ENFORCED_BLOCK_AND_AUDIT_LOG&quot;, &quot;DRYRUN_AUDIT_LOG_ONLY&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>evaluationMode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>How this admission rule will be evaluated. Possible values: [&quot;ALWAYS_ALLOW&quot;, &quot;REQUIRE_ATTESTATION&quot;, &quot;ALWAYS_DENY&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requireAttestationsBy</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The resource names of the attestors that must attest to a
+container image. If the attestor is in a different project from the
+policy, it should be specified in the format 'projects/<em>/attestors/</em>'.
+Each attestor must exist before a policy can reference it. To add an
+attestor to a policy the principal issuing the policy change
+request must be able to read the attestor resource.</p>
+<p>Note: this field must be non-empty when the evaluation_mode field
+specifies REQUIRE_ATTESTATION, otherwise it must be empty.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecResource">PolicySpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpec">PolicySpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>admissionWhitelistPatterns</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecAdmissionWhitelistPatterns">
+[]PolicySpecAdmissionWhitelistPatterns
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A whitelist of image patterns to exclude from admission rules. If an
+image's name matches a whitelist pattern, the image's admission
+requests will always be permitted regardless of your admission rules.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>clusterAdmissionRules</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecClusterAdmissionRules">
+[]PolicySpecClusterAdmissionRules
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Per-cluster admission rules. An admission rule specifies either that
+all container images used in a pod creation request must be attested
+to by one or more attestors, that all pod creations will be allowed,
+or that all pod creations will be denied. There can be at most one
+admission rule per cluster spec.</p>
+<p>Identifier format: '{{location}}.{{clusterId}}'.
+A location is either a compute zone (e.g. 'us-central1-a') or a region
+(e.g. 'us-central1').</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>defaultAdmissionRule</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.PolicySpecDefaultAdmissionRule">
+PolicySpecDefaultAdmissionRule
+</a>
+</em>
+</td>
+<td>
+<p>Default admission rule for a cluster without a per-cluster admission
+rule.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A descriptive comment.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>globalPolicyEvaluationMode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Controls the evaluation of a Google-maintained global admission policy
+for common system-level images. Images not covered by the global
+policy will be subject to the project admission policy. Possible values: [&quot;ENABLE&quot;, &quot;DISABLE&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.PolicyStatus">PolicyStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.Policy">Policy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

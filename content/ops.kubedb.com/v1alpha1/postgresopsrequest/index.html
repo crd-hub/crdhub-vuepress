@@ -1,0 +1,699 @@
+<h3 id="ops.kubedb.com/v1alpha1.PostgresOpsRequest">PostgresOpsRequest
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+ops.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>PostgresOpsRequest</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">
+PostgresOpsRequestSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the Postgres reference</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">
+OpsRequestType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the ops request type: Upgrade, HorizontalScaling, VerticalScaling etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgrade</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresUpgradeSpec">
+PostgresUpgradeSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for upgrading Postgres</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>horizontalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresHorizontalScalingSpec">
+PostgresHorizontalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for horizontal scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verticalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresVerticalScalingSpec">
+PostgresVerticalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for vertical scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeExpansion</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresVolumeExpansionSpec">
+PostgresVolumeExpansionSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for volume expansion</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>configuration</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresCustomConfigurationSpec">
+PostgresCustomConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for custom configuration of Postgres</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tls</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresTLSSpec">
+PostgresTLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for configuring TLS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>restart</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">
+RestartSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for restarting database</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<p>Timeout for each step of the ops request in second. If a step doesn't finish within the specified timeout, the ops request will result in failure.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestStatus">
+PostgresOpsRequestStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">
+OpsRequestPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.PostgresCustomConfigurationSpec">PostgresCustomConfigurationSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>configSecret</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>inlineConfig</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>removeCustomConfig</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.PostgresHorizontalScalingSpec">PostgresHorizontalScalingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>)
+</p>
+<div>
+<p>HorizontalScaling is the spec for Postgres horizontal scaling</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>replicas</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequest">PostgresOpsRequest</a>)
+</p>
+<div>
+<p>PostgresOpsRequestSpec is the spec for PostgresOpsRequest</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the Postgres reference</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">
+OpsRequestType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the ops request type: Upgrade, HorizontalScaling, VerticalScaling etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgrade</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresUpgradeSpec">
+PostgresUpgradeSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for upgrading Postgres</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>horizontalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresHorizontalScalingSpec">
+PostgresHorizontalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for horizontal scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verticalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresVerticalScalingSpec">
+PostgresVerticalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for vertical scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeExpansion</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresVolumeExpansionSpec">
+PostgresVolumeExpansionSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for volume expansion</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>configuration</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresCustomConfigurationSpec">
+PostgresCustomConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for custom configuration of Postgres</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tls</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.PostgresTLSSpec">
+PostgresTLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for configuring TLS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>restart</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">
+RestartSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for restarting database</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<p>Timeout for each step of the ops request in second. If a step doesn't finish within the specified timeout, the ops request will result in failure.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.PostgresOpsRequestStatus">PostgresOpsRequestStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequest">PostgresOpsRequest</a>)
+</p>
+<div>
+<p>PostgresOpsRequestStatus is the status for PostgresOpsRequest</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">
+OpsRequestPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.PostgresTLSSpec">PostgresTLSSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>TLSSpec</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.TLSSpec">
+TLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>
+(Members of <code>TLSSpec</code> are embedded into this type.)
+</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sslMode</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha2.PostgresSSLMode">
+PostgresSSLMode
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>SSLMode for both standalone and clusters. [disable;allow;prefer;require;verify-ca;verify-full]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>clientAuthMode</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha2.PostgresClientAuthMode">
+PostgresClientAuthMode
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ClientAuthMode for sidecar or sharding. (default will be md5. [md5;scram;cert])</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.PostgresUpgradeSpec">PostgresUpgradeSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetVersion</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Specifies the target version name from catalog</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.PostgresVerticalScalingSpec">PostgresVerticalScalingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>)
+</p>
+<div>
+<p>PostgresVerticalScalingSpec is the spec for Postgres vertical scaling</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>postgres</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinator</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.PostgresVolumeExpansionSpec">PostgresVolumeExpansionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>)
+</p>
+<div>
+<p>PostgresVolumeExpansionSpec is the spec for Postgres volume expansion</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>postgres</code><br/>
+<em>
+k8s.io/apimachinery/pkg/api/resource.Quantity
+</em>
+</td>
+<td>
+<p>volume specification for Postgres</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

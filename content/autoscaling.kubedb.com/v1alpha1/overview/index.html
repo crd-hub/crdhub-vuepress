@@ -1,0 +1,407 @@
+<h2 id="autoscaling.kubedb.com/v1alpha1">autoscaling.kubedb.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscaler">ElasticsearchAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.EtcdAutoscaler">EtcdAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MariaDBAutoscaler">MariaDBAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MemcachedAutoscaler">MemcachedAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MongoDBAutoscaler">MongoDBAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MySQLAutoscaler">MySQLAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PerconaXtraDBAutoscaler">PerconaXtraDBAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PgBouncerAutoscaler">PgBouncerAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PostgresAutoscaler">PostgresAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ProxySQLAutoscaler">ProxySQLAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.RedisAutoscaler">RedisAutoscaler</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscaler">ElasticsearchAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.EtcdAutoscaler">EtcdAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MariaDBAutoscaler">MariaDBAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MemcachedAutoscaler">MemcachedAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MongoDBAutoscaler">MongoDBAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MySQLAutoscaler">MySQLAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PerconaXtraDBAutoscaler">PerconaXtraDBAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PgBouncerAutoscaler">PgBouncerAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PostgresAutoscaler">PostgresAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ProxySQLAutoscaler">ProxySQLAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.RedisAutoscaler">RedisAutoscaler</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.AutoscalerTrigger">AutoscalerTrigger</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ComputeAutoscalerSpec">ComputeAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ContainerControlledValues">ContainerControlledValues</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerConditionType">ElasticsearchAutoscalerConditionType</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerSpec">ElasticsearchAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerStatus">ElasticsearchAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeAutoscalerSpec">ElasticsearchComputeAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeTopologyAutoscalerSpec">ElasticsearchComputeTopologyAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageAutoscalerSpec">ElasticsearchStorageAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageTopologyAutoscalerSpec">ElasticsearchStorageTopologyAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.EtcdAutoscalerBehavior">EtcdAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.EtcdAutoscalerSpec">EtcdAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.EtcdAutoscalerStatus">EtcdAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.EtcdScalingPolicy">EtcdScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.EtcdScalingRules">EtcdScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MariaDBAutoscalerBehavior">MariaDBAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MariaDBAutoscalerSpec">MariaDBAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MariaDBAutoscalerStatus">MariaDBAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MariaDBScalingPolicy">MariaDBScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MariaDBScalingRules">MariaDBScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MemcachedAutoscalerBehavior">MemcachedAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MemcachedAutoscalerSpec">MemcachedAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MemcachedAutoscalerStatus">MemcachedAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MemcachedScalingPolicy">MemcachedScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MemcachedScalingRules">MemcachedScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MongoDBAutoscalerConditionType">MongoDBAutoscalerConditionType</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MongoDBAutoscalerSpec">MongoDBAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MongoDBAutoscalerStatus">MongoDBAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MongoDBComputeAutoscalerSpec">MongoDBComputeAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MongoDBStorageAutoscalerSpec">MongoDBStorageAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MySQLAutoscalerBehavior">MySQLAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MySQLAutoscalerSpec">MySQLAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MySQLAutoscalerStatus">MySQLAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MySQLScalingPolicy">MySQLScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.MySQLScalingRules">MySQLScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PerconaXtraDBAutoscalerBehavior">PerconaXtraDBAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PerconaXtraDBAutoscalerSpec">PerconaXtraDBAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PerconaXtraDBAutoscalerStatus">PerconaXtraDBAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PerconaXtraDBScalingPolicy">PerconaXtraDBScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PerconaXtraDBScalingRules">PerconaXtraDBScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PgBouncerAutoscalerBehavior">PgBouncerAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PgBouncerAutoscalerSpec">PgBouncerAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PgBouncerAutoscalerStatus">PgBouncerAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PgBouncerScalingPolicy">PgBouncerScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PgBouncerScalingRules">PgBouncerScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PostgresAutoscalerBehavior">PostgresAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PostgresAutoscalerSpec">PostgresAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PostgresAutoscalerStatus">PostgresAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PostgresScalingPolicy">PostgresScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.PostgresScalingRules">PostgresScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ProxySQLAutoscalerBehavior">ProxySQLAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ProxySQLAutoscalerSpec">ProxySQLAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ProxySQLAutoscalerStatus">ProxySQLAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ProxySQLScalingPolicy">ProxySQLScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.ProxySQLScalingRules">ProxySQLScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.RedisAutoscalerBehavior">RedisAutoscalerBehavior</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.RedisAutoscalerSpec">RedisAutoscalerSpec</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.RedisAutoscalerStatus">RedisAutoscalerStatus</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.RedisScalingPolicy">RedisScalingPolicy</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.RedisScalingRules">RedisScalingRules</a>
+</li><li>
+<a href="#autoscaling.kubedb.com/v1alpha1.StorageAutoscalerSpec">StorageAutoscalerSpec</a>
+</li></ul>
+<h3 id="autoscaling.kubedb.com/v1alpha1.AutoscalerTrigger">AutoscalerTrigger
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ComputeAutoscalerSpec">ComputeAutoscalerSpec</a>, <a href="#autoscaling.kubedb.com/v1alpha1.StorageAutoscalerSpec">StorageAutoscalerSpec</a>)
+</p>
+<div>
+<p>AutoscalerTrigger controls if autoscaler is enabled.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Off&#34;</p></td>
+<td><p>AutoscalerTriggerOff means the autoscaler is disabled.</p>
+</td>
+</tr><tr><td><p>&#34;On&#34;</p></td>
+<td><p>AutoscalerTriggerOn means the autoscaler is enabled.</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.ComputeAutoscalerSpec">ComputeAutoscalerSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeAutoscalerSpec">ElasticsearchComputeAutoscalerSpec</a>, <a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeTopologyAutoscalerSpec">ElasticsearchComputeTopologyAutoscalerSpec</a>, <a href="#autoscaling.kubedb.com/v1alpha1.MongoDBComputeAutoscalerSpec">MongoDBComputeAutoscalerSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>trigger</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.AutoscalerTrigger">
+AutoscalerTrigger
+</a>
+</em>
+</td>
+<td>
+<p>Whether compute autoscaler is enabled. The default is Off&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minAllowed</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcelist-v1-core">
+Kubernetes core/v1.ResourceList
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the minimal amount of resources that will be recommended.
+The default is no minimum.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxAllowed</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcelist-v1-core">
+Kubernetes core/v1.ResourceList
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the maximum amount of resources that will be recommended.
+The default is no maximum.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>controlledResources</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcename-v1-core">
+[]Kubernetes core/v1.ResourceName
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the type of recommendations that will be computed
+(and possibly applied) by VPA.
+If not specified, the default of [ResourceCPU, ResourceMemory] will be used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>containerControlledValues</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ContainerControlledValues">
+ContainerControlledValues
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies which resource values should be controlled.
+The default is &quot;RequestsAndLimits&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>resourceDiffPercentage</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the minimum resource difference in percentage
+The default is 10%.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podLifeTimeThreshold</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the minimum pod life time
+The default is 12h.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>inMemoryScalingThreshold</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the percentage of the Memory that will be passed as inMemorySizeGB
+The default is 70%.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.ContainerControlledValues">ContainerControlledValues
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ComputeAutoscalerSpec">ComputeAutoscalerSpec</a>)
+</p>
+<div>
+<p>ContainerControlledValues controls which resource value should be autoscaled.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;RequestsAndLimits&#34;</p></td>
+<td><p>ContainerControlledValuesRequestsAndLimits means resource request and limits
+are scaled automatically. The limit is scaled proportionally to the request.</p>
+</td>
+</tr><tr><td><p>&#34;RequestsOnly&#34;</p></td>
+<td><p>ContainerControlledValuesRequestsOnly means only requested resource is autoscaled.</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.StorageAutoscalerSpec">StorageAutoscalerSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageAutoscalerSpec">ElasticsearchStorageAutoscalerSpec</a>, <a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageTopologyAutoscalerSpec">ElasticsearchStorageTopologyAutoscalerSpec</a>, <a href="#autoscaling.kubedb.com/v1alpha1.MongoDBStorageAutoscalerSpec">MongoDBStorageAutoscalerSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>trigger</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.AutoscalerTrigger">
+AutoscalerTrigger
+</a>
+</em>
+</td>
+<td>
+<p>Whether compute autoscaler is enabled. The default is Off&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>usageThreshold</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>scalingThreshold</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

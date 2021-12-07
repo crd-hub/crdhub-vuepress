@@ -1,0 +1,652 @@
+<h3 id="network.google.kubeform.com/v1alpha1.ManagementConnectivityTest">ManagementConnectivityTest
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+network.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ManagementConnectivityTest</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpec">
+ManagementConnectivityTestSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecResource">
+ManagementConnectivityTestSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecResource">
+ManagementConnectivityTestSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestStatus">
+ManagementConnectivityTestStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpec">ManagementConnectivityTestSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTest">ManagementConnectivityTest</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecResource">
+ManagementConnectivityTestSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecResource">
+ManagementConnectivityTestSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecDestination">ManagementConnectivityTestSpecDestination
+</h3>
+<p>
+(<em>Appears on:</em><a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecResource">ManagementConnectivityTestSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>instance</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A Compute Engine instance URI.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ipAddress</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IP address of the endpoint, which can be an external or
+internal IP. An IPv6 address is only allowed when the test's
+destination is a global load balancer VIP.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>network</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A Compute Engine network URI.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IP protocol port of the endpoint. Only applicable when
+protocol is TCP or UDP.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Project ID where the endpoint is located. The Project ID can be
+derived from the URI if you provide a VM instance or network URI.
+The following are two cases where you must provide the project ID:</p>
+<ol>
+<li>Only the IP address is specified, and the IP address is within
+a GCP project. 2. When you are using Shared VPC and the IP address
+that you provide is from the service project. In this case, the
+network that the IP address resides in is defined in the host
+project.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecResource">ManagementConnectivityTestSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpec">ManagementConnectivityTestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The user-supplied description of the Connectivity Test.
+Maximum of 512 characters.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destination</code><br/>
+<em>
+<a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecDestination">
+ManagementConnectivityTestSpecDestination
+</a>
+</em>
+</td>
+<td>
+<p>Required. Destination specification of the Connectivity Test.</p>
+<p>You can use a combination of destination IP address, Compute
+Engine VM instance, or VPC network to uniquely identify the
+destination location.</p>
+<p>Even if the destination IP address is not unique, the source IP
+location is unique. Usually, the analysis can infer the destination
+endpoint from route information.</p>
+<p>If the destination you specify is a VM instance and the instance has
+multiple network interfaces, then you must also specify either a
+destination IP address or VPC network to identify the destination
+interface.</p>
+<p>A reachability analysis proceeds even if the destination location
+is ambiguous. However, the result can include endpoints that you
+don't intend to test.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>labels</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource labels to represent user-provided metadata.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Unique name for the connectivity test.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>protocol</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>IP Protocol of the test. When not provided, &quot;TCP&quot; is assumed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>relatedProjects</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Other projects that may be relevant for reachability analysis.
+This is applicable to scenarios where a test can cross project
+boundaries.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>source</code><br/>
+<em>
+<a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecSource">
+ManagementConnectivityTestSpecSource
+</a>
+</em>
+</td>
+<td>
+<p>Required. Source specification of the Connectivity Test.</p>
+<p>You can use a combination of source IP address, virtual machine
+(VM) instance, or Compute Engine network to uniquely identify the
+source location.</p>
+<p>Examples: If the source IP address is an internal IP address within
+a Google Cloud Virtual Private Cloud (VPC) network, then you must
+also specify the VPC network. Otherwise, specify the VM instance,
+which already contains its internal IP address and VPC network
+information.</p>
+<p>If the source of the test is within an on-premises network, then
+you must provide the destination VPC network.</p>
+<p>If the source endpoint is a Compute Engine VM instance with multiple
+network interfaces, the instance itself is not sufficient to
+identify the endpoint. So, you must also specify the source IP
+address or VPC network.</p>
+<p>A reachability analysis proceeds even if the source location is
+ambiguous. However, the test result may include endpoints that
+you don't intend to test.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecSource">ManagementConnectivityTestSpecSource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTestSpecResource">ManagementConnectivityTestSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>instance</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A Compute Engine instance URI.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ipAddress</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IP address of the endpoint, which can be an external or
+internal IP. An IPv6 address is only allowed when the test's
+destination is a global load balancer VIP.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>network</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A Compute Engine network URI.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>networkType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Type of the network where the endpoint is located. Possible values: [&quot;GCP_NETWORK&quot;, &quot;NON_GCP_NETWORK&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IP protocol port of the endpoint. Only applicable when
+protocol is TCP or UDP.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Project ID where the endpoint is located. The Project ID can be
+derived from the URI if you provide a VM instance or network URI.
+The following are two cases where you must provide the project ID:</p>
+<ol>
+<li>Only the IP address is specified, and the IP address is
+within a GCP project.</li>
+<li>When you are using Shared VPC and the IP address
+that you provide is from the service project. In this case,
+the network that the IP address resides in is defined in the
+host project.</li>
+</ol>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="network.google.kubeform.com/v1alpha1.ManagementConnectivityTestStatus">ManagementConnectivityTestStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#network.google.kubeform.com/v1alpha1.ManagementConnectivityTest">ManagementConnectivityTest</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

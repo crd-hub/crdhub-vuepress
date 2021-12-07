@@ -1,0 +1,342 @@
+<h2 id="glue.aws.kubeform.com/v1alpha1">glue.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogDatabase">CatalogDatabase</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTable">CatalogTable</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Classifier">Classifier</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Connection">Connection</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Crawler">Crawler</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettings">DataCatalogEncryptionSettings</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DevEndpoint">DevEndpoint</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Job">Job</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransform">MlTransform</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Partition">Partition</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Registry">Registry</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ResourcePolicy">ResourcePolicy</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Schema">Schema</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfiguration">SecurityConfiguration</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Trigger">Trigger</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.UserDefinedFunction">UserDefinedFunction</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Workflow">Workflow</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogDatabase">CatalogDatabase</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTable">CatalogTable</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Classifier">Classifier</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Connection">Connection</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Crawler">Crawler</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettings">DataCatalogEncryptionSettings</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DevEndpoint">DevEndpoint</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Job">Job</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransform">MlTransform</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Partition">Partition</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Registry">Registry</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ResourcePolicy">ResourcePolicy</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Schema">Schema</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfiguration">SecurityConfiguration</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Trigger">Trigger</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.UserDefinedFunction">UserDefinedFunction</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.Workflow">Workflow</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogDatabaseSpec">CatalogDatabaseSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogDatabaseSpecResource">CatalogDatabaseSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogDatabaseSpecTargetDatabase">CatalogDatabaseSpecTargetDatabase</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogDatabaseSpecTargetDatabaseCodec">CatalogDatabaseSpecTargetDatabaseCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogDatabaseStatus">CatalogDatabaseStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpec">CatalogTableSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecPartitionIndex">CatalogTableSpecPartitionIndex</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecPartitionKeys">CatalogTableSpecPartitionKeys</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecResource">CatalogTableSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptor">CatalogTableSpecStorageDescriptor</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorCodec">CatalogTableSpecStorageDescriptorCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorColumns">CatalogTableSpecStorageDescriptorColumns</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSchemaReference">CatalogTableSpecStorageDescriptorSchemaReference</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSchemaReferenceCodec">CatalogTableSpecStorageDescriptorSchemaReferenceCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSchemaReferenceSchemaID">CatalogTableSpecStorageDescriptorSchemaReferenceSchemaID</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSchemaReferenceSchemaIDCodec">CatalogTableSpecStorageDescriptorSchemaReferenceSchemaIDCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSerDeInfo">CatalogTableSpecStorageDescriptorSerDeInfo</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSerDeInfoCodec">CatalogTableSpecStorageDescriptorSerDeInfoCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSkewedInfo">CatalogTableSpecStorageDescriptorSkewedInfo</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSkewedInfoCodec">CatalogTableSpecStorageDescriptorSkewedInfoCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecStorageDescriptorSortColumns">CatalogTableSpecStorageDescriptorSortColumns</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecTargetTable">CatalogTableSpecTargetTable</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableSpecTargetTableCodec">CatalogTableSpecTargetTableCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CatalogTableStatus">CatalogTableStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpec">ClassifierSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecCsvClassifier">ClassifierSpecCsvClassifier</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecCsvClassifierCodec">ClassifierSpecCsvClassifierCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecGrokClassifier">ClassifierSpecGrokClassifier</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecGrokClassifierCodec">ClassifierSpecGrokClassifierCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecJsonClassifier">ClassifierSpecJsonClassifier</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecJsonClassifierCodec">ClassifierSpecJsonClassifierCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecResource">ClassifierSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecXmlClassifier">ClassifierSpecXmlClassifier</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierSpecXmlClassifierCodec">ClassifierSpecXmlClassifierCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ClassifierStatus">ClassifierStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ConnectionSpec">ConnectionSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ConnectionSpecPhysicalConnectionRequirements">ConnectionSpecPhysicalConnectionRequirements</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ConnectionSpecPhysicalConnectionRequirementsCodec">ConnectionSpecPhysicalConnectionRequirementsCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ConnectionSpecResource">ConnectionSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ConnectionStatus">ConnectionStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpec">CrawlerSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecCatalogTarget">CrawlerSpecCatalogTarget</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecDynamodbTarget">CrawlerSpecDynamodbTarget</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecJdbcTarget">CrawlerSpecJdbcTarget</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecLineageConfiguration">CrawlerSpecLineageConfiguration</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecLineageConfigurationCodec">CrawlerSpecLineageConfigurationCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecMongodbTarget">CrawlerSpecMongodbTarget</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecRecrawlPolicy">CrawlerSpecRecrawlPolicy</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecRecrawlPolicyCodec">CrawlerSpecRecrawlPolicyCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecResource">CrawlerSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecS3Target">CrawlerSpecS3Target</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecSchemaChangePolicy">CrawlerSpecSchemaChangePolicy</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerSpecSchemaChangePolicyCodec">CrawlerSpecSchemaChangePolicyCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.CrawlerStatus">CrawlerStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsSpec">DataCatalogEncryptionSettingsSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettings">DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettings</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsCodec">DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsConnectionPasswordEncryption">DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsConnectionPasswordEncryption</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsConnectionPasswordEncryptionCodec">DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsConnectionPasswordEncryptionCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsEncryptionAtRest">DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsEncryptionAtRest</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsEncryptionAtRestCodec">DataCatalogEncryptionSettingsSpecDataCatalogEncryptionSettingsEncryptionAtRestCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsSpecResource">DataCatalogEncryptionSettingsSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DataCatalogEncryptionSettingsStatus">DataCatalogEncryptionSettingsStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DevEndpointSpec">DevEndpointSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DevEndpointSpecResource">DevEndpointSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.DevEndpointStatus">DevEndpointStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobSpec">JobSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobSpecCommand">JobSpecCommand</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobSpecCommandCodec">JobSpecCommandCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobSpecExecutionProperty">JobSpecExecutionProperty</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobSpecExecutionPropertyCodec">JobSpecExecutionPropertyCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobSpecNotificationProperty">JobSpecNotificationProperty</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobSpecNotificationPropertyCodec">JobSpecNotificationPropertyCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobSpecResource">JobSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.JobStatus">JobStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformSpec">MlTransformSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformSpecInputRecordTables">MlTransformSpecInputRecordTables</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformSpecParameters">MlTransformSpecParameters</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformSpecParametersCodec">MlTransformSpecParametersCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformSpecParametersFindMatchesParameters">MlTransformSpecParametersFindMatchesParameters</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformSpecParametersFindMatchesParametersCodec">MlTransformSpecParametersFindMatchesParametersCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformSpecResource">MlTransformSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformSpecSchema">MlTransformSpecSchema</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.MlTransformStatus">MlTransformStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpec">PartitionSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecResource">PartitionSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecStorageDescriptor">PartitionSpecStorageDescriptor</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecStorageDescriptorCodec">PartitionSpecStorageDescriptorCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecStorageDescriptorColumns">PartitionSpecStorageDescriptorColumns</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecStorageDescriptorSerDeInfo">PartitionSpecStorageDescriptorSerDeInfo</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecStorageDescriptorSerDeInfoCodec">PartitionSpecStorageDescriptorSerDeInfoCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecStorageDescriptorSkewedInfo">PartitionSpecStorageDescriptorSkewedInfo</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecStorageDescriptorSkewedInfoCodec">PartitionSpecStorageDescriptorSkewedInfoCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionSpecStorageDescriptorSortColumns">PartitionSpecStorageDescriptorSortColumns</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.PartitionStatus">PartitionStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.RegistrySpec">RegistrySpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.RegistrySpecResource">RegistrySpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.RegistryStatus">RegistryStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ResourcePolicySpec">ResourcePolicySpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ResourcePolicySpecResource">ResourcePolicySpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.ResourcePolicyStatus">ResourcePolicyStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SchemaSpec">SchemaSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SchemaSpecResource">SchemaSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SchemaStatus">SchemaStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpec">SecurityConfigurationSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecEncryptionConfiguration">SecurityConfigurationSpecEncryptionConfiguration</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecEncryptionConfigurationCloudwatchEncryption">SecurityConfigurationSpecEncryptionConfigurationCloudwatchEncryption</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecEncryptionConfigurationCloudwatchEncryptionCodec">SecurityConfigurationSpecEncryptionConfigurationCloudwatchEncryptionCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecEncryptionConfigurationCodec">SecurityConfigurationSpecEncryptionConfigurationCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecEncryptionConfigurationJobBookmarksEncryption">SecurityConfigurationSpecEncryptionConfigurationJobBookmarksEncryption</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecEncryptionConfigurationJobBookmarksEncryptionCodec">SecurityConfigurationSpecEncryptionConfigurationJobBookmarksEncryptionCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecEncryptionConfigurationS3Encryption">SecurityConfigurationSpecEncryptionConfigurationS3Encryption</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecEncryptionConfigurationS3EncryptionCodec">SecurityConfigurationSpecEncryptionConfigurationS3EncryptionCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationSpecResource">SecurityConfigurationSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.SecurityConfigurationStatus">SecurityConfigurationStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerSpec">TriggerSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerSpecActions">TriggerSpecActions</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerSpecActionsNotificationProperty">TriggerSpecActionsNotificationProperty</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerSpecActionsNotificationPropertyCodec">TriggerSpecActionsNotificationPropertyCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerSpecPredicate">TriggerSpecPredicate</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerSpecPredicateCodec">TriggerSpecPredicateCodec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerSpecPredicateConditions">TriggerSpecPredicateConditions</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerSpecResource">TriggerSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.TriggerStatus">TriggerStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.UserDefinedFunctionSpec">UserDefinedFunctionSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.UserDefinedFunctionSpecResource">UserDefinedFunctionSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.UserDefinedFunctionSpecResourceUris">UserDefinedFunctionSpecResourceUris</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.UserDefinedFunctionStatus">UserDefinedFunctionStatus</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.WorkflowSpec">WorkflowSpec</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.WorkflowSpecResource">WorkflowSpecResource</a>
+</li><li>
+<a href="#glue.aws.kubeform.com/v1alpha1.WorkflowStatus">WorkflowStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

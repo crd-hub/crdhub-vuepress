@@ -1,0 +1,99 @@
+<h3 id="auditor.appscode.com/v1alpha1.AuditRegistration">AuditRegistration
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+auditor.appscode.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>AuditRegistration</code></td>
+</tr>
+<tr>
+<td>
+<code>resources</code><br/>
+<em>
+<a href="#auditor.appscode.com/v1alpha1.GroupResources">
+[]GroupResources
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resources that this rule matches. An empty list implies all kinds in all API groups.</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="auditor.appscode.com/v1alpha1.GroupResources">GroupResources
+</h3>
+<p>
+(<em>Appears on:</em><a href="#auditor.appscode.com/v1alpha1.AuditRegistration">AuditRegistration</a>)
+</p>
+<div>
+<p>GroupResources represents resource kinds in an API group.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>group</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Group is the name of the API group that contains the resources.
+The empty string represents the core API group.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>resources</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resources is a list of resources within the API group. Subresources are
+matched using a &quot;/&quot; to indicate the subresource. For example, &quot;pods/log&quot;
+would match request to the log subresource of pods. The top level resource
+does not match subresources, &quot;pods&quot; doesn't match &quot;pods/log&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>3bf3dbd</code>.
+</em></p>

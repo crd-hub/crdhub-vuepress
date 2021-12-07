@@ -1,0 +1,246 @@
+<h2 id="monitoring.google.kubeform.com/v1alpha1">monitoring.google.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicy">AlertPolicy</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.CustomService">CustomService</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.Dashboard">Dashboard</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.Group">Group</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptor">MetricDescriptor</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.NotificationChannel">NotificationChannel</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.Slo">Slo</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfig">UptimeCheckConfig</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicy">AlertPolicy</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.CustomService">CustomService</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.Dashboard">Dashboard</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.Group">Group</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptor">MetricDescriptor</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.NotificationChannel">NotificationChannel</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.Slo">Slo</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfig">UptimeCheckConfig</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpec">AlertPolicySpec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditions">AlertPolicySpecConditions</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionAbsent">AlertPolicySpecConditionsConditionAbsent</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionAbsentAggregations">AlertPolicySpecConditionsConditionAbsentAggregations</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionAbsentCodec">AlertPolicySpecConditionsConditionAbsentCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionAbsentTrigger">AlertPolicySpecConditionsConditionAbsentTrigger</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionAbsentTriggerCodec">AlertPolicySpecConditionsConditionAbsentTriggerCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionMonitoringQueryLanguage">AlertPolicySpecConditionsConditionMonitoringQueryLanguage</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionMonitoringQueryLanguageCodec">AlertPolicySpecConditionsConditionMonitoringQueryLanguageCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionMonitoringQueryLanguageTrigger">AlertPolicySpecConditionsConditionMonitoringQueryLanguageTrigger</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionMonitoringQueryLanguageTriggerCodec">AlertPolicySpecConditionsConditionMonitoringQueryLanguageTriggerCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionThreshold">AlertPolicySpecConditionsConditionThreshold</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionThresholdAggregations">AlertPolicySpecConditionsConditionThresholdAggregations</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionThresholdCodec">AlertPolicySpecConditionsConditionThresholdCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionThresholdDenominatorAggregations">AlertPolicySpecConditionsConditionThresholdDenominatorAggregations</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionThresholdTrigger">AlertPolicySpecConditionsConditionThresholdTrigger</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecConditionsConditionThresholdTriggerCodec">AlertPolicySpecConditionsConditionThresholdTriggerCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecCreationRecord">AlertPolicySpecCreationRecord</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecDocumentation">AlertPolicySpecDocumentation</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecDocumentationCodec">AlertPolicySpecDocumentationCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicySpecResource">AlertPolicySpecResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.AlertPolicyStatus">AlertPolicyStatus</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.CustomServiceSpec">CustomServiceSpec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.CustomServiceSpecResource">CustomServiceSpecResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.CustomServiceSpecTelemetry">CustomServiceSpecTelemetry</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.CustomServiceSpecTelemetryCodec">CustomServiceSpecTelemetryCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.CustomServiceStatus">CustomServiceStatus</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.DashboardSpec">DashboardSpec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.DashboardSpecResource">DashboardSpecResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.DashboardStatus">DashboardStatus</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.GroupSpec">GroupSpec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.GroupSpecResource">GroupSpecResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.GroupStatus">GroupStatus</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpec">MetricDescriptorSpec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecLabels">MetricDescriptorSpecLabels</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecMetadata">MetricDescriptorSpecMetadata</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecMetadataCodec">MetricDescriptorSpecMetadataCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecResource">MetricDescriptorSpecResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorStatus">MetricDescriptorStatus</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.NotificationChannelSpec">NotificationChannelSpec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.NotificationChannelSpecResource">NotificationChannelSpecResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.NotificationChannelSpecSensitiveLabels">NotificationChannelSpecSensitiveLabels</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.NotificationChannelSpecSensitiveLabelsCodec">NotificationChannelSpecSensitiveLabelsCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.NotificationChannelStatus">NotificationChannelStatus</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpec">SloSpec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecBasicSli">SloSpecBasicSli</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecBasicSliAvailability">SloSpecBasicSliAvailability</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecBasicSliAvailabilityCodec">SloSpecBasicSliAvailabilityCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecBasicSliCodec">SloSpecBasicSliCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecBasicSliLatency">SloSpecBasicSliLatency</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecBasicSliLatencyCodec">SloSpecBasicSliLatencyCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecRequestBasedSli">SloSpecRequestBasedSli</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecRequestBasedSliCodec">SloSpecRequestBasedSliCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecRequestBasedSliDistributionCut">SloSpecRequestBasedSliDistributionCut</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecRequestBasedSliDistributionCutCodec">SloSpecRequestBasedSliDistributionCutCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecRequestBasedSliDistributionCutRange">SloSpecRequestBasedSliDistributionCutRange</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecRequestBasedSliDistributionCutRangeCodec">SloSpecRequestBasedSliDistributionCutRangeCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecRequestBasedSliGoodTotalRatio">SloSpecRequestBasedSliGoodTotalRatio</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecRequestBasedSliGoodTotalRatioCodec">SloSpecRequestBasedSliGoodTotalRatioCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecResource">SloSpecResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSli">SloSpecWindowsBasedSli</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliCodec">SloSpecWindowsBasedSliCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThreshold">SloSpecWindowsBasedSliGoodTotalRatioThreshold</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance">SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformance</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability">SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailability</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityCodec">SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceAvailabilityCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceCodec">SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency">SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatency</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyCodec">SloSpecWindowsBasedSliGoodTotalRatioThresholdBasicSliPerformanceLatencyCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdCodec">SloSpecWindowsBasedSliGoodTotalRatioThresholdCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformance">SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformance</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceCodec">SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut">SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCut</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutCodec">SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange">SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRange</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeCodec">SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceDistributionCutRangeCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio">SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatio</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioCodec">SloSpecWindowsBasedSliGoodTotalRatioThresholdPerformanceGoodTotalRatioCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliMetricMeanInRange">SloSpecWindowsBasedSliMetricMeanInRange</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliMetricMeanInRangeCodec">SloSpecWindowsBasedSliMetricMeanInRangeCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliMetricMeanInRangeRange">SloSpecWindowsBasedSliMetricMeanInRangeRange</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliMetricMeanInRangeRangeCodec">SloSpecWindowsBasedSliMetricMeanInRangeRangeCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliMetricSumInRange">SloSpecWindowsBasedSliMetricSumInRange</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliMetricSumInRangeCodec">SloSpecWindowsBasedSliMetricSumInRangeCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliMetricSumInRangeRange">SloSpecWindowsBasedSliMetricSumInRangeRange</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloSpecWindowsBasedSliMetricSumInRangeRangeCodec">SloSpecWindowsBasedSliMetricSumInRangeRangeCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.SloStatus">SloStatus</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpec">UptimeCheckConfigSpec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecContentMatchers">UptimeCheckConfigSpecContentMatchers</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecHttpCheck">UptimeCheckConfigSpecHttpCheck</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecHttpCheckAuthInfo">UptimeCheckConfigSpecHttpCheckAuthInfo</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecHttpCheckAuthInfoCodec">UptimeCheckConfigSpecHttpCheckAuthInfoCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecHttpCheckCodec">UptimeCheckConfigSpecHttpCheckCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecMonitoredResource">UptimeCheckConfigSpecMonitoredResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecMonitoredResourceCodec">UptimeCheckConfigSpecMonitoredResourceCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecResource">UptimeCheckConfigSpecResource</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecResourceGroup">UptimeCheckConfigSpecResourceGroup</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecResourceGroupCodec">UptimeCheckConfigSpecResourceGroupCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecTcpCheck">UptimeCheckConfigSpecTcpCheck</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigSpecTcpCheckCodec">UptimeCheckConfigSpecTcpCheckCodec</a>
+</li><li>
+<a href="#monitoring.google.kubeform.com/v1alpha1.UptimeCheckConfigStatus">UptimeCheckConfigStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

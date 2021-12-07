@@ -1,0 +1,106 @@
+<h2 id="msk.aws.kubeform.com/v1alpha1">msk.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.Cluster">Cluster</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.Configuration">Configuration</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ScramSecretAssociation">ScramSecretAssociation</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.Cluster">Cluster</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.Configuration">Configuration</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ScramSecretAssociation">ScramSecretAssociation</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpec">ClusterSpec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecBrokerNodeGroupInfo">ClusterSpecBrokerNodeGroupInfo</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecBrokerNodeGroupInfoCodec">ClusterSpecBrokerNodeGroupInfoCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecClientAuthentication">ClusterSpecClientAuthentication</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecClientAuthenticationCodec">ClusterSpecClientAuthenticationCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecClientAuthenticationSasl">ClusterSpecClientAuthenticationSasl</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecClientAuthenticationSaslCodec">ClusterSpecClientAuthenticationSaslCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecClientAuthenticationTls">ClusterSpecClientAuthenticationTls</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecClientAuthenticationTlsCodec">ClusterSpecClientAuthenticationTlsCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecConfigurationInfo">ClusterSpecConfigurationInfo</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecConfigurationInfoCodec">ClusterSpecConfigurationInfoCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecEncryptionInfo">ClusterSpecEncryptionInfo</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecEncryptionInfoCodec">ClusterSpecEncryptionInfoCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecEncryptionInfoEncryptionInTransit">ClusterSpecEncryptionInfoEncryptionInTransit</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecEncryptionInfoEncryptionInTransitCodec">ClusterSpecEncryptionInfoEncryptionInTransitCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfo">ClusterSpecLoggingInfo</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoBrokerLogs">ClusterSpecLoggingInfoBrokerLogs</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoBrokerLogsCloudwatchLogs">ClusterSpecLoggingInfoBrokerLogsCloudwatchLogs</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoBrokerLogsCloudwatchLogsCodec">ClusterSpecLoggingInfoBrokerLogsCloudwatchLogsCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoBrokerLogsCodec">ClusterSpecLoggingInfoBrokerLogsCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoBrokerLogsFirehose">ClusterSpecLoggingInfoBrokerLogsFirehose</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoBrokerLogsFirehoseCodec">ClusterSpecLoggingInfoBrokerLogsFirehoseCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoBrokerLogsS3">ClusterSpecLoggingInfoBrokerLogsS3</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoBrokerLogsS3Codec">ClusterSpecLoggingInfoBrokerLogsS3Codec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecLoggingInfoCodec">ClusterSpecLoggingInfoCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecOpenMonitoring">ClusterSpecOpenMonitoring</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecOpenMonitoringCodec">ClusterSpecOpenMonitoringCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecOpenMonitoringPrometheus">ClusterSpecOpenMonitoringPrometheus</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecOpenMonitoringPrometheusCodec">ClusterSpecOpenMonitoringPrometheusCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecOpenMonitoringPrometheusJmxExporter">ClusterSpecOpenMonitoringPrometheusJmxExporter</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecOpenMonitoringPrometheusJmxExporterCodec">ClusterSpecOpenMonitoringPrometheusJmxExporterCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecOpenMonitoringPrometheusNodeExporter">ClusterSpecOpenMonitoringPrometheusNodeExporter</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecOpenMonitoringPrometheusNodeExporterCodec">ClusterSpecOpenMonitoringPrometheusNodeExporterCodec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterSpecResource">ClusterSpecResource</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ClusterStatus">ClusterStatus</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ConfigurationSpec">ConfigurationSpec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ConfigurationSpecResource">ConfigurationSpecResource</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ConfigurationStatus">ConfigurationStatus</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ScramSecretAssociationSpec">ScramSecretAssociationSpec</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ScramSecretAssociationSpecResource">ScramSecretAssociationSpecResource</a>
+</li><li>
+<a href="#msk.aws.kubeform.com/v1alpha1.ScramSecretAssociationStatus">ScramSecretAssociationStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

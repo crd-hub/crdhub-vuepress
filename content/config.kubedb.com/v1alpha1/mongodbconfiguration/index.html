@@ -1,0 +1,97 @@
+<h3 id="config.kubedb.com/v1alpha1.MongoDBConfiguration">MongoDBConfiguration
+</h3>
+<div>
+<p>MongoDBConfiguration defines a MongoDB app configuration.
+https://www.vaultproject.io/api/secret/databases/index.html
+https://www.vaultproject.io/api/secret/databases/mongodb.html#configure-connection</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+config.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>MongoDBConfiguration</code></td>
+</tr>
+<tr>
+<td>
+<code>configServer</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>ConfigServer is the dsn of config server of mongodb sharding. The dsn includes the port no too.</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>replicaSets</code><br/>
+<em>
+map[string]string
+</em>
+</td>
+<td>
+<p>ReplicaSets contains the dsn of each replicaset of sharding. The DSNs are in key-value pair, where
+the keys are host-0, host-1 etc, and the values are DSN of each replicaset. If there is no sharding
+but only one replicaset, then ReplicaSets field contains only one key-value pair where the key is
+host-0 and the value is dsn of that replicaset.</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>stash</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashAddonSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stash defines backup and restore task definitions.</p>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>addon</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashTaskSpec
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

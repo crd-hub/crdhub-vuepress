@@ -1,0 +1,1299 @@
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheck">RegionHealthCheck
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+compute.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>RegionHealthCheck</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpec">
+RegionHealthCheckSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">
+RegionHealthCheckSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">
+RegionHealthCheckSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckStatus">
+RegionHealthCheckStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpec">RegionHealthCheckSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheck">RegionHealthCheck</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">
+RegionHealthCheckSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">
+RegionHealthCheckSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecGrpcHealthCheck">RegionHealthCheckSpecGrpcHealthCheck
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">RegionHealthCheckSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>grpcServiceName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The gRPC service name for the health check.
+The value of grpcServiceName has the following meanings by convention:</p>
+<ul>
+<li>Empty serviceName means the overall status of all services at the backend.</li>
+<li>Non-empty serviceName means the health of that gRPC service, as defined by the owner of the service.</li>
+</ul>
+<p>The grpcServiceName can only be ASCII.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The port number for the health check request.
+Must be specified if portName and portSpecification are not set
+or if port_specification is USE_FIXED_PORT. Valid values are 1 through 65535.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Port name as defined in InstanceGroup#NamedPort#name. If both port and
+port_name are defined, port takes precedence.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portSpecification</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies how port is selected for health checking, can be one of the
+following values:</p>
+<ul>
+<li>
+<p>'USE_FIXED_PORT': The port number in 'port' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_NAMED_PORT': The 'portName' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_SERVING_PORT': For NetworkEndpointGroup, the port specified for each
+network endpoint is used for health checking. For other backends, the
+port or named port specified in the Backend Service is used for health
+checking.</p>
+</li>
+</ul>
+<p>If not specified, gRPC health check follows behavior specified in 'port' and
+'portName' fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecHttp2HealthCheck">RegionHealthCheckSpecHttp2HealthCheck
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">RegionHealthCheckSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>host</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the host header in the HTTP2 health check request.
+If left empty (default value), the public IP on behalf of which this health
+check is performed will be used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The TCP port number for the HTTP2 health check request.
+The default value is 443.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Port name as defined in InstanceGroup#NamedPort#name. If both port and
+port_name are defined, port takes precedence.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portSpecification</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies how port is selected for health checking, can be one of the
+following values:</p>
+<ul>
+<li>
+<p>'USE_FIXED_PORT': The port number in 'port' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_NAMED_PORT': The 'portName' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_SERVING_PORT': For NetworkEndpointGroup, the port specified for each
+network endpoint is used for health checking. For other backends, the
+port or named port specified in the Backend Service is used for health
+checking.</p>
+</li>
+</ul>
+<p>If not specified, HTTP2 health check follows behavior specified in 'port' and
+'portName' fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>proxyHeader</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the type of proxy header to append before sending data to the
+backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The request path of the HTTP2 health check request.
+The default value is /.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>response</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The bytes to match against the beginning of the response data. If left empty
+(the default value), any response will indicate health. The response data
+can only be ASCII.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecHttpHealthCheck">RegionHealthCheckSpecHttpHealthCheck
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">RegionHealthCheckSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>host</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the host header in the HTTP health check request.
+If left empty (default value), the public IP on behalf of which this health
+check is performed will be used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The TCP port number for the HTTP health check request.
+The default value is 80.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Port name as defined in InstanceGroup#NamedPort#name. If both port and
+port_name are defined, port takes precedence.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portSpecification</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies how port is selected for health checking, can be one of the
+following values:</p>
+<ul>
+<li>
+<p>'USE_FIXED_PORT': The port number in 'port' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_NAMED_PORT': The 'portName' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_SERVING_PORT': For NetworkEndpointGroup, the port specified for each
+network endpoint is used for health checking. For other backends, the
+port or named port specified in the Backend Service is used for health
+checking.</p>
+</li>
+</ul>
+<p>If not specified, HTTP health check follows behavior specified in 'port' and
+'portName' fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>proxyHeader</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the type of proxy header to append before sending data to the
+backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The request path of the HTTP health check request.
+The default value is /.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>response</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The bytes to match against the beginning of the response data. If left empty
+(the default value), any response will indicate health. The response data
+can only be ASCII.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecHttpsHealthCheck">RegionHealthCheckSpecHttpsHealthCheck
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">RegionHealthCheckSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>host</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the host header in the HTTPS health check request.
+If left empty (default value), the public IP on behalf of which this health
+check is performed will be used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The TCP port number for the HTTPS health check request.
+The default value is 443.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Port name as defined in InstanceGroup#NamedPort#name. If both port and
+port_name are defined, port takes precedence.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portSpecification</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies how port is selected for health checking, can be one of the
+following values:</p>
+<ul>
+<li>
+<p>'USE_FIXED_PORT': The port number in 'port' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_NAMED_PORT': The 'portName' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_SERVING_PORT': For NetworkEndpointGroup, the port specified for each
+network endpoint is used for health checking. For other backends, the
+port or named port specified in the Backend Service is used for health
+checking.</p>
+</li>
+</ul>
+<p>If not specified, HTTPS health check follows behavior specified in 'port' and
+'portName' fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>proxyHeader</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the type of proxy header to append before sending data to the
+backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The request path of the HTTPS health check request.
+The default value is /.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>response</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The bytes to match against the beginning of the response data. If left empty
+(the default value), any response will indicate health. The response data
+can only be ASCII.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecLogConfig">RegionHealthCheckSpecLogConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">RegionHealthCheckSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>enable</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Indicates whether or not to export logs. This is false by default,
+which means no health check logging will be done.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">RegionHealthCheckSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpec">RegionHealthCheckSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>checkIntervalSec</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>How often (in seconds) to send a health check. The default value is 5
+seconds.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>creationTimestamp</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Creation timestamp in RFC3339 text format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An optional description of this resource. Provide this property when
+you create the resource.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>grpcHealthCheck</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecGrpcHealthCheck">
+RegionHealthCheckSpecGrpcHealthCheck
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A nested object resource</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>healthyThreshold</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A so-far unhealthy instance will be marked healthy after this many
+consecutive successes. The default value is 2.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>http2HealthCheck</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecHttp2HealthCheck">
+RegionHealthCheckSpecHttp2HealthCheck
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A nested object resource</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>httpHealthCheck</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecHttpHealthCheck">
+RegionHealthCheckSpecHttpHealthCheck
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A nested object resource</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>httpsHealthCheck</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecHttpsHealthCheck">
+RegionHealthCheckSpecHttpsHealthCheck
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A nested object resource</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>logConfig</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecLogConfig">
+RegionHealthCheckSpecLogConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Configure logging on this health check.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the resource. Provided by the client when the resource is
+created. The name must be 1-63 characters long, and comply with
+RFC1035.  Specifically, the name must be 1-63 characters long and
+match the regular expression '<a href="%5B-a-z0-9%5D*%5Ba-z0-9%5D">a-z</a>?' which means
+the first character must be a lowercase letter, and all following
+characters must be a dash, lowercase letter, or digit, except the
+last character, which cannot be a dash.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>region</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The Region in which the created health check should reside.
+If it is not provided, the provider region is used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>selfLink</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>sslHealthCheck</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecSslHealthCheck">
+RegionHealthCheckSpecSslHealthCheck
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A nested object resource</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tcpHealthCheck</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecTcpHealthCheck">
+RegionHealthCheckSpecTcpHealthCheck
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A nested object resource</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeoutSec</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>How long (in seconds) to wait before claiming failure.
+The default value is 5 seconds.  It is invalid for timeoutSec to have
+greater value than checkIntervalSec.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The type of the health check. One of HTTP, HTTP2, HTTPS, TCP, or SSL.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unhealthyThreshold</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A so-far healthy instance will be marked unhealthy after this many
+consecutive failures. The default value is 2.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecSslHealthCheck">RegionHealthCheckSpecSslHealthCheck
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">RegionHealthCheckSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The TCP port number for the SSL health check request.
+The default value is 443.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Port name as defined in InstanceGroup#NamedPort#name. If both port and
+port_name are defined, port takes precedence.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portSpecification</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies how port is selected for health checking, can be one of the
+following values:</p>
+<ul>
+<li>
+<p>'USE_FIXED_PORT': The port number in 'port' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_NAMED_PORT': The 'portName' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_SERVING_PORT': For NetworkEndpointGroup, the port specified for each
+network endpoint is used for health checking. For other backends, the
+port or named port specified in the Backend Service is used for health
+checking.</p>
+</li>
+</ul>
+<p>If not specified, SSL health check follows behavior specified in 'port' and
+'portName' fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>proxyHeader</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the type of proxy header to append before sending data to the
+backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>request</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The application data to send once the SSL connection has been
+established (default value is empty). If both request and response are
+empty, the connection establishment alone will indicate health. The request
+data can only be ASCII.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>response</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The bytes to match against the beginning of the response data. If left empty
+(the default value), any response will indicate health. The response data
+can only be ASCII.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecTcpHealthCheck">RegionHealthCheckSpecTcpHealthCheck
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheckSpecResource">RegionHealthCheckSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The TCP port number for the TCP health check request.
+The default value is 80.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Port name as defined in InstanceGroup#NamedPort#name. If both port and
+port_name are defined, port takes precedence.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portSpecification</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies how port is selected for health checking, can be one of the
+following values:</p>
+<ul>
+<li>
+<p>'USE_FIXED_PORT': The port number in 'port' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_NAMED_PORT': The 'portName' is used for health checking.</p>
+</li>
+<li>
+<p>'USE_SERVING_PORT': For NetworkEndpointGroup, the port specified for each
+network endpoint is used for health checking. For other backends, the
+port or named port specified in the Backend Service is used for health
+checking.</p>
+</li>
+</ul>
+<p>If not specified, TCP health check follows behavior specified in 'port' and
+'portName' fields. Possible values: [&quot;USE_FIXED_PORT&quot;, &quot;USE_NAMED_PORT&quot;, &quot;USE_SERVING_PORT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>proxyHeader</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the type of proxy header to append before sending data to the
+backend. Default value: &quot;NONE&quot; Possible values: [&quot;NONE&quot;, &quot;PROXY_V1&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>request</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The application data to send once the TCP connection has been
+established (default value is empty). If both request and response are
+empty, the connection establishment alone will indicate health. The request
+data can only be ASCII.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>response</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The bytes to match against the beginning of the response data. If left empty
+(the default value), any response will indicate health. The response data
+can only be ASCII.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionHealthCheckStatus">RegionHealthCheckStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionHealthCheck">RegionHealthCheck</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

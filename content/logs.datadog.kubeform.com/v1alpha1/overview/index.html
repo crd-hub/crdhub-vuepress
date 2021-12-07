@@ -1,0 +1,264 @@
+<h2 id="logs.datadog.kubeform.com/v1alpha1">logs.datadog.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.Archive">Archive</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveOrder">ArchiveOrder</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipeline">CustomPipeline</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.Index">Index</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexOrder">IndexOrder</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IntegrationPipeline">IntegrationPipeline</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.Metric">Metric</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.PipelineOrder">PipelineOrder</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.Archive">Archive</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveOrder">ArchiveOrder</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipeline">CustomPipeline</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.Index">Index</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexOrder">IndexOrder</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IntegrationPipeline">IntegrationPipeline</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.Metric">Metric</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.PipelineOrder">PipelineOrder</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveOrderSpec">ArchiveOrderSpec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveOrderSpecResource">ArchiveOrderSpecResource</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveOrderStatus">ArchiveOrderStatus</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveSpec">ArchiveSpec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveSpecAzureArchive">ArchiveSpecAzureArchive</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveSpecAzureArchiveCodec">ArchiveSpecAzureArchiveCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveSpecGcsArchive">ArchiveSpecGcsArchive</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveSpecGcsArchiveCodec">ArchiveSpecGcsArchiveCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveSpecResource">ArchiveSpecResource</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveSpecS3Archive">ArchiveSpecS3Archive</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveSpecS3ArchiveCodec">ArchiveSpecS3ArchiveCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.ArchiveStatus">ArchiveStatus</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpec">CustomPipelineSpec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecFilter">CustomPipelineSpecFilter</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessor">CustomPipelineSpecProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorArithmeticProcessor">CustomPipelineSpecProcessorArithmeticProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorArithmeticProcessorCodec">CustomPipelineSpecProcessorArithmeticProcessorCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorAttributeRemapper">CustomPipelineSpecProcessorAttributeRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorAttributeRemapperCodec">CustomPipelineSpecProcessorAttributeRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorCategoryProcessor">CustomPipelineSpecProcessorCategoryProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorCategoryProcessorCategory">CustomPipelineSpecProcessorCategoryProcessorCategory</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorCategoryProcessorCategoryFilter">CustomPipelineSpecProcessorCategoryProcessorCategoryFilter</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorCategoryProcessorCategoryFilterCodec">CustomPipelineSpecProcessorCategoryProcessorCategoryFilterCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorCategoryProcessorCodec">CustomPipelineSpecProcessorCategoryProcessorCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorDateRemapper">CustomPipelineSpecProcessorDateRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorDateRemapperCodec">CustomPipelineSpecProcessorDateRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorGeoIPParser">CustomPipelineSpecProcessorGeoIPParser</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorGeoIPParserCodec">CustomPipelineSpecProcessorGeoIPParserCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorGrokParser">CustomPipelineSpecProcessorGrokParser</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorGrokParserCodec">CustomPipelineSpecProcessorGrokParserCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorGrokParserGrok">CustomPipelineSpecProcessorGrokParserGrok</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorGrokParserGrokCodec">CustomPipelineSpecProcessorGrokParserGrokCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorLookupProcessor">CustomPipelineSpecProcessorLookupProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorLookupProcessorCodec">CustomPipelineSpecProcessorLookupProcessorCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorMessageRemapper">CustomPipelineSpecProcessorMessageRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorMessageRemapperCodec">CustomPipelineSpecProcessorMessageRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipeline">CustomPipelineSpecProcessorPipeline</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineCodec">CustomPipelineSpecProcessorPipelineCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineFilter">CustomPipelineSpecProcessorPipelineFilter</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessor">CustomPipelineSpecProcessorPipelineProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorArithmeticProcessor">CustomPipelineSpecProcessorPipelineProcessorArithmeticProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorArithmeticProcessorCodec">CustomPipelineSpecProcessorPipelineProcessorArithmeticProcessorCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorAttributeRemapper">CustomPipelineSpecProcessorPipelineProcessorAttributeRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorAttributeRemapperCodec">CustomPipelineSpecProcessorPipelineProcessorAttributeRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorCategoryProcessor">CustomPipelineSpecProcessorPipelineProcessorCategoryProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorCategoryProcessorCategory">CustomPipelineSpecProcessorPipelineProcessorCategoryProcessorCategory</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorCategoryProcessorCategoryFilter">CustomPipelineSpecProcessorPipelineProcessorCategoryProcessorCategoryFilter</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorCategoryProcessorCategoryFilterCodec">CustomPipelineSpecProcessorPipelineProcessorCategoryProcessorCategoryFilterCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorCategoryProcessorCodec">CustomPipelineSpecProcessorPipelineProcessorCategoryProcessorCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorDateRemapper">CustomPipelineSpecProcessorPipelineProcessorDateRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorDateRemapperCodec">CustomPipelineSpecProcessorPipelineProcessorDateRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorGeoIPParser">CustomPipelineSpecProcessorPipelineProcessorGeoIPParser</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorGeoIPParserCodec">CustomPipelineSpecProcessorPipelineProcessorGeoIPParserCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorGrokParser">CustomPipelineSpecProcessorPipelineProcessorGrokParser</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorGrokParserCodec">CustomPipelineSpecProcessorPipelineProcessorGrokParserCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorGrokParserGrok">CustomPipelineSpecProcessorPipelineProcessorGrokParserGrok</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorGrokParserGrokCodec">CustomPipelineSpecProcessorPipelineProcessorGrokParserGrokCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorLookupProcessor">CustomPipelineSpecProcessorPipelineProcessorLookupProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorLookupProcessorCodec">CustomPipelineSpecProcessorPipelineProcessorLookupProcessorCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorMessageRemapper">CustomPipelineSpecProcessorPipelineProcessorMessageRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorMessageRemapperCodec">CustomPipelineSpecProcessorPipelineProcessorMessageRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorServiceRemapper">CustomPipelineSpecProcessorPipelineProcessorServiceRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorServiceRemapperCodec">CustomPipelineSpecProcessorPipelineProcessorServiceRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorStatusRemapper">CustomPipelineSpecProcessorPipelineProcessorStatusRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorStatusRemapperCodec">CustomPipelineSpecProcessorPipelineProcessorStatusRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorStringBuilderProcessor">CustomPipelineSpecProcessorPipelineProcessorStringBuilderProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorStringBuilderProcessorCodec">CustomPipelineSpecProcessorPipelineProcessorStringBuilderProcessorCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorTraceIDRemapper">CustomPipelineSpecProcessorPipelineProcessorTraceIDRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorTraceIDRemapperCodec">CustomPipelineSpecProcessorPipelineProcessorTraceIDRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorUrlParser">CustomPipelineSpecProcessorPipelineProcessorUrlParser</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorUrlParserCodec">CustomPipelineSpecProcessorPipelineProcessorUrlParserCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorUserAgentParser">CustomPipelineSpecProcessorPipelineProcessorUserAgentParser</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorPipelineProcessorUserAgentParserCodec">CustomPipelineSpecProcessorPipelineProcessorUserAgentParserCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorServiceRemapper">CustomPipelineSpecProcessorServiceRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorServiceRemapperCodec">CustomPipelineSpecProcessorServiceRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorStatusRemapper">CustomPipelineSpecProcessorStatusRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorStatusRemapperCodec">CustomPipelineSpecProcessorStatusRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorStringBuilderProcessor">CustomPipelineSpecProcessorStringBuilderProcessor</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorStringBuilderProcessorCodec">CustomPipelineSpecProcessorStringBuilderProcessorCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorTraceIDRemapper">CustomPipelineSpecProcessorTraceIDRemapper</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorTraceIDRemapperCodec">CustomPipelineSpecProcessorTraceIDRemapperCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorUrlParser">CustomPipelineSpecProcessorUrlParser</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorUrlParserCodec">CustomPipelineSpecProcessorUrlParserCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorUserAgentParser">CustomPipelineSpecProcessorUserAgentParser</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecProcessorUserAgentParserCodec">CustomPipelineSpecProcessorUserAgentParserCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineSpecResource">CustomPipelineSpecResource</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.CustomPipelineStatus">CustomPipelineStatus</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexOrderSpec">IndexOrderSpec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexOrderSpecResource">IndexOrderSpecResource</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexOrderStatus">IndexOrderStatus</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexSpec">IndexSpec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexSpecExclusionFilter">IndexSpecExclusionFilter</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexSpecExclusionFilterFilter">IndexSpecExclusionFilterFilter</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexSpecFilter">IndexSpecFilter</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexSpecResource">IndexSpecResource</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IndexStatus">IndexStatus</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IntegrationPipelineSpec">IntegrationPipelineSpec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IntegrationPipelineSpecResource">IntegrationPipelineSpecResource</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.IntegrationPipelineStatus">IntegrationPipelineStatus</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.MetricSpec">MetricSpec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.MetricSpecCompute">MetricSpecCompute</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.MetricSpecComputeCodec">MetricSpecComputeCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.MetricSpecFilter">MetricSpecFilter</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.MetricSpecFilterCodec">MetricSpecFilterCodec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.MetricSpecGroupBy">MetricSpecGroupBy</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.MetricSpecResource">MetricSpecResource</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.MetricStatus">MetricStatus</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.PipelineOrderSpec">PipelineOrderSpec</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.PipelineOrderSpecResource">PipelineOrderSpecResource</a>
+</li><li>
+<a href="#logs.datadog.kubeform.com/v1alpha1.PipelineOrderStatus">PipelineOrderStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>692b0b6</code>.
+</em></p>

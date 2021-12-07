@@ -1,0 +1,306 @@
+<h3 id="engine.kubevault.com/v1alpha1.SecretRoleBinding">SecretRoleBinding
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+engine.kubevault.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>SecretRoleBinding</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.SecretRoleBindingSpec">
+SecretRoleBindingSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>roles</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#typedlocalobjectreference-v1-core">
+[]Kubernetes core/v1.TypedLocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>subjects</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#subject-v1-rbac">
+[]Kubernetes rbac/v1.Subject
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.SecretRoleBindingStatus">
+SecretRoleBindingStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.RequestStatusPhase">
+RequestStatusPhase
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the phase of SecretRoleBinding object</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>lease</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.Lease">
+Lease
+</a>
+</em>
+</td>
+<td>
+<p>Contains lease info</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyRef</code><br/>
+<em>
+kmodules.xyz/client-go/api/v1.ObjectReference
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyBindingRef</code><br/>
+<em>
+kmodules.xyz/client-go/api/v1.ObjectReference
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="engine.kubevault.com/v1alpha1.SecretRoleBindingSpec">SecretRoleBindingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#engine.kubevault.com/v1alpha1.SecretRoleBinding">SecretRoleBinding</a>)
+</p>
+<div>
+<p>SecretRoleBindingSpec contains information to request for database credential</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>roles</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#typedlocalobjectreference-v1-core">
+[]Kubernetes core/v1.TypedLocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>subjects</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#subject-v1-rbac">
+[]Kubernetes rbac/v1.Subject
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="engine.kubevault.com/v1alpha1.SecretRoleBindingStatus">SecretRoleBindingStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#engine.kubevault.com/v1alpha1.SecretRoleBinding">SecretRoleBinding</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.RequestStatusPhase">
+RequestStatusPhase
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the phase of SecretRoleBinding object</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>lease</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.Lease">
+Lease
+</a>
+</em>
+</td>
+<td>
+<p>Contains lease info</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyRef</code><br/>
+<em>
+kmodules.xyz/client-go/api/v1.ObjectReference
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyBindingRef</code><br/>
+<em>
+kmodules.xyz/client-go/api/v1.ObjectReference
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>311cc741</code>.
+</em></p>

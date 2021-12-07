@@ -1,0 +1,518 @@
+<h2 id="hdinsight.azurerm.kubeform.com/v1alpha1">hdinsight.azurerm.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopCluster">HadoopCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseCluster">HbaseCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryCluster">InteractiveQueryCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaCluster">KafkaCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesCluster">MlServicesCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverCluster">RserverCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkCluster">SparkCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormCluster">StormCluster</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopCluster">HadoopCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseCluster">HbaseCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryCluster">InteractiveQueryCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaCluster">KafkaCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesCluster">MlServicesCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverCluster">RserverCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkCluster">SparkCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormCluster">StormCluster</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpec">HadoopClusterSpec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecComponentVersion">HadoopClusterSpecComponentVersion</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecComponentVersionCodec">HadoopClusterSpecComponentVersionCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecGateway">HadoopClusterSpecGateway</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecGatewayCodec">HadoopClusterSpecGatewayCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMetastores">HadoopClusterSpecMetastores</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMetastoresAmbari">HadoopClusterSpecMetastoresAmbari</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMetastoresAmbariCodec">HadoopClusterSpecMetastoresAmbariCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMetastoresCodec">HadoopClusterSpecMetastoresCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMetastoresHive">HadoopClusterSpecMetastoresHive</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMetastoresHiveCodec">HadoopClusterSpecMetastoresHiveCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMetastoresOozie">HadoopClusterSpecMetastoresOozie</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMetastoresOozieCodec">HadoopClusterSpecMetastoresOozieCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMonitor">HadoopClusterSpecMonitor</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecMonitorCodec">HadoopClusterSpecMonitorCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecNetwork">HadoopClusterSpecNetwork</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecNetworkCodec">HadoopClusterSpecNetworkCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecResource">HadoopClusterSpecResource</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRoles">HadoopClusterSpecRoles</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesCodec">HadoopClusterSpecRolesCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesEdgeNode">HadoopClusterSpecRolesEdgeNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesEdgeNodeCodec">HadoopClusterSpecRolesEdgeNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesEdgeNodeInstallScriptAction">HadoopClusterSpecRolesEdgeNodeInstallScriptAction</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesHeadNode">HadoopClusterSpecRolesHeadNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesHeadNodeCodec">HadoopClusterSpecRolesHeadNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNode">HadoopClusterSpecRolesWorkerNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNodeAutoscale">HadoopClusterSpecRolesWorkerNodeAutoscale</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNodeAutoscaleCapacity">HadoopClusterSpecRolesWorkerNodeAutoscaleCapacity</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNodeAutoscaleCapacityCodec">HadoopClusterSpecRolesWorkerNodeAutoscaleCapacityCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNodeAutoscaleCodec">HadoopClusterSpecRolesWorkerNodeAutoscaleCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNodeAutoscaleRecurrence">HadoopClusterSpecRolesWorkerNodeAutoscaleRecurrence</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNodeAutoscaleRecurrenceCodec">HadoopClusterSpecRolesWorkerNodeAutoscaleRecurrenceCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNodeAutoscaleRecurrenceSchedule">HadoopClusterSpecRolesWorkerNodeAutoscaleRecurrenceSchedule</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesWorkerNodeCodec">HadoopClusterSpecRolesWorkerNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesZookeeperNode">HadoopClusterSpecRolesZookeeperNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecRolesZookeeperNodeCodec">HadoopClusterSpecRolesZookeeperNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecStorageAccount">HadoopClusterSpecStorageAccount</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecStorageAccountGen2">HadoopClusterSpecStorageAccountGen2</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterSpecStorageAccountGen2Codec">HadoopClusterSpecStorageAccountGen2Codec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HadoopClusterStatus">HadoopClusterStatus</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpec">HbaseClusterSpec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecComponentVersion">HbaseClusterSpecComponentVersion</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecComponentVersionCodec">HbaseClusterSpecComponentVersionCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecGateway">HbaseClusterSpecGateway</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecGatewayCodec">HbaseClusterSpecGatewayCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMetastores">HbaseClusterSpecMetastores</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMetastoresAmbari">HbaseClusterSpecMetastoresAmbari</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMetastoresAmbariCodec">HbaseClusterSpecMetastoresAmbariCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMetastoresCodec">HbaseClusterSpecMetastoresCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMetastoresHive">HbaseClusterSpecMetastoresHive</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMetastoresHiveCodec">HbaseClusterSpecMetastoresHiveCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMetastoresOozie">HbaseClusterSpecMetastoresOozie</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMetastoresOozieCodec">HbaseClusterSpecMetastoresOozieCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMonitor">HbaseClusterSpecMonitor</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecMonitorCodec">HbaseClusterSpecMonitorCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecResource">HbaseClusterSpecResource</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRoles">HbaseClusterSpecRoles</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesCodec">HbaseClusterSpecRolesCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesHeadNode">HbaseClusterSpecRolesHeadNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesHeadNodeCodec">HbaseClusterSpecRolesHeadNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesWorkerNode">HbaseClusterSpecRolesWorkerNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesWorkerNodeAutoscale">HbaseClusterSpecRolesWorkerNodeAutoscale</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesWorkerNodeAutoscaleCodec">HbaseClusterSpecRolesWorkerNodeAutoscaleCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesWorkerNodeAutoscaleRecurrence">HbaseClusterSpecRolesWorkerNodeAutoscaleRecurrence</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesWorkerNodeAutoscaleRecurrenceCodec">HbaseClusterSpecRolesWorkerNodeAutoscaleRecurrenceCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesWorkerNodeAutoscaleRecurrenceSchedule">HbaseClusterSpecRolesWorkerNodeAutoscaleRecurrenceSchedule</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesWorkerNodeCodec">HbaseClusterSpecRolesWorkerNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesZookeeperNode">HbaseClusterSpecRolesZookeeperNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecRolesZookeeperNodeCodec">HbaseClusterSpecRolesZookeeperNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecStorageAccount">HbaseClusterSpecStorageAccount</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecStorageAccountGen2">HbaseClusterSpecStorageAccountGen2</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterSpecStorageAccountGen2Codec">HbaseClusterSpecStorageAccountGen2Codec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.HbaseClusterStatus">HbaseClusterStatus</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpec">InteractiveQueryClusterSpec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecComponentVersion">InteractiveQueryClusterSpecComponentVersion</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecComponentVersionCodec">InteractiveQueryClusterSpecComponentVersionCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecGateway">InteractiveQueryClusterSpecGateway</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecGatewayCodec">InteractiveQueryClusterSpecGatewayCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMetastores">InteractiveQueryClusterSpecMetastores</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMetastoresAmbari">InteractiveQueryClusterSpecMetastoresAmbari</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMetastoresAmbariCodec">InteractiveQueryClusterSpecMetastoresAmbariCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMetastoresCodec">InteractiveQueryClusterSpecMetastoresCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMetastoresHive">InteractiveQueryClusterSpecMetastoresHive</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMetastoresHiveCodec">InteractiveQueryClusterSpecMetastoresHiveCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMetastoresOozie">InteractiveQueryClusterSpecMetastoresOozie</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMetastoresOozieCodec">InteractiveQueryClusterSpecMetastoresOozieCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMonitor">InteractiveQueryClusterSpecMonitor</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecMonitorCodec">InteractiveQueryClusterSpecMonitorCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecNetwork">InteractiveQueryClusterSpecNetwork</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecNetworkCodec">InteractiveQueryClusterSpecNetworkCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecResource">InteractiveQueryClusterSpecResource</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRoles">InteractiveQueryClusterSpecRoles</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesCodec">InteractiveQueryClusterSpecRolesCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesHeadNode">InteractiveQueryClusterSpecRolesHeadNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesHeadNodeCodec">InteractiveQueryClusterSpecRolesHeadNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNode">InteractiveQueryClusterSpecRolesWorkerNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNodeAutoscale">InteractiveQueryClusterSpecRolesWorkerNodeAutoscale</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleCapacity">InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleCapacity</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleCapacityCodec">InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleCapacityCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleCodec">InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleRecurrence">InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleRecurrence</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleRecurrenceCodec">InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleRecurrenceCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleRecurrenceSchedule">InteractiveQueryClusterSpecRolesWorkerNodeAutoscaleRecurrenceSchedule</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesWorkerNodeCodec">InteractiveQueryClusterSpecRolesWorkerNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesZookeeperNode">InteractiveQueryClusterSpecRolesZookeeperNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecRolesZookeeperNodeCodec">InteractiveQueryClusterSpecRolesZookeeperNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecStorageAccount">InteractiveQueryClusterSpecStorageAccount</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecStorageAccountGen2">InteractiveQueryClusterSpecStorageAccountGen2</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterSpecStorageAccountGen2Codec">InteractiveQueryClusterSpecStorageAccountGen2Codec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.InteractiveQueryClusterStatus">InteractiveQueryClusterStatus</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpec">KafkaClusterSpec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecComponentVersion">KafkaClusterSpecComponentVersion</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecComponentVersionCodec">KafkaClusterSpecComponentVersionCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecGateway">KafkaClusterSpecGateway</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecGatewayCodec">KafkaClusterSpecGatewayCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMetastores">KafkaClusterSpecMetastores</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMetastoresAmbari">KafkaClusterSpecMetastoresAmbari</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMetastoresAmbariCodec">KafkaClusterSpecMetastoresAmbariCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMetastoresCodec">KafkaClusterSpecMetastoresCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMetastoresHive">KafkaClusterSpecMetastoresHive</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMetastoresHiveCodec">KafkaClusterSpecMetastoresHiveCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMetastoresOozie">KafkaClusterSpecMetastoresOozie</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMetastoresOozieCodec">KafkaClusterSpecMetastoresOozieCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMonitor">KafkaClusterSpecMonitor</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecMonitorCodec">KafkaClusterSpecMonitorCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecResource">KafkaClusterSpecResource</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRestProxy">KafkaClusterSpecRestProxy</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRestProxyCodec">KafkaClusterSpecRestProxyCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRoles">KafkaClusterSpecRoles</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesCodec">KafkaClusterSpecRolesCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesHeadNode">KafkaClusterSpecRolesHeadNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesHeadNodeCodec">KafkaClusterSpecRolesHeadNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesKafkaManagementNode">KafkaClusterSpecRolesKafkaManagementNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesKafkaManagementNodeCodec">KafkaClusterSpecRolesKafkaManagementNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesWorkerNode">KafkaClusterSpecRolesWorkerNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesWorkerNodeCodec">KafkaClusterSpecRolesWorkerNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesZookeeperNode">KafkaClusterSpecRolesZookeeperNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecRolesZookeeperNodeCodec">KafkaClusterSpecRolesZookeeperNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecStorageAccount">KafkaClusterSpecStorageAccount</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecStorageAccountGen2">KafkaClusterSpecStorageAccountGen2</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterSpecStorageAccountGen2Codec">KafkaClusterSpecStorageAccountGen2Codec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.KafkaClusterStatus">KafkaClusterStatus</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpec">MlServicesClusterSpec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecGateway">MlServicesClusterSpecGateway</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecGatewayCodec">MlServicesClusterSpecGatewayCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecResource">MlServicesClusterSpecResource</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRoles">MlServicesClusterSpecRoles</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesCodec">MlServicesClusterSpecRolesCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesEdgeNode">MlServicesClusterSpecRolesEdgeNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesEdgeNodeCodec">MlServicesClusterSpecRolesEdgeNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesHeadNode">MlServicesClusterSpecRolesHeadNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesHeadNodeCodec">MlServicesClusterSpecRolesHeadNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesWorkerNode">MlServicesClusterSpecRolesWorkerNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesWorkerNodeCodec">MlServicesClusterSpecRolesWorkerNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesZookeeperNode">MlServicesClusterSpecRolesZookeeperNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecRolesZookeeperNodeCodec">MlServicesClusterSpecRolesZookeeperNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterSpecStorageAccount">MlServicesClusterSpecStorageAccount</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.MlServicesClusterStatus">MlServicesClusterStatus</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpec">RserverClusterSpec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecGateway">RserverClusterSpecGateway</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecGatewayCodec">RserverClusterSpecGatewayCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecResource">RserverClusterSpecResource</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRoles">RserverClusterSpecRoles</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesCodec">RserverClusterSpecRolesCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesEdgeNode">RserverClusterSpecRolesEdgeNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesEdgeNodeCodec">RserverClusterSpecRolesEdgeNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesHeadNode">RserverClusterSpecRolesHeadNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesHeadNodeCodec">RserverClusterSpecRolesHeadNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesWorkerNode">RserverClusterSpecRolesWorkerNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesWorkerNodeCodec">RserverClusterSpecRolesWorkerNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesZookeeperNode">RserverClusterSpecRolesZookeeperNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecRolesZookeeperNodeCodec">RserverClusterSpecRolesZookeeperNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterSpecStorageAccount">RserverClusterSpecStorageAccount</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.RserverClusterStatus">RserverClusterStatus</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpec">SparkClusterSpec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecComponentVersion">SparkClusterSpecComponentVersion</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecComponentVersionCodec">SparkClusterSpecComponentVersionCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecGateway">SparkClusterSpecGateway</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecGatewayCodec">SparkClusterSpecGatewayCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMetastores">SparkClusterSpecMetastores</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMetastoresAmbari">SparkClusterSpecMetastoresAmbari</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMetastoresAmbariCodec">SparkClusterSpecMetastoresAmbariCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMetastoresCodec">SparkClusterSpecMetastoresCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMetastoresHive">SparkClusterSpecMetastoresHive</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMetastoresHiveCodec">SparkClusterSpecMetastoresHiveCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMetastoresOozie">SparkClusterSpecMetastoresOozie</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMetastoresOozieCodec">SparkClusterSpecMetastoresOozieCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMonitor">SparkClusterSpecMonitor</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecMonitorCodec">SparkClusterSpecMonitorCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecNetwork">SparkClusterSpecNetwork</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecNetworkCodec">SparkClusterSpecNetworkCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecResource">SparkClusterSpecResource</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRoles">SparkClusterSpecRoles</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesCodec">SparkClusterSpecRolesCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesHeadNode">SparkClusterSpecRolesHeadNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesHeadNodeCodec">SparkClusterSpecRolesHeadNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNode">SparkClusterSpecRolesWorkerNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNodeAutoscale">SparkClusterSpecRolesWorkerNodeAutoscale</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNodeAutoscaleCapacity">SparkClusterSpecRolesWorkerNodeAutoscaleCapacity</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNodeAutoscaleCapacityCodec">SparkClusterSpecRolesWorkerNodeAutoscaleCapacityCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNodeAutoscaleCodec">SparkClusterSpecRolesWorkerNodeAutoscaleCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNodeAutoscaleRecurrence">SparkClusterSpecRolesWorkerNodeAutoscaleRecurrence</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNodeAutoscaleRecurrenceCodec">SparkClusterSpecRolesWorkerNodeAutoscaleRecurrenceCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNodeAutoscaleRecurrenceSchedule">SparkClusterSpecRolesWorkerNodeAutoscaleRecurrenceSchedule</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesWorkerNodeCodec">SparkClusterSpecRolesWorkerNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesZookeeperNode">SparkClusterSpecRolesZookeeperNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecRolesZookeeperNodeCodec">SparkClusterSpecRolesZookeeperNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecStorageAccount">SparkClusterSpecStorageAccount</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecStorageAccountGen2">SparkClusterSpecStorageAccountGen2</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterSpecStorageAccountGen2Codec">SparkClusterSpecStorageAccountGen2Codec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.SparkClusterStatus">SparkClusterStatus</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpec">StormClusterSpec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecComponentVersion">StormClusterSpecComponentVersion</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecComponentVersionCodec">StormClusterSpecComponentVersionCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecGateway">StormClusterSpecGateway</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecGatewayCodec">StormClusterSpecGatewayCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMetastores">StormClusterSpecMetastores</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMetastoresAmbari">StormClusterSpecMetastoresAmbari</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMetastoresAmbariCodec">StormClusterSpecMetastoresAmbariCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMetastoresCodec">StormClusterSpecMetastoresCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMetastoresHive">StormClusterSpecMetastoresHive</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMetastoresHiveCodec">StormClusterSpecMetastoresHiveCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMetastoresOozie">StormClusterSpecMetastoresOozie</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMetastoresOozieCodec">StormClusterSpecMetastoresOozieCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMonitor">StormClusterSpecMonitor</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecMonitorCodec">StormClusterSpecMonitorCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecResource">StormClusterSpecResource</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecRoles">StormClusterSpecRoles</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecRolesCodec">StormClusterSpecRolesCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecRolesHeadNode">StormClusterSpecRolesHeadNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecRolesHeadNodeCodec">StormClusterSpecRolesHeadNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecRolesWorkerNode">StormClusterSpecRolesWorkerNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecRolesWorkerNodeCodec">StormClusterSpecRolesWorkerNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecRolesZookeeperNode">StormClusterSpecRolesZookeeperNode</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecRolesZookeeperNodeCodec">StormClusterSpecRolesZookeeperNodeCodec</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterSpecStorageAccount">StormClusterSpecStorageAccount</a>
+</li><li>
+<a href="#hdinsight.azurerm.kubeform.com/v1alpha1.StormClusterStatus">StormClusterStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>d6ee7ab</code>.
+</em></p>

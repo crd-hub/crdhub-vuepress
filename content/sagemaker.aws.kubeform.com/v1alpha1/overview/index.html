@@ -1,0 +1,292 @@
+<h2 id="sagemaker.aws.kubeform.com/v1alpha1">sagemaker.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.App">App</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfig">AppImageConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.CodeRepository">CodeRepository</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.Domain">Domain</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.Endpoint">Endpoint</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfiguration">EndpointConfiguration</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroup">FeatureGroup</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.Image">Image</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ImageVersion">ImageVersion</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.Model">Model</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelPackageGroup">ModelPackageGroup</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstance">NotebookInstance</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstanceLifecycleConfiguration">NotebookInstanceLifecycleConfiguration</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfile">UserProfile</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.App">App</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfig">AppImageConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.CodeRepository">CodeRepository</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.Domain">Domain</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.Endpoint">Endpoint</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfiguration">EndpointConfiguration</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroup">FeatureGroup</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.Image">Image</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ImageVersion">ImageVersion</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.Model">Model</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelPackageGroup">ModelPackageGroup</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstance">NotebookInstance</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstanceLifecycleConfiguration">NotebookInstanceLifecycleConfiguration</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfile">UserProfile</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigSpec">AppImageConfigSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigSpecKernelGatewayImageConfig">AppImageConfigSpecKernelGatewayImageConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigSpecKernelGatewayImageConfigCodec">AppImageConfigSpecKernelGatewayImageConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigSpecKernelGatewayImageConfigFileSystemConfig">AppImageConfigSpecKernelGatewayImageConfigFileSystemConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigSpecKernelGatewayImageConfigFileSystemConfigCodec">AppImageConfigSpecKernelGatewayImageConfigFileSystemConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigSpecKernelGatewayImageConfigKernelSpec">AppImageConfigSpecKernelGatewayImageConfigKernelSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigSpecKernelGatewayImageConfigKernelSpecCodec">AppImageConfigSpecKernelGatewayImageConfigKernelSpecCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigSpecResource">AppImageConfigSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppImageConfigStatus">AppImageConfigStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppSpec">AppSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppSpecResource">AppSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppSpecResourceSpec">AppSpecResourceSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppSpecResourceSpecCodec">AppSpecResourceSpecCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.AppStatus">AppStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.CodeRepositorySpec">CodeRepositorySpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.CodeRepositorySpecGitConfig">CodeRepositorySpecGitConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.CodeRepositorySpecGitConfigCodec">CodeRepositorySpecGitConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.CodeRepositorySpecResource">CodeRepositorySpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.CodeRepositoryStatus">CodeRepositoryStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpec">DomainSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettings">DomainSpecDefaultUserSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsCodec">DomainSpecDefaultUserSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsJupyterServerAppSettings">DomainSpecDefaultUserSettingsJupyterServerAppSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsJupyterServerAppSettingsCodec">DomainSpecDefaultUserSettingsJupyterServerAppSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec">DomainSpecDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecCodec">DomainSpecDefaultUserSettingsJupyterServerAppSettingsDefaultResourceSpecCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsKernelGatewayAppSettings">DomainSpecDefaultUserSettingsKernelGatewayAppSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsKernelGatewayAppSettingsCodec">DomainSpecDefaultUserSettingsKernelGatewayAppSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsKernelGatewayAppSettingsCustomImage">DomainSpecDefaultUserSettingsKernelGatewayAppSettingsCustomImage</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec">DomainSpecDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecCodec">DomainSpecDefaultUserSettingsKernelGatewayAppSettingsDefaultResourceSpecCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsSharingSettings">DomainSpecDefaultUserSettingsSharingSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsSharingSettingsCodec">DomainSpecDefaultUserSettingsSharingSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsTensorBoardAppSettings">DomainSpecDefaultUserSettingsTensorBoardAppSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsTensorBoardAppSettingsCodec">DomainSpecDefaultUserSettingsTensorBoardAppSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec">DomainSpecDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecCodec">DomainSpecDefaultUserSettingsTensorBoardAppSettingsDefaultResourceSpecCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainSpecResource">DomainSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.DomainStatus">DomainStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationSpec">EndpointConfigurationSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationSpecDataCaptureConfig">EndpointConfigurationSpecDataCaptureConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationSpecDataCaptureConfigCaptureContentTypeHeader">EndpointConfigurationSpecDataCaptureConfigCaptureContentTypeHeader</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationSpecDataCaptureConfigCaptureContentTypeHeaderCodec">EndpointConfigurationSpecDataCaptureConfigCaptureContentTypeHeaderCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationSpecDataCaptureConfigCaptureOptions">EndpointConfigurationSpecDataCaptureConfigCaptureOptions</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationSpecDataCaptureConfigCodec">EndpointConfigurationSpecDataCaptureConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationSpecProductionVariants">EndpointConfigurationSpecProductionVariants</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationSpecResource">EndpointConfigurationSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointConfigurationStatus">EndpointConfigurationStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointSpec">EndpointSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointSpecResource">EndpointSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.EndpointStatus">EndpointStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpec">FeatureGroupSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecFeatureDefinition">FeatureGroupSpecFeatureDefinition</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOfflineStoreConfig">FeatureGroupSpecOfflineStoreConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOfflineStoreConfigCodec">FeatureGroupSpecOfflineStoreConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOfflineStoreConfigDataCatalogConfig">FeatureGroupSpecOfflineStoreConfigDataCatalogConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOfflineStoreConfigDataCatalogConfigCodec">FeatureGroupSpecOfflineStoreConfigDataCatalogConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOfflineStoreConfigS3StorageConfig">FeatureGroupSpecOfflineStoreConfigS3StorageConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOfflineStoreConfigS3StorageConfigCodec">FeatureGroupSpecOfflineStoreConfigS3StorageConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOnlineStoreConfig">FeatureGroupSpecOnlineStoreConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOnlineStoreConfigCodec">FeatureGroupSpecOnlineStoreConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOnlineStoreConfigSecurityConfig">FeatureGroupSpecOnlineStoreConfigSecurityConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecOnlineStoreConfigSecurityConfigCodec">FeatureGroupSpecOnlineStoreConfigSecurityConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupSpecResource">FeatureGroupSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.FeatureGroupStatus">FeatureGroupStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ImageSpec">ImageSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ImageSpecResource">ImageSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ImageStatus">ImageStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ImageVersionSpec">ImageVersionSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ImageVersionSpecResource">ImageVersionSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ImageVersionStatus">ImageVersionStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelPackageGroupSpec">ModelPackageGroupSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelPackageGroupSpecResource">ModelPackageGroupSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelPackageGroupStatus">ModelPackageGroupStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpec">ModelSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecContainer">ModelSpecContainer</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecContainerImageConfig">ModelSpecContainerImageConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecContainerImageConfigCodec">ModelSpecContainerImageConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecPrimaryContainer">ModelSpecPrimaryContainer</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecPrimaryContainerCodec">ModelSpecPrimaryContainerCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecPrimaryContainerImageConfig">ModelSpecPrimaryContainerImageConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecPrimaryContainerImageConfigCodec">ModelSpecPrimaryContainerImageConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecResource">ModelSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecVpcConfig">ModelSpecVpcConfig</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelSpecVpcConfigCodec">ModelSpecVpcConfigCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.ModelStatus">ModelStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstanceLifecycleConfigurationSpec">NotebookInstanceLifecycleConfigurationSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstanceLifecycleConfigurationSpecResource">NotebookInstanceLifecycleConfigurationSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstanceLifecycleConfigurationStatus">NotebookInstanceLifecycleConfigurationStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstanceSpec">NotebookInstanceSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstanceSpecResource">NotebookInstanceSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.NotebookInstanceStatus">NotebookInstanceStatus</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpec">UserProfileSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecResource">UserProfileSpecResource</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettings">UserProfileSpecUserSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsCodec">UserProfileSpecUserSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsJupyterServerAppSettings">UserProfileSpecUserSettingsJupyterServerAppSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsJupyterServerAppSettingsCodec">UserProfileSpecUserSettingsJupyterServerAppSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsJupyterServerAppSettingsDefaultResourceSpec">UserProfileSpecUserSettingsJupyterServerAppSettingsDefaultResourceSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsJupyterServerAppSettingsDefaultResourceSpecCodec">UserProfileSpecUserSettingsJupyterServerAppSettingsDefaultResourceSpecCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsKernelGatewayAppSettings">UserProfileSpecUserSettingsKernelGatewayAppSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsKernelGatewayAppSettingsCodec">UserProfileSpecUserSettingsKernelGatewayAppSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsKernelGatewayAppSettingsCustomImage">UserProfileSpecUserSettingsKernelGatewayAppSettingsCustomImage</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsKernelGatewayAppSettingsDefaultResourceSpec">UserProfileSpecUserSettingsKernelGatewayAppSettingsDefaultResourceSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsKernelGatewayAppSettingsDefaultResourceSpecCodec">UserProfileSpecUserSettingsKernelGatewayAppSettingsDefaultResourceSpecCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsSharingSettings">UserProfileSpecUserSettingsSharingSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsSharingSettingsCodec">UserProfileSpecUserSettingsSharingSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsTensorBoardAppSettings">UserProfileSpecUserSettingsTensorBoardAppSettings</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsTensorBoardAppSettingsCodec">UserProfileSpecUserSettingsTensorBoardAppSettingsCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsTensorBoardAppSettingsDefaultResourceSpec">UserProfileSpecUserSettingsTensorBoardAppSettingsDefaultResourceSpec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileSpecUserSettingsTensorBoardAppSettingsDefaultResourceSpecCodec">UserProfileSpecUserSettingsTensorBoardAppSettingsDefaultResourceSpecCodec</a>
+</li><li>
+<a href="#sagemaker.aws.kubeform.com/v1alpha1.UserProfileStatus">UserProfileStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

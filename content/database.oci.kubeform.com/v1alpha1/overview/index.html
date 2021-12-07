@@ -1,0 +1,850 @@
+<h2 id="database.oci.kubeform.com/v1alpha1">database.oci.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabase">AutonomousContainerDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseDataguardAssociationOperation">AutonomousContainerDatabaseDataguardAssociationOperation</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabase">AutonomousDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseBackup">AutonomousDatabaseBackup</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseInstanceWalletManagement">AutonomousDatabaseInstanceWalletManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseRegionalWalletManagement">AutonomousDatabaseRegionalWalletManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseWallet">AutonomousDatabaseWallet</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructure">AutonomousExadataInfrastructure</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousVmCluster">AutonomousVmCluster</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.Backup">Backup</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupDestination">BackupDestination</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructure">CloudExadataInfrastructure</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudVmCluster">CloudVmCluster</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DataGuardAssociation">DataGuardAssociation</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.Database">Database</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSoftwareImage">DatabaseSoftwareImage</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgrade">DatabaseUpgrade</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHome">DbHome</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbNodeConsoleConnection">DbNodeConsoleConnection</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystem">DbSystem</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructure">ExadataInfrastructure</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorage">ExadataInfrastructureStorage</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataIormConfig">ExadataIormConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabase">ExternalContainerDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseManagement">ExternalContainerDatabaseManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnector">ExternalDatabaseConnector</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabase">ExternalNonContainerDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseManagement">ExternalNonContainerDatabaseManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseOperationsInsightsManagement">ExternalNonContainerDatabaseOperationsInsightsManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabase">ExternalPluggableDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseManagement">ExternalPluggableDatabaseManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseOperationsInsightsManagement">ExternalPluggableDatabaseOperationsInsightsManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.KeyStore">KeyStore</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MaintenanceRun">MaintenanceRun</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabaseGroup">ManagementManagedDatabaseGroup</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesChangeDatabaseParameter">ManagementManagedDatabasesChangeDatabaseParameter</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesResetDatabaseParameter">ManagementManagedDatabasesResetDatabaseParameter</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.Migration">Migration</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationAgent">MigrationAgent</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnection">MigrationConnection</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJob">MigrationJob</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigration">MigrationMigration</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabase">PluggableDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesLocalClone">PluggableDatabasesLocalClone</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesRemoteClone">PluggableDatabasesRemoteClone</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmCluster">VmCluster</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterNetwork">VmClusterNetwork</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabase">AutonomousContainerDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseDataguardAssociationOperation">AutonomousContainerDatabaseDataguardAssociationOperation</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabase">AutonomousDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseBackup">AutonomousDatabaseBackup</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseInstanceWalletManagement">AutonomousDatabaseInstanceWalletManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseRegionalWalletManagement">AutonomousDatabaseRegionalWalletManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseWallet">AutonomousDatabaseWallet</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructure">AutonomousExadataInfrastructure</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousVmCluster">AutonomousVmCluster</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.Backup">Backup</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupDestination">BackupDestination</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructure">CloudExadataInfrastructure</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudVmCluster">CloudVmCluster</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DataGuardAssociation">DataGuardAssociation</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.Database">Database</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSoftwareImage">DatabaseSoftwareImage</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgrade">DatabaseUpgrade</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHome">DbHome</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbNodeConsoleConnection">DbNodeConsoleConnection</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystem">DbSystem</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructure">ExadataInfrastructure</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorage">ExadataInfrastructureStorage</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataIormConfig">ExadataIormConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabase">ExternalContainerDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseManagement">ExternalContainerDatabaseManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnector">ExternalDatabaseConnector</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabase">ExternalNonContainerDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseManagement">ExternalNonContainerDatabaseManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseOperationsInsightsManagement">ExternalNonContainerDatabaseOperationsInsightsManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabase">ExternalPluggableDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseManagement">ExternalPluggableDatabaseManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseOperationsInsightsManagement">ExternalPluggableDatabaseOperationsInsightsManagement</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.KeyStore">KeyStore</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MaintenanceRun">MaintenanceRun</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabaseGroup">ManagementManagedDatabaseGroup</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesChangeDatabaseParameter">ManagementManagedDatabasesChangeDatabaseParameter</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesResetDatabaseParameter">ManagementManagedDatabasesResetDatabaseParameter</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.Migration">Migration</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationAgent">MigrationAgent</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnection">MigrationConnection</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJob">MigrationJob</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigration">MigrationMigration</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabase">PluggableDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesLocalClone">PluggableDatabasesLocalClone</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesRemoteClone">PluggableDatabasesRemoteClone</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmCluster">VmCluster</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterNetwork">VmClusterNetwork</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseDataguardAssociationOperationSpec">AutonomousContainerDatabaseDataguardAssociationOperationSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseDataguardAssociationOperationSpecResource">AutonomousContainerDatabaseDataguardAssociationOperationSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseDataguardAssociationOperationStatus">AutonomousContainerDatabaseDataguardAssociationOperationStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpec">AutonomousContainerDatabaseSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecBackupConfig">AutonomousContainerDatabaseSpecBackupConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecBackupConfigBackupDestinationDetails">AutonomousContainerDatabaseSpecBackupConfigBackupDestinationDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecBackupConfigBackupDestinationDetailsCodec">AutonomousContainerDatabaseSpecBackupConfigBackupDestinationDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecBackupConfigCodec">AutonomousContainerDatabaseSpecBackupConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecMaintenanceWindow">AutonomousContainerDatabaseSpecMaintenanceWindow</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecMaintenanceWindowCodec">AutonomousContainerDatabaseSpecMaintenanceWindowCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecMaintenanceWindowDaysOfWeek">AutonomousContainerDatabaseSpecMaintenanceWindowDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecMaintenanceWindowDetails">AutonomousContainerDatabaseSpecMaintenanceWindowDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecMaintenanceWindowDetailsCodec">AutonomousContainerDatabaseSpecMaintenanceWindowDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecMaintenanceWindowDetailsDaysOfWeek">AutonomousContainerDatabaseSpecMaintenanceWindowDetailsDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecMaintenanceWindowDetailsMonths">AutonomousContainerDatabaseSpecMaintenanceWindowDetailsMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecMaintenanceWindowMonths">AutonomousContainerDatabaseSpecMaintenanceWindowMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecPeerAutonomousContainerDatabaseBackupConfig">AutonomousContainerDatabaseSpecPeerAutonomousContainerDatabaseBackupConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecPeerAutonomousContainerDatabaseBackupConfigBackupDestinationDetails">AutonomousContainerDatabaseSpecPeerAutonomousContainerDatabaseBackupConfigBackupDestinationDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecPeerAutonomousContainerDatabaseBackupConfigCodec">AutonomousContainerDatabaseSpecPeerAutonomousContainerDatabaseBackupConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseSpecResource">AutonomousContainerDatabaseSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousContainerDatabaseStatus">AutonomousContainerDatabaseStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseBackupSpec">AutonomousDatabaseBackupSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseBackupSpecResource">AutonomousDatabaseBackupSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseBackupStatus">AutonomousDatabaseBackupStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseInstanceWalletManagementSpec">AutonomousDatabaseInstanceWalletManagementSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseInstanceWalletManagementSpecResource">AutonomousDatabaseInstanceWalletManagementSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseInstanceWalletManagementStatus">AutonomousDatabaseInstanceWalletManagementStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseRegionalWalletManagementSpec">AutonomousDatabaseRegionalWalletManagementSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseRegionalWalletManagementSpecResource">AutonomousDatabaseRegionalWalletManagementSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseRegionalWalletManagementStatus">AutonomousDatabaseRegionalWalletManagementStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpec">AutonomousDatabaseSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecApexDetails">AutonomousDatabaseSpecApexDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecApexDetailsCodec">AutonomousDatabaseSpecApexDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecBackupConfig">AutonomousDatabaseSpecBackupConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecBackupConfigCodec">AutonomousDatabaseSpecBackupConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecConnectionStrings">AutonomousDatabaseSpecConnectionStrings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecConnectionStringsCodec">AutonomousDatabaseSpecConnectionStringsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecConnectionUrls">AutonomousDatabaseSpecConnectionUrls</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecConnectionUrlsCodec">AutonomousDatabaseSpecConnectionUrlsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecCustomerContacts">AutonomousDatabaseSpecCustomerContacts</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecKeyHistoryEntry">AutonomousDatabaseSpecKeyHistoryEntry</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecResource">AutonomousDatabaseSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecStandbyDb">AutonomousDatabaseSpecStandbyDb</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseSpecStandbyDbCodec">AutonomousDatabaseSpecStandbyDbCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseStatus">AutonomousDatabaseStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseWalletSpec">AutonomousDatabaseWalletSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseWalletSpecResource">AutonomousDatabaseWalletSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousDatabaseWalletStatus">AutonomousDatabaseWalletStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpec">AutonomousExadataInfrastructureSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecMaintenanceWindow">AutonomousExadataInfrastructureSpecMaintenanceWindow</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecMaintenanceWindowCodec">AutonomousExadataInfrastructureSpecMaintenanceWindowCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecMaintenanceWindowDaysOfWeek">AutonomousExadataInfrastructureSpecMaintenanceWindowDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecMaintenanceWindowDetails">AutonomousExadataInfrastructureSpecMaintenanceWindowDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecMaintenanceWindowDetailsCodec">AutonomousExadataInfrastructureSpecMaintenanceWindowDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecMaintenanceWindowDetailsDaysOfWeek">AutonomousExadataInfrastructureSpecMaintenanceWindowDetailsDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecMaintenanceWindowDetailsMonths">AutonomousExadataInfrastructureSpecMaintenanceWindowDetailsMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecMaintenanceWindowMonths">AutonomousExadataInfrastructureSpecMaintenanceWindowMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureSpecResource">AutonomousExadataInfrastructureSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousExadataInfrastructureStatus">AutonomousExadataInfrastructureStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousVmClusterSpec">AutonomousVmClusterSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousVmClusterSpecResource">AutonomousVmClusterSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.AutonomousVmClusterStatus">AutonomousVmClusterStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupDestinationSpec">BackupDestinationSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupDestinationSpecAssociatedDatabases">BackupDestinationSpecAssociatedDatabases</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupDestinationSpecMountTypeDetails">BackupDestinationSpecMountTypeDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupDestinationSpecMountTypeDetailsCodec">BackupDestinationSpecMountTypeDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupDestinationSpecResource">BackupDestinationSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupDestinationStatus">BackupDestinationStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupSpec">BackupSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupSpecResource">BackupSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.BackupStatus">BackupStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructureSpec">CloudExadataInfrastructureSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructureSpecCustomerContacts">CloudExadataInfrastructureSpecCustomerContacts</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructureSpecMaintenanceWindow">CloudExadataInfrastructureSpecMaintenanceWindow</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructureSpecMaintenanceWindowCodec">CloudExadataInfrastructureSpecMaintenanceWindowCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructureSpecMaintenanceWindowDaysOfWeek">CloudExadataInfrastructureSpecMaintenanceWindowDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructureSpecMaintenanceWindowMonths">CloudExadataInfrastructureSpecMaintenanceWindowMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructureSpecResource">CloudExadataInfrastructureSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudExadataInfrastructureStatus">CloudExadataInfrastructureStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudVmClusterSpec">CloudVmClusterSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudVmClusterSpecIormConfigCache">CloudVmClusterSpecIormConfigCache</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudVmClusterSpecIormConfigCacheCodec">CloudVmClusterSpecIormConfigCacheCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudVmClusterSpecIormConfigCacheDbPlans">CloudVmClusterSpecIormConfigCacheDbPlans</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudVmClusterSpecResource">CloudVmClusterSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.CloudVmClusterStatus">CloudVmClusterStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DataGuardAssociationSpec">DataGuardAssociationSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DataGuardAssociationSpecResource">DataGuardAssociationSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DataGuardAssociationStatus">DataGuardAssociationStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSoftwareImageSpec">DatabaseSoftwareImageSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSoftwareImageSpecResource">DatabaseSoftwareImageSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSoftwareImageStatus">DatabaseSoftwareImageStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpec">DatabaseSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecConnectionStrings">DatabaseSpecConnectionStrings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecConnectionStringsCodec">DatabaseSpecConnectionStringsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecDatabase">DatabaseSpecDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecDatabaseCodec">DatabaseSpecDatabaseCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecDatabaseDbBackupConfig">DatabaseSpecDatabaseDbBackupConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecDatabaseDbBackupConfigBackupDestinationDetails">DatabaseSpecDatabaseDbBackupConfigBackupDestinationDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecDatabaseDbBackupConfigCodec">DatabaseSpecDatabaseDbBackupConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecDbBackupConfig">DatabaseSpecDbBackupConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecDbBackupConfigBackupDestinationDetails">DatabaseSpecDbBackupConfigBackupDestinationDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecDbBackupConfigCodec">DatabaseSpecDbBackupConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseSpecResource">DatabaseSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseStatus">DatabaseStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpec">DatabaseUpgradeSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpecConnectionStrings">DatabaseUpgradeSpecConnectionStrings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpecConnectionStringsCodec">DatabaseUpgradeSpecConnectionStringsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpecDatabaseUpgradeSourceDetails">DatabaseUpgradeSpecDatabaseUpgradeSourceDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpecDatabaseUpgradeSourceDetailsCodec">DatabaseUpgradeSpecDatabaseUpgradeSourceDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpecDbBackupConfig">DatabaseUpgradeSpecDbBackupConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpecDbBackupConfigBackupDestinationDetails">DatabaseUpgradeSpecDbBackupConfigBackupDestinationDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpecDbBackupConfigCodec">DatabaseUpgradeSpecDbBackupConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeSpecResource">DatabaseUpgradeSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DatabaseUpgradeStatus">DatabaseUpgradeStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeSpec">DbHomeSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeSpecDatabase">DbHomeSpecDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeSpecDatabaseCodec">DbHomeSpecDatabaseCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeSpecDatabaseConnectionStrings">DbHomeSpecDatabaseConnectionStrings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeSpecDatabaseDbBackupConfig">DbHomeSpecDatabaseDbBackupConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeSpecDatabaseDbBackupConfigBackupDestinationDetails">DbHomeSpecDatabaseDbBackupConfigBackupDestinationDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeSpecDatabaseDbBackupConfigCodec">DbHomeSpecDatabaseDbBackupConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeSpecResource">DbHomeSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbHomeStatus">DbHomeStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbNodeConsoleConnectionSpec">DbNodeConsoleConnectionSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbNodeConsoleConnectionSpecResource">DbNodeConsoleConnectionSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbNodeConsoleConnectionStatus">DbNodeConsoleConnectionStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpec">DbSystemSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbHome">DbSystemSpecDbHome</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbHomeCodec">DbSystemSpecDbHomeCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbHomeDatabase">DbSystemSpecDbHomeDatabase</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbHomeDatabaseCodec">DbSystemSpecDbHomeDatabaseCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbHomeDatabaseConnectionStrings">DbSystemSpecDbHomeDatabaseConnectionStrings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbHomeDatabaseDbBackupConfig">DbSystemSpecDbHomeDatabaseDbBackupConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbHomeDatabaseDbBackupConfigBackupDestinationDetails">DbSystemSpecDbHomeDatabaseDbBackupConfigBackupDestinationDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbHomeDatabaseDbBackupConfigCodec">DbSystemSpecDbHomeDatabaseDbBackupConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbSystemOptions">DbSystemSpecDbSystemOptions</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecDbSystemOptionsCodec">DbSystemSpecDbSystemOptionsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecIormConfigCache">DbSystemSpecIormConfigCache</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecIormConfigCacheCodec">DbSystemSpecIormConfigCacheCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecIormConfigCacheDbPlans">DbSystemSpecIormConfigCacheDbPlans</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecMaintenanceWindow">DbSystemSpecMaintenanceWindow</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecMaintenanceWindowCodec">DbSystemSpecMaintenanceWindowCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecMaintenanceWindowDaysOfWeek">DbSystemSpecMaintenanceWindowDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecMaintenanceWindowDetails">DbSystemSpecMaintenanceWindowDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecMaintenanceWindowDetailsCodec">DbSystemSpecMaintenanceWindowDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecMaintenanceWindowDetailsDaysOfWeek">DbSystemSpecMaintenanceWindowDetailsDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecMaintenanceWindowDetailsMonths">DbSystemSpecMaintenanceWindowDetailsMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecMaintenanceWindowMonths">DbSystemSpecMaintenanceWindowMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemSpecResource">DbSystemSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.DbSystemStatus">DbSystemStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureSpec">ExadataInfrastructureSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureSpecContacts">ExadataInfrastructureSpecContacts</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureSpecMaintenanceWindow">ExadataInfrastructureSpecMaintenanceWindow</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureSpecMaintenanceWindowCodec">ExadataInfrastructureSpecMaintenanceWindowCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureSpecMaintenanceWindowDaysOfWeek">ExadataInfrastructureSpecMaintenanceWindowDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureSpecMaintenanceWindowMonths">ExadataInfrastructureSpecMaintenanceWindowMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureSpecResource">ExadataInfrastructureSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStatus">ExadataInfrastructureStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorageSpec">ExadataInfrastructureStorageSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorageSpecContacts">ExadataInfrastructureStorageSpecContacts</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorageSpecMaintenanceWindow">ExadataInfrastructureStorageSpecMaintenanceWindow</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorageSpecMaintenanceWindowCodec">ExadataInfrastructureStorageSpecMaintenanceWindowCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorageSpecMaintenanceWindowDaysOfWeek">ExadataInfrastructureStorageSpecMaintenanceWindowDaysOfWeek</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorageSpecMaintenanceWindowMonths">ExadataInfrastructureStorageSpecMaintenanceWindowMonths</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorageSpecResource">ExadataInfrastructureStorageSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataInfrastructureStorageStatus">ExadataInfrastructureStorageStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataIormConfigSpec">ExadataIormConfigSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataIormConfigSpecDbPlans">ExadataIormConfigSpecDbPlans</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataIormConfigSpecResource">ExadataIormConfigSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExadataIormConfigStatus">ExadataIormConfigStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseManagementSpec">ExternalContainerDatabaseManagementSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseManagementSpecResource">ExternalContainerDatabaseManagementSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseManagementStatus">ExternalContainerDatabaseManagementStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseSpec">ExternalContainerDatabaseSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseSpecDatabaseManagementConfig">ExternalContainerDatabaseSpecDatabaseManagementConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseSpecDatabaseManagementConfigCodec">ExternalContainerDatabaseSpecDatabaseManagementConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseSpecResource">ExternalContainerDatabaseSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalContainerDatabaseStatus">ExternalContainerDatabaseStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnectorSpec">ExternalDatabaseConnectorSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnectorSpecConnectionCredentials">ExternalDatabaseConnectorSpecConnectionCredentials</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnectorSpecConnectionCredentialsCodec">ExternalDatabaseConnectorSpecConnectionCredentialsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnectorSpecConnectionString">ExternalDatabaseConnectorSpecConnectionString</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnectorSpecConnectionStringCodec">ExternalDatabaseConnectorSpecConnectionStringCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnectorSpecResource">ExternalDatabaseConnectorSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalDatabaseConnectorStatus">ExternalDatabaseConnectorStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseManagementSpec">ExternalNonContainerDatabaseManagementSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseManagementSpecResource">ExternalNonContainerDatabaseManagementSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseManagementStatus">ExternalNonContainerDatabaseManagementStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseOperationsInsightsManagementSpec">ExternalNonContainerDatabaseOperationsInsightsManagementSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseOperationsInsightsManagementSpecResource">ExternalNonContainerDatabaseOperationsInsightsManagementSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseOperationsInsightsManagementStatus">ExternalNonContainerDatabaseOperationsInsightsManagementStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseSpec">ExternalNonContainerDatabaseSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseSpecDatabaseManagementConfig">ExternalNonContainerDatabaseSpecDatabaseManagementConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseSpecDatabaseManagementConfigCodec">ExternalNonContainerDatabaseSpecDatabaseManagementConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseSpecOperationsInsightsConfig">ExternalNonContainerDatabaseSpecOperationsInsightsConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseSpecOperationsInsightsConfigCodec">ExternalNonContainerDatabaseSpecOperationsInsightsConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseSpecResource">ExternalNonContainerDatabaseSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalNonContainerDatabaseStatus">ExternalNonContainerDatabaseStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseManagementSpec">ExternalPluggableDatabaseManagementSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseManagementSpecResource">ExternalPluggableDatabaseManagementSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseManagementStatus">ExternalPluggableDatabaseManagementStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseOperationsInsightsManagementSpec">ExternalPluggableDatabaseOperationsInsightsManagementSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseOperationsInsightsManagementSpecResource">ExternalPluggableDatabaseOperationsInsightsManagementSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseOperationsInsightsManagementStatus">ExternalPluggableDatabaseOperationsInsightsManagementStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseSpec">ExternalPluggableDatabaseSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseSpecDatabaseManagementConfig">ExternalPluggableDatabaseSpecDatabaseManagementConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseSpecDatabaseManagementConfigCodec">ExternalPluggableDatabaseSpecDatabaseManagementConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseSpecOperationsInsightsConfig">ExternalPluggableDatabaseSpecOperationsInsightsConfig</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseSpecOperationsInsightsConfigCodec">ExternalPluggableDatabaseSpecOperationsInsightsConfigCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseSpecResource">ExternalPluggableDatabaseSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ExternalPluggableDatabaseStatus">ExternalPluggableDatabaseStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.KeyStoreSpec">KeyStoreSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.KeyStoreSpecAssociatedDatabases">KeyStoreSpecAssociatedDatabases</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.KeyStoreSpecResource">KeyStoreSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.KeyStoreSpecTypeDetails">KeyStoreSpecTypeDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.KeyStoreSpecTypeDetailsCodec">KeyStoreSpecTypeDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.KeyStoreStatus">KeyStoreStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MaintenanceRunSpec">MaintenanceRunSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MaintenanceRunSpecResource">MaintenanceRunSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MaintenanceRunStatus">MaintenanceRunStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabaseGroupSpec">ManagementManagedDatabaseGroupSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabaseGroupSpecManagedDatabases">ManagementManagedDatabaseGroupSpecManagedDatabases</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabaseGroupSpecResource">ManagementManagedDatabaseGroupSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabaseGroupStatus">ManagementManagedDatabaseGroupStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesChangeDatabaseParameterSpec">ManagementManagedDatabasesChangeDatabaseParameterSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesChangeDatabaseParameterSpecCredentials">ManagementManagedDatabasesChangeDatabaseParameterSpecCredentials</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesChangeDatabaseParameterSpecCredentialsCodec">ManagementManagedDatabasesChangeDatabaseParameterSpecCredentialsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesChangeDatabaseParameterSpecParameters">ManagementManagedDatabasesChangeDatabaseParameterSpecParameters</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesChangeDatabaseParameterSpecResource">ManagementManagedDatabasesChangeDatabaseParameterSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesChangeDatabaseParameterStatus">ManagementManagedDatabasesChangeDatabaseParameterStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesResetDatabaseParameterSpec">ManagementManagedDatabasesResetDatabaseParameterSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesResetDatabaseParameterSpecCredentials">ManagementManagedDatabasesResetDatabaseParameterSpecCredentials</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesResetDatabaseParameterSpecCredentialsCodec">ManagementManagedDatabasesResetDatabaseParameterSpecCredentialsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesResetDatabaseParameterSpecResource">ManagementManagedDatabasesResetDatabaseParameterSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.ManagementManagedDatabasesResetDatabaseParameterStatus">ManagementManagedDatabasesResetDatabaseParameterStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationAgentSpec">MigrationAgentSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationAgentSpecResource">MigrationAgentSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationAgentStatus">MigrationAgentStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpec">MigrationConnectionSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecAdminCredentials">MigrationConnectionSpecAdminCredentials</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecAdminCredentialsCodec">MigrationConnectionSpecAdminCredentialsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecConnectDescriptor">MigrationConnectionSpecConnectDescriptor</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecConnectDescriptorCodec">MigrationConnectionSpecConnectDescriptorCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecPrivateEndpoint">MigrationConnectionSpecPrivateEndpoint</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecPrivateEndpointCodec">MigrationConnectionSpecPrivateEndpointCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecResource">MigrationConnectionSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecSshDetails">MigrationConnectionSpecSshDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecSshDetailsCodec">MigrationConnectionSpecSshDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecVaultDetails">MigrationConnectionSpecVaultDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionSpecVaultDetailsCodec">MigrationConnectionSpecVaultDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationConnectionStatus">MigrationConnectionStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJobSpec">MigrationJobSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJobSpecProgress">MigrationJobSpecProgress</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJobSpecProgressCodec">MigrationJobSpecProgressCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJobSpecProgressPhases">MigrationJobSpecProgressPhases</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJobSpecResource">MigrationJobSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJobSpecUnsupportedObjects">MigrationJobSpecUnsupportedObjects</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationJobStatus">MigrationJobStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpec">MigrationMigrationSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDataTransferMediumDetails">MigrationMigrationSpecDataTransferMediumDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDataTransferMediumDetailsCodec">MigrationMigrationSpecDataTransferMediumDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDataTransferMediumDetailsDatabaseLinkDetails">MigrationMigrationSpecDataTransferMediumDetailsDatabaseLinkDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDataTransferMediumDetailsDatabaseLinkDetailsCodec">MigrationMigrationSpecDataTransferMediumDetailsDatabaseLinkDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDataTransferMediumDetailsObjectStorageDetails">MigrationMigrationSpecDataTransferMediumDetailsObjectStorageDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDataTransferMediumDetailsObjectStorageDetailsCodec">MigrationMigrationSpecDataTransferMediumDetailsObjectStorageDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettings">MigrationMigrationSpecDatapumpSettings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettingsCodec">MigrationMigrationSpecDatapumpSettingsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettingsDataPumpParameters">MigrationMigrationSpecDatapumpSettingsDataPumpParameters</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettingsDataPumpParametersCodec">MigrationMigrationSpecDatapumpSettingsDataPumpParametersCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettingsExportDirectoryObject">MigrationMigrationSpecDatapumpSettingsExportDirectoryObject</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettingsExportDirectoryObjectCodec">MigrationMigrationSpecDatapumpSettingsExportDirectoryObjectCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettingsImportDirectoryObject">MigrationMigrationSpecDatapumpSettingsImportDirectoryObject</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettingsImportDirectoryObjectCodec">MigrationMigrationSpecDatapumpSettingsImportDirectoryObjectCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecDatapumpSettingsMetadataRemaps">MigrationMigrationSpecDatapumpSettingsMetadataRemaps</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecExcludeObjects">MigrationMigrationSpecExcludeObjects</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetails">MigrationMigrationSpecGoldenGateDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsCodec">MigrationMigrationSpecGoldenGateDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHub">MigrationMigrationSpecGoldenGateDetailsHub</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubCodec">MigrationMigrationSpecGoldenGateDetailsHubCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubRestAdminCredentials">MigrationMigrationSpecGoldenGateDetailsHubRestAdminCredentials</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubRestAdminCredentialsCodec">MigrationMigrationSpecGoldenGateDetailsHubRestAdminCredentialsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubSourceContainerDbAdminCredentials">MigrationMigrationSpecGoldenGateDetailsHubSourceContainerDbAdminCredentials</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubSourceContainerDbAdminCredentialsCodec">MigrationMigrationSpecGoldenGateDetailsHubSourceContainerDbAdminCredentialsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubSourceDbAdminCredentials">MigrationMigrationSpecGoldenGateDetailsHubSourceDbAdminCredentials</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubSourceDbAdminCredentialsCodec">MigrationMigrationSpecGoldenGateDetailsHubSourceDbAdminCredentialsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubTargetDbAdminCredentials">MigrationMigrationSpecGoldenGateDetailsHubTargetDbAdminCredentials</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsHubTargetDbAdminCredentialsCodec">MigrationMigrationSpecGoldenGateDetailsHubTargetDbAdminCredentialsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsSettings">MigrationMigrationSpecGoldenGateDetailsSettings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsSettingsCodec">MigrationMigrationSpecGoldenGateDetailsSettingsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsSettingsExtract">MigrationMigrationSpecGoldenGateDetailsSettingsExtract</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsSettingsExtractCodec">MigrationMigrationSpecGoldenGateDetailsSettingsExtractCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsSettingsReplicat">MigrationMigrationSpecGoldenGateDetailsSettingsReplicat</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecGoldenGateDetailsSettingsReplicatCodec">MigrationMigrationSpecGoldenGateDetailsSettingsReplicatCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecResource">MigrationMigrationSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecVaultDetails">MigrationMigrationSpecVaultDetails</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationSpecVaultDetailsCodec">MigrationMigrationSpecVaultDetailsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationMigrationStatus">MigrationMigrationStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationSpec">MigrationSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationSpecAdditionalMigrations">MigrationSpecAdditionalMigrations</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationSpecResource">MigrationSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.MigrationStatus">MigrationStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabaseSpec">PluggableDatabaseSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabaseSpecConnectionStrings">PluggableDatabaseSpecConnectionStrings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabaseSpecConnectionStringsCodec">PluggableDatabaseSpecConnectionStringsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabaseSpecResource">PluggableDatabaseSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabaseStatus">PluggableDatabaseStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesLocalCloneSpec">PluggableDatabasesLocalCloneSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesLocalCloneSpecConnectionStrings">PluggableDatabasesLocalCloneSpecConnectionStrings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesLocalCloneSpecConnectionStringsCodec">PluggableDatabasesLocalCloneSpecConnectionStringsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesLocalCloneSpecResource">PluggableDatabasesLocalCloneSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesLocalCloneStatus">PluggableDatabasesLocalCloneStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesRemoteCloneSpec">PluggableDatabasesRemoteCloneSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesRemoteCloneSpecConnectionStrings">PluggableDatabasesRemoteCloneSpecConnectionStrings</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesRemoteCloneSpecConnectionStringsCodec">PluggableDatabasesRemoteCloneSpecConnectionStringsCodec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesRemoteCloneSpecResource">PluggableDatabasesRemoteCloneSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.PluggableDatabasesRemoteCloneStatus">PluggableDatabasesRemoteCloneStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterNetworkSpec">VmClusterNetworkSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterNetworkSpecResource">VmClusterNetworkSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterNetworkSpecScans">VmClusterNetworkSpecScans</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterNetworkSpecVmNetworks">VmClusterNetworkSpecVmNetworks</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterNetworkSpecVmNetworksNodes">VmClusterNetworkSpecVmNetworksNodes</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterNetworkStatus">VmClusterNetworkStatus</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterSpec">VmClusterSpec</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterSpecResource">VmClusterSpecResource</a>
+</li><li>
+<a href="#database.oci.kubeform.com/v1alpha1.VmClusterStatus">VmClusterStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>96b0f4e</code>.
+</em></p>

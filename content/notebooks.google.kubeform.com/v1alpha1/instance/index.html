@@ -1,0 +1,944 @@
+<h3 id="notebooks.google.kubeform.com/v1alpha1.Instance">Instance
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+notebooks.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Instance</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpec">
+InstanceSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">
+InstanceSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">
+InstanceSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceStatus">
+InstanceStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notebooks.google.kubeform.com/v1alpha1.InstanceSpec">InstanceSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#notebooks.google.kubeform.com/v1alpha1.Instance">Instance</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">
+InstanceSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">
+InstanceSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notebooks.google.kubeform.com/v1alpha1.InstanceSpecAcceleratorConfig">InstanceSpecAcceleratorConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">InstanceSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>coreCount</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Count of cores of this accelerator.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Type of this accelerator. Possible values: [&quot;ACCELERATOR_TYPE_UNSPECIFIED&quot;, &quot;NVIDIA_TESLA_K80&quot;, &quot;NVIDIA_TESLA_P100&quot;, &quot;NVIDIA_TESLA_V100&quot;, &quot;NVIDIA_TESLA_P4&quot;, &quot;NVIDIA_TESLA_T4&quot;, &quot;NVIDIA_TESLA_T4_VWS&quot;, &quot;NVIDIA_TESLA_P100_VWS&quot;, &quot;NVIDIA_TESLA_P4_VWS&quot;, &quot;NVIDIA_TESLA_A100&quot;, &quot;TPU_V2&quot;, &quot;TPU_V3&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notebooks.google.kubeform.com/v1alpha1.InstanceSpecContainerImage">InstanceSpecContainerImage
+</h3>
+<p>
+(<em>Appears on:</em><a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">InstanceSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>repository</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The path to the container image repository.
+For example: gcr.io/{project_id}/{imageName}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tag</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The tag of the container image. If not specified, this defaults to the latest tag.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">InstanceSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpec">InstanceSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>acceleratorConfig</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecAcceleratorConfig">
+InstanceSpecAcceleratorConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The hardware accelerator used on this instance. If you use accelerators,
+make sure that your configuration has enough vCPUs and memory to support the
+machineType you have selected.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>bootDiskSizeGb</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The size of the boot disk in GB attached to this instance,
+up to a maximum of 64000 GB (64 TB). The minimum recommended value is 100 GB.
+If not specified, this defaults to 100.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>bootDiskType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Possible disk types for notebook instances. Possible values: [&quot;DISK_TYPE_UNSPECIFIED&quot;, &quot;PD_STANDARD&quot;, &quot;PD_SSD&quot;, &quot;PD_BALANCED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>containerImage</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecContainerImage">
+InstanceSpecContainerImage
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use a container image to start the notebook instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>createTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Instance creation time</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>customGpuDriverPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specify a custom Cloud Storage path where the GPU driver is stored.
+If not specified, we'll automatically choose from official GPU drivers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataDiskSizeGb</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The size of the data disk in GB attached to this instance,
+up to a maximum of 64000 GB (64 TB).
+You can choose the size of the data disk based on how big your notebooks and data are.
+If not specified, this defaults to 100.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dataDiskType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Possible disk types for notebook instances. Possible values: [&quot;DISK_TYPE_UNSPECIFIED&quot;, &quot;PD_STANDARD&quot;, &quot;PD_SSD&quot;, &quot;PD_BALANCED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>diskEncryption</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Disk encryption method used on the boot and data disks, defaults to GMEK. Possible values: [&quot;DISK_ENCRYPTION_UNSPECIFIED&quot;, &quot;GMEK&quot;, &quot;CMEK&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>installGpuDriver</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether the end user authorizes Google Cloud to install GPU driver
+on this instance. If this field is empty or set to false, the GPU driver
+won't be installed. Only applicable to instances with GPUs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>instanceOwners</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The list of owners of this instance after creation.
+Format: alias@example.com.
+Currently supports one owner only.
+If not specified, all of the service account users of
+your VM instance's service account can use the instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>kmsKey</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The KMS key used to encrypt the disks, only applicable if diskEncryption is CMEK.
+Format: projects/{project_id}/locations/{location}/keyRings/{key_ring_id}/cryptoKeys/{key_id}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>labels</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Labels to apply to this instance. These can be later modified by the setLabels method.
+An object containing a list of &quot;key&quot;: value pairs. Example: { &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>location</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A reference to the zone where the machine resides.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>machineType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A reference to a machine type which defines VM kind.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Custom metadata to apply to this instance.
+An object containing a list of &quot;key&quot;: value pairs. Example: { &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name specified for the Notebook instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>network</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The name of the VPC that this instance is in.
+Format: projects/{project_id}/global/networks/{network_id}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>noProxyAccess</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The notebook instance will not register with the proxy..</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>noPublicIP</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>No public IP will be assigned to this instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>noRemoveDataDisk</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If true, the data disk will not be auto deleted when deleting the instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>postStartupScript</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Path to a Bash script that automatically runs after a
+notebook instance fully boots up. The path must be a URL
+or Cloud Storage path (gs://path-to-file/file-name).</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>proxyURI</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The proxy endpoint that is used to access the Jupyter notebook.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serviceAccount</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The service account on this instance, giving access to other
+Google Cloud services. You can use any service account within
+the same project, but you must have the service account user
+permission to use the instance. If not specified,
+the Compute Engine default service account is used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serviceAccountScopes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Optional. The URIs of service account scopes to be included in Compute Engine instances.
+If not specified, the following scopes are defined:</p>
+<ul>
+<li>https://www.googleapis.com/auth/cloud-platform</li>
+<li>https://www.googleapis.com/auth/userinfo.email</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<code>shieldedInstanceConfig</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecShieldedInstanceConfig">
+InstanceSpecShieldedInstanceConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A set of Shielded Instance options. Check [Images using supported Shielded VM features]
+Not all combinations are valid</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The state of this instance.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>subnet</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The name of the subnet that this instance is in.
+Format: projects/{project_id}/regions/{region}/subnetworks/{subnetwork_id}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tags</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The Compute Engine tags to add to runtime.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>updateTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Instance update time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>vmImage</code><br/>
+<em>
+<a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecVmImage">
+InstanceSpecVmImage
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use a Compute Engine VM image to start the notebook instance.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notebooks.google.kubeform.com/v1alpha1.InstanceSpecShieldedInstanceConfig">InstanceSpecShieldedInstanceConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">InstanceSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>enableIntegrityMonitoring</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines whether the instance has integrity monitoring enabled. Enables monitoring and attestation of the
+boot integrity of the instance. The attestation is performed against the integrity policy baseline.
+This baseline is initially derived from the implicitly trusted boot image when the instance is created.
+Enabled by default.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>enableSecureBoot</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines whether the instance has Secure Boot enabled. Secure Boot helps ensure that the system only runs
+authentic software by verifying the digital signature of all boot components, and halting the boot process
+if signature verification fails.
+Disabled by default.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>enableVtpm</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines whether the instance has the vTPM enabled.
+Enabled by default.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notebooks.google.kubeform.com/v1alpha1.InstanceSpecVmImage">InstanceSpecVmImage
+</h3>
+<p>
+(<em>Appears on:</em><a href="#notebooks.google.kubeform.com/v1alpha1.InstanceSpecResource">InstanceSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>imageFamily</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use this VM image family to find the image; the newest image in this family will be used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>imageName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Use VM image name to find the image.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name of the Google Cloud project that this VM image belongs to.
+Format: projects/{project_id}</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="notebooks.google.kubeform.com/v1alpha1.InstanceStatus">InstanceStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#notebooks.google.kubeform.com/v1alpha1.Instance">Instance</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

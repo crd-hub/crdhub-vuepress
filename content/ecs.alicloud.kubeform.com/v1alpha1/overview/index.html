@@ -1,0 +1,156 @@
+<h2 id="ecs.alicloud.kubeform.com/v1alpha1">ecs.alicloud.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicy">AutoSnapshotPolicy</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicyAttachment">AutoSnapshotPolicyAttachment</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.Command">Command</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DedicatedHost">DedicatedHost</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.Disk">Disk</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DiskAttachment">DiskAttachment</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.HpcCluster">HpcCluster</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPair">KeyPair</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPairAttachment">KeyPairAttachment</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplate">LaunchTemplate</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterface">NetworkInterface</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.Snapshot">Snapshot</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicy">AutoSnapshotPolicy</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicyAttachment">AutoSnapshotPolicyAttachment</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.Command">Command</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DedicatedHost">DedicatedHost</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.Disk">Disk</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DiskAttachment">DiskAttachment</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.HpcCluster">HpcCluster</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPair">KeyPair</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPairAttachment">KeyPairAttachment</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplate">LaunchTemplate</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterface">NetworkInterface</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterfaceAttachment">NetworkInterfaceAttachment</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.Snapshot">Snapshot</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicyAttachmentSpec">AutoSnapshotPolicyAttachmentSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicyAttachmentSpecResource">AutoSnapshotPolicyAttachmentSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicyAttachmentStatus">AutoSnapshotPolicyAttachmentStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicySpec">AutoSnapshotPolicySpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicySpecResource">AutoSnapshotPolicySpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.AutoSnapshotPolicyStatus">AutoSnapshotPolicyStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.CommandSpec">CommandSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.CommandSpecResource">CommandSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.CommandStatus">CommandStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DedicatedHostSpec">DedicatedHostSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DedicatedHostSpecNetworkAttributes">DedicatedHostSpecNetworkAttributes</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DedicatedHostSpecNetworkAttributesCodec">DedicatedHostSpecNetworkAttributesCodec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DedicatedHostSpecResource">DedicatedHostSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DedicatedHostStatus">DedicatedHostStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DiskAttachmentSpec">DiskAttachmentSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DiskAttachmentSpecResource">DiskAttachmentSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DiskAttachmentStatus">DiskAttachmentStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DiskSpec">DiskSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DiskSpecResource">DiskSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.DiskStatus">DiskStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.HpcClusterSpec">HpcClusterSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.HpcClusterSpecResource">HpcClusterSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.HpcClusterStatus">HpcClusterStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPairAttachmentSpec">KeyPairAttachmentSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPairAttachmentSpecResource">KeyPairAttachmentSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPairAttachmentStatus">KeyPairAttachmentStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPairSpec">KeyPairSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPairSpecResource">KeyPairSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.KeyPairStatus">KeyPairStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplateSpec">LaunchTemplateSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplateSpecDataDisks">LaunchTemplateSpecDataDisks</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplateSpecNetworkInterfaces">LaunchTemplateSpecNetworkInterfaces</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplateSpecNetworkInterfacesCodec">LaunchTemplateSpecNetworkInterfacesCodec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplateSpecResource">LaunchTemplateSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplateSpecSystemDisk">LaunchTemplateSpecSystemDisk</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplateSpecSystemDiskCodec">LaunchTemplateSpecSystemDiskCodec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.LaunchTemplateStatus">LaunchTemplateStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterfaceAttachmentSpec">NetworkInterfaceAttachmentSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterfaceAttachmentSpecResource">NetworkInterfaceAttachmentSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterfaceAttachmentStatus">NetworkInterfaceAttachmentStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterfaceSpec">NetworkInterfaceSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterfaceSpecResource">NetworkInterfaceSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.NetworkInterfaceStatus">NetworkInterfaceStatus</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.SnapshotSpec">SnapshotSpec</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.SnapshotSpecResource">SnapshotSpecResource</a>
+</li><li>
+<a href="#ecs.alicloud.kubeform.com/v1alpha1.SnapshotStatus">SnapshotStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>2413792</code>.
+</em></p>

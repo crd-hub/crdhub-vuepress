@@ -1,0 +1,477 @@
+<h3 id="kms.google.kubeform.com/v1alpha1.CryptoKey">CryptoKey
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+kms.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>CryptoKey</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.CryptoKeySpec">
+CryptoKeySpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.CryptoKeySpecResource">
+CryptoKeySpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.CryptoKeySpecResource">
+CryptoKeySpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.CryptoKeyStatus">
+CryptoKeyStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.CryptoKeySpec">CryptoKeySpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.CryptoKey">CryptoKey</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.CryptoKeySpecResource">
+CryptoKeySpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.CryptoKeySpecResource">
+CryptoKeySpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.CryptoKeySpecResource">CryptoKeySpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.CryptoKeySpec">CryptoKeySpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>keyRing</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The KeyRing that this key belongs to.
+Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>labels</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Labels with user-defined metadata to apply to this resource.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The resource name for the CryptoKey.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>purpose</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The immutable purpose of this CryptoKey. See the
+<a href="https://cloud.google.com/kms/docs/reference/rest/v1/projects.locations.keyRings.cryptoKeys#CryptoKeyPurpose">purpose reference</a>
+for possible inputs. Default value: &quot;ENCRYPT_DECRYPT&quot; Possible values: [&quot;ENCRYPT_DECRYPT&quot;, &quot;ASYMMETRIC_SIGN&quot;, &quot;ASYMMETRIC_DECRYPT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>rotationPeriod</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Every time this period passes, generate a new CryptoKeyVersion and set it as the primary.
+The first rotation will take place after the specified period. The rotation period has
+the format of a decimal number with up to 9 fractional digits, followed by the
+letter 's' (seconds). It must be greater than a day (ie, 86400).</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>selfLink</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The self link of the created KeyRing in the format projects/{project}/locations/{location}/keyRings/{name}.
+Deprecated</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>skipInitialVersionCreation</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If set to true, the request will create a CryptoKey without any CryptoKeyVersions.
+You must use the 'google_kms_key_ring_import_job' resource to import the CryptoKeyVersion.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>versionTemplate</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.CryptoKeySpecVersionTemplate">
+CryptoKeySpecVersionTemplate
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A template describing settings for new crypto key versions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.CryptoKeySpecVersionTemplate">CryptoKeySpecVersionTemplate
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.CryptoKeySpecResource">CryptoKeySpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>algorithm</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The algorithm to use when creating a version based on this template.
+See the <a href="https://cloud.google.com/kms/docs/reference/rest/v1/CryptoKeyVersionAlgorithm">algorithm reference</a> for possible inputs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>protectionLevel</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The protection level to use when creating a version based on this template. Default value: &quot;SOFTWARE&quot; Possible values: [&quot;SOFTWARE&quot;, &quot;HSM&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.CryptoKeyStatus">CryptoKeyStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.CryptoKey">CryptoKey</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

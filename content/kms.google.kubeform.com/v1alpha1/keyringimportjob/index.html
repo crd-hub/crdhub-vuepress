@@ -1,0 +1,517 @@
+<h3 id="kms.google.kubeform.com/v1alpha1.KeyRingImportJob">KeyRingImportJob
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+kms.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>KeyRingImportJob</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpec">
+KeyRingImportJobSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecResource">
+KeyRingImportJobSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecResource">
+KeyRingImportJobSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobStatus">
+KeyRingImportJobStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpec">KeyRingImportJobSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJob">KeyRingImportJob</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecResource">
+KeyRingImportJobSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecResource">
+KeyRingImportJobSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecAttestation">KeyRingImportJobSpecAttestation
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecResource">KeyRingImportJobSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>content</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The attestation data provided by the HSM when the key operation was performed.
+A base64-encoded string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>format</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The format of the attestation data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecPublicKey">KeyRingImportJobSpecPublicKey
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecResource">KeyRingImportJobSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>pem</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The public key, encoded in PEM format. For more information, see the RFC 7468 sections
+for General Considerations and Textual Encoding of Subject Public Key Info.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecResource">KeyRingImportJobSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpec">KeyRingImportJobSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>attestation</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecAttestation">
+[]KeyRingImportJobSpecAttestation
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Statement that was generated and signed by the key creator (for example, an HSM) at key creation time.
+Use this statement to verify attributes of the key as stored on the HSM, independently of Google.
+Only present if the chosen ImportMethod is one with a protection level of HSM.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>expireTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time at which this resource is scheduled for expiration and can no longer be used.
+This is in RFC3339 text format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>importJobID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>It must be unique within a KeyRing and match the regular expression [a-zA-Z0-9_-]{1,63}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>importMethod</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The wrapping method to be used for incoming key material. Possible values: [&quot;RSA_OAEP_3072_SHA1_AES_256&quot;, &quot;RSA_OAEP_4096_SHA1_AES_256&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>keyRing</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The KeyRing that this import job belongs to.
+Format: ''projects/{{project}}/locations/{{location}}/keyRings/{{keyRing}}''.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The resource name for this ImportJob in the format projects/<em>/locations/</em>/keyRings/<em>/importJobs/</em>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>protectionLevel</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The protection level of the ImportJob. This must match the protectionLevel of the
+versionTemplate on the CryptoKey you attempt to import into. Possible values: [&quot;SOFTWARE&quot;, &quot;HSM&quot;, &quot;EXTERNAL&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>publicKey</code><br/>
+<em>
+<a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJobSpecPublicKey">
+[]KeyRingImportJobSpecPublicKey
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The public key with which to wrap key material prior to import. Only returned if state is 'ACTIVE'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The current state of the ImportJob, indicating if it can be used.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kms.google.kubeform.com/v1alpha1.KeyRingImportJobStatus">KeyRingImportJobStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kms.google.kubeform.com/v1alpha1.KeyRingImportJob">KeyRingImportJob</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

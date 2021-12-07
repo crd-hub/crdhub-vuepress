@@ -1,0 +1,128 @@
+<h2 id="lex.aws.kubeform.com/v1alpha1">lex.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.Bot">Bot</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotAlias">BotAlias</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.Intent">Intent</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.SlotType">SlotType</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.Bot">Bot</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotAlias">BotAlias</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.Intent">Intent</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.SlotType">SlotType</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotAliasSpec">BotAliasSpec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotAliasSpecConversationLogs">BotAliasSpecConversationLogs</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotAliasSpecConversationLogsCodec">BotAliasSpecConversationLogsCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotAliasSpecConversationLogsLogSettings">BotAliasSpecConversationLogsLogSettings</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotAliasSpecResource">BotAliasSpecResource</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotAliasStatus">BotAliasStatus</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpec">BotSpec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpecAbortStatement">BotSpecAbortStatement</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpecAbortStatementCodec">BotSpecAbortStatementCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpecAbortStatementMessage">BotSpecAbortStatementMessage</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpecClarificationPrompt">BotSpecClarificationPrompt</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpecClarificationPromptCodec">BotSpecClarificationPromptCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpecClarificationPromptMessage">BotSpecClarificationPromptMessage</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpecIntent">BotSpecIntent</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotSpecResource">BotSpecResource</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.BotStatus">BotStatus</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpec">IntentSpec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecConclusionStatement">IntentSpecConclusionStatement</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecConclusionStatementCodec">IntentSpecConclusionStatementCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecConclusionStatementMessage">IntentSpecConclusionStatementMessage</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecConfirmationPrompt">IntentSpecConfirmationPrompt</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecConfirmationPromptCodec">IntentSpecConfirmationPromptCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecConfirmationPromptMessage">IntentSpecConfirmationPromptMessage</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecDialogCodeHook">IntentSpecDialogCodeHook</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecDialogCodeHookCodec">IntentSpecDialogCodeHookCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFollowUpPrompt">IntentSpecFollowUpPrompt</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFollowUpPromptCodec">IntentSpecFollowUpPromptCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFollowUpPromptPrompt">IntentSpecFollowUpPromptPrompt</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFollowUpPromptPromptCodec">IntentSpecFollowUpPromptPromptCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFollowUpPromptPromptMessage">IntentSpecFollowUpPromptPromptMessage</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFollowUpPromptRejectionStatement">IntentSpecFollowUpPromptRejectionStatement</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFollowUpPromptRejectionStatementCodec">IntentSpecFollowUpPromptRejectionStatementCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFollowUpPromptRejectionStatementMessage">IntentSpecFollowUpPromptRejectionStatementMessage</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFulfillmentActivity">IntentSpecFulfillmentActivity</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFulfillmentActivityCodeHook">IntentSpecFulfillmentActivityCodeHook</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFulfillmentActivityCodeHookCodec">IntentSpecFulfillmentActivityCodeHookCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecFulfillmentActivityCodec">IntentSpecFulfillmentActivityCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecRejectionStatement">IntentSpecRejectionStatement</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecRejectionStatementCodec">IntentSpecRejectionStatementCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecRejectionStatementMessage">IntentSpecRejectionStatementMessage</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecResource">IntentSpecResource</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecSlot">IntentSpecSlot</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecSlotValueElicitationPrompt">IntentSpecSlotValueElicitationPrompt</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecSlotValueElicitationPromptCodec">IntentSpecSlotValueElicitationPromptCodec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentSpecSlotValueElicitationPromptMessage">IntentSpecSlotValueElicitationPromptMessage</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.IntentStatus">IntentStatus</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.SlotTypeSpec">SlotTypeSpec</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.SlotTypeSpecEnumerationValue">SlotTypeSpecEnumerationValue</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.SlotTypeSpecResource">SlotTypeSpecResource</a>
+</li><li>
+<a href="#lex.aws.kubeform.com/v1alpha1.SlotTypeStatus">SlotTypeStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

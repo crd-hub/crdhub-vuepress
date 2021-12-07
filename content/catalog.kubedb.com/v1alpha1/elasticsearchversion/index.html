@@ -1,0 +1,549 @@
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchVersion">ElasticsearchVersion
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+catalog.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ElasticsearchVersion</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">
+ElasticsearchVersionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>distribution</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchDistro">
+ElasticsearchDistro
+</a>
+</em>
+</td>
+<td>
+<p>Distribution</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>authPlugin</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchAuthPlugin">
+ElasticsearchAuthPlugin
+</a>
+</em>
+</td>
+<td>
+<p>Authentication plugin used by Elasticsearch cluster</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>db</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionDatabase">
+ElasticsearchVersionDatabase
+</a>
+</em>
+</td>
+<td>
+<p>Database Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionExporter">
+ElasticsearchVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>initContainer</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionInitContainer">
+ElasticsearchVersionInitContainer
+</a>
+</em>
+</td>
+<td>
+<p>Init container Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicies</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionPodSecurityPolicy">
+ElasticsearchVersionPodSecurityPolicy
+</a>
+</em>
+</td>
+<td>
+<p>PSP names</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stash</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashAddonSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stash defines backup and restore task definitions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>securityContext</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchSecurityContext">
+ElasticsearchSecurityContext
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>SecurityContext is for the additional security information for the Elasticsearch container</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchAuthPlugin">ElasticsearchAuthPlugin
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">ElasticsearchVersionSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;OpenDistro&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;OpenSearch&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;SearchGuard&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;X-Pack&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchDistro">ElasticsearchDistro
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">ElasticsearchVersionSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;ElasticStack&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;KubeDB&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;OpenDistro&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;OpenSearch&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;SearchGuard&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchSecurityContext">ElasticsearchSecurityContext
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">ElasticsearchVersionSpec</a>)
+</p>
+<div>
+<p>ElasticsearchSecurityContext provides additional securityContext settings for the Elasticsearch Image</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>runAsUser</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>RunAsUser is default UID for the DB container. It defaults to 1000.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>runAsAnyNonRoot</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>RunAsAnyNonRoot will be true if user can change the default UID to other than 1000.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchVersionDatabase">ElasticsearchVersionDatabase
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">ElasticsearchVersionSpec</a>)
+</p>
+<div>
+<p>ElasticsearchVersionDatabase is the Elasticsearch Database image</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchVersionExporter">ElasticsearchVersionExporter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">ElasticsearchVersionSpec</a>)
+</p>
+<div>
+<p>ElasticsearchVersionExporter is the image for the Elasticsearch exporter</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchVersionInitContainer">ElasticsearchVersionInitContainer
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">ElasticsearchVersionSpec</a>)
+</p>
+<div>
+<p>ElasticsearchVersionInitContainer is the Elasticsearch Container initializer</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>yqImage</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchVersionPodSecurityPolicy">ElasticsearchVersionPodSecurityPolicy
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">ElasticsearchVersionSpec</a>)
+</p>
+<div>
+<p>ElasticsearchVersionPodSecurityPolicy is the Elasticsearch pod security policies</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databasePolicyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ElasticsearchVersionSpec">ElasticsearchVersionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersion">ElasticsearchVersion</a>)
+</p>
+<div>
+<p>ElasticsearchVersionSpec is the spec for elasticsearch version</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>distribution</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchDistro">
+ElasticsearchDistro
+</a>
+</em>
+</td>
+<td>
+<p>Distribution</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>authPlugin</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchAuthPlugin">
+ElasticsearchAuthPlugin
+</a>
+</em>
+</td>
+<td>
+<p>Authentication plugin used by Elasticsearch cluster</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>db</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionDatabase">
+ElasticsearchVersionDatabase
+</a>
+</em>
+</td>
+<td>
+<p>Database Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionExporter">
+ElasticsearchVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>initContainer</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionInitContainer">
+ElasticsearchVersionInitContainer
+</a>
+</em>
+</td>
+<td>
+<p>Init container Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicies</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchVersionPodSecurityPolicy">
+ElasticsearchVersionPodSecurityPolicy
+</a>
+</em>
+</td>
+<td>
+<p>PSP names</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stash</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashAddonSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stash defines backup and restore task definitions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>securityContext</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ElasticsearchSecurityContext">
+ElasticsearchSecurityContext
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>SecurityContext is for the additional security information for the Elasticsearch container</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

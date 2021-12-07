@@ -1,0 +1,725 @@
+<h3 id="metrics.appscode.com/v1alpha1.MetricsConfiguration">MetricsConfiguration
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+metrics.appscode.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>MetricsConfiguration</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.MetricsConfigurationSpec">
+MetricsConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>targetRef</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.TargetRef">
+TargetRef
+</a>
+</em>
+</td>
+<td>
+<p>TargetRef defines the object for which metrics will be collected</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metrics</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.Metrics">
+[]Metrics
+</a>
+</em>
+</td>
+<td>
+<p>List of Metrics configuration for the resource object defined in TargetRef</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.Field">Field
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.Metrics">Metrics</a>)
+</p>
+<div>
+<p>Field contains the information of the field for which metric is collected.
+Example: To collect available replica count for a Deployment, Field's Path
+will be .statue.availableReplicas and the Type will be Integer.</p>
+<p>When some labels are collected with metric value 1 and
+the values are not from an array then Field can be skipped
+or will be ignored if specified. Otherwise Field must be specified.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Path defines the json path of the object.
+Example: For deployment spec replica count, the path will be .spec.replicas</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.FieldType">
+FieldType
+</a>
+</em>
+</td>
+<td>
+<p>Type defines the type of the value in the given Path
+Type can be &quot;Integer&quot; for integer value like .spec.replicas,
+&quot;DateTime&quot; for time stamp value like .metadata.creationTimestamp
+&quot;Array&quot; for array field like .spec.containers
+&quot;String&quot; for string field like .statue.phase (for pod status)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.FieldType">FieldType
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.Field">Field</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Array&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;DateTime&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Integer&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;String&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.Label">Label
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.Metrics">Metrics</a>)
+</p>
+<div>
+<p>Label contains the information of a metric label.
+Given labels are always added in the metrics along with resource name and namespace.
+Resource's name and namespace are always added in the labels by default.
+No configuration is needed for name and namespace labels.</p>
+<p>Example: kube_pod_info{pod=&quot;&lt;pod_name&gt;&quot;, namespace=&quot;&lt;pod_namespace&gt;&quot;, host_ip=&quot;172.18.0.2&quot;, pod_ip=&quot;10.244.0.14&quot;, node=&quot;kind-control-plane&quot;}  1
+In the example pod, namespace, host_ip, pod_ip, node are labels.
+pod(resource name) and namespace are default labels. No configurations is needed for those.</p>
+<p>To generate others labels, config should be given in the following way</p>
+<p>labels:</p>
+<ul>
+<li>key: host_ip
+valuePath: .status.hostIP</li>
+<li>key: pod_ip
+valuePath: .status.podIP</li>
+<li>key: node
+valuePath: .spec.nodeName</li>
+</ul>
+<p>Either Value or ValuePath must be specified for a Label.
+If both is specified, ValuePath is ignored.
+Note that if a valuePath doesn't exist for a label key, the label will be ignored.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Key defines the label key</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Value defines the hard coded label value.
+Example:
+labels:</p>
+<ul>
+<li>key: unit
+value: byte</li>
+<li>key: environment
+value: production</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<code>valuePath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ValuePath defines the label value path.
+Example: To add deployment's resource version as labels,
+labels:</p>
+<ul>
+<li>key: version
+valuePath: .metadata.resourceVersion</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.MetricValue">MetricValue
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.Metrics">Metrics</a>, <a href="#metrics.appscode.com/v1alpha1.StateValues">StateValues</a>)
+</p>
+<div>
+<p>MetricValue contains the configuration to obtain the value for a metric.
+Note that MetricValue should contain only one field: Value or ValueFromPath or ValueFromExpression.
+If multiple fields are assigned then only one field is considered and other fields are ignored.
+The priority rule is Value &gt; ValueFromPath &gt; ValueFromExpression.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Value contains the metric value. It is always equal to 1.
+It is defined when some information of the object is
+collected as labels but there is no specific metric value.</p>
+<p>Example: For metrics &quot;kube_pod_info&quot;, there are some information
+like host_ip, pod_ip, node name is collected as labels.
+As there must be a metric value, metric value is kept as 1.
+The metric will look like <code>kube_pod_info{host_ip=&quot;172.18.0.2&quot;, pod_ip=&quot;10.244.0.14&quot;, node=&quot;kind-control-plane&quot; .....}  1</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>valueFromPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ValueFromPath contains the field path of the manifest file of a object.
+ValueFromPath is used when the metric value is coming from
+any specific json path of the object.</p>
+<p>Example: For metrics &quot;kube_deployment_spec_replicas&quot;,
+the metricValue is coming from a specific path .spec.replicas
+In this case, valueFromPath: .spec.replicas
+Some example of json path: .metadata.observedGeneration, .spec.restartPolicy, .status.startTime</p>
+<p>Some example of json path
+which is coming from an element of an array: .spec.containers[<em>].image, .status.containerStatuses[</em>].restartCount</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>valueFromExpression</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ValueFromExpression contains an expression for the metric value
+expression can be a function as well. Parameters is used in the expression string</p>
+<p>Available expression evaluation functions are:</p>
+<p>int() returns 1 if the expression is true otherwise 0,
+example: int(phase == 'Running')</p>
+<p>percentage(percent, total, roundUp) returns the value of (percent * total%) when <code>percent</code> contains the percent(%) value.
+If percent represents an Integer value, then it will simply return it.
+roundUp is an optional field. By default, its value is false. If roundUp is set as <code>true</code>, the resultant value will be rounded up.
+example: (i) percentage(&quot;25%&quot;, 4) will return 1.
+(ii) percentage(&quot;25%&quot;, 1 , true) will return 1 as roundUp is set as true.
+(iii) percentage(2, 4) will return 2 as percent is representing an Integer value.</p>
+<p>cpu_cores() returns the cpu in unit core
+example: cpu_cores(cpu), for cpu value 150m, it will return 0.15</p>
+<p>bytes() returns the memory size in byte
+example: bytes(memory), for memory value 1 ki, it will return 1024</p>
+<p>unix() returns the DateTime string into unix format.
+example: unix(dateTime) will return the corresponding unix value for the given dateTime</p>
+<p>in above examples phase, replicas, maxUnavailable, cpu, memory, dateTime are Parameter's key
+those values will come from corresponding Parameter's value</p>
+<p>Some expression evaluation functions are used for calculating resource requests and limits.
+Those functions are stated here: https://github.com/kmodules/resource-metrics/blob/master/eval.go</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.Metrics">Metrics
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.MetricsConfigurationSpec">MetricsConfigurationSpec</a>)
+</p>
+<div>
+<p>Metrics contains the configuration of a metric in prometheus style.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name defines the metrics name. Name should be in snake case.
+Example: kube_deployment_spec_replicas</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>help</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Help is used to describe the metrics.
+Example: For kube_deployment_spec_replicas, help string can be &quot;Number of desired pods for a deployment.&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Type defines the metrics type.
+For kubernetes based object, types can only be &quot;gauge&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>field</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.Field">
+Field
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Field defines the metric value path of the manifest file and the type of that value</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>labels</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.Label">
+[]Label
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Labels defines the metric labels as a key-value pair</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>params</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.Parameter">
+[]Parameter
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Params is list of parameters configuration used in expression evaluation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>states</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.State">
+State
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>States handle metrics with label cardinality.
+States specify the possible states for a label
+and their corresponding MetricValue configuration.</p>
+<p>Metrics must contain either States or MetricValue.
+If both are specified, MetricValue will be ignored.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metricValue</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.MetricValue">
+MetricValue
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>MetricValue defines the configuration to obtain metric value.</p>
+<p>Metrics must contain either States or MetricValue.
+If both are specified, MetricValue will be ignored.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.MetricsConfigurationSpec">MetricsConfigurationSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.MetricsConfiguration">MetricsConfiguration</a>)
+</p>
+<div>
+<p>MetricsConfigurationSpec is the spec of MetricsConfiguration object.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetRef</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.TargetRef">
+TargetRef
+</a>
+</em>
+</td>
+<td>
+<p>TargetRef defines the object for which metrics will be collected</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metrics</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.Metrics">
+[]Metrics
+</a>
+</em>
+</td>
+<td>
+<p>List of Metrics configuration for the resource object defined in TargetRef</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.Parameter">Parameter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.Metrics">Metrics</a>)
+</p>
+<div>
+<p>Parameter contains the information of a parameter used in expression evaluation
+Parameter should contain an user defined key and corresponding Value or ValuePath.
+Either Value or ValuePath must be specified.
+If both are specified, ValuePath is ignored.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Key defines the parameter's key</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Value defines user defined parameter's value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>valuePath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ValuePath defines the manifest field path for the parameter's value.
+Example: To add deployment's spec replica count as parameter,
+params:</p>
+<ul>
+<li>key: replica
+valuePath: .spec.replicas</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.State">State
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.Metrics">Metrics</a>)
+</p>
+<div>
+<p>State contains the configuration for generating all the time series
+of a metric with label cardinality is greater than 1.</p>
+<p>Example: kube_pod_status_phase has a label called &quot;phase&quot; which value can be
+&quot;Running&quot;, &quot;Succeeded&quot;, &quot;Failed&quot;, &quot;Unknown&quot;, &quot;Pending&quot;.
+So the cardinality of label phase is equal to 5. So kube_pod_status_phase will
+always generate five time series for a single pod.</p>
+<p>For a pod which .status.phase=Running, the time series are:
+kube_pod_status_phase{...,phase=&quot;Running&quot;,...} 1
+kube_pod_status_phase{...,phase=&quot;Succeeded&quot;,...} 0
+kube_pod_status_phase{...,phase=&quot;Failed&quot;,...} 0
+kube_pod_status_phase{...,phase=&quot;Unknown&quot;,...} 0
+kube_pod_status_phase{...,phase=&quot;Pending&quot;,...} 0</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>labelKey</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>LabelKey defines an user defined label key of the label
+which label cardinality is greater than one.
+Example: For metric &quot;kube_pod_status_phase&quot;, the LabelKey can be &quot;phase&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.StateValues">
+[]StateValues
+</a>
+</em>
+</td>
+<td>
+<p>Values contains the list of state values.
+The size of the list is always equal to the cardinality of that label.
+Example: &quot;kube_pod_statue_phase&quot; metric has a label &quot;phase&quot;
+which cardinality is equal to 5. So Values should have StateValues config for all of them.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.StateValues">StateValues
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.State">State</a>)
+</p>
+<div>
+<p>StateValues contains the information of a state value.
+StateValues is used to define state with all possible
+label values and corresponding MetricValue.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>labelValue</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>LabelValue defines the value of the label.
+Example: For labelKey &quot;phase&quot; (metric: kube_pod_status_phase path: .status.phase )
+label value can be &quot;Running&quot;, &quot;Succeeded&quot;, &quot;Failed&quot;, &quot;Unknown&quot; and &quot;Pending&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metricValue</code><br/>
+<em>
+<a href="#metrics.appscode.com/v1alpha1.MetricValue">
+MetricValue
+</a>
+</em>
+</td>
+<td>
+<p>MetricValue defines the configuration of the metric value for the corresponding LabelValue</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="metrics.appscode.com/v1alpha1.TargetRef">TargetRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#metrics.appscode.com/v1alpha1.MetricsConfigurationSpec">MetricsConfigurationSpec</a>)
+</p>
+<div>
+<p>TargetRef contains the Object's apiVersion &amp; kind to specify the target resource</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>kind</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Kind is a string value representing the REST resource this object represents.
+In CamelCase.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>APIVersion defines the versioned schema of this representation of an object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>3bf3dbd</code>.
+</em></p>

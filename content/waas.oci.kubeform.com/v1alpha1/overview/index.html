@@ -1,0 +1,182 @@
+<h2 id="waas.oci.kubeform.com/v1alpha1">waas.oci.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.Certificate">Certificate</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CustomProtectionRule">CustomProtectionRule</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.HttpRedirect">HttpRedirect</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.ProtectionRule">ProtectionRule</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.PurgeCache">PurgeCache</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicy">WaasPolicy</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.Certificate">Certificate</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CustomProtectionRule">CustomProtectionRule</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.HttpRedirect">HttpRedirect</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.ProtectionRule">ProtectionRule</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.PurgeCache">PurgeCache</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicy">WaasPolicy</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.AddressListSpec">AddressListSpec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.AddressListSpecResource">AddressListSpecResource</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.AddressListStatus">AddressListStatus</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpec">CertificateSpec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpecExtensions">CertificateSpecExtensions</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpecIssuerName">CertificateSpecIssuerName</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpecIssuerNameCodec">CertificateSpecIssuerNameCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpecPublicKeyInfo">CertificateSpecPublicKeyInfo</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpecPublicKeyInfoCodec">CertificateSpecPublicKeyInfoCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpecResource">CertificateSpecResource</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpecSubjectName">CertificateSpecSubjectName</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateSpecSubjectNameCodec">CertificateSpecSubjectNameCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CertificateStatus">CertificateStatus</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CustomProtectionRuleSpec">CustomProtectionRuleSpec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CustomProtectionRuleSpecResource">CustomProtectionRuleSpecResource</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.CustomProtectionRuleStatus">CustomProtectionRuleStatus</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.HttpRedirectSpec">HttpRedirectSpec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.HttpRedirectSpecResource">HttpRedirectSpecResource</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.HttpRedirectSpecTarget">HttpRedirectSpecTarget</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.HttpRedirectSpecTargetCodec">HttpRedirectSpecTargetCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.HttpRedirectStatus">HttpRedirectStatus</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.ProtectionRuleSpec">ProtectionRuleSpec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.ProtectionRuleSpecExclusions">ProtectionRuleSpecExclusions</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.ProtectionRuleSpecResource">ProtectionRuleSpecResource</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.ProtectionRuleStatus">ProtectionRuleStatus</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.PurgeCacheSpec">PurgeCacheSpec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.PurgeCacheSpecResource">PurgeCacheSpecResource</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.PurgeCacheStatus">PurgeCacheStatus</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpec">WaasPolicySpec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecOriginGroups">WaasPolicySpecOriginGroups</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecOriginGroupsOriginGroup">WaasPolicySpecOriginGroupsOriginGroup</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecOrigins">WaasPolicySpecOrigins</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecOriginsCustomHeaders">WaasPolicySpecOriginsCustomHeaders</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecPolicyConfig">WaasPolicySpecPolicyConfig</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecPolicyConfigCodec">WaasPolicySpecPolicyConfigCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecPolicyConfigHealthChecks">WaasPolicySpecPolicyConfigHealthChecks</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecPolicyConfigHealthChecksCodec">WaasPolicySpecPolicyConfigHealthChecksCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecPolicyConfigLoadBalancingMethod">WaasPolicySpecPolicyConfigLoadBalancingMethod</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecPolicyConfigLoadBalancingMethodCodec">WaasPolicySpecPolicyConfigLoadBalancingMethodCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecResource">WaasPolicySpecResource</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfig">WaasPolicySpecWafConfig</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigAccessRules">WaasPolicySpecWafConfigAccessRules</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigAccessRulesCriteria">WaasPolicySpecWafConfigAccessRulesCriteria</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigAccessRulesResponseHeaderManipulation">WaasPolicySpecWafConfigAccessRulesResponseHeaderManipulation</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigAddressRateLimiting">WaasPolicySpecWafConfigAddressRateLimiting</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigAddressRateLimitingCodec">WaasPolicySpecWafConfigAddressRateLimitingCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigCachingRules">WaasPolicySpecWafConfigCachingRules</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigCachingRulesCriteria">WaasPolicySpecWafConfigCachingRulesCriteria</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigCaptchas">WaasPolicySpecWafConfigCaptchas</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigCodec">WaasPolicySpecWafConfigCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigCustomProtectionRules">WaasPolicySpecWafConfigCustomProtectionRules</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigCustomProtectionRulesExclusions">WaasPolicySpecWafConfigCustomProtectionRulesExclusions</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigDeviceFingerprintChallenge">WaasPolicySpecWafConfigDeviceFingerprintChallenge</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigDeviceFingerprintChallengeChallengeSettings">WaasPolicySpecWafConfigDeviceFingerprintChallengeChallengeSettings</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigDeviceFingerprintChallengeChallengeSettingsCodec">WaasPolicySpecWafConfigDeviceFingerprintChallengeChallengeSettingsCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigDeviceFingerprintChallengeCodec">WaasPolicySpecWafConfigDeviceFingerprintChallengeCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigHumanInteractionChallenge">WaasPolicySpecWafConfigHumanInteractionChallenge</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigHumanInteractionChallengeChallengeSettings">WaasPolicySpecWafConfigHumanInteractionChallengeChallengeSettings</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigHumanInteractionChallengeChallengeSettingsCodec">WaasPolicySpecWafConfigHumanInteractionChallengeChallengeSettingsCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigHumanInteractionChallengeCodec">WaasPolicySpecWafConfigHumanInteractionChallengeCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigHumanInteractionChallengeSetHTTPHeader">WaasPolicySpecWafConfigHumanInteractionChallengeSetHTTPHeader</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigHumanInteractionChallengeSetHTTPHeaderCodec">WaasPolicySpecWafConfigHumanInteractionChallengeSetHTTPHeaderCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigJsChallenge">WaasPolicySpecWafConfigJsChallenge</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigJsChallengeChallengeSettings">WaasPolicySpecWafConfigJsChallengeChallengeSettings</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigJsChallengeChallengeSettingsCodec">WaasPolicySpecWafConfigJsChallengeChallengeSettingsCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigJsChallengeCodec">WaasPolicySpecWafConfigJsChallengeCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigJsChallengeCriteria">WaasPolicySpecWafConfigJsChallengeCriteria</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigJsChallengeSetHTTPHeader">WaasPolicySpecWafConfigJsChallengeSetHTTPHeader</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigJsChallengeSetHTTPHeaderCodec">WaasPolicySpecWafConfigJsChallengeSetHTTPHeaderCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigProtectionSettings">WaasPolicySpecWafConfigProtectionSettings</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigProtectionSettingsCodec">WaasPolicySpecWafConfigProtectionSettingsCodec</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicySpecWafConfigWhitelists">WaasPolicySpecWafConfigWhitelists</a>
+</li><li>
+<a href="#waas.oci.kubeform.com/v1alpha1.WaasPolicyStatus">WaasPolicyStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>96b0f4e</code>.
+</em></p>

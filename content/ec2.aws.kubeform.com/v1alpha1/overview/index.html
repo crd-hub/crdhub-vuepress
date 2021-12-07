@@ -1,0 +1,314 @@
+<h2 id="ec2.aws.kubeform.com/v1alpha1">ec2.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.AvailabilityZoneGroup">AvailabilityZoneGroup</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CapacityReservation">CapacityReservation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CarrierGateway">CarrierGateway</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNAuthorizationRule">ClientVPNAuthorizationRule</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNEndpoint">ClientVPNEndpoint</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNNetworkAssociation">ClientVPNNetworkAssociation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNRoute">ClientVPNRoute</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.Fleet">Fleet</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRoute">LocalGatewayRoute</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRouteTableVpcAssociation">LocalGatewayRouteTableVpcAssociation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.Tag">Tag</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilter">TrafficMirrorFilter</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRule">TrafficMirrorFilterRule</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorSession">TrafficMirrorSession</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorTarget">TrafficMirrorTarget</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGateway">TransitGateway</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachment">TransitGatewayPeeringAttachment</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachmentAccepter">TransitGatewayPeeringAttachmentAccepter</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPrefixListReference">TransitGatewayPrefixListReference</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRoute">TransitGatewayRoute</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTable">TransitGatewayRouteTable</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTableAssociation">TransitGatewayRouteTableAssociation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTablePropagation">TransitGatewayRouteTablePropagation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachment">TransitGatewayVpcAttachment</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachmentAccepter">TransitGatewayVpcAttachmentAccepter</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.AvailabilityZoneGroup">AvailabilityZoneGroup</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CapacityReservation">CapacityReservation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CarrierGateway">CarrierGateway</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNAuthorizationRule">ClientVPNAuthorizationRule</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNEndpoint">ClientVPNEndpoint</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNNetworkAssociation">ClientVPNNetworkAssociation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNRoute">ClientVPNRoute</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.Fleet">Fleet</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRoute">LocalGatewayRoute</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRouteTableVpcAssociation">LocalGatewayRouteTableVpcAssociation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.Tag">Tag</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilter">TrafficMirrorFilter</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRule">TrafficMirrorFilterRule</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorSession">TrafficMirrorSession</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorTarget">TrafficMirrorTarget</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGateway">TransitGateway</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachment">TransitGatewayPeeringAttachment</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachmentAccepter">TransitGatewayPeeringAttachmentAccepter</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPrefixListReference">TransitGatewayPrefixListReference</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRoute">TransitGatewayRoute</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTable">TransitGatewayRouteTable</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTableAssociation">TransitGatewayRouteTableAssociation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTablePropagation">TransitGatewayRouteTablePropagation</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachment">TransitGatewayVpcAttachment</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachmentAccepter">TransitGatewayVpcAttachmentAccepter</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.AvailabilityZoneGroupSpec">AvailabilityZoneGroupSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.AvailabilityZoneGroupSpecResource">AvailabilityZoneGroupSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.AvailabilityZoneGroupStatus">AvailabilityZoneGroupStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CapacityReservationSpec">CapacityReservationSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CapacityReservationSpecResource">CapacityReservationSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CapacityReservationStatus">CapacityReservationStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CarrierGatewaySpec">CarrierGatewaySpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CarrierGatewaySpecResource">CarrierGatewaySpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.CarrierGatewayStatus">CarrierGatewayStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNAuthorizationRuleSpec">ClientVPNAuthorizationRuleSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNAuthorizationRuleSpecResource">ClientVPNAuthorizationRuleSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNAuthorizationRuleStatus">ClientVPNAuthorizationRuleStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNEndpointSpec">ClientVPNEndpointSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNEndpointSpecAuthenticationOptions">ClientVPNEndpointSpecAuthenticationOptions</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNEndpointSpecConnectionLogOptions">ClientVPNEndpointSpecConnectionLogOptions</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNEndpointSpecConnectionLogOptionsCodec">ClientVPNEndpointSpecConnectionLogOptionsCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNEndpointSpecResource">ClientVPNEndpointSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNEndpointStatus">ClientVPNEndpointStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNNetworkAssociationSpec">ClientVPNNetworkAssociationSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNNetworkAssociationSpecResource">ClientVPNNetworkAssociationSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNNetworkAssociationStatus">ClientVPNNetworkAssociationStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNRouteSpec">ClientVPNRouteSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNRouteSpecResource">ClientVPNRouteSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ClientVPNRouteStatus">ClientVPNRouteStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpec">FleetSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecLaunchTemplateConfig">FleetSpecLaunchTemplateConfig</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecLaunchTemplateConfigCodec">FleetSpecLaunchTemplateConfigCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecLaunchTemplateConfigLaunchTemplateSpecification">FleetSpecLaunchTemplateConfigLaunchTemplateSpecification</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecLaunchTemplateConfigLaunchTemplateSpecificationCodec">FleetSpecLaunchTemplateConfigLaunchTemplateSpecificationCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecLaunchTemplateConfigOverride">FleetSpecLaunchTemplateConfigOverride</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecOnDemandOptions">FleetSpecOnDemandOptions</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecOnDemandOptionsCodec">FleetSpecOnDemandOptionsCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecResource">FleetSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecSpotOptions">FleetSpecSpotOptions</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecSpotOptionsCodec">FleetSpecSpotOptionsCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecSpotOptionsMaintenanceStrategies">FleetSpecSpotOptionsMaintenanceStrategies</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecSpotOptionsMaintenanceStrategiesCapacityRebalance">FleetSpecSpotOptionsMaintenanceStrategiesCapacityRebalance</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecSpotOptionsMaintenanceStrategiesCapacityRebalanceCodec">FleetSpecSpotOptionsMaintenanceStrategiesCapacityRebalanceCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecSpotOptionsMaintenanceStrategiesCodec">FleetSpecSpotOptionsMaintenanceStrategiesCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecTargetCapacitySpecification">FleetSpecTargetCapacitySpecification</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetSpecTargetCapacitySpecificationCodec">FleetSpecTargetCapacitySpecificationCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.FleetStatus">FleetStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRouteSpec">LocalGatewayRouteSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRouteSpecResource">LocalGatewayRouteSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRouteStatus">LocalGatewayRouteStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRouteTableVpcAssociationSpec">LocalGatewayRouteTableVpcAssociationSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRouteTableVpcAssociationSpecResource">LocalGatewayRouteTableVpcAssociationSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.LocalGatewayRouteTableVpcAssociationStatus">LocalGatewayRouteTableVpcAssociationStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ManagedPrefixListSpec">ManagedPrefixListSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ManagedPrefixListSpecEntry">ManagedPrefixListSpecEntry</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ManagedPrefixListSpecResource">ManagedPrefixListSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.ManagedPrefixListStatus">ManagedPrefixListStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TagSpec">TagSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TagSpecResource">TagSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TagStatus">TagStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRuleSpec">TrafficMirrorFilterRuleSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRuleSpecDestinationPortRange">TrafficMirrorFilterRuleSpecDestinationPortRange</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRuleSpecDestinationPortRangeCodec">TrafficMirrorFilterRuleSpecDestinationPortRangeCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRuleSpecResource">TrafficMirrorFilterRuleSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRuleSpecSourcePortRange">TrafficMirrorFilterRuleSpecSourcePortRange</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRuleSpecSourcePortRangeCodec">TrafficMirrorFilterRuleSpecSourcePortRangeCodec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterRuleStatus">TrafficMirrorFilterRuleStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterSpec">TrafficMirrorFilterSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterSpecResource">TrafficMirrorFilterSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorFilterStatus">TrafficMirrorFilterStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorSessionSpec">TrafficMirrorSessionSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorSessionSpecResource">TrafficMirrorSessionSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorSessionStatus">TrafficMirrorSessionStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorTargetSpec">TrafficMirrorTargetSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorTargetSpecResource">TrafficMirrorTargetSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TrafficMirrorTargetStatus">TrafficMirrorTargetStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachmentAccepterSpec">TransitGatewayPeeringAttachmentAccepterSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachmentAccepterSpecResource">TransitGatewayPeeringAttachmentAccepterSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachmentAccepterStatus">TransitGatewayPeeringAttachmentAccepterStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachmentSpec">TransitGatewayPeeringAttachmentSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachmentSpecResource">TransitGatewayPeeringAttachmentSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPeeringAttachmentStatus">TransitGatewayPeeringAttachmentStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPrefixListReferenceSpec">TransitGatewayPrefixListReferenceSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPrefixListReferenceSpecResource">TransitGatewayPrefixListReferenceSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayPrefixListReferenceStatus">TransitGatewayPrefixListReferenceStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteSpec">TransitGatewayRouteSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteSpecResource">TransitGatewayRouteSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteStatus">TransitGatewayRouteStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTableAssociationSpec">TransitGatewayRouteTableAssociationSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTableAssociationSpecResource">TransitGatewayRouteTableAssociationSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTableAssociationStatus">TransitGatewayRouteTableAssociationStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTablePropagationSpec">TransitGatewayRouteTablePropagationSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTablePropagationSpecResource">TransitGatewayRouteTablePropagationSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTablePropagationStatus">TransitGatewayRouteTablePropagationStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTableSpec">TransitGatewayRouteTableSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTableSpecResource">TransitGatewayRouteTableSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayRouteTableStatus">TransitGatewayRouteTableStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewaySpec">TransitGatewaySpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewaySpecResource">TransitGatewaySpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayStatus">TransitGatewayStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachmentAccepterSpec">TransitGatewayVpcAttachmentAccepterSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachmentAccepterSpecResource">TransitGatewayVpcAttachmentAccepterSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachmentAccepterStatus">TransitGatewayVpcAttachmentAccepterStatus</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachmentSpec">TransitGatewayVpcAttachmentSpec</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachmentSpecResource">TransitGatewayVpcAttachmentSpecResource</a>
+</li><li>
+<a href="#ec2.aws.kubeform.com/v1alpha1.TransitGatewayVpcAttachmentStatus">TransitGatewayVpcAttachmentStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

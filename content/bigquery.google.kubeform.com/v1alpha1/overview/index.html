@@ -1,0 +1,296 @@
+<h2 id="bigquery.google.kubeform.com/v1alpha1">bigquery.google.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfig">DataTransferConfig</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Dataset">Dataset</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetAccess">DatasetAccess</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamBinding">DatasetIamBinding</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamMember">DatasetIamMember</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamPolicy">DatasetIamPolicy</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Job">Job</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Reservation">Reservation</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Routine">Routine</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Table">Table</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamBinding">TableIamBinding</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamMember">TableIamMember</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamPolicy">TableIamPolicy</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfig">DataTransferConfig</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Dataset">Dataset</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetAccess">DatasetAccess</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamBinding">DatasetIamBinding</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamMember">DatasetIamMember</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamPolicy">DatasetIamPolicy</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Job">Job</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Reservation">Reservation</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Routine">Routine</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.Table">Table</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamBinding">TableIamBinding</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamMember">TableIamMember</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamPolicy">TableIamPolicy</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigSpec">DataTransferConfigSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigSpecEmailPreferences">DataTransferConfigSpecEmailPreferences</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigSpecEmailPreferencesCodec">DataTransferConfigSpecEmailPreferencesCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigSpecResource">DataTransferConfigSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigSpecScheduleOptions">DataTransferConfigSpecScheduleOptions</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigSpecScheduleOptionsCodec">DataTransferConfigSpecScheduleOptionsCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigSpecSensitiveParams">DataTransferConfigSpecSensitiveParams</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigSpecSensitiveParamsCodec">DataTransferConfigSpecSensitiveParamsCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DataTransferConfigStatus">DataTransferConfigStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetAccessSpec">DatasetAccessSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetAccessSpecResource">DatasetAccessSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetAccessSpecView">DatasetAccessSpecView</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetAccessSpecViewCodec">DatasetAccessSpecViewCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetAccessStatus">DatasetAccessStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamBindingSpec">DatasetIamBindingSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamBindingSpecCondition">DatasetIamBindingSpecCondition</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamBindingSpecConditionCodec">DatasetIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamBindingSpecResource">DatasetIamBindingSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamBindingStatus">DatasetIamBindingStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamMemberSpec">DatasetIamMemberSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamMemberSpecCondition">DatasetIamMemberSpecCondition</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamMemberSpecConditionCodec">DatasetIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamMemberSpecResource">DatasetIamMemberSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamMemberStatus">DatasetIamMemberStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamPolicySpec">DatasetIamPolicySpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamPolicySpecResource">DatasetIamPolicySpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetIamPolicyStatus">DatasetIamPolicyStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetSpec">DatasetSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetSpecAccess">DatasetSpecAccess</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetSpecAccessView">DatasetSpecAccessView</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetSpecAccessViewCodec">DatasetSpecAccessViewCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetSpecDefaultEncryptionConfiguration">DatasetSpecDefaultEncryptionConfiguration</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetSpecDefaultEncryptionConfigurationCodec">DatasetSpecDefaultEncryptionConfigurationCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetSpecResource">DatasetSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.DatasetStatus">DatasetStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpec">JobSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopy">JobSpecCopy</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopyCodec">JobSpecCopyCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopyDestinationEncryptionConfiguration">JobSpecCopyDestinationEncryptionConfiguration</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopyDestinationEncryptionConfigurationCodec">JobSpecCopyDestinationEncryptionConfigurationCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopyDestinationTable">JobSpecCopyDestinationTable</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopyDestinationTableCodec">JobSpecCopyDestinationTableCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopySourceTables">JobSpecCopySourceTables</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtract">JobSpecExtract</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtractCodec">JobSpecExtractCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtractSourceModel">JobSpecExtractSourceModel</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtractSourceModelCodec">JobSpecExtractSourceModelCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtractSourceTable">JobSpecExtractSourceTable</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtractSourceTableCodec">JobSpecExtractSourceTableCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoad">JobSpecLoad</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadCodec">JobSpecLoadCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadDestinationEncryptionConfiguration">JobSpecLoadDestinationEncryptionConfiguration</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadDestinationEncryptionConfigurationCodec">JobSpecLoadDestinationEncryptionConfigurationCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadDestinationTable">JobSpecLoadDestinationTable</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadDestinationTableCodec">JobSpecLoadDestinationTableCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadTimePartitioning">JobSpecLoadTimePartitioning</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadTimePartitioningCodec">JobSpecLoadTimePartitioningCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQuery">JobSpecQuery</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryCodec">JobSpecQueryCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDefaultDataset">JobSpecQueryDefaultDataset</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDefaultDatasetCodec">JobSpecQueryDefaultDatasetCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDestinationEncryptionConfiguration">JobSpecQueryDestinationEncryptionConfiguration</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDestinationEncryptionConfigurationCodec">JobSpecQueryDestinationEncryptionConfigurationCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDestinationTable">JobSpecQueryDestinationTable</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDestinationTableCodec">JobSpecQueryDestinationTableCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryScriptOptions">JobSpecQueryScriptOptions</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryScriptOptionsCodec">JobSpecQueryScriptOptionsCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryUserDefinedFunctionResources">JobSpecQueryUserDefinedFunctionResources</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">JobSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecStatus">JobSpecStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecStatusErrorResult">JobSpecStatusErrorResult</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecStatusErrors">JobSpecStatusErrors</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobStatus">JobStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.ReservationSpec">ReservationSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.ReservationSpecResource">ReservationSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.ReservationStatus">ReservationStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpec">RoutineSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpecArguments">RoutineSpecArguments</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineSpecResource">RoutineSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.RoutineStatus">RoutineStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamBindingSpec">TableIamBindingSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamBindingSpecCondition">TableIamBindingSpecCondition</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamBindingSpecConditionCodec">TableIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamBindingSpecResource">TableIamBindingSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamBindingStatus">TableIamBindingStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamMemberSpec">TableIamMemberSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamMemberSpecCondition">TableIamMemberSpecCondition</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamMemberSpecConditionCodec">TableIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamMemberSpecResource">TableIamMemberSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamMemberStatus">TableIamMemberStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamPolicySpec">TableIamPolicySpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamPolicySpecResource">TableIamPolicySpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableIamPolicyStatus">TableIamPolicyStatus</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpec">TableSpec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecEncryptionConfiguration">TableSpecEncryptionConfiguration</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecEncryptionConfigurationCodec">TableSpecEncryptionConfigurationCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecExternalDataConfiguration">TableSpecExternalDataConfiguration</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecExternalDataConfigurationCodec">TableSpecExternalDataConfigurationCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecExternalDataConfigurationCsvOptions">TableSpecExternalDataConfigurationCsvOptions</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecExternalDataConfigurationCsvOptionsCodec">TableSpecExternalDataConfigurationCsvOptionsCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecExternalDataConfigurationGoogleSheetsOptions">TableSpecExternalDataConfigurationGoogleSheetsOptions</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecExternalDataConfigurationGoogleSheetsOptionsCodec">TableSpecExternalDataConfigurationGoogleSheetsOptionsCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecExternalDataConfigurationHivePartitioningOptions">TableSpecExternalDataConfigurationHivePartitioningOptions</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecExternalDataConfigurationHivePartitioningOptionsCodec">TableSpecExternalDataConfigurationHivePartitioningOptionsCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecMaterializedView">TableSpecMaterializedView</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecMaterializedViewCodec">TableSpecMaterializedViewCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecRangePartitioning">TableSpecRangePartitioning</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecRangePartitioningCodec">TableSpecRangePartitioningCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecRangePartitioningRange">TableSpecRangePartitioningRange</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecRangePartitioningRangeCodec">TableSpecRangePartitioningRangeCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecResource">TableSpecResource</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecTimePartitioning">TableSpecTimePartitioning</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecTimePartitioningCodec">TableSpecTimePartitioningCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecView">TableSpecView</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableSpecViewCodec">TableSpecViewCodec</a>
+</li><li>
+<a href="#bigquery.google.kubeform.com/v1alpha1.TableStatus">TableStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

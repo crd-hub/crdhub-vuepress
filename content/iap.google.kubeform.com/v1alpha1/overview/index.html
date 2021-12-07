@@ -1,0 +1,336 @@
+<h2 id="iap.google.kubeform.com/v1alpha1">iap.google.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamBinding">AppEngineServiceIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamMember">AppEngineServiceIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamPolicy">AppEngineServiceIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamBinding">AppEngineVersionIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamMember">AppEngineVersionIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamPolicy">AppEngineVersionIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.Brand">Brand</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.Client">Client</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamBinding">TunnelIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamMember">TunnelIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamPolicy">TunnelIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamBinding">TunnelInstanceIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamMember">TunnelInstanceIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamPolicy">TunnelInstanceIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamBinding">WebBackendServiceIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamMember">WebBackendServiceIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamPolicy">WebBackendServiceIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamBinding">WebIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamMember">WebIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamPolicy">WebIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamBinding">WebTypeAppEngineIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamMember">WebTypeAppEngineIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamPolicy">WebTypeAppEngineIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamBinding">WebTypeComputeIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamMember">WebTypeComputeIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamPolicy">WebTypeComputeIamPolicy</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamBinding">AppEngineServiceIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamMember">AppEngineServiceIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamPolicy">AppEngineServiceIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamBinding">AppEngineVersionIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamMember">AppEngineVersionIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamPolicy">AppEngineVersionIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.Brand">Brand</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.Client">Client</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamBinding">TunnelIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamMember">TunnelIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamPolicy">TunnelIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamBinding">TunnelInstanceIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamMember">TunnelInstanceIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamPolicy">TunnelInstanceIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamBinding">WebBackendServiceIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamMember">WebBackendServiceIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamPolicy">WebBackendServiceIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamBinding">WebIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamMember">WebIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamPolicy">WebIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamBinding">WebTypeAppEngineIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamMember">WebTypeAppEngineIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamPolicy">WebTypeAppEngineIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamBinding">WebTypeComputeIamBinding</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamMember">WebTypeComputeIamMember</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamPolicy">WebTypeComputeIamPolicy</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamBindingSpec">AppEngineServiceIamBindingSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamBindingSpecCondition">AppEngineServiceIamBindingSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamBindingSpecConditionCodec">AppEngineServiceIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamBindingSpecResource">AppEngineServiceIamBindingSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamBindingStatus">AppEngineServiceIamBindingStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamMemberSpec">AppEngineServiceIamMemberSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamMemberSpecCondition">AppEngineServiceIamMemberSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamMemberSpecConditionCodec">AppEngineServiceIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamMemberSpecResource">AppEngineServiceIamMemberSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamMemberStatus">AppEngineServiceIamMemberStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamPolicySpec">AppEngineServiceIamPolicySpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamPolicySpecResource">AppEngineServiceIamPolicySpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineServiceIamPolicyStatus">AppEngineServiceIamPolicyStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamBindingSpec">AppEngineVersionIamBindingSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamBindingSpecCondition">AppEngineVersionIamBindingSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamBindingSpecConditionCodec">AppEngineVersionIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamBindingSpecResource">AppEngineVersionIamBindingSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamBindingStatus">AppEngineVersionIamBindingStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamMemberSpec">AppEngineVersionIamMemberSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamMemberSpecCondition">AppEngineVersionIamMemberSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamMemberSpecConditionCodec">AppEngineVersionIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamMemberSpecResource">AppEngineVersionIamMemberSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamMemberStatus">AppEngineVersionIamMemberStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamPolicySpec">AppEngineVersionIamPolicySpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamPolicySpecResource">AppEngineVersionIamPolicySpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.AppEngineVersionIamPolicyStatus">AppEngineVersionIamPolicyStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.BrandSpec">BrandSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.BrandSpecResource">BrandSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.BrandStatus">BrandStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.ClientSpec">ClientSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.ClientSpecResource">ClientSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.ClientStatus">ClientStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamBindingSpec">TunnelIamBindingSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamBindingSpecCondition">TunnelIamBindingSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamBindingSpecConditionCodec">TunnelIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamBindingSpecResource">TunnelIamBindingSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamBindingStatus">TunnelIamBindingStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamMemberSpec">TunnelIamMemberSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamMemberSpecCondition">TunnelIamMemberSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamMemberSpecConditionCodec">TunnelIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamMemberSpecResource">TunnelIamMemberSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamMemberStatus">TunnelIamMemberStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamPolicySpec">TunnelIamPolicySpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamPolicySpecResource">TunnelIamPolicySpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelIamPolicyStatus">TunnelIamPolicyStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamBindingSpec">TunnelInstanceIamBindingSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamBindingSpecCondition">TunnelInstanceIamBindingSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamBindingSpecConditionCodec">TunnelInstanceIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamBindingSpecResource">TunnelInstanceIamBindingSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamBindingStatus">TunnelInstanceIamBindingStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamMemberSpec">TunnelInstanceIamMemberSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamMemberSpecCondition">TunnelInstanceIamMemberSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamMemberSpecConditionCodec">TunnelInstanceIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamMemberSpecResource">TunnelInstanceIamMemberSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamMemberStatus">TunnelInstanceIamMemberStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamPolicySpec">TunnelInstanceIamPolicySpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamPolicySpecResource">TunnelInstanceIamPolicySpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.TunnelInstanceIamPolicyStatus">TunnelInstanceIamPolicyStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamBindingSpec">WebBackendServiceIamBindingSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamBindingSpecCondition">WebBackendServiceIamBindingSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamBindingSpecConditionCodec">WebBackendServiceIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamBindingSpecResource">WebBackendServiceIamBindingSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamBindingStatus">WebBackendServiceIamBindingStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamMemberSpec">WebBackendServiceIamMemberSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamMemberSpecCondition">WebBackendServiceIamMemberSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamMemberSpecConditionCodec">WebBackendServiceIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamMemberSpecResource">WebBackendServiceIamMemberSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamMemberStatus">WebBackendServiceIamMemberStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamPolicySpec">WebBackendServiceIamPolicySpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamPolicySpecResource">WebBackendServiceIamPolicySpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebBackendServiceIamPolicyStatus">WebBackendServiceIamPolicyStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamBindingSpec">WebIamBindingSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamBindingSpecCondition">WebIamBindingSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamBindingSpecConditionCodec">WebIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamBindingSpecResource">WebIamBindingSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamBindingStatus">WebIamBindingStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamMemberSpec">WebIamMemberSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamMemberSpecCondition">WebIamMemberSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamMemberSpecConditionCodec">WebIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamMemberSpecResource">WebIamMemberSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamMemberStatus">WebIamMemberStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamPolicySpec">WebIamPolicySpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamPolicySpecResource">WebIamPolicySpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebIamPolicyStatus">WebIamPolicyStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamBindingSpec">WebTypeAppEngineIamBindingSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamBindingSpecCondition">WebTypeAppEngineIamBindingSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamBindingSpecConditionCodec">WebTypeAppEngineIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamBindingSpecResource">WebTypeAppEngineIamBindingSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamBindingStatus">WebTypeAppEngineIamBindingStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamMemberSpec">WebTypeAppEngineIamMemberSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamMemberSpecCondition">WebTypeAppEngineIamMemberSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamMemberSpecConditionCodec">WebTypeAppEngineIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamMemberSpecResource">WebTypeAppEngineIamMemberSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamMemberStatus">WebTypeAppEngineIamMemberStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamPolicySpec">WebTypeAppEngineIamPolicySpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamPolicySpecResource">WebTypeAppEngineIamPolicySpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeAppEngineIamPolicyStatus">WebTypeAppEngineIamPolicyStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamBindingSpec">WebTypeComputeIamBindingSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamBindingSpecCondition">WebTypeComputeIamBindingSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamBindingSpecConditionCodec">WebTypeComputeIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamBindingSpecResource">WebTypeComputeIamBindingSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamBindingStatus">WebTypeComputeIamBindingStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamMemberSpec">WebTypeComputeIamMemberSpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamMemberSpecCondition">WebTypeComputeIamMemberSpecCondition</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamMemberSpecConditionCodec">WebTypeComputeIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamMemberSpecResource">WebTypeComputeIamMemberSpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamMemberStatus">WebTypeComputeIamMemberStatus</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamPolicySpec">WebTypeComputeIamPolicySpec</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamPolicySpecResource">WebTypeComputeIamPolicySpecResource</a>
+</li><li>
+<a href="#iap.google.kubeform.com/v1alpha1.WebTypeComputeIamPolicyStatus">WebTypeComputeIamPolicyStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

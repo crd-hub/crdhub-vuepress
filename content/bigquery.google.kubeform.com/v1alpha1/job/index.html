@@ -1,0 +1,2009 @@
+<h3 id="bigquery.google.kubeform.com/v1alpha1.Job">Job
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+bigquery.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Job</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpec">
+JobSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">
+JobSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">
+JobSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobStatus">
+JobStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpec">JobSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.Job">Job</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">
+JobSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">
+JobSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecCopy">JobSpecCopy
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">JobSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>createDisposition</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies whether the job is allowed to create new tables. The following values are supported:
+CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table.
+CREATE_NEVER: The table must already exist. If it does not, a 'notFound' error is returned in the job result.
+Creation, truncation and append actions occur as one atomic update upon job completion Default value: &quot;CREATE_IF_NEEDED&quot; Possible values: [&quot;CREATE_IF_NEEDED&quot;, &quot;CREATE_NEVER&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationEncryptionConfiguration</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopyDestinationEncryptionConfiguration">
+JobSpecCopyDestinationEncryptionConfiguration
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Custom encryption configuration (e.g., Cloud KMS keys)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationTable</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopyDestinationTable">
+JobSpecCopyDestinationTable
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The destination table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceTables</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopySourceTables">
+[]JobSpecCopySourceTables
+</a>
+</em>
+</td>
+<td>
+<p>Source tables to copy.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>writeDisposition</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the action that occurs if the destination table already exists. The following values are supported:
+WRITE_TRUNCATE: If the table already exists, BigQuery overwrites the table data and uses the schema from the query result.
+WRITE_APPEND: If the table already exists, BigQuery appends the data to the table.
+WRITE_EMPTY: If the table already exists and contains data, a 'duplicate' error is returned in the job result.
+Each action is atomic and only occurs if BigQuery is able to complete the job successfully.
+Creation, truncation and append actions occur as one atomic update upon job completion. Default value: &quot;WRITE_EMPTY&quot; Possible values: [&quot;WRITE_TRUNCATE&quot;, &quot;WRITE_APPEND&quot;, &quot;WRITE_EMPTY&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecCopyDestinationEncryptionConfiguration">JobSpecCopyDestinationEncryptionConfiguration
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopy">JobSpecCopy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>kmsKeyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Describes the Cloud KMS encryption key that will be used to protect destination BigQuery table.
+The BigQuery Service Account associated with your project requires access to this encryption key.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecCopyDestinationTable">JobSpecCopyDestinationTable
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopy">JobSpecCopy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>datasetID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the dataset containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the project containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tableID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The table. Can be specified '{{table_id}}' if 'project_id' and 'dataset_id' are also set,
+or of the form 'projects/{{project}}/datasets/{{dataset_id}}/tables/{{table_id}}' if not.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecCopySourceTables">JobSpecCopySourceTables
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopy">JobSpecCopy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>datasetID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the dataset containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the project containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tableID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The table. Can be specified '{{table_id}}' if 'project_id' and 'dataset_id' are also set,
+or of the form 'projects/{{project}}/datasets/{{dataset_id}}/tables/{{table_id}}' if not.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecExtract">JobSpecExtract
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">JobSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>compression</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The compression type to use for exported files. Possible values include GZIP, DEFLATE, SNAPPY, and NONE.
+The default value is NONE. DEFLATE and SNAPPY are only supported for Avro.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationFormat</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The exported file format. Possible values include CSV, NEWLINE_DELIMITED_JSON and AVRO for tables and SAVED_MODEL for models.
+The default value for tables is CSV. Tables with nested or repeated fields cannot be exported as CSV.
+The default value for models is SAVED_MODEL.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationUris</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>A list of fully-qualified Google Cloud Storage URIs where the extracted table should be written.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>fieldDelimiter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>When extracting data in CSV format, this defines the delimiter to use between fields in the exported data.
+Default is ','</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>printHeader</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether to print out a header row in the results. Default is true.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceModel</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtractSourceModel">
+JobSpecExtractSourceModel
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A reference to the model being exported.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceTable</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtractSourceTable">
+JobSpecExtractSourceTable
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A reference to the table being exported.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>useAvroLogicalTypes</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether to use logical types when extracting to AVRO format.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecExtractSourceModel">JobSpecExtractSourceModel
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtract">JobSpecExtract</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>datasetID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The ID of the dataset containing this model.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>modelID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The ID of the model.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The ID of the project containing this model.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecExtractSourceTable">JobSpecExtractSourceTable
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtract">JobSpecExtract</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>datasetID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the dataset containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the project containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tableID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The table. Can be specified '{{table_id}}' if 'project_id' and 'dataset_id' are also set,
+or of the form 'projects/{{project}}/datasets/{{dataset_id}}/tables/{{table_id}}' if not.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecLoad">JobSpecLoad
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">JobSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>allowJaggedRows</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Accept rows that are missing trailing optional columns. The missing values are treated as nulls.
+If false, records with missing trailing columns are treated as bad records, and if there are too many bad records,
+an invalid error is returned in the job result. The default value is false. Only applicable to CSV, ignored for other formats.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>allowQuotedNewlines</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Indicates if BigQuery should allow quoted data sections that contain newline characters in a CSV file.
+The default value is false.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>autodetect</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Indicates if we should automatically infer the options and schema for CSV and JSON sources.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>createDisposition</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies whether the job is allowed to create new tables. The following values are supported:
+CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table.
+CREATE_NEVER: The table must already exist. If it does not, a 'notFound' error is returned in the job result.
+Creation, truncation and append actions occur as one atomic update upon job completion Default value: &quot;CREATE_IF_NEEDED&quot; Possible values: [&quot;CREATE_IF_NEEDED&quot;, &quot;CREATE_NEVER&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationEncryptionConfiguration</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadDestinationEncryptionConfiguration">
+JobSpecLoadDestinationEncryptionConfiguration
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Custom encryption configuration (e.g., Cloud KMS keys)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationTable</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadDestinationTable">
+JobSpecLoadDestinationTable
+</a>
+</em>
+</td>
+<td>
+<p>The destination table to load the data into.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>encoding</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The character encoding of the data. The supported values are UTF-8 or ISO-8859-1.
+The default value is UTF-8. BigQuery decodes the data after the raw, binary data
+has been split using the values of the quote and fieldDelimiter properties.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>fieldDelimiter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The separator for fields in a CSV file. The separator can be any ISO-8859-1 single-byte character.
+To use a character in the range 128-255, you must encode the character as UTF8. BigQuery converts
+the string to ISO-8859-1 encoding, and then uses the first byte of the encoded string to split the
+data in its raw, binary state. BigQuery also supports the escape sequence &quot;\t&quot; to specify a tab separator.
+The default value is a comma (',').</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ignoreUnknownValues</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Indicates if BigQuery should allow extra values that are not represented in the table schema.
+If true, the extra values are ignored. If false, records with extra columns are treated as bad records,
+and if there are too many bad records, an invalid error is returned in the job result.
+The default value is false. The sourceFormat property determines what BigQuery treats as an extra value:
+CSV: Trailing columns
+JSON: Named values that don't match any column names</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxBadRecords</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The maximum number of bad records that BigQuery can ignore when running the job. If the number of bad records exceeds this value,
+an invalid error is returned in the job result. The default value is 0, which requires that all records are valid.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>nullMarker</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies a string that represents a null value in a CSV file. For example, if you specify &quot;\N&quot;, BigQuery interprets &quot;\N&quot; as a null value
+when loading a CSV file. The default value is the empty string. If you set this property to a custom value, BigQuery throws an error if an
+empty string is present for all data types except for STRING and BYTE. For STRING and BYTE columns, BigQuery interprets the empty string as
+an empty value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectionFields</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If sourceFormat is set to &quot;DATASTORE_BACKUP&quot;, indicates which entity properties to load into BigQuery from a Cloud Datastore backup.
+Property names are case sensitive and must be top-level properties. If no properties are specified, BigQuery loads all properties.
+If any named property isn't found in the Cloud Datastore backup, an invalid error is returned in the job result.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>quote</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value that is used to quote data sections in a CSV file. BigQuery converts the string to ISO-8859-1 encoding,
+and then uses the first byte of the encoded string to split the data in its raw, binary state.
+The default value is a double-quote ('&quot;'). If your data does not contain quoted sections, set the property value to an empty string.
+If your data contains quoted newline characters, you must also set the allowQuotedNewlines property to true.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>schemaUpdateOptions</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Allows the schema of the destination table to be updated as a side effect of the load job if a schema is autodetected or
+supplied in the job configuration. Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND;
+when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table, specified by partition decorators.
+For normal tables, WRITE_TRUNCATE will always overwrite the schema. One or more of the following values are specified:
+ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema.
+ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>skipLeadingRows</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The number of rows at the top of a CSV file that BigQuery will skip when loading the data.
+The default value is 0. This property is useful if you have header rows in the file that should be skipped.
+When autodetect is on, the behavior is the following:
+skipLeadingRows unspecified - Autodetect tries to detect headers in the first row. If they are not detected,
+the row is read as data. Otherwise data is read starting from the second row.
+skipLeadingRows is 0 - Instructs autodetect that there are no headers and data should be read starting from the first row.
+skipLeadingRows = N &gt; 0 - Autodetect skips N-1 rows and tries to detect headers in row N. If headers are not detected,
+row N is just skipped. Otherwise row N is used to extract column names for the detected schema.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceFormat</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The format of the data files. For CSV files, specify &quot;CSV&quot;. For datastore backups, specify &quot;DATASTORE_BACKUP&quot;.
+For newline-delimited JSON, specify &quot;NEWLINE_DELIMITED_JSON&quot;. For Avro, specify &quot;AVRO&quot;. For parquet, specify &quot;PARQUET&quot;.
+For orc, specify &quot;ORC&quot;. [Beta] For Bigtable, specify &quot;BIGTABLE&quot;.
+The default value is CSV.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceUris</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>The fully-qualified URIs that point to your data in Google Cloud.
+For Google Cloud Storage URIs: Each URI can contain one '<em>' wildcard character
+and it must come after the 'bucket' name. Size limits related to load jobs apply
+to external data sources. For Google Cloud Bigtable URIs: Exactly one URI can be
+specified and it has be a fully specified and valid HTTPS URL for a Google Cloud Bigtable table.
+For Google Cloud Datastore backups: Exactly one URI can be specified. Also, the '</em>' wildcard character is not allowed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timePartitioning</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoadTimePartitioning">
+JobSpecLoadTimePartitioning
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Time-based partitioning specification for the destination table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>writeDisposition</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the action that occurs if the destination table already exists. The following values are supported:
+WRITE_TRUNCATE: If the table already exists, BigQuery overwrites the table data and uses the schema from the query result.
+WRITE_APPEND: If the table already exists, BigQuery appends the data to the table.
+WRITE_EMPTY: If the table already exists and contains data, a 'duplicate' error is returned in the job result.
+Each action is atomic and only occurs if BigQuery is able to complete the job successfully.
+Creation, truncation and append actions occur as one atomic update upon job completion. Default value: &quot;WRITE_EMPTY&quot; Possible values: [&quot;WRITE_TRUNCATE&quot;, &quot;WRITE_APPEND&quot;, &quot;WRITE_EMPTY&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecLoadDestinationEncryptionConfiguration">JobSpecLoadDestinationEncryptionConfiguration
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoad">JobSpecLoad</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>kmsKeyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Describes the Cloud KMS encryption key that will be used to protect destination BigQuery table.
+The BigQuery Service Account associated with your project requires access to this encryption key.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecLoadDestinationTable">JobSpecLoadDestinationTable
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoad">JobSpecLoad</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>datasetID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the dataset containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the project containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tableID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The table. Can be specified '{{table_id}}' if 'project_id' and 'dataset_id' are also set,
+or of the form 'projects/{{project}}/datasets/{{dataset_id}}/tables/{{table_id}}' if not.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecLoadTimePartitioning">JobSpecLoadTimePartitioning
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoad">JobSpecLoad</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>expirationMs</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of milliseconds for which to keep the storage for a partition. A wrapper is used here because 0 is an invalid value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>field</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If not set, the table is partitioned by pseudo column '_PARTITIONTIME'; if set, the table is partitioned by this field.
+The field must be a top-level TIMESTAMP or DATE field. Its mode must be NULLABLE or REQUIRED.
+A wrapper is used here because an empty string is an invalid value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The only type supported is DAY, which will generate one partition per day. Providing an empty string used to cause an error,
+but in OnePlatform the field will be treated as unset.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecQuery">JobSpecQuery
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">JobSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>allowLargeResults</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If true and query uses legacy SQL dialect, allows the query to produce arbitrarily large result tables at a slight cost in performance.
+Requires destinationTable to be set. For standard SQL queries, this flag is ignored and large results are always allowed.
+However, you must still set destinationTable when result size exceeds the allowed maximum response size.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>createDisposition</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies whether the job is allowed to create new tables. The following values are supported:
+CREATE_IF_NEEDED: If the table does not exist, BigQuery creates the table.
+CREATE_NEVER: The table must already exist. If it does not, a 'notFound' error is returned in the job result.
+Creation, truncation and append actions occur as one atomic update upon job completion Default value: &quot;CREATE_IF_NEEDED&quot; Possible values: [&quot;CREATE_IF_NEEDED&quot;, &quot;CREATE_NEVER&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>defaultDataset</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDefaultDataset">
+JobSpecQueryDefaultDataset
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the default dataset to use for unqualified table names in the query. Note that this does not alter behavior of unqualified dataset names.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationEncryptionConfiguration</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDestinationEncryptionConfiguration">
+JobSpecQueryDestinationEncryptionConfiguration
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Custom encryption configuration (e.g., Cloud KMS keys)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationTable</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDestinationTable">
+JobSpecQueryDestinationTable
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Describes the table where the query results should be stored.
+This property must be set for large results that exceed the maximum response size.
+For queries that produce anonymous (cached) results, this field will be populated by BigQuery.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>flattenResults</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If true and query uses legacy SQL dialect, flattens all nested and repeated fields in the query results.
+allowLargeResults must be true if this is set to false. For standard SQL queries, this flag is ignored and results are never flattened.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maximumBillingTier</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Limits the billing tier for this job. Queries that have resource usage beyond this tier will fail (without incurring a charge).
+If unspecified, this will be set to your project default.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maximumBytesBilled</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Limits the bytes billed for this job. Queries that will have bytes billed beyond this limit will fail (without incurring a charge).
+If unspecified, this will be set to your project default.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>parameterMode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Standard SQL only. Set to POSITIONAL to use positional (?) query parameters or to NAMED to use named (@myparam) query parameters in this query.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>priority</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies a priority for the query. Default value: &quot;INTERACTIVE&quot; Possible values: [&quot;INTERACTIVE&quot;, &quot;BATCH&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>query</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>SQL query text to execute. The useLegacySql field can be used to indicate whether the query uses legacy SQL or standard SQL.
+<em>NOTE</em>: queries containing <a href="https://cloud.google.com/bigquery/docs/reference/standard-sql/data-manipulation-language">DML language</a>
+('DELETE', 'UPDATE', 'MERGE', 'INSERT') must specify 'create_disposition = &quot;&quot;' and 'write_disposition = &quot;&quot;'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>schemaUpdateOptions</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Allows the schema of the destination table to be updated as a side effect of the query job.
+Schema update options are supported in two cases: when writeDisposition is WRITE_APPEND;
+when writeDisposition is WRITE_TRUNCATE and the destination table is a partition of a table,
+specified by partition decorators. For normal tables, WRITE_TRUNCATE will always overwrite the schema.
+One or more of the following values are specified:
+ALLOW_FIELD_ADDITION: allow adding a nullable field to the schema.
+ALLOW_FIELD_RELAXATION: allow relaxing a required field in the original schema to nullable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scriptOptions</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryScriptOptions">
+JobSpecQueryScriptOptions
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Options controlling the execution of scripts.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>useLegacySQL</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies whether to use BigQuery's legacy SQL dialect for this query. The default value is true.
+If set to false, the query will use BigQuery's standard SQL.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>useQueryCache</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether to look for the result in the query cache. The query cache is a best-effort cache that will be flushed whenever
+tables in the query are modified. Moreover, the query cache is only available when a query does not have a destination table specified.
+The default value is true.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>userDefinedFunctionResources</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQueryUserDefinedFunctionResources">
+[]JobSpecQueryUserDefinedFunctionResources
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Describes user-defined function resources used in the query.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>writeDisposition</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the action that occurs if the destination table already exists. The following values are supported:
+WRITE_TRUNCATE: If the table already exists, BigQuery overwrites the table data and uses the schema from the query result.
+WRITE_APPEND: If the table already exists, BigQuery appends the data to the table.
+WRITE_EMPTY: If the table already exists and contains data, a 'duplicate' error is returned in the job result.
+Each action is atomic and only occurs if BigQuery is able to complete the job successfully.
+Creation, truncation and append actions occur as one atomic update upon job completion. Default value: &quot;WRITE_EMPTY&quot; Possible values: [&quot;WRITE_TRUNCATE&quot;, &quot;WRITE_APPEND&quot;, &quot;WRITE_EMPTY&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDefaultDataset">JobSpecQueryDefaultDataset
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQuery">JobSpecQuery</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>datasetID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The dataset. Can be specified '{{dataset_id}}' if 'project_id' is also set,
+or of the form 'projects/{{project}}/datasets/{{dataset_id}}' if not.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the project containing this table.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDestinationEncryptionConfiguration">JobSpecQueryDestinationEncryptionConfiguration
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQuery">JobSpecQuery</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>kmsKeyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Describes the Cloud KMS encryption key that will be used to protect destination BigQuery table.
+The BigQuery Service Account associated with your project requires access to this encryption key.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecQueryDestinationTable">JobSpecQueryDestinationTable
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQuery">JobSpecQuery</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>datasetID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the dataset containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of the project containing this table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tableID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The table. Can be specified '{{table_id}}' if 'project_id' and 'dataset_id' are also set,
+or of the form 'projects/{{project}}/datasets/{{dataset_id}}/tables/{{table_id}}' if not.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecQueryScriptOptions">JobSpecQueryScriptOptions
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQuery">JobSpecQuery</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>keyResultStatement</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Determines which statement in the script represents the &quot;key result&quot;,
+used to populate the schema and query results of the script job. Possible values: [&quot;LAST&quot;, &quot;FIRST_SELECT&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>statementByteBudget</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Limit on the number of bytes billed per statement. Exceeding this budget results in an error.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>statementTimeoutMs</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Timeout period for each statement in a script.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecQueryUserDefinedFunctionResources">JobSpecQueryUserDefinedFunctionResources
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQuery">JobSpecQuery</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>inlineCode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An inline resource that contains code for a user-defined function (UDF).
+Providing a inline code resource is equivalent to providing a URI for a file containing the same code.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>resourceURI</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A code resource to load from a Google Cloud Storage URI (gs://bucket/path).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecResource">JobSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpec">JobSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>copy</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecCopy">
+JobSpecCopy
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Copies a table.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>extract</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecExtract">
+JobSpecExtract
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Configures an extract job.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>jobID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The ID of the job. The ID must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), or dashes (-). The maximum length is 1,024 characters.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>jobTimeoutMs</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Job timeout in milliseconds. If this time limit is exceeded, BigQuery may attempt to terminate the job.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>jobType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The type of the job.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>labels</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The labels associated with this job. You can use these to organize and group your jobs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>load</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecLoad">
+JobSpecLoad
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Configures a load job.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>location</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The geographic location of the job. The default value is US.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>query</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecQuery">
+JobSpecQuery
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Configures a query job.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecStatus">
+[]JobSpecStatus
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The status of this job. Examine this value when polling an asynchronous job to see if the job is complete.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>userEmail</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Email address of the user who ran the job.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecStatus">JobSpecStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecResource">JobSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>errorResult</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecStatusErrorResult">
+[]JobSpecStatusErrorResult
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Final error result of the job. If present, indicates that the job has completed and was unsuccessful.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>errors</code><br/>
+<em>
+<a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecStatusErrors">
+[]JobSpecStatusErrors
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The first errors encountered during the running of the job. The final message
+includes the number of errors that caused the process to stop. Errors here do
+not necessarily mean that the job has not completed or was unsuccessful.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Running state of the job. Valid states include 'PENDING', 'RUNNING', and 'DONE'.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecStatusErrorResult">JobSpecStatusErrorResult
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecStatus">JobSpecStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>location</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies where the error occurred, if present.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>message</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A human-readable description of the error.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>reason</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A short error code that summarizes the error.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobSpecStatusErrors">JobSpecStatusErrors
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.JobSpecStatus">JobSpecStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>location</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies where the error occurred, if present.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>message</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A human-readable description of the error.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>reason</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A short error code that summarizes the error.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="bigquery.google.kubeform.com/v1alpha1.JobStatus">JobStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#bigquery.google.kubeform.com/v1alpha1.Job">Job</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

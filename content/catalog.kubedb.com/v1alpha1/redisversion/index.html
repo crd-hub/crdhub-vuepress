@@ -1,0 +1,423 @@
+<h3 id="catalog.kubedb.com/v1alpha1.RedisVersion">RedisVersion
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+catalog.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>RedisVersion</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionSpec">
+RedisVersionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>initContainer</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionInitContainer">
+RedisVersionInitContainer
+</a>
+</em>
+</td>
+<td>
+<p>init container image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>db</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionDatabase">
+RedisVersionDatabase
+</a>
+</em>
+</td>
+<td>
+<p>Database Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionExporter">
+RedisVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinator</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionCoordinator">
+RedisVersionCoordinator
+</a>
+</em>
+</td>
+<td>
+<p>Coordinator Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicies</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionPodSecurityPolicy">
+RedisVersionPodSecurityPolicy
+</a>
+</em>
+</td>
+<td>
+<p>PSP names</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stash</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashAddonSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stash defines backup and restore task definitions.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.RedisVersionCoordinator">RedisVersionCoordinator
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.RedisVersionSpec">RedisVersionSpec</a>)
+</p>
+<div>
+<p>RedisVersionCoordinator is the Redis coordinator image</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.RedisVersionDatabase">RedisVersionDatabase
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.RedisVersionSpec">RedisVersionSpec</a>)
+</p>
+<div>
+<p>RedisVersionDatabase is the Redis Database image</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.RedisVersionExporter">RedisVersionExporter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.RedisVersionSpec">RedisVersionSpec</a>)
+</p>
+<div>
+<p>RedisVersionExporter is the image for the Redis exporter</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.RedisVersionInitContainer">RedisVersionInitContainer
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.RedisVersionSpec">RedisVersionSpec</a>)
+</p>
+<div>
+<p>RedisVersionInitContainer is the Redis init container image</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.RedisVersionPodSecurityPolicy">RedisVersionPodSecurityPolicy
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.RedisVersionSpec">RedisVersionSpec</a>)
+</p>
+<div>
+<p>RedisVersionPodSecurityPolicy is the Redis pod security policies</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databasePolicyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.RedisVersionSpec">RedisVersionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.RedisVersion">RedisVersion</a>)
+</p>
+<div>
+<p>RedisVersionSpec is the spec for redis version</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>initContainer</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionInitContainer">
+RedisVersionInitContainer
+</a>
+</em>
+</td>
+<td>
+<p>init container image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>db</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionDatabase">
+RedisVersionDatabase
+</a>
+</em>
+</td>
+<td>
+<p>Database Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionExporter">
+RedisVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinator</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionCoordinator">
+RedisVersionCoordinator
+</a>
+</em>
+</td>
+<td>
+<p>Coordinator Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicies</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.RedisVersionPodSecurityPolicy">
+RedisVersionPodSecurityPolicy
+</a>
+</em>
+</td>
+<td>
+<p>PSP names</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stash</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashAddonSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stash defines backup and restore task definitions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

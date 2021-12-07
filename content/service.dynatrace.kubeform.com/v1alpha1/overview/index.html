@@ -1,0 +1,252 @@
+<h2 id="service.dynatrace.kubeform.com/v1alpha1">service.dynatrace.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.Anomalies">Anomalies</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.Naming">Naming</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.Anomalies">Anomalies</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.Naming">Naming</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpec">AnomaliesSpec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRates">AnomaliesSpecFailureRates</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesAuto">AnomaliesSpecFailureRatesAuto</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesAutoCodec">AnomaliesSpecFailureRatesAutoCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesCodec">AnomaliesSpecFailureRatesCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesThresholds">AnomaliesSpecFailureRatesThresholds</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesThresholdsCodec">AnomaliesSpecFailureRatesThresholdsCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoad">AnomaliesSpecLoad</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadCodec">AnomaliesSpecLoadCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadDrops">AnomaliesSpecLoadDrops</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadDrops2">AnomaliesSpecLoadDrops2</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadDrops2Codec">AnomaliesSpecLoadDrops2Codec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadDropsCodec">AnomaliesSpecLoadDropsCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadSpikes">AnomaliesSpecLoadSpikes</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadSpikesCodec">AnomaliesSpecLoadSpikesCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimes">AnomaliesSpecResponseTimes</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesAuto">AnomaliesSpecResponseTimesAuto</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesAutoCodec">AnomaliesSpecResponseTimesAutoCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesCodec">AnomaliesSpecResponseTimesCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesThresholds">AnomaliesSpecResponseTimesThresholds</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesThresholdsCodec">AnomaliesSpecResponseTimesThresholdsCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesStatus">AnomaliesStatus</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpec">NamingSpec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditions">NamingSpecConditions</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsCondition">NamingSpecConditionsCondition</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionApplicationType">NamingSpecConditionsConditionApplicationType</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionApplicationTypeComparison">NamingSpecConditionsConditionApplicationTypeComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionAzureComputeMode">NamingSpecConditionsConditionAzureComputeMode</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionAzureComputeModeComparison">NamingSpecConditionsConditionAzureComputeModeComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionAzureSku">NamingSpecConditionsConditionAzureSku</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionAzureSkuComparision">NamingSpecConditionsConditionAzureSkuComparision</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionBaseComparisonBasic">NamingSpecConditionsConditionBaseComparisonBasic</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionBaseConditionKey">NamingSpecConditionsConditionBaseConditionKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionBitness">NamingSpecConditionsConditionBitness</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionBitnessComparision">NamingSpecConditionsConditionBitnessComparision</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCloudType">NamingSpecConditionsConditionCloudType</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCloudTypeComparison">NamingSpecConditionsConditionCloudTypeComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionComparison">NamingSpecConditionsConditionComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomApplicationType">NamingSpecConditionsConditionCustomApplicationType</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomApplicationTypeComparison">NamingSpecConditionsConditionCustomApplicationTypeComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomHostMetadata">NamingSpecConditionsConditionCustomHostMetadata</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomHostMetadataConditionKey">NamingSpecConditionsConditionCustomHostMetadataConditionKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomHostMetadataConditionKeyDynamicKey">NamingSpecConditionsConditionCustomHostMetadataConditionKeyDynamicKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomHostMetadataConditionKeyDynamicKeyCodec">NamingSpecConditionsConditionCustomHostMetadataConditionKeyDynamicKeyCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomHostMetadataDynamicKey">NamingSpecConditionsConditionCustomHostMetadataDynamicKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomHostMetadataDynamicKeyCodec">NamingSpecConditionsConditionCustomHostMetadataDynamicKeyCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomProcessMetadata">NamingSpecConditionsConditionCustomProcessMetadata</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomProcessMetadataConditionKey">NamingSpecConditionsConditionCustomProcessMetadataConditionKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomProcessMetadataConditionKeyDynamicKey">NamingSpecConditionsConditionCustomProcessMetadataConditionKeyDynamicKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomProcessMetadataConditionKeyDynamicKeyCodec">NamingSpecConditionsConditionCustomProcessMetadataConditionKeyDynamicKeyCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomProcessMetadataDynamicKey">NamingSpecConditionsConditionCustomProcessMetadataDynamicKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionCustomProcessMetadataDynamicKeyCodec">NamingSpecConditionsConditionCustomProcessMetadataDynamicKeyCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionDatabaseTopology">NamingSpecConditionsConditionDatabaseTopology</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionDatabaseTopologyComparison">NamingSpecConditionsConditionDatabaseTopologyComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionDcrumDecoder">NamingSpecConditionsConditionDcrumDecoder</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionDcrumDecoderComparison">NamingSpecConditionsConditionDcrumDecoderComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionEntity">NamingSpecConditionsConditionEntity</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionEntityIDComparison">NamingSpecConditionsConditionEntityIDComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionHostTech">NamingSpecConditionsConditionHostTech</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionHostTechValue">NamingSpecConditionsConditionHostTechValue</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionHostTechValueCodec">NamingSpecConditionsConditionHostTechValueCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionHypervisor">NamingSpecConditionsConditionHypervisor</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionHypervisorTypeComparision">NamingSpecConditionsConditionHypervisorTypeComparision</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedName">NamingSpecConditionsConditionIndexedName</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedNameComparison">NamingSpecConditionsConditionIndexedNameComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedString">NamingSpecConditionsConditionIndexedString</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedStringComparison">NamingSpecConditionsConditionIndexedStringComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedTag">NamingSpecConditionsConditionIndexedTag</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedTagComparison">NamingSpecConditionsConditionIndexedTagComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedTagComparisonValue">NamingSpecConditionsConditionIndexedTagComparisonValue</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedTagComparisonValueCodec">NamingSpecConditionsConditionIndexedTagComparisonValueCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedTagValue">NamingSpecConditionsConditionIndexedTagValue</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIndexedTagValueCodec">NamingSpecConditionsConditionIndexedTagValueCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionInteger">NamingSpecConditionsConditionInteger</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIntegerComparison">NamingSpecConditionsConditionIntegerComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIpaddress">NamingSpecConditionsConditionIpaddress</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionIpaddressComparison">NamingSpecConditionsConditionIpaddressComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionKey">NamingSpecConditionsConditionKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionMobilePlatform">NamingSpecConditionsConditionMobilePlatform</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionMobilePlatformComparison">NamingSpecConditionsConditionMobilePlatformComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionOsArch">NamingSpecConditionsConditionOsArch</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionOsType">NamingSpecConditionsConditionOsType</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionOsarchitectureComparison">NamingSpecConditionsConditionOsarchitectureComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionOstypeComparison">NamingSpecConditionsConditionOstypeComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionPaasType">NamingSpecConditionsConditionPaasType</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionPaasTypeComparison">NamingSpecConditionsConditionPaasTypeComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionProcessMetadata">NamingSpecConditionsConditionProcessMetadata</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionProcessMetadataConditionKey">NamingSpecConditionsConditionProcessMetadataConditionKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionServiceTopology">NamingSpecConditionsConditionServiceTopology</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionServiceTopologyComparison">NamingSpecConditionsConditionServiceTopologyComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionServiceType">NamingSpecConditionsConditionServiceType</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionServiceTypeComparison">NamingSpecConditionsConditionServiceTypeComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionSimpleHostTechComparison">NamingSpecConditionsConditionSimpleHostTechComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionSimpleHostTechComparisonValue">NamingSpecConditionsConditionSimpleHostTechComparisonValue</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionSimpleHostTechComparisonValueCodec">NamingSpecConditionsConditionSimpleHostTechComparisonValueCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionSimpleTechComparison">NamingSpecConditionsConditionSimpleTechComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionSimpleTechComparisonValue">NamingSpecConditionsConditionSimpleTechComparisonValue</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionSimpleTechComparisonValueCodec">NamingSpecConditionsConditionSimpleTechComparisonValueCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionString">NamingSpecConditionsConditionString</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionStringComparison">NamingSpecConditionsConditionStringComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionStringConditionKey">NamingSpecConditionsConditionStringConditionKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionStringKey">NamingSpecConditionsConditionStringKey</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionSyntheticEngine">NamingSpecConditionsConditionSyntheticEngine</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionSyntheticEngineTypeComparison">NamingSpecConditionsConditionSyntheticEngineTypeComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTag">NamingSpecConditionsConditionTag</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTagComparison">NamingSpecConditionsConditionTagComparison</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTagComparisonValue">NamingSpecConditionsConditionTagComparisonValue</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTagComparisonValueCodec">NamingSpecConditionsConditionTagComparisonValueCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTagValue">NamingSpecConditionsConditionTagValue</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTagValueCodec">NamingSpecConditionsConditionTagValueCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTech">NamingSpecConditionsConditionTech</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTechValue">NamingSpecConditionsConditionTechValue</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecConditionsConditionTechValueCodec">NamingSpecConditionsConditionTechValueCodec</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingSpecResource">NamingSpecResource</a>
+</li><li>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.NamingStatus">NamingStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>e4a0042</code>.
+</em></p>
