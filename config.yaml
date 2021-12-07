@@ -1,4 +1,4 @@
-baseURL: 'http://crdhub.dev/'
+baseURL: 'https://crdhub.dev/'
 languageCode: en-us
 title: CRDHub
 theme: minimal
