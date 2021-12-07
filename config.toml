@@ -1,0 +1,58 @@
+baseURL = "http://crdhub.dev/"
+languageCode = "en-us"
+title = "CRDHub"
+theme = "minimal"
+disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
+
+[params]
+    author = "AppsCode Inc."
+    description = "Kubernetes API Registry"
+    githubUsername = "crd-hub"
+    accent = "purple"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["go", "haskell", "kotlin", "scala", "swift"]
+    favicon = "images/logo.jpg"
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+
+# [[menu.main]]
+#     url = "/post/"
+#     name = "Posts"
+#     weight = 3
+# 
+# [[menu.main]]
+#     url = "/project/"
+#     name = "Projects"
+#     weight = 4
+
+# Social icons to be shown on the right-hand side of the navigation bar.
+# The "name" field should match the name of the icon in Font Awesome.
+# The list of available icons can be found at http://fontawesome.io/icons.
+
+[[menu.icon]]
+    url = "mailto:support@appscode.com"
+    name = "fas fa-envelope"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/crd-hub/"
+    name = "fab fa-github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/crdhub/"
+    name = "fab fa-twitter"
+    weight = 3
