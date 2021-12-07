@@ -1,2 +1,9 @@
-.hugo_build.lock
+/.firebase
+/content/docs
+/node_modules
+/repos
+/resources
+.sass-cache
+/public
 .DS_Store
+.hugo_build.lock

@@ -1,0 +1,62 @@
+name: CI
+
+on:
+  pull_request:
+    branches:
+      - "*"
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Set up Go 1.x
+        uses: actions/setup-go@v2
+        with:
+          go-version: ^1.17
+        id: go
+
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+
+      - name: Install yq
+        run: |
+          curl -fsSL -o yqq https://github.com/mikefarah/yq/releases/download/3.3.0/yq_linux_amd64
+          chmod +x yqq
+          sudo mv yqq /usr/local/bin/yqq
+          pip3 install yq
+
+      - name: Install Hugo
+        run: |
+          curl -fsSL -o hugo_extended.deb https://github.com/gohugoio/hugo/releases/download/v0.87.0/hugo_extended_0.87.0_Linux-64bit.deb
+          sudo dpkg -i hugo_extended.deb
+
+      - name: Install Hugo Tools
+        run: |
+          curl -fsSL -o hugo-tools https://github.com/appscodelabs/hugo-tools/releases/download/v0.2.21/hugo-tools-linux-amd64
+          chmod +x hugo-tools
+          sudo mv hugo-tools /usr/local/bin/hugo-tools
+
+      - name: Install link checker
+        run: |
+          curl -fsSL -o liche https://github.com/appscodelabs/liche/releases/download/v0.1.0/liche-linux-amd64
+          chmod +x liche
+          sudo mv liche /usr/local/bin/liche
+
+      - name: Install npm packages
+        run: |
+          npm install
+
+      - name: Build
+        env:
+          GOOGLE_CUSTOM_SEARCH_API_KEY: ${{ secrets.GOOGLE_CUSTOM_SEARCH_API_KEY }}
+        run: make gen-prod
+
+      - name: Check links
+        run: |
+          hugo server --minify --config=config.yaml &>/dev/null &
+          liche -r public -d http://localhost:1313 -c 10 -p -l -x '^(.*github.com.*|.*linkedin.com.*)$' || true

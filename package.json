@@ -1,0 +1,23 @@
+{
+  "name": "crdhub",
+  "version": "0.0.1",
+  "description": "byte.builders",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crd-hub/crdhub.git"
+  },
+  "author": "AppsCode Inc. <support@appscode.com>",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/crd-hub/crdhub/issues"
+  },
+  "homepage": "https://github.com/crd-hub/crdhub#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^6.1.3"
+  },
+  "private": true
+}

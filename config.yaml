@@ -1,0 +1,41 @@
+baseURL: 'http://crdhub.dev/'
+languageCode: en-us
+title: CRDHub
+theme: minimal
+disqusShortname: username
+googleAnalytics: ''
+params:
+  author: AppsCode Inc.
+  description: Kubernetes API Registry
+  githubUsername: crd-hub
+  accent: purple
+  showBorder: true
+  backgroundColor: white
+  font: Raleway
+  highlight: true
+  highlightStyle: default
+  highlightLanguages:
+    - go
+    - haskell
+    - kotlin
+    - scala
+    - swift
+  favicon: images/logo.jpg
+menu:
+  main:
+    - url: /
+      name: Home
+      weight: 1
+    - url: /about/
+      name: About
+      weight: 2
+  icon:
+    - url: 'mailto:support@appscode.com'
+      name: fas fa-envelope
+      weight: 1
+    - url: 'https://github.com/crd-hub/'
+      name: fab fa-github
+      weight: 2
+    - url: 'https://twitter.com/crdhub/'
+      name: fab fa-twitter
+      weight: 3

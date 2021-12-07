@@ -1,0 +1,13 @@
+{
+  "hosting": [
+    {
+      "target": "hugo",
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    }
+  ]
+}
