@@ -1,0 +1,150 @@
+<h2 id="autoscaling.aws.kubeform.com/v1alpha1">autoscaling.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Attachment">Attachment</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Group">Group</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.LifecycleHook">LifecycleHook</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Notification">Notification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Policy">Policy</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Schedule">Schedule</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Attachment">Attachment</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Group">Group</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.LifecycleHook">LifecycleHook</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Notification">Notification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Policy">Policy</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.Schedule">Schedule</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.AttachmentSpec">AttachmentSpec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.AttachmentSpecResource">AttachmentSpecResource</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.AttachmentStatus">AttachmentStatus</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpec">GroupSpec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecInitialLifecycleHook">GroupSpecInitialLifecycleHook</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecInstanceRefresh">GroupSpecInstanceRefresh</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecInstanceRefreshCodec">GroupSpecInstanceRefreshCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecInstanceRefreshPreferences">GroupSpecInstanceRefreshPreferences</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecInstanceRefreshPreferencesCodec">GroupSpecInstanceRefreshPreferencesCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecLaunchTemplate">GroupSpecLaunchTemplate</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecLaunchTemplateCodec">GroupSpecLaunchTemplateCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicy">GroupSpecMixedInstancesPolicy</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyCodec">GroupSpecMixedInstancesPolicyCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyInstancesDistribution">GroupSpecMixedInstancesPolicyInstancesDistribution</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyInstancesDistributionCodec">GroupSpecMixedInstancesPolicyInstancesDistributionCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyLaunchTemplate">GroupSpecMixedInstancesPolicyLaunchTemplate</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyLaunchTemplateCodec">GroupSpecMixedInstancesPolicyLaunchTemplateCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification">GroupSpecMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationCodec">GroupSpecMixedInstancesPolicyLaunchTemplateLaunchTemplateSpecificationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyLaunchTemplateOverride">GroupSpecMixedInstancesPolicyLaunchTemplateOverride</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification">GroupSpecMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationCodec">GroupSpecMixedInstancesPolicyLaunchTemplateOverrideLaunchTemplateSpecificationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecResource">GroupSpecResource</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecTag">GroupSpecTag</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecWarmPool">GroupSpecWarmPool</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupSpecWarmPoolCodec">GroupSpecWarmPoolCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.GroupStatus">GroupStatus</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.LifecycleHookSpec">LifecycleHookSpec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.LifecycleHookSpecResource">LifecycleHookSpecResource</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.LifecycleHookStatus">LifecycleHookStatus</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.NotificationSpec">NotificationSpec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.NotificationSpecResource">NotificationSpecResource</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.NotificationStatus">NotificationStatus</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpec">PolicySpec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfiguration">PolicySpecPredictiveScalingConfiguration</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationCodec">PolicySpecPredictiveScalingConfigurationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationMetricSpecification">PolicySpecPredictiveScalingConfigurationMetricSpecification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationMetricSpecificationCodec">PolicySpecPredictiveScalingConfigurationMetricSpecificationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification">PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationCodec">PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedLoadMetricSpecificationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification">PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationCodec">PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedMetricPairSpecificationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification">PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationCodec">PolicySpecPredictiveScalingConfigurationMetricSpecificationPredefinedScalingMetricSpecificationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecResource">PolicySpecResource</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecStepAdjustment">PolicySpecStepAdjustment</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecTargetTrackingConfiguration">PolicySpecTargetTrackingConfiguration</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecTargetTrackingConfigurationCodec">PolicySpecTargetTrackingConfigurationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecTargetTrackingConfigurationCustomizedMetricSpecification">PolicySpecTargetTrackingConfigurationCustomizedMetricSpecification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecTargetTrackingConfigurationCustomizedMetricSpecificationCodec">PolicySpecTargetTrackingConfigurationCustomizedMetricSpecificationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension">PolicySpecTargetTrackingConfigurationCustomizedMetricSpecificationMetricDimension</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecTargetTrackingConfigurationPredefinedMetricSpecification">PolicySpecTargetTrackingConfigurationPredefinedMetricSpecification</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicySpecTargetTrackingConfigurationPredefinedMetricSpecificationCodec">PolicySpecTargetTrackingConfigurationPredefinedMetricSpecificationCodec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.PolicyStatus">PolicyStatus</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.ScheduleSpec">ScheduleSpec</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.ScheduleSpecResource">ScheduleSpecResource</a>
+</li><li>
+<a href="#autoscaling.aws.kubeform.com/v1alpha1.ScheduleStatus">ScheduleStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

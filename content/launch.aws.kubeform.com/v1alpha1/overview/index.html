@@ -1,0 +1,110 @@
+<h2 id="launch.aws.kubeform.com/v1alpha1">launch.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.Configuration">Configuration</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.Template">Template</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.Configuration">Configuration</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.Template">Template</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationSpec">ConfigurationSpec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationSpecEbsBlockDevice">ConfigurationSpecEbsBlockDevice</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationSpecEphemeralBlockDevice">ConfigurationSpecEphemeralBlockDevice</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationSpecMetadataOptions">ConfigurationSpecMetadataOptions</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationSpecMetadataOptionsCodec">ConfigurationSpecMetadataOptionsCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationSpecResource">ConfigurationSpecResource</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationSpecRootBlockDevice">ConfigurationSpecRootBlockDevice</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationSpecRootBlockDeviceCodec">ConfigurationSpecRootBlockDeviceCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.ConfigurationStatus">ConfigurationStatus</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpec">TemplateSpec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecBlockDeviceMappings">TemplateSpecBlockDeviceMappings</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecBlockDeviceMappingsEbs">TemplateSpecBlockDeviceMappingsEbs</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecBlockDeviceMappingsEbsCodec">TemplateSpecBlockDeviceMappingsEbsCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecCapacityReservationSpecification">TemplateSpecCapacityReservationSpecification</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecCapacityReservationSpecificationCapacityReservationTarget">TemplateSpecCapacityReservationSpecificationCapacityReservationTarget</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecCapacityReservationSpecificationCapacityReservationTargetCodec">TemplateSpecCapacityReservationSpecificationCapacityReservationTargetCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecCapacityReservationSpecificationCodec">TemplateSpecCapacityReservationSpecificationCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecCpuOptions">TemplateSpecCpuOptions</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecCpuOptionsCodec">TemplateSpecCpuOptionsCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecCreditSpecification">TemplateSpecCreditSpecification</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecCreditSpecificationCodec">TemplateSpecCreditSpecificationCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecElasticGpuSpecifications">TemplateSpecElasticGpuSpecifications</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecElasticInferenceAccelerator">TemplateSpecElasticInferenceAccelerator</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecElasticInferenceAcceleratorCodec">TemplateSpecElasticInferenceAcceleratorCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecEnclaveOptions">TemplateSpecEnclaveOptions</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecEnclaveOptionsCodec">TemplateSpecEnclaveOptionsCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecHibernationOptions">TemplateSpecHibernationOptions</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecHibernationOptionsCodec">TemplateSpecHibernationOptionsCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecIamInstanceProfile">TemplateSpecIamInstanceProfile</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecIamInstanceProfileCodec">TemplateSpecIamInstanceProfileCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecInstanceMarketOptions">TemplateSpecInstanceMarketOptions</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecInstanceMarketOptionsCodec">TemplateSpecInstanceMarketOptionsCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecInstanceMarketOptionsSpotOptions">TemplateSpecInstanceMarketOptionsSpotOptions</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecInstanceMarketOptionsSpotOptionsCodec">TemplateSpecInstanceMarketOptionsSpotOptionsCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecLicenseSpecification">TemplateSpecLicenseSpecification</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecMetadataOptions">TemplateSpecMetadataOptions</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecMetadataOptionsCodec">TemplateSpecMetadataOptionsCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecMonitoring">TemplateSpecMonitoring</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecMonitoringCodec">TemplateSpecMonitoringCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecNetworkInterfaces">TemplateSpecNetworkInterfaces</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecPlacement">TemplateSpecPlacement</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecPlacementCodec">TemplateSpecPlacementCodec</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecResource">TemplateSpecResource</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateSpecTagSpecifications">TemplateSpecTagSpecifications</a>
+</li><li>
+<a href="#launch.aws.kubeform.com/v1alpha1.TemplateStatus">TemplateStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

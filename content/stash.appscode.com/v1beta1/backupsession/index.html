@@ -1,0 +1,695 @@
+<h3 id="stash.appscode.com/v1beta1.BackupSession">BackupSession
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+stash.appscode.com/v1beta1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>BackupSession</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.BackupSessionSpec">
+BackupSessionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>invoker</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.BackupInvokerRef">
+BackupInvokerRef
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Invoker refers to the BackupConfiguration or BackupBatch being used to invoke this backup session</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.BackupSessionStatus">
+BackupSessionStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.BackupSessionPhase">
+BackupSessionPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Phase indicates the overall phase of the backup process for this BackupSession. Phase will be &quot;Succeeded&quot; only if
+phase of all hosts are &quot;Succeeded&quot;. If any of the host fail to complete backup, Phase will be &quot;Failed&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sessionDuration</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>SessionDuration specify total time taken to complete current backup session (sum of backup duration of all targets)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targets</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.BackupTargetStatus">
+[]BackupTargetStatus
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Targets specify the backup status of individual targets</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions shows condition of different operations/steps of the backup process</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.BackupInvokerRef">BackupInvokerRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.BackupSessionSpec">BackupSessionSpec</a>)
+</p>
+<div>
+<p>BackupInvokerRef contains information that points to the backup configuration or batch being used</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiGroup</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>APIGroup is the group for the resource being referenced</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Kind is the type of resource being referenced</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name is the name of resource being referenced</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.BackupSessionPhase">BackupSessionPhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.BackupSessionStatus">BackupSessionStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Failed&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Pending&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Running&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Skipped&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Succeeded&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Unknown&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.BackupSessionSpec">BackupSessionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.BackupSession">BackupSession</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>invoker</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.BackupInvokerRef">
+BackupInvokerRef
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Invoker refers to the BackupConfiguration or BackupBatch being used to invoke this backup session</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.BackupSessionStatus">BackupSessionStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.BackupSession">BackupSession</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.BackupSessionPhase">
+BackupSessionPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Phase indicates the overall phase of the backup process for this BackupSession. Phase will be &quot;Succeeded&quot; only if
+phase of all hosts are &quot;Succeeded&quot;. If any of the host fail to complete backup, Phase will be &quot;Failed&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sessionDuration</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>SessionDuration specify total time taken to complete current backup session (sum of backup duration of all targets)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targets</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.BackupTargetStatus">
+[]BackupTargetStatus
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Targets specify the backup status of individual targets</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions shows condition of different operations/steps of the backup process</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.BackupTargetStatus">BackupTargetStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.BackupSessionStatus">BackupSessionStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>ref</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.TargetRef">
+TargetRef
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Ref refers to the backup target</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>totalHosts</code><br/>
+<em>
+int32
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>TotalHosts specifies total number of hosts for this target that will be backed up for a BackupSession</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.TargetPhase">
+TargetPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Phase indicates backup phase of this target</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stats</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.HostBackupStats">
+[]HostBackupStats
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stats shows statistics of individual hosts for this backup session</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>preBackupActions</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>PreBackupActions specifies a list of actions that the backup process should execute before taking backup</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>postBackupActions</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>PostBackupActions specifies a list of actions that the backup process should execute after taking backup</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.FileStats">FileStats
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.SnapshotStats">SnapshotStats</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>totalFiles</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>TotalFiles shows total number of files that has been backed up</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>newFiles</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>NewFiles shows total number of new files that has been created since last backup</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>modifiedFiles</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>ModifiedFiles shows total number of files that has been modified since last backup</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unmodifiedFiles</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>UnmodifiedFiles shows total number of files that has not been changed since last backup</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.HostBackupPhase">HostBackupPhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.HostBackupStats">HostBackupStats</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Failed&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Succeeded&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.HostBackupStats">HostBackupStats
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.BackupTargetStatus">BackupTargetStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>hostname</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Hostname indicate name of the host that has been backed up</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.HostBackupPhase">
+HostBackupPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Phase indicates backup phase of this host</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>snapshots</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.SnapshotStats">
+[]SnapshotStats
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Snapshots specifies the stats of individual snapshots that has been taken for this host in current backup session</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>duration</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Duration indicates total time taken to complete backup for this hosts</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>error</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Error indicates string value of error in case of backup failure</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.SnapshotStats">SnapshotStats
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.HostBackupStats">HostBackupStats</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name indicates the name of the backup snapshot created for this host</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Path indicates the directory that has been backed up in this snapshot</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>totalSize</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>TotalSize indicates the size of data to backup in target directory</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>uploaded</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Uploaded indicates size of data uploaded to backend for this snapshot</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>processingTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>ProcessingTime indicates time taken to process the target data</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>fileStats</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.FileStats">
+FileStats
+</a>
+</em>
+</td>
+<td>
+<p>FileStats shows statistics of files of this snapshot</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.TargetPhase">TargetPhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.BackupTargetStatus">BackupTargetStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Failed&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Pending&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Running&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Succeeded&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>dce6be25</code>.
+</em></p>

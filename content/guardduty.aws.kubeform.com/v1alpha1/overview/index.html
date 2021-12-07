@@ -1,0 +1,108 @@
+<h2 id="guardduty.aws.kubeform.com/v1alpha1">guardduty.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Detector">Detector</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Filter">Filter</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.InviteAccepter">InviteAccepter</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Ipset">Ipset</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Member">Member</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationAdminAccount">OrganizationAdminAccount</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationConfiguration">OrganizationConfiguration</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.PublishingDestination">PublishingDestination</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Threatintelset">Threatintelset</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Detector">Detector</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Filter">Filter</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.InviteAccepter">InviteAccepter</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Ipset">Ipset</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Member">Member</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationAdminAccount">OrganizationAdminAccount</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationConfiguration">OrganizationConfiguration</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.PublishingDestination">PublishingDestination</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.Threatintelset">Threatintelset</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.DetectorSpec">DetectorSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.DetectorSpecResource">DetectorSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.DetectorStatus">DetectorStatus</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.FilterSpec">FilterSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.FilterSpecFindingCriteria">FilterSpecFindingCriteria</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.FilterSpecFindingCriteriaCodec">FilterSpecFindingCriteriaCodec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.FilterSpecFindingCriteriaCriterion">FilterSpecFindingCriteriaCriterion</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.FilterSpecResource">FilterSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.FilterStatus">FilterStatus</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.InviteAccepterSpec">InviteAccepterSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.InviteAccepterSpecResource">InviteAccepterSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.InviteAccepterStatus">InviteAccepterStatus</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.IpsetSpec">IpsetSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.IpsetSpecResource">IpsetSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.IpsetStatus">IpsetStatus</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.MemberSpec">MemberSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.MemberSpecResource">MemberSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.MemberStatus">MemberStatus</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationAdminAccountSpec">OrganizationAdminAccountSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationAdminAccountSpecResource">OrganizationAdminAccountSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationAdminAccountStatus">OrganizationAdminAccountStatus</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationConfigurationSpec">OrganizationConfigurationSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationConfigurationSpecResource">OrganizationConfigurationSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.OrganizationConfigurationStatus">OrganizationConfigurationStatus</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.PublishingDestinationSpec">PublishingDestinationSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.PublishingDestinationSpecResource">PublishingDestinationSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.PublishingDestinationStatus">PublishingDestinationStatus</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.ThreatintelsetSpec">ThreatintelsetSpec</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.ThreatintelsetSpecResource">ThreatintelsetSpecResource</a>
+</li><li>
+<a href="#guardduty.aws.kubeform.com/v1alpha1.ThreatintelsetStatus">ThreatintelsetStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

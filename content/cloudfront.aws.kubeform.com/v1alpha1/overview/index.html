@@ -1,0 +1,232 @@
+<h2 id="cloudfront.aws.kubeform.com/v1alpha1">cloudfront.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicy">CachePolicy</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.Distribution">Distribution</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.Function">Function</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.KeyGroup">KeyGroup</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginAccessIdentity">OriginAccessIdentity</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicy">OriginRequestPolicy</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.PublicKey">PublicKey</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfig">RealtimeLogConfig</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicy">CachePolicy</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.Distribution">Distribution</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.Function">Function</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.KeyGroup">KeyGroup</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginAccessIdentity">OriginAccessIdentity</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicy">OriginRequestPolicy</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.PublicKey">PublicKey</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfig">RealtimeLogConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpec">CachePolicySpec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOrigin">CachePolicySpecParametersInCacheKeyAndForwardedToOrigin</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginCodec">CachePolicySpecParametersInCacheKeyAndForwardedToOriginCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginCookiesConfig">CachePolicySpecParametersInCacheKeyAndForwardedToOriginCookiesConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginCookiesConfigCodec">CachePolicySpecParametersInCacheKeyAndForwardedToOriginCookiesConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies">CachePolicySpecParametersInCacheKeyAndForwardedToOriginCookiesConfigCookies</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesCodec">CachePolicySpecParametersInCacheKeyAndForwardedToOriginCookiesConfigCookiesCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginHeadersConfig">CachePolicySpecParametersInCacheKeyAndForwardedToOriginHeadersConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginHeadersConfigCodec">CachePolicySpecParametersInCacheKeyAndForwardedToOriginHeadersConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders">CachePolicySpecParametersInCacheKeyAndForwardedToOriginHeadersConfigHeaders</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersCodec">CachePolicySpecParametersInCacheKeyAndForwardedToOriginHeadersConfigHeadersCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginQueryStringsConfig">CachePolicySpecParametersInCacheKeyAndForwardedToOriginQueryStringsConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginQueryStringsConfigCodec">CachePolicySpecParametersInCacheKeyAndForwardedToOriginQueryStringsConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings">CachePolicySpecParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStrings</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsCodec">CachePolicySpecParametersInCacheKeyAndForwardedToOriginQueryStringsConfigQueryStringsCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicySpecResource">CachePolicySpecResource</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.CachePolicyStatus">CachePolicyStatus</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpec">DistributionSpec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecCustomErrorResponse">DistributionSpecCustomErrorResponse</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecDefaultCacheBehavior">DistributionSpecDefaultCacheBehavior</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecDefaultCacheBehaviorCodec">DistributionSpecDefaultCacheBehaviorCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecDefaultCacheBehaviorForwardedValues">DistributionSpecDefaultCacheBehaviorForwardedValues</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecDefaultCacheBehaviorForwardedValuesCodec">DistributionSpecDefaultCacheBehaviorForwardedValuesCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecDefaultCacheBehaviorForwardedValuesCookies">DistributionSpecDefaultCacheBehaviorForwardedValuesCookies</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecDefaultCacheBehaviorForwardedValuesCookiesCodec">DistributionSpecDefaultCacheBehaviorForwardedValuesCookiesCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecDefaultCacheBehaviorFunctionAssociation">DistributionSpecDefaultCacheBehaviorFunctionAssociation</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecDefaultCacheBehaviorLambdaFunctionAssociation">DistributionSpecDefaultCacheBehaviorLambdaFunctionAssociation</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecLoggingConfig">DistributionSpecLoggingConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecLoggingConfigCodec">DistributionSpecLoggingConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOrderedCacheBehavior">DistributionSpecOrderedCacheBehavior</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOrderedCacheBehaviorForwardedValues">DistributionSpecOrderedCacheBehaviorForwardedValues</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOrderedCacheBehaviorForwardedValuesCodec">DistributionSpecOrderedCacheBehaviorForwardedValuesCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOrderedCacheBehaviorForwardedValuesCookies">DistributionSpecOrderedCacheBehaviorForwardedValuesCookies</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOrderedCacheBehaviorForwardedValuesCookiesCodec">DistributionSpecOrderedCacheBehaviorForwardedValuesCookiesCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOrderedCacheBehaviorFunctionAssociation">DistributionSpecOrderedCacheBehaviorFunctionAssociation</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOrderedCacheBehaviorLambdaFunctionAssociation">DistributionSpecOrderedCacheBehaviorLambdaFunctionAssociation</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOrigin">DistributionSpecOrigin</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginCustomHeader">DistributionSpecOriginCustomHeader</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginCustomOriginConfig">DistributionSpecOriginCustomOriginConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginCustomOriginConfigCodec">DistributionSpecOriginCustomOriginConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginGroup">DistributionSpecOriginGroup</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginGroupFailoverCriteria">DistributionSpecOriginGroupFailoverCriteria</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginGroupFailoverCriteriaCodec">DistributionSpecOriginGroupFailoverCriteriaCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginGroupMember">DistributionSpecOriginGroupMember</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginOriginShield">DistributionSpecOriginOriginShield</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginOriginShieldCodec">DistributionSpecOriginOriginShieldCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginS3OriginConfig">DistributionSpecOriginS3OriginConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecOriginS3OriginConfigCodec">DistributionSpecOriginS3OriginConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecResource">DistributionSpecResource</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecRestrictions">DistributionSpecRestrictions</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecRestrictionsCodec">DistributionSpecRestrictionsCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecRestrictionsGeoRestriction">DistributionSpecRestrictionsGeoRestriction</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecRestrictionsGeoRestrictionCodec">DistributionSpecRestrictionsGeoRestrictionCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecTrustedKeyGroups">DistributionSpecTrustedKeyGroups</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecTrustedKeyGroupsItems">DistributionSpecTrustedKeyGroupsItems</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecTrustedSigners">DistributionSpecTrustedSigners</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecTrustedSignersItems">DistributionSpecTrustedSignersItems</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecViewerCertificate">DistributionSpecViewerCertificate</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionSpecViewerCertificateCodec">DistributionSpecViewerCertificateCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.DistributionStatus">DistributionStatus</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.FunctionSpec">FunctionSpec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.FunctionSpecResource">FunctionSpecResource</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.FunctionStatus">FunctionStatus</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.KeyGroupSpec">KeyGroupSpec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.KeyGroupSpecResource">KeyGroupSpecResource</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.KeyGroupStatus">KeyGroupStatus</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginAccessIdentitySpec">OriginAccessIdentitySpec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginAccessIdentitySpecResource">OriginAccessIdentitySpecResource</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginAccessIdentityStatus">OriginAccessIdentityStatus</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpec">OriginRequestPolicySpec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecCookiesConfig">OriginRequestPolicySpecCookiesConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecCookiesConfigCodec">OriginRequestPolicySpecCookiesConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecCookiesConfigCookies">OriginRequestPolicySpecCookiesConfigCookies</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecCookiesConfigCookiesCodec">OriginRequestPolicySpecCookiesConfigCookiesCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecHeadersConfig">OriginRequestPolicySpecHeadersConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecHeadersConfigCodec">OriginRequestPolicySpecHeadersConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecHeadersConfigHeaders">OriginRequestPolicySpecHeadersConfigHeaders</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecHeadersConfigHeadersCodec">OriginRequestPolicySpecHeadersConfigHeadersCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecQueryStringsConfig">OriginRequestPolicySpecQueryStringsConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecQueryStringsConfigCodec">OriginRequestPolicySpecQueryStringsConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecQueryStringsConfigQueryStrings">OriginRequestPolicySpecQueryStringsConfigQueryStrings</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecQueryStringsConfigQueryStringsCodec">OriginRequestPolicySpecQueryStringsConfigQueryStringsCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicySpecResource">OriginRequestPolicySpecResource</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.OriginRequestPolicyStatus">OriginRequestPolicyStatus</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.PublicKeySpec">PublicKeySpec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.PublicKeySpecResource">PublicKeySpecResource</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.PublicKeyStatus">PublicKeyStatus</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfigSpec">RealtimeLogConfigSpec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfigSpecEndpoint">RealtimeLogConfigSpecEndpoint</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfigSpecEndpointCodec">RealtimeLogConfigSpecEndpointCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfigSpecEndpointKinesisStreamConfig">RealtimeLogConfigSpecEndpointKinesisStreamConfig</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfigSpecEndpointKinesisStreamConfigCodec">RealtimeLogConfigSpecEndpointKinesisStreamConfigCodec</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfigSpecResource">RealtimeLogConfigSpecResource</a>
+</li><li>
+<a href="#cloudfront.aws.kubeform.com/v1alpha1.RealtimeLogConfigStatus">RealtimeLogConfigStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

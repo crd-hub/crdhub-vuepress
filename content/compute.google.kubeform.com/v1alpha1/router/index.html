@@ -1,0 +1,550 @@
+<h3 id="compute.google.kubeform.com/v1alpha1.Router">Router
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+compute.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Router</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterSpec">
+RouterSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterSpecResource">
+RouterSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterSpecResource">
+RouterSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterStatus">
+RouterStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterSpec">RouterSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.Router">Router</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterSpecResource">
+RouterSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterSpecResource">
+RouterSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterSpecBgp">RouterSpecBgp
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RouterSpecResource">RouterSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>advertiseMode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>User-specified flag to indicate which mode to use for advertisement. Default value: &quot;DEFAULT&quot; Possible values: [&quot;DEFAULT&quot;, &quot;CUSTOM&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>advertisedGroups</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>User-specified list of prefix groups to advertise in custom mode.
+This field can only be populated if advertiseMode is CUSTOM and
+is advertised to all peers of the router. These groups will be
+advertised in addition to any specified prefixes. Leave this field
+blank to advertise no custom groups.</p>
+<p>This enum field has the one valid value: ALL_SUBNETS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>advertisedIPRanges</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterSpecBgpAdvertisedIPRanges">
+[]RouterSpecBgpAdvertisedIPRanges
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>User-specified list of individual IP ranges to advertise in
+custom mode. This field can only be populated if advertiseMode
+is CUSTOM and is advertised to all peers of the router. These IP
+ranges will be advertised in addition to any specified groups.
+Leave this field blank to advertise no custom IP ranges.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>asn</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Local BGP Autonomous System Number (ASN). Must be an RFC6996
+private ASN, either 16-bit or 32-bit. The value will be fixed for
+this router resource. All VPN tunnels that link to this router
+will have the same local ASN.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterSpecBgpAdvertisedIPRanges">RouterSpecBgpAdvertisedIPRanges
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RouterSpecBgp">RouterSpecBgp</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>User-specified description for the IP range.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>range</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The IP range to advertise. The value must be a
+CIDR-formatted string.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterSpecResource">RouterSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RouterSpec">RouterSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>bgp</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterSpecBgp">
+RouterSpecBgp
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>BGP information specific to this router.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>creationTimestamp</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Creation timestamp in RFC3339 text format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An optional description of this resource.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the resource. The name must be 1-63 characters long, and
+comply with RFC1035. Specifically, the name must be 1-63 characters
+long and match the regular expression '<a href="%5B-a-z0-9%5D*%5Ba-z0-9%5D">a-z</a>?'
+which means the first character must be a lowercase letter, and all
+following characters must be a dash, lowercase letter, or digit,
+except the last character, which cannot be a dash.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>network</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A reference to the network to which this router belongs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>region</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Region where the router resides.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>selfLink</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterStatus">RouterStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.Router">Router</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

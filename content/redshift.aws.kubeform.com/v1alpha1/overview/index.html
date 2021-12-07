@@ -1,0 +1,104 @@
+<h2 id="redshift.aws.kubeform.com/v1alpha1">redshift.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.Cluster">Cluster</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.EventSubscription">EventSubscription</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ParameterGroup">ParameterGroup</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SecurityGroup">SecurityGroup</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotCopyGrant">SnapshotCopyGrant</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotSchedule">SnapshotSchedule</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotScheduleAssociation">SnapshotScheduleAssociation</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SubnetGroup">SubnetGroup</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.Cluster">Cluster</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.EventSubscription">EventSubscription</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ParameterGroup">ParameterGroup</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SecurityGroup">SecurityGroup</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotCopyGrant">SnapshotCopyGrant</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotSchedule">SnapshotSchedule</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotScheduleAssociation">SnapshotScheduleAssociation</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SubnetGroup">SubnetGroup</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ClusterSpec">ClusterSpec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ClusterSpecLogging">ClusterSpecLogging</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ClusterSpecLoggingCodec">ClusterSpecLoggingCodec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ClusterSpecResource">ClusterSpecResource</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ClusterSpecSnapshotCopy">ClusterSpecSnapshotCopy</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ClusterSpecSnapshotCopyCodec">ClusterSpecSnapshotCopyCodec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ClusterStatus">ClusterStatus</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.EventSubscriptionSpec">EventSubscriptionSpec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.EventSubscriptionSpecResource">EventSubscriptionSpecResource</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.EventSubscriptionStatus">EventSubscriptionStatus</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ParameterGroupSpec">ParameterGroupSpec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ParameterGroupSpecParameter">ParameterGroupSpecParameter</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ParameterGroupSpecResource">ParameterGroupSpecResource</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.ParameterGroupStatus">ParameterGroupStatus</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SecurityGroupSpec">SecurityGroupSpec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SecurityGroupSpecIngress">SecurityGroupSpecIngress</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SecurityGroupSpecResource">SecurityGroupSpecResource</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SecurityGroupStatus">SecurityGroupStatus</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotCopyGrantSpec">SnapshotCopyGrantSpec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotCopyGrantSpecResource">SnapshotCopyGrantSpecResource</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotCopyGrantStatus">SnapshotCopyGrantStatus</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotScheduleAssociationSpec">SnapshotScheduleAssociationSpec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotScheduleAssociationSpecResource">SnapshotScheduleAssociationSpecResource</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotScheduleAssociationStatus">SnapshotScheduleAssociationStatus</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotScheduleSpec">SnapshotScheduleSpec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotScheduleSpecResource">SnapshotScheduleSpecResource</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SnapshotScheduleStatus">SnapshotScheduleStatus</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SubnetGroupSpec">SubnetGroupSpec</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SubnetGroupSpecResource">SubnetGroupSpecResource</a>
+</li><li>
+<a href="#redshift.aws.kubeform.com/v1alpha1.SubnetGroupStatus">SubnetGroupStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

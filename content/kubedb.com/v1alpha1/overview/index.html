@@ -1,0 +1,593 @@
+<h2 id="kubedb.com/v1alpha1">kubedb.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#kubedb.com/v1alpha1.Elasticsearch">Elasticsearch</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.Etcd">Etcd</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MariaDB">MariaDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.Memcached">Memcached</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDB">MongoDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MySQL">MySQL</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PerconaXtraDB">PerconaXtraDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.Postgres">Postgres</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.Redis">Redis</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#kubedb.com/v1alpha1.Elasticsearch">Elasticsearch</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.Etcd">Etcd</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MariaDB">MariaDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.Memcached">Memcached</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDB">MongoDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MySQL">MySQL</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PerconaXtraDB">PerconaXtraDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.Postgres">Postgres</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.Redis">Redis</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.BackupScheduleSpec">BackupScheduleSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.ClusterAuthMode">ClusterAuthMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.DatabasePhase">DatabasePhase</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.ElasticsearchAuthPlugin">ElasticsearchAuthPlugin</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.ElasticsearchClusterTopology">ElasticsearchClusterTopology</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.ElasticsearchNode">ElasticsearchNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.ElasticsearchSpec">ElasticsearchSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.ElasticsearchStatus">ElasticsearchStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.EtcdSpec">EtcdSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.EtcdStatus">EtcdStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.InitSpec">InitSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.LeaderElectionConfig">LeaderElectionConfig</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MariaDBSpec">MariaDBSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MariaDBStatus">MariaDBStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MemberSecret">MemberSecret</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MemcachedSpec">MemcachedSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MemcachedStatus">MemcachedStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDBConfigNode">MongoDBConfigNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDBMongosNode">MongoDBMongosNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDBNode">MongoDBNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDBReplicaSet">MongoDBReplicaSet</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDBShardNode">MongoDBShardNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDBShardingTopology">MongoDBShardingTopology</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDBSpec">MongoDBSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MongoDBStatus">MongoDBStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MySQLClusterMode">MySQLClusterMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MySQLClusterTopology">MySQLClusterTopology</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MySQLGroupMode">MySQLGroupMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MySQLGroupSpec">MySQLGroupSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MySQLSpec">MySQLSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.MySQLStatus">MySQLStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PXCSpec">PXCSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PerconaXtraDBSpec">PerconaXtraDBSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PerconaXtraDBStatus">PerconaXtraDBStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresArchiverSpec">PostgresArchiverSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresSchemaInfo">PostgresSchemaInfo</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresSpec">PostgresSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresStandbyMode">PostgresStandbyMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresStatus">PostgresStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresStreamingMode">PostgresStreamingMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresSummary">PostgresSummary</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresTableInfo">PostgresTableInfo</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.PostgresWALSourceSpec">PostgresWALSourceSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.ProxysqlSpec">ProxysqlSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.RecoveryTarget">RecoveryTarget</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.RedisClusterSpec">RedisClusterSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.RedisMode">RedisMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.RedisSpec">RedisSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.RedisStatus">RedisStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.SSLMode">SSLMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.ScriptSourceSpec">ScriptSourceSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.SnapshotSourceSpec">SnapshotSourceSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.StorageType">StorageType</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.TLSPolicy">TLSPolicy</a>
+</li><li>
+<a href="#kubedb.com/v1alpha1.TerminationPolicy">TerminationPolicy</a>
+</li></ul>
+<h3 id="kubedb.com/v1alpha1.BackupScheduleSpec">BackupScheduleSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.ElasticsearchSpec">ElasticsearchSpec</a>, <a href="#kubedb.com/v1alpha1.EtcdSpec">EtcdSpec</a>, <a href="#kubedb.com/v1alpha1.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha1.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha1.PostgresSpec">PostgresSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>cronExpression</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>Backend</code><br/>
+<em>
+kmodules.xyz/objectstore-api/api/v1.Backend
+</em>
+</td>
+<td>
+<p>
+(Members of <code>Backend</code> are embedded into this type.)
+</p>
+<p>Snapshot Spec</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>storageType</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha1.StorageType">
+StorageType
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>StorageType can be durable or ephemeral.
+If not given, database storage type will be used.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podTemplate</code><br/>
+<em>
+kmodules.xyz/offshoot-api/api/v1.PodTemplateSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>PodTemplate is an optional configuration for pods used to take database snapshots</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podVolumeClaimSpec</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#persistentvolumeclaimspec-v1-core">
+Kubernetes core/v1.PersistentVolumeClaimSpec
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>PodVolumeClaimSpec is used to specify temporary storage for backup/restore Job.
+If not given, database's PvcSpec will be used.
+If storageType is durable, then a PVC will be created using this PVCSpec.
+If storageType is ephemeral, then an empty directory will be created of size PvcSpec.Resources.Requests[core.ResourceStorage].</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha1.DatabasePhase">DatabasePhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.ElasticsearchStatus">ElasticsearchStatus</a>, <a href="#kubedb.com/v1alpha1.EtcdStatus">EtcdStatus</a>, <a href="#kubedb.com/v1alpha1.MariaDBStatus">MariaDBStatus</a>, <a href="#kubedb.com/v1alpha1.MemcachedStatus">MemcachedStatus</a>, <a href="#kubedb.com/v1alpha1.MongoDBStatus">MongoDBStatus</a>, <a href="#kubedb.com/v1alpha1.MySQLStatus">MySQLStatus</a>, <a href="#kubedb.com/v1alpha1.PerconaXtraDBStatus">PerconaXtraDBStatus</a>, <a href="#kubedb.com/v1alpha1.PostgresStatus">PostgresStatus</a>, <a href="#kubedb.com/v1alpha1.RedisStatus">RedisStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Creating&#34;</p></td>
+<td><p>used for Databases that are currently creating</p>
+</td>
+</tr><tr><td><p>&#34;Failed&#34;</p></td>
+<td><p>used for Databases that are Failed</p>
+</td>
+</tr><tr><td><p>&#34;Initializing&#34;</p></td>
+<td><p>used for Databases that are currently initializing</p>
+</td>
+</tr><tr><td><p>&#34;Running&#34;</p></td>
+<td><p>used for Databases that are currently running</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="kubedb.com/v1alpha1.InitSpec">InitSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.ElasticsearchSpec">ElasticsearchSpec</a>, <a href="#kubedb.com/v1alpha1.EtcdSpec">EtcdSpec</a>, <a href="#kubedb.com/v1alpha1.MariaDBSpec">MariaDBSpec</a>, <a href="#kubedb.com/v1alpha1.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha1.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha1.PerconaXtraDBSpec">PerconaXtraDBSpec</a>, <a href="#kubedb.com/v1alpha1.PostgresSpec">PostgresSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>scriptSource</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha1.ScriptSourceSpec">
+ScriptSourceSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>snapshotSource</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha1.SnapshotSourceSpec">
+SnapshotSourceSpec
+</a>
+</em>
+</td>
+<td>
+<p>Deprecated</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>postgresWAL</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha1.PostgresWALSourceSpec">
+PostgresWALSourceSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>stashRestoreSession</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Name of stash restoreSession in same namespace of kubedb object.
+ref: https://github.com/stashed/stash/blob/09af5d319bb5be889186965afb04045781d6f926/apis/stash/v1beta1/restore_session_types.go#L22</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha1.PostgresWALSourceSpec">PostgresWALSourceSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.InitSpec">InitSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>backupName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>pitr</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha1.RecoveryTarget">
+RecoveryTarget
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>Backend</code><br/>
+<em>
+kmodules.xyz/objectstore-api/api/v1.Backend
+</em>
+</td>
+<td>
+<p>
+(Members of <code>Backend</code> are embedded into this type.)
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha1.RecoveryTarget">RecoveryTarget
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.PostgresWALSourceSpec">PostgresWALSourceSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>TargetTime specifies the time stamp up to which recovery will proceed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetTimeline</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>TargetTimeline specifies recovering into a particular timeline.
+The default is to recover along the same timeline that was current when the base backup was taken.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetXID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>TargetXID specifies the transaction ID up to which recovery will proceed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetInclusive</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>TargetInclusive specifies whether to include ongoing transaction in given target point.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha1.ScriptSourceSpec">ScriptSourceSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.InitSpec">InitSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>scriptPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>VolumeSource</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#volumesource-v1-core">
+Kubernetes core/v1.VolumeSource
+</a>
+</em>
+</td>
+<td>
+<p>
+(Members of <code>VolumeSource</code> are embedded into this type.)
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha1.SnapshotSourceSpec">SnapshotSourceSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.InitSpec">InitSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>namespace</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>args</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>Arguments to the restore job</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha1.StorageType">StorageType
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.BackupScheduleSpec">BackupScheduleSpec</a>, <a href="#kubedb.com/v1alpha1.ElasticsearchSpec">ElasticsearchSpec</a>, <a href="#kubedb.com/v1alpha1.EtcdSpec">EtcdSpec</a>, <a href="#kubedb.com/v1alpha1.MariaDBSpec">MariaDBSpec</a>, <a href="#kubedb.com/v1alpha1.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha1.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha1.PerconaXtraDBSpec">PerconaXtraDBSpec</a>, <a href="#kubedb.com/v1alpha1.PostgresSpec">PostgresSpec</a>, <a href="#kubedb.com/v1alpha1.RedisSpec">RedisSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Durable&#34;</p></td>
+<td><p>default storage type and requires spec.storage to be configured</p>
+</td>
+</tr><tr><td><p>&#34;Ephemeral&#34;</p></td>
+<td><p>Uses emptyDir as storage</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="kubedb.com/v1alpha1.TerminationPolicy">TerminationPolicy
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha1.ElasticsearchSpec">ElasticsearchSpec</a>, <a href="#kubedb.com/v1alpha1.EtcdSpec">EtcdSpec</a>, <a href="#kubedb.com/v1alpha1.MariaDBSpec">MariaDBSpec</a>, <a href="#kubedb.com/v1alpha1.MemcachedSpec">MemcachedSpec</a>, <a href="#kubedb.com/v1alpha1.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha1.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha1.PerconaXtraDBSpec">PerconaXtraDBSpec</a>, <a href="#kubedb.com/v1alpha1.PostgresSpec">PostgresSpec</a>, <a href="#kubedb.com/v1alpha1.RedisSpec">RedisSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Delete&#34;</p></td>
+<td><p>Deletes database pods, service, pvcs but leave the snapshot data intact. This will not create a DormantDatabase.</p>
+</td>
+</tr><tr><td><p>&#34;DoNotTerminate&#34;</p></td>
+<td><p>Rejects attempt to delete database using ValidationWebhook. This replaces spec.doNotPause = true</p>
+</td>
+</tr><tr><td><p>&#34;Pause&#34;</p></td>
+<td><p>Pauses database into a DormantDatabase</p>
+</td>
+</tr><tr><td><p>&#34;WipeOut&#34;</p></td>
+<td><p>Deletes database pods, service, pvcs and snapshot data. This will not create a DormantDatabase.</p>
+</td>
+</tr></tbody>
+</table>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

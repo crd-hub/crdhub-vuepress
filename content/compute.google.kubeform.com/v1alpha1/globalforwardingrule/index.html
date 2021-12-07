@@ -1,0 +1,614 @@
+<h3 id="compute.google.kubeform.com/v1alpha1.GlobalForwardingRule">GlobalForwardingRule
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+compute.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>GlobalForwardingRule</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpec">
+GlobalForwardingRuleSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecResource">
+GlobalForwardingRuleSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecResource">
+GlobalForwardingRuleSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleStatus">
+GlobalForwardingRuleStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpec">GlobalForwardingRuleSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRule">GlobalForwardingRule</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecResource">
+GlobalForwardingRuleSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecResource">
+GlobalForwardingRuleSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecMetadataFilters">GlobalForwardingRuleSpecMetadataFilters
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecResource">GlobalForwardingRuleSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filterLabels</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecMetadataFiltersFilterLabels">
+[]GlobalForwardingRuleSpecMetadataFiltersFilterLabels
+</a>
+</em>
+</td>
+<td>
+<p>The list of label value pairs that must match labels in the
+provided metadata based on filterMatchCriteria</p>
+<p>This list must not be empty and can have at the most 64 entries.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>filterMatchCriteria</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Specifies how individual filterLabel matches within the list of
+filterLabels contribute towards the overall metadataFilter match.</p>
+<p>MATCH_ANY - At least one of the filterLabels must have a matching
+label in the provided metadata.
+MATCH_ALL - All filterLabels must have matching labels in the
+provided metadata. Possible values: [&quot;MATCH_ANY&quot;, &quot;MATCH_ALL&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecMetadataFiltersFilterLabels">GlobalForwardingRuleSpecMetadataFiltersFilterLabels
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecMetadataFilters">GlobalForwardingRuleSpecMetadataFilters</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the metadata label. The length must be between
+1 and 1024 characters, inclusive.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The value that the label must match. The value has a maximum
+length of 1024 characters.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecResource">GlobalForwardingRuleSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpec">GlobalForwardingRuleSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An optional description of this resource. Provide this property when
+you create the resource.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ipAddress</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IP address that this forwarding rule serves. When a client sends
+traffic to this IP address, the forwarding rule directs the traffic to
+the target that you specify in the forwarding rule. The
+loadBalancingScheme and the forwarding rule's target determine the
+type of IP address that you can use. For detailed information, refer
+to <a href="https://cloud.google.com/load-balancing/docs/forwarding-rule-concepts#ip_address_specifications">IP address specifications</a>.</p>
+<p>An address can be specified either by a literal IP address or a
+reference to an existing Address resource. If you don't specify a
+reserved IP address, an ephemeral IP address is assigned.</p>
+<p>The value must be set to 0.0.0.0 when the target is a targetGrpcProxy
+that has validateForProxyless field set to true.</p>
+<p>For Private Service Connect forwarding rules that forward traffic to
+Google APIs, IP address must be provided.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ipProtocol</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IP protocol to which this rule applies. When the load balancing scheme is
+INTERNAL_SELF_MANAGED, only TCP is valid. This field must not be set if the
+global address is configured as a purpose of PRIVATE_SERVICE_CONNECT
+and addressType of INTERNAL Possible values: [&quot;TCP&quot;, &quot;UDP&quot;, &quot;ESP&quot;, &quot;AH&quot;, &quot;SCTP&quot;, &quot;ICMP&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ipVersion</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IP Version that will be used by this global forwarding rule. Possible values: [&quot;IPV4&quot;, &quot;IPV6&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>loadBalancingScheme</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>This signifies what the GlobalForwardingRule will be used for.
+The value of INTERNAL_SELF_MANAGED means that this will be used for
+Internal Global HTTP(S) LB. The value of EXTERNAL means that this
+will be used for External Global Load Balancing (HTTP(S) LB,
+External TCP/UDP LB, SSL Proxy)</p>
+<p>(<a href="https://terraform.io/docs/providers/google/guides/provider_versions.html">Beta</a> only) Note: This field must be set &quot;&quot; if the global address is
+configured as a purpose of PRIVATE_SERVICE_CONNECT and addressType of INTERNAL. Default value: &quot;EXTERNAL&quot; Possible values: [&quot;EXTERNAL&quot;, &quot;INTERNAL_SELF_MANAGED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metadataFilters</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleSpecMetadataFilters">
+[]GlobalForwardingRuleSpecMetadataFilters
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Opaque filter criteria used by Loadbalancer to restrict routing
+configuration to a limited set xDS compliant clients. In their xDS
+requests to Loadbalancer, xDS clients present node metadata. If a
+match takes place, the relevant routing configuration is made available
+to those proxies.</p>
+<p>For each metadataFilter in this list, if its filterMatchCriteria is set
+to MATCH_ANY, at least one of the filterLabels must match the
+corresponding label provided in the metadata. If its filterMatchCriteria
+is set to MATCH_ALL, then all of its filterLabels must match with
+corresponding labels in the provided metadata.</p>
+<p>metadataFilters specified here can be overridden by those specified in
+the UrlMap that this ForwardingRule references.</p>
+<p>metadataFilters only applies to Loadbalancers that have their
+loadBalancingScheme set to INTERNAL_SELF_MANAGED.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the resource; provided by the client when the resource is
+created. The name must be 1-63 characters long, and comply with
+RFC1035. Specifically, the name must be 1-63 characters long and match
+the regular expression '<a href="%5B-a-z0-9%5D*%5Ba-z0-9%5D">a-z</a>?' which means the
+first character must be a lowercase letter, and all following
+characters must be a dash, lowercase letter, or digit, except the last
+character, which cannot be a dash.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>portRange</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>This field is used along with the target field for TargetHttpProxy,
+TargetHttpsProxy, TargetSslProxy, TargetTcpProxy, TargetVpnGateway,
+TargetPool, TargetInstance.</p>
+<p>Applicable only when IPProtocol is TCP, UDP, or SCTP, only packets
+addressed to ports in the specified range will be forwarded to target.
+Forwarding rules with the same [IPAddress, IPProtocol] pair must have
+disjoint port ranges.</p>
+<p>Some types of forwarding target have constraints on the acceptable
+ports:</p>
+<ul>
+<li>TargetHttpProxy: 80, 8080</li>
+<li>TargetHttpsProxy: 443</li>
+<li>TargetTcpProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
+1883, 5222</li>
+<li>TargetSslProxy: 25, 43, 110, 143, 195, 443, 465, 587, 700, 993, 995,
+1883, 5222</li>
+<li>TargetVpnGateway: 500, 4500</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>selfLink</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>target</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The URL of the target resource to receive the matched traffic.
+The forwarded traffic must be of a type appropriate to the target object.
+For INTERNAL_SELF_MANAGED load balancing, only HTTP and HTTPS targets
+are valid.</p>
+<p>(<a href="https://terraform.io/docs/providers/google/guides/provider_versions.html">Beta</a> only) For global address with a purpose of PRIVATE_SERVICE_CONNECT and
+addressType of INTERNAL, only &quot;all-apis&quot; and &quot;vpc-sc&quot; are valid.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.GlobalForwardingRuleStatus">GlobalForwardingRuleStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.GlobalForwardingRule">GlobalForwardingRule</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

@@ -1,0 +1,366 @@
+<h3 id="stash.appscode.com/v1beta1.Function">Function
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+stash.appscode.com/v1beta1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Function</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.FunctionSpec">
+FunctionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Docker image name.
+More info: https://kubernetes.io/docs/concepts/containers/images
+This field is optional to allow higher level config management to default or override
+container images in workload controllers like Deployments and StatefulSets.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>command</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Entrypoint array. Not executed within a shell.
+The docker image's ENTRYPOINT is used if this is not provided.
+Variable references $(VAR_NAME) are expanded using the container's environment. If a variable
+cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax
+can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded,
+regardless of whether the variable exists or not.
+Cannot be updated.
+More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>args</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Arguments to the entrypoint.
+The docker image's CMD is used if this is not provided.
+Variable references $(VAR_NAME) are expanded using the container's environment. If a variable
+cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax
+can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded,
+regardless of whether the variable exists or not.
+Cannot be updated.
+More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>workingDir</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Container's working directory.
+If not specified, the container runtime's default will be used, which
+might be configured in the container image.
+Cannot be updated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ports</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#containerport-v1-core">
+[]Kubernetes core/v1.ContainerPort
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of ports to expose from the container. Exposing a port here gives
+the system additional information about the network connections a
+container uses, but is primarily informational. Not specifying a port here
+DOES NOT prevent that port from being exposed. Any port which is
+listening on the default &quot;0.0.0.0&quot; address inside a container will be
+accessible from the network.
+Cannot be updated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeMounts</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#volumemount-v1-core">
+[]Kubernetes core/v1.VolumeMount
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Pod volumes to mount into the container's filesystem.
+Cannot be updated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeDevices</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#volumedevice-v1-core">
+[]Kubernetes core/v1.VolumeDevice
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>volumeDevices is the list of block devices to be used by the container.
+This is an alpha feature and may change in the future.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>runtimeSettings</code><br/>
+<em>
+kmodules.xyz/offshoot-api/api/v1.ContainerRuntimeSettings
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>RuntimeSettings allow to specify Resources, LivenessProbe, ReadinessProbe, Lifecycle, SecurityContext etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Name of PodSecurityPolicy(PSP) required by this function</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.FunctionSpec">FunctionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.Function">Function</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Docker image name.
+More info: https://kubernetes.io/docs/concepts/containers/images
+This field is optional to allow higher level config management to default or override
+container images in workload controllers like Deployments and StatefulSets.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>command</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Entrypoint array. Not executed within a shell.
+The docker image's ENTRYPOINT is used if this is not provided.
+Variable references $(VAR_NAME) are expanded using the container's environment. If a variable
+cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax
+can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded,
+regardless of whether the variable exists or not.
+Cannot be updated.
+More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>args</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Arguments to the entrypoint.
+The docker image's CMD is used if this is not provided.
+Variable references $(VAR_NAME) are expanded using the container's environment. If a variable
+cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax
+can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded,
+regardless of whether the variable exists or not.
+Cannot be updated.
+More info: https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>workingDir</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Container's working directory.
+If not specified, the container runtime's default will be used, which
+might be configured in the container image.
+Cannot be updated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ports</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#containerport-v1-core">
+[]Kubernetes core/v1.ContainerPort
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of ports to expose from the container. Exposing a port here gives
+the system additional information about the network connections a
+container uses, but is primarily informational. Not specifying a port here
+DOES NOT prevent that port from being exposed. Any port which is
+listening on the default &quot;0.0.0.0&quot; address inside a container will be
+accessible from the network.
+Cannot be updated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeMounts</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#volumemount-v1-core">
+[]Kubernetes core/v1.VolumeMount
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Pod volumes to mount into the container's filesystem.
+Cannot be updated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeDevices</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#volumedevice-v1-core">
+[]Kubernetes core/v1.VolumeDevice
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>volumeDevices is the list of block devices to be used by the container.
+This is an alpha feature and may change in the future.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>runtimeSettings</code><br/>
+<em>
+kmodules.xyz/offshoot-api/api/v1.ContainerRuntimeSettings
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>RuntimeSettings allow to specify Resources, LivenessProbe, ReadinessProbe, Lifecycle, SecurityContext etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Name of PodSecurityPolicy(PSP) required by this function</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>dce6be25</code>.
+</em></p>

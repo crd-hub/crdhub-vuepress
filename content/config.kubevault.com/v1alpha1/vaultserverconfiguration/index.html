@@ -1,0 +1,284 @@
+<h3 id="config.kubevault.com/v1alpha1.VaultServerConfiguration">VaultServerConfiguration
+</h3>
+<div>
+<p>VaultServerConfiguration defines a Vault Server configuration.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+config.kubevault.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>VaultServerConfiguration</code></td>
+</tr>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the path which is used for authentication by this AppBinding.
+If vault server is provisioned by KubeVault, this is usually <code>kubernetes</code>.</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>vaultRole</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the vault role name for policy controller
+It has permission to create policy in vault</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>kubernetes</code><br/>
+<em>
+<a href="#config.kubevault.com/v1alpha1.KubernetesAuthConfig">
+KubernetesAuthConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the Kubernetes authentication information</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>azure</code><br/>
+<em>
+<a href="#config.kubevault.com/v1alpha1.AzureAuthConfig">
+AzureAuthConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the Azure authentication information</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>aws</code><br/>
+<em>
+<a href="#config.kubevault.com/v1alpha1.AWSAuthConfig">
+AWSAuthConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the AWS authentication information</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="config.kubevault.com/v1alpha1.AWSAuthConfig">AWSAuthConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#config.kubevault.com/v1alpha1.VaultServerConfiguration">VaultServerConfiguration</a>)
+</p>
+<div>
+<p>AWSAuthConfig contains necessary information for
+performing AWS authentication to the Vault server.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>headerValue</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the header value that required
+if X-Vault-AWS-IAM-Server-ID Header is set in Vault.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="config.kubevault.com/v1alpha1.AzureAuthConfig">AzureAuthConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#config.kubevault.com/v1alpha1.VaultServerConfiguration">VaultServerConfiguration</a>)
+</p>
+<div>
+<p>AzureAuthConfig contains necessary information for
+performing Azure authentication to the Vault server.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>subscriptionID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the subscription ID for the machine
+that generated the MSI token.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>resourceGroupName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the resource group for the machine
+that generated the MSI token.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>vmName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the virtual machine name for the machine
+that generated the MSI token. If VmssName is provided,
+this value is ignored.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>vmssName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the virtual machine scale set name
+for the machine that generated the MSI token.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="config.kubevault.com/v1alpha1.KubernetesAuthConfig">KubernetesAuthConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#config.kubevault.com/v1alpha1.VaultServerConfiguration">VaultServerConfiguration</a>)
+</p>
+<div>
+<p>KubernetesAuthConfiguration contains necessary information for
+performing Kubernetes authentication to the Vault server.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>serviceAccountName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Specifies the service account name</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenReviewerServiceAccountName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the service account name for token reviewer
+It has system:auth-delegator permission
+It's jwt token is used on vault kubernetes auth config</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>usePodServiceAccountForCSIDriver</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies to use pod service account for vault csi driver</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>311cc741</code>.
+</em></p>

@@ -1,0 +1,409 @@
+<h2 id="ops.kubedb.com/v1alpha1">ops.kubedb.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequest">ElasticsearchOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequest">EtcdOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequest">MariaDBOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedOpsRequest">MemcachedOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBOpsRequest">MongoDBOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLOpsRequest">MySQLOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBOpsRequest">PerconaXtraDBOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerOpsRequest">PgBouncerOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequest">PostgresOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLOpsRequest">ProxySQLOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisOpsRequest">RedisOpsRequest</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequest">ElasticsearchOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequest">EtcdOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequest">MariaDBOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedOpsRequest">MemcachedOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBOpsRequest">MongoDBOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLOpsRequest">MySQLOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBOpsRequest">PerconaXtraDBOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerOpsRequest">PgBouncerOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequest">PostgresOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLOpsRequest">ProxySQLOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisOpsRequest">RedisOpsRequest</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ConfigNode">ConfigNode</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchCustomConfiguration">ElasticsearchCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchCustomConfigurationSpec">ElasticsearchCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchHorizontalScalingSpec">ElasticsearchHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchHorizontalScalingTopologySpec">ElasticsearchHorizontalScalingTopologySpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestStatus">ElasticsearchOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchUpgradeSpec">ElasticsearchUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVerticalScalingSpec">ElasticsearchVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVerticalScalingTopologySpec">ElasticsearchVerticalScalingTopologySpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVolumeExpansionSpec">ElasticsearchVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ElasticsearchVolumeExpansionTopologySpec">ElasticsearchVolumeExpansionTopologySpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdCustomConfiguration">EtcdCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdCustomConfigurationSpec">EtcdCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdHorizontalScalingSpec">EtcdHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestStatus">EtcdOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdReplicaReadinessCriteria">EtcdReplicaReadinessCriteria</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdUpgradeSpec">EtcdUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdVerticalScalingSpec">EtcdVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.EtcdVolumeExpansionSpec">EtcdVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBCustomConfiguration">MariaDBCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBCustomConfigurationSpec">MariaDBCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBHorizontalScalingSpec">MariaDBHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestStatus">MariaDBOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBTLSSpec">MariaDBTLSSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBUpgradeSpec">MariaDBUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBVerticalScalingSpec">MariaDBVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MariaDBVolumeExpansionSpec">MariaDBVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedCustomConfiguration">MemcachedCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedCustomConfigurationSpec">MemcachedCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedHorizontalScalingSpec">MemcachedHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedOpsRequestSpec">MemcachedOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedOpsRequestStatus">MemcachedOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedReplicaReadinessCriteria">MemcachedReplicaReadinessCriteria</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedUpgradeSpec">MemcachedUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedVerticalScalingSpec">MemcachedVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MemcachedVolumeExpansionSpec">MemcachedVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBCustomConfiguration">MongoDBCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBCustomConfigurationSpec">MongoDBCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBHorizontalScalingSpec">MongoDBHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBOpsRequestSpec">MongoDBOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBOpsRequestStatus">MongoDBOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBReplicaReadinessCriteria">MongoDBReplicaReadinessCriteria</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBShardNode">MongoDBShardNode</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBUpgradeSpec">MongoDBUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBVerticalScalingSpec">MongoDBVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongoDBVolumeExpansionSpec">MongoDBVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MongosNode">MongosNode</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLCustomConfigurationSpec">MySQLCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLHorizontalScalingSpec">MySQLHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLOpsRequestSpec">MySQLOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLOpsRequestStatus">MySQLOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLReplicaReadinessCriteria">MySQLReplicaReadinessCriteria</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLTLSSpec">MySQLTLSSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLUpgradeSpec">MySQLUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLVerticalScalingSpec">MySQLVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.MySQLVolumeExpansionSpec">MySQLVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">OpsRequestPhase</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">OpsRequestType</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBCustomConfiguration">PerconaXtraDBCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBCustomConfigurationSpec">PerconaXtraDBCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBHorizontalScalingSpec">PerconaXtraDBHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBOpsRequestSpec">PerconaXtraDBOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBOpsRequestStatus">PerconaXtraDBOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBReplicaReadinessCriteria">PerconaXtraDBReplicaReadinessCriteria</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBUpgradeSpec">PerconaXtraDBUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBVerticalScalingSpec">PerconaXtraDBVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBVolumeExpansionSpec">PerconaXtraDBVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerCustomConfiguration">PgBouncerCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerCustomConfigurationSpec">PgBouncerCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerHorizontalScalingSpec">PgBouncerHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerOpsRequestSpec">PgBouncerOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerOpsRequestStatus">PgBouncerOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerReplicaReadinessCriteria">PgBouncerReplicaReadinessCriteria</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerUpgradeSpec">PgBouncerUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerVerticalScalingSpec">PgBouncerVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PgBouncerVolumeExpansionSpec">PgBouncerVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresCustomConfiguration">PostgresCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresCustomConfigurationSpec">PostgresCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresHorizontalScalingSpec">PostgresHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestStatus">PostgresOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresTLSSpec">PostgresTLSSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresUpgradeSpec">PostgresUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresVerticalScalingSpec">PostgresVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.PostgresVolumeExpansionSpec">PostgresVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLCustomConfiguration">ProxySQLCustomConfiguration</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLCustomConfigurationSpec">ProxySQLCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLHorizontalScalingSpec">ProxySQLHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLOpsRequestSpec">ProxySQLOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLOpsRequestStatus">ProxySQLOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLReplicaReadinessCriteria">ProxySQLReplicaReadinessCriteria</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLUpgradeSpec">ProxySQLUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLVerticalScalingSpec">ProxySQLVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.ProxySQLVolumeExpansionSpec">ProxySQLVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisCustomConfigurationSpec">RedisCustomConfigurationSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisHorizontalScalingSpec">RedisHorizontalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisOpsRequestSpec">RedisOpsRequestSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisOpsRequestStatus">RedisOpsRequestStatus</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisReplicaReadinessCriteria">RedisReplicaReadinessCriteria</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisUpgradeSpec">RedisUpgradeSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisVerticalScalingSpec">RedisVerticalScalingSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RedisVolumeExpansionSpec">RedisVolumeExpansionSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">RestartSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.TLSSpec">TLSSpec</a>
+</li><li>
+<a href="#ops.kubedb.com/v1alpha1.VolumeExpansionMode">VolumeExpansionMode</a>
+</li></ul>
+<h3 id="ops.kubedb.com/v1alpha1.OpsRequestPhase">OpsRequestPhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestStatus">ElasticsearchOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestStatus">EtcdOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestStatus">MariaDBOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.MemcachedOpsRequestStatus">MemcachedOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.MongoDBOpsRequestStatus">MongoDBOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.MySQLOpsRequestStatus">MySQLOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBOpsRequestStatus">PerconaXtraDBOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.PgBouncerOpsRequestStatus">PgBouncerOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestStatus">PostgresOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.ProxySQLOpsRequestStatus">ProxySQLOpsRequestStatus</a>, <a href="#ops.kubedb.com/v1alpha1.RedisOpsRequestStatus">RedisOpsRequestStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Approved&#34;</p></td>
+<td><p>used for ops requests that are approved</p>
+</td>
+</tr><tr><td><p>&#34;Denied&#34;</p></td>
+<td><p>used for ops requests that are denied</p>
+</td>
+</tr><tr><td><p>&#34;Failed&#34;</p></td>
+<td><p>used for ops requests that are failed</p>
+</td>
+</tr><tr><td><p>&#34;Pending&#34;</p></td>
+<td><p>used for ops requests that are currently in queue</p>
+</td>
+</tr><tr><td><p>&#34;Progressing&#34;</p></td>
+<td><p>used for ops requests that are currently Progressing</p>
+</td>
+</tr><tr><td><p>&#34;Successful&#34;</p></td>
+<td><p>used for ops requests that are executed successfully</p>
+</td>
+</tr><tr><td><p>&#34;WaitingForApproval&#34;</p></td>
+<td><p>used for ops requests that are waiting for approval</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.OpsRequestType">OpsRequestType
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MemcachedOpsRequestSpec">MemcachedOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MongoDBOpsRequestSpec">MongoDBOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MySQLOpsRequestSpec">MySQLOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBOpsRequestSpec">PerconaXtraDBOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PgBouncerOpsRequestSpec">PgBouncerOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.ProxySQLOpsRequestSpec">ProxySQLOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.RedisOpsRequestSpec">RedisOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;HorizontalScaling&#34;</p></td>
+<td><p>used for HorizontalScaling operation</p>
+</td>
+</tr><tr><td><p>&#34;Reconfigure&#34;</p></td>
+<td><p>used for Reconfigure operation</p>
+</td>
+</tr><tr><td><p>&#34;ReconfigureTLS&#34;</p></td>
+<td><p>used for ReconfigureTLS operation</p>
+</td>
+</tr><tr><td><p>&#34;Restart&#34;</p></td>
+<td><p>used for Restart operation</p>
+</td>
+</tr><tr><td><p>&#34;Upgrade&#34;</p></td>
+<td><p>used for Upgrade operation</p>
+</td>
+</tr><tr><td><p>&#34;VerticalScaling&#34;</p></td>
+<td><p>used for VerticalScaling operation</p>
+</td>
+</tr><tr><td><p>&#34;VolumeExpansion&#34;</p></td>
+<td><p>used for VolumeExpansion operation</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.RestartSpec">RestartSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MariaDBOpsRequestSpec">MariaDBOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MemcachedOpsRequestSpec">MemcachedOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MongoDBOpsRequestSpec">MongoDBOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MySQLOpsRequestSpec">MySQLOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBOpsRequestSpec">PerconaXtraDBOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PgBouncerOpsRequestSpec">PgBouncerOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PostgresOpsRequestSpec">PostgresOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.ProxySQLOpsRequestSpec">ProxySQLOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.RedisOpsRequestSpec">RedisOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<h3 id="ops.kubedb.com/v1alpha1.TLSSpec">TLSSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.ElasticsearchOpsRequestSpec">ElasticsearchOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MariaDBTLSSpec">MariaDBTLSSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MemcachedOpsRequestSpec">MemcachedOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MongoDBOpsRequestSpec">MongoDBOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.MySQLTLSSpec">MySQLTLSSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PerconaXtraDBOpsRequestSpec">PerconaXtraDBOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PgBouncerOpsRequestSpec">PgBouncerOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.PostgresTLSSpec">PostgresTLSSpec</a>, <a href="#ops.kubedb.com/v1alpha1.ProxySQLOpsRequestSpec">ProxySQLOpsRequestSpec</a>, <a href="#ops.kubedb.com/v1alpha1.RedisOpsRequestSpec">RedisOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>TLSConfig</code><br/>
+<em>
+kmodules.xyz/client-go/api/v1.TLSConfig
+</em>
+</td>
+<td>
+<p>
+(Members of <code>TLSConfig</code> are embedded into this type.)
+</p>
+<em>(Optional)</em>
+<p>TLSConfig contains updated tls configurations for client and server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>rotateCertificates</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>RotateCertificates tells operator to initiate certificate rotation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>remove</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Remove tells operator to remove TLS configuration</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

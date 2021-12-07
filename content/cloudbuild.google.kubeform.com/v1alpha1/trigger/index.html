@@ -1,0 +1,1854 @@
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.Trigger">Trigger
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+cloudbuild.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Trigger</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpec">
+TriggerSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecResource">
+TriggerSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecResource">
+TriggerSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerStatus">
+TriggerStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpec">TriggerSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.Trigger">Trigger</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecResource">
+TriggerSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecResource">
+TriggerSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuild">TriggerSpecBuild
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecResource">TriggerSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>artifacts</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildArtifacts">
+TriggerSpecBuildArtifacts
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Artifacts produced by the build that should be uploaded upon successful completion of all build steps.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>images</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of images to be pushed upon the successful completion of all build steps.
+The images are pushed using the builder service account's credentials.
+The digests of the pushed images will be stored in the Build resource's results field.
+If any of the images fail to be pushed, the build status is marked FAILURE.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>logsBucket</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Google Cloud Storage bucket where logs should be written.
+Logs file names will be of the format ${logsBucket}/log-${build_id}.txt.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>options</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildOptions">
+TriggerSpecBuildOptions
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Special options for this build.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>queueTtl</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>TTL in queue for this build. If provided and the build is enqueued longer than this value,
+the build will expire and the build status will be EXPIRED.
+The TTL starts ticking from createTime.
+A duration in seconds with up to nine fractional digits, terminated by 's'. Example: &quot;3.5s&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secret</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSecret">
+[]TriggerSpecBuildSecret
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Secrets to decrypt using Cloud Key Management Service.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>source</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSource">
+TriggerSpecBuildSource
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The location of the source files to build.</p>
+<p>One of 'storageSource' or 'repoSource' must be provided.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>step</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildStep">
+[]TriggerSpecBuildStep
+</a>
+</em>
+</td>
+<td>
+<p>The operations to be performed on the workspace.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>substitutions</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Substitutions data for Build resource.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tags</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Tags for annotation of a Build. These are not docker tags.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Amount of time that this build should be allowed to run, to second granularity.
+If this amount of time elapses, work on the build will cease and the build status will be TIMEOUT.
+This timeout must be equal to or greater than the sum of the timeouts for build steps within the build.
+The expected format is the number of seconds followed by s.
+Default time is ten minutes (600s).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildArtifacts">TriggerSpecBuildArtifacts
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuild">TriggerSpecBuild</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>images</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of images to be pushed upon the successful completion of all build steps.</p>
+<p>The images will be pushed using the builder service account's credentials.</p>
+<p>The digests of the pushed images will be stored in the Build resource's results field.</p>
+<p>If any of the images fail to be pushed, the build is marked FAILURE.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>objects</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildArtifactsObjects">
+TriggerSpecBuildArtifactsObjects
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of objects to be uploaded to Cloud Storage upon successful completion of all build steps.</p>
+<p>Files in the workspace matching specified paths globs will be uploaded to the
+Cloud Storage location using the builder service account's credentials.</p>
+<p>The location and generation of the uploaded objects will be stored in the Build resource's results field.</p>
+<p>If any objects fail to be pushed, the build is marked FAILURE.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildArtifactsObjects">TriggerSpecBuildArtifactsObjects
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildArtifacts">TriggerSpecBuildArtifacts</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>location</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Cloud Storage bucket and optional object path, in the form &quot;gs://bucket/path/to/somewhere/&quot;.</p>
+<p>Files in the workspace matching any path pattern will be uploaded to Cloud Storage with
+this location as a prefix.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>paths</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Path globs used to match files in the build's workspace.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timing</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildArtifactsObjectsTiming">
+[]TriggerSpecBuildArtifactsObjectsTiming
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Output only. Stores timing information for pushing all artifact objects.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildArtifactsObjectsTiming">TriggerSpecBuildArtifactsObjectsTiming
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildArtifactsObjects">TriggerSpecBuildArtifactsObjects</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>endTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>End of time span.</p>
+<p>A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to
+nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>startTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Start of time span.</p>
+<p>A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to
+nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildOptions">TriggerSpecBuildOptions
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuild">TriggerSpecBuild</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>diskSizeGb</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Requested disk size for the VM that runs the build. Note that this is NOT &quot;disk free&quot;;
+some of the space will be used by the operating system and build utilities.
+Also note that this is the minimum disk size that will be allocated for the build --
+the build may run with a larger disk than requested. At present, the maximum disk size
+is 1000GB; builds that request more than the maximum are rejected with an error.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dynamicSubstitutions</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Option to specify whether or not to apply bash style string operations to the substitutions.</p>
+<p>NOTE this is always enabled for triggered builds and cannot be overridden in the build configuration file.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>env</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of global environment variable definitions that will exist for all build steps
+in this build. If a variable is defined in both globally and in a build step,
+the variable will use the build step value.</p>
+<p>The elements are of the form &quot;KEY=VALUE&quot; for the environment variable &quot;KEY&quot; being given the value &quot;VALUE&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>logStreamingOption</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Option to define build log streaming behavior to Google Cloud Storage. Possible values: [&quot;STREAM_DEFAULT&quot;, &quot;STREAM_ON&quot;, &quot;STREAM_OFF&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>logging</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Option to specify the logging mode, which determines if and where build logs are stored. Possible values: [&quot;LOGGING_UNSPECIFIED&quot;, &quot;LEGACY&quot;, &quot;GCS_ONLY&quot;, &quot;STACKDRIVER_ONLY&quot;, &quot;NONE&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>machineType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Compute Engine machine type on which to run the build. Possible values: [&quot;UNSPECIFIED&quot;, &quot;N1_HIGHCPU_8&quot;, &quot;N1_HIGHCPU_32&quot;, &quot;E2_HIGHCPU_8&quot;, &quot;E2_HIGHCPU_32&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestedVerifyOption</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Requested verifiability options. Possible values: [&quot;NOT_VERIFIED&quot;, &quot;VERIFIED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secretEnv</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of global environment variables, which are encrypted using a Cloud Key Management
+Service crypto key. These values must be specified in the build's Secret. These variables
+will be available to all build steps in this build.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceProvenanceHash</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Requested hash for SourceProvenance. Possible values: [&quot;NONE&quot;, &quot;SHA256&quot;, &quot;MD5&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>substitutionOption</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Option to specify behavior when there is an error in the substitution checks.</p>
+<p>NOTE this is always set to ALLOW_LOOSE for triggered builds and cannot be overridden
+in the build configuration file. Possible values: [&quot;MUST_MATCH&quot;, &quot;ALLOW_LOOSE&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumes</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildOptionsVolumes">
+[]TriggerSpecBuildOptionsVolumes
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Global list of volumes to mount for ALL build steps</p>
+<p>Each volume is created as an empty volume prior to starting the build process.
+Upon completion of the build, volumes and their contents are discarded. Global
+volume names and paths cannot conflict with the volumes defined a build step.</p>
+<p>Using a global volume in a build with only one step is not valid as it is indicative
+of a build request with an incorrect configuration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>workerPool</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Option to specify a WorkerPool for the build. Format projects/{project}/workerPools/{workerPool}</p>
+<p>This field is experimental.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildOptionsVolumes">TriggerSpecBuildOptionsVolumes
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildOptions">TriggerSpecBuildOptions</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Name of the volume to mount.</p>
+<p>Volume names must be unique per build step and must be valid names for Docker volumes.
+Each named volume must be used by at least two build steps.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Path at which to mount the volume.</p>
+<p>Paths must be absolute and cannot conflict with other volume paths on the same
+build step or with certain reserved volume paths.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSecret">TriggerSpecBuildSecret
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuild">TriggerSpecBuild</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>kmsKeyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Cloud KMS key name to use to decrypt these envs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secretEnv</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Map of environment variable name to its encrypted value.
+Secret environment variables must be unique across all of a build's secrets,
+and must be used by at least one build step. Values can be at most 64 KB in size.
+There can be at most 100 secret values across all of a build's secrets.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSource">TriggerSpecBuildSource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuild">TriggerSpecBuild</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>repoSource</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSourceRepoSource">
+TriggerSpecBuildSourceRepoSource
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Location of the source in a Google Cloud Source Repository.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>storageSource</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSourceStorageSource">
+TriggerSpecBuildSourceStorageSource
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Location of the source in an archive file in Google Cloud Storage.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSourceRepoSource">TriggerSpecBuildSourceRepoSource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSource">TriggerSpecBuildSource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>branchName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Regex matching branches to build. Exactly one a of branch name, tag, or commit SHA must be provided.
+The syntax of the regular expressions accepted is the syntax accepted by RE2 and
+described at https://github.com/google/re2/wiki/Syntax</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>commitSha</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Explicit commit SHA to build. Exactly one a of branch name, tag, or commit SHA must be provided.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dir</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Directory, relative to the source root, in which to run the build.
+This must be a relative path. If a step's dir is specified and is an absolute path,
+this value is ignored for that step's execution.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>invertRegex</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Only trigger a build if the revision regex does NOT match the revision regex.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ID of the project that owns the Cloud Source Repository.
+If omitted, the project ID requesting the build is assumed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>repoName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the Cloud Source Repository.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>substitutions</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Substitutions to use in a triggered build. Should only be used with triggers.run</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tagName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Regex matching tags to build. Exactly one a of branch name, tag, or commit SHA must be provided.
+The syntax of the regular expressions accepted is the syntax accepted by RE2 and
+described at https://github.com/google/re2/wiki/Syntax</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSourceStorageSource">TriggerSpecBuildSourceStorageSource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildSource">TriggerSpecBuildSource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>bucket</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Google Cloud Storage bucket containing the source.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>generation</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Google Cloud Storage generation for the object.
+If the generation is omitted, the latest generation will be used</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>object</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Google Cloud Storage object containing the source.
+This object must be a gzipped archive file (.tar.gz) containing source to build.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildStep">TriggerSpecBuildStep
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuild">TriggerSpecBuild</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>args</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of arguments that will be presented to the step when it is started.</p>
+<p>If the image used to run the step's container has an entrypoint, the args
+are used as arguments to that entrypoint. If the image does not define an
+entrypoint, the first element in args is used as the entrypoint, and the
+remainder will be used as arguments.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dir</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Working directory to use when running this step's container.</p>
+<p>If this value is a relative path, it is relative to the build's working
+directory. If this value is absolute, it may be outside the build's working
+directory, in which case the contents of the path may not be persisted
+across build step executions, unless a 'volume' for that path is specified.</p>
+<p>If the build specifies a 'RepoSource' with 'dir' and a step with a
+'dir',
+which specifies an absolute path, the 'RepoSource' 'dir' is ignored
+for the step's execution.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>entrypoint</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Entrypoint to be used instead of the build step image's
+default entrypoint.
+If unset, the image's default entrypoint is used</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>env</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of environment variable definitions to be used when
+running a step.</p>
+<p>The elements are of the form &quot;KEY=VALUE&quot; for the environment variable
+&quot;KEY&quot; being given the value &quot;VALUE&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Unique identifier for this build step, used in 'wait_for' to
+reference this build step as a dependency.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name of the container image that will run this particular build step.</p>
+<p>If the image is available in the host's Docker daemon's cache, it will be
+run directly. If not, the host will attempt to pull the image first, using
+the builder service account's credentials if necessary.</p>
+<p>The Docker daemon's cache will already have the latest versions of all of
+the officially supported build steps (see https://github.com/GoogleCloudPlatform/cloud-builders
+for images and examples).
+The Docker daemon will also have cached many of the layers for some popular
+images, like &quot;ubuntu&quot;, &quot;debian&quot;, but they will be refreshed at the time
+you attempt to use them.</p>
+<p>If you built an image in a previous build step, it will be stored in the
+host's Docker daemon's cache and is available to use as the name for a
+later build step.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secretEnv</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of environment variables which are encrypted using
+a Cloud Key
+Management Service crypto key. These values must be specified in
+the build's 'Secret'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Time limit for executing this build step. If not defined,
+the step has no
+time limit and will be allowed to continue to run until either it
+completes or the build itself times out.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timing</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Output only. Stores timing information for executing this
+build step.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumes</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildStepVolumes">
+[]TriggerSpecBuildStepVolumes
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of volumes to mount into the build step.</p>
+<p>Each volume is created as an empty volume prior to execution of the
+build step. Upon completion of the build, volumes and their contents
+are discarded.</p>
+<p>Using a named volume in only one step is not valid as it is
+indicative of a build request with an incorrect configuration.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>waitFor</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID(s) of the step(s) that this build step depends on.</p>
+<p>This build step will not start until all the build steps in 'wait_for'
+have completed successfully. If 'wait_for' is empty, this build step
+will start when all previous build steps in the 'Build.Steps' list
+have completed successfully.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildStepVolumes">TriggerSpecBuildStepVolumes
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuildStep">TriggerSpecBuildStep</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the volume to mount.</p>
+<p>Volume names must be unique per build step and must be valid names for
+Docker volumes. Each named volume must be used by at least two build steps.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Path at which to mount the volume.</p>
+<p>Paths must be absolute and cannot conflict with other volume paths on
+the same build step or with certain reserved volume paths.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecGithub">TriggerSpecGithub
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecResource">TriggerSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Name of the repository. For example: The name for
+https://github.com/googlecloudplatform/cloud-builders is &quot;cloud-builders&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>owner</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Owner of the repository. For example: The owner for
+https://github.com/googlecloudplatform/cloud-builders is &quot;googlecloudplatform&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>pullRequest</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecGithubPullRequest">
+TriggerSpecGithubPullRequest
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>filter to match changes in pull requests.  Specify only one of pullRequest or push.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>push</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecGithubPush">
+TriggerSpecGithubPush
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>filter to match changes in refs, like branches or tags.  Specify only one of pullRequest or push.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecGithubPullRequest">TriggerSpecGithubPullRequest
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecGithub">TriggerSpecGithub</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>branch</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Regex of branches to match.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>commentControl</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether to block builds on a &quot;/gcbrun&quot; comment from a repository owner or collaborator. Possible values: [&quot;COMMENTS_DISABLED&quot;, &quot;COMMENTS_ENABLED&quot;, &quot;COMMENTS_ENABLED_FOR_EXTERNAL_CONTRIBUTORS_ONLY&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>invertRegex</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If true, branches that do NOT match the git_ref will trigger a build.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecGithubPush">TriggerSpecGithubPush
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecGithub">TriggerSpecGithub</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>branch</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Regex of branches to match.  Specify only one of branch or tag.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>invertRegex</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>When true, only trigger a build if the revision regex does NOT match the git_ref regex.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tag</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Regex of tags to match.  Specify only one of branch or tag.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecResource">TriggerSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpec">TriggerSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>build</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecBuild">
+TriggerSpecBuild
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Contents of the build template. Either a filename or build template must be provided.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>createTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Time when the trigger was created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Human-readable description of the trigger.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>disabled</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether the trigger is disabled or not. If true, the trigger will never result in a build.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>filename</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Path, from the source root, to a file whose contents is used for the template. Either a filename or build template must be provided.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>github</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecGithub">
+TriggerSpecGithub
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Describes the configuration of a trigger that creates a build whenever a GitHub event is received.</p>
+<p>One of 'trigger_template' or 'github' must be provided.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ignoredFiles</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ignoredFiles and includedFiles are file glob matches using https://golang.org/pkg/path/filepath/#Match
+extended with support for '**'.</p>
+<p>If ignoredFiles and changed files are both empty, then they are not
+used to determine whether or not to trigger a build.</p>
+<p>If ignoredFiles is not empty, then we ignore any files that match any
+of the ignored_file globs. If the change has no files that are outside
+of the ignoredFiles globs, then we do not trigger a build.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>includedFiles</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ignoredFiles and includedFiles are file glob matches using https://golang.org/pkg/path/filepath/#Match
+extended with support for '**'.</p>
+<p>If any of the files altered in the commit pass the ignoredFiles filter
+and includedFiles is empty, then as far as this filter is concerned, we
+should trigger the build.</p>
+<p>If any of the files altered in the commit pass the ignoredFiles filter
+and includedFiles is not empty, then we make sure that at least one of
+those files matches a includedFiles glob. If not, then we do not trigger
+a build.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Name of the trigger. Must be unique within the project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>substitutions</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Substitutions data for Build resource.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tags</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Tags for annotation of a BuildTrigger</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>triggerID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The unique identifier for the trigger.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>triggerTemplate</code><br/>
+<em>
+<a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecTriggerTemplate">
+TriggerSpecTriggerTemplate
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Template describing the types of source changes to trigger a build.</p>
+<p>Branch and tag names in trigger templates are interpreted as regular
+expressions. Any branch or tag change that matches that regular
+expression will trigger a build.</p>
+<p>One of 'trigger_template' or 'github' must be provided.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecTriggerTemplate">TriggerSpecTriggerTemplate
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.TriggerSpecResource">TriggerSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>branchName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Name of the branch to build. Exactly one a of branch name, tag, or commit SHA must be provided.
+This field is a regular expression.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>commitSha</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Explicit commit SHA to build. Exactly one of a branch name, tag, or commit SHA must be provided.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dir</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Directory, relative to the source root, in which to run the build.</p>
+<p>This must be a relative path. If a step's dir is specified and
+is an absolute path, this value is ignored for that step's
+execution.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>invertRegex</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Only trigger a build if the revision regex does NOT match the revision regex.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>projectID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ID of the project that owns the Cloud Source Repository. If
+omitted, the project ID requesting the build is assumed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>repoName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Name of the Cloud Source Repository. If omitted, the name &quot;default&quot; is assumed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tagName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Name of the tag to build. Exactly one of a branch name, tag, or commit SHA must be provided.
+This field is a regular expression.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloudbuild.google.kubeform.com/v1alpha1.TriggerStatus">TriggerStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloudbuild.google.kubeform.com/v1alpha1.Trigger">Trigger</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

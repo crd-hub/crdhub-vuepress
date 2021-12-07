@@ -1,0 +1,2057 @@
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeployment">ConfigPatchDeployment
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+os.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ConfigPatchDeployment</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpec">
+ConfigPatchDeploymentSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">
+ConfigPatchDeploymentSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">
+ConfigPatchDeploymentSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentStatus">
+ConfigPatchDeploymentStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpec">ConfigPatchDeploymentSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeployment">ConfigPatchDeployment</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">
+ConfigPatchDeploymentSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">
+ConfigPatchDeploymentSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecInstanceFilter">ConfigPatchDeploymentSpecInstanceFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">ConfigPatchDeploymentSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>all</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target all VM instances in the project. If true, no other criteria is permitted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>groupLabels</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecInstanceFilterGroupLabels">
+[]ConfigPatchDeploymentSpecInstanceFilterGroupLabels
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Targets VM instances matching ANY of these GroupLabels. This allows targeting of disparate groups of VM instances.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>instanceNamePrefixes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Targets VMs whose name starts with one of these prefixes. Similar to labels, this is another way to group
+VMs when targeting configs, for example prefix=&quot;prod-&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>instances</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Targets any of the VM instances specified. Instances are specified by their URI in the 'form zones/{{zone}}/instances/{{instance_name}}',
+'projects/{{project_id}}/zones/{{zone}}/instances/{{instance_name}}', or
+'https://www.googleapis.com/compute/v1/projects/{{project_id}}/zones/{{zone}}/instances/{{instance_name}}'</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>zones</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Targets VM instances in ANY of these zones. Leave empty to target VM instances in any zone.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecInstanceFilterGroupLabels">ConfigPatchDeploymentSpecInstanceFilterGroupLabels
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecInstanceFilter">ConfigPatchDeploymentSpecInstanceFilter</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>labels</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Compute Engine instance labels that must be present for a VM instance to be targeted by this filter</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecOneTimeSchedule">ConfigPatchDeploymentSpecOneTimeSchedule
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">ConfigPatchDeploymentSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>executeTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The desired patch job execution time. A timestamp in RFC3339 UTC &quot;Zulu&quot; format,
+accurate to nanoseconds. Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">ConfigPatchDeploymentSpecPatchConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">ConfigPatchDeploymentSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apt</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigApt">
+ConfigPatchDeploymentSpecPatchConfigApt
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Apt update settings. Use this setting to override the default apt patch rules.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>goo</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigGoo">
+ConfigPatchDeploymentSpecPatchConfigGoo
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>goo update settings. Use this setting to override the default goo patch rules.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>postStep</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStep">
+ConfigPatchDeploymentSpecPatchConfigPostStep
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ExecStep to run after the patch update.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>preStep</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStep">
+ConfigPatchDeploymentSpecPatchConfigPreStep
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ExecStep to run before the patch update.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>rebootConfig</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Post-patch reboot settings. Possible values: [&quot;DEFAULT&quot;, &quot;ALWAYS&quot;, &quot;NEVER&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>windowsUpdate</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigWindowsUpdate">
+ConfigPatchDeploymentSpecPatchConfigWindowsUpdate
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Windows update settings. Use this setting to override the default Windows patch rules.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>yum</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigYum">
+ConfigPatchDeploymentSpecPatchConfigYum
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Yum update settings. Use this setting to override the default yum patch rules.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>zypper</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigZypper">
+ConfigPatchDeploymentSpecPatchConfigZypper
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>zypper update settings. Use this setting to override the default zypper patch rules.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigApt">ConfigPatchDeploymentSpecPatchConfigApt
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">ConfigPatchDeploymentSpecPatchConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>excludes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of packages to exclude from update. These packages will be excluded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exclusivePackages</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An exclusive list of packages to be updated. These are the only packages that will be updated.
+If these packages are not installed, they will be ignored. This field cannot be specified with
+any other patch configuration fields.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>By changing the type to DIST, the patching is performed using apt-get dist-upgrade instead. Possible values: [&quot;DIST&quot;, &quot;UPGRADE&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigGoo">ConfigPatchDeploymentSpecPatchConfigGoo
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">ConfigPatchDeploymentSpecPatchConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>enabled</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>goo update settings. Use this setting to override the default goo patch rules.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStep">ConfigPatchDeploymentSpecPatchConfigPostStep
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">ConfigPatchDeploymentSpecPatchConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>linuxExecStepConfig</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfig">
+ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ExecStepConfig for all Linux VMs targeted by the PatchJob.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>windowsExecStepConfig</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfig">
+ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ExecStepConfig for all Windows VMs targeted by the PatchJob.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfig">ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStep">ConfigPatchDeploymentSpecPatchConfigPostStep</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>allowedSuccessCodes</code><br/>
+<em>
+[]int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>gcsObject</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfigGcsObject">
+ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfigGcsObject
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A Cloud Storage object containing the executable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>interpreter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The script interpreter to use to run the script. If no interpreter is specified the script will
+be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: [&quot;SHELL&quot;, &quot;POWERSHELL&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>localPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An absolute path to the executable on the VM.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfigGcsObject">ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfigGcsObject
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfig">ConfigPatchDeploymentSpecPatchConfigPostStepLinuxExecStepConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>bucket</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Bucket of the Cloud Storage object.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>generationNumber</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>object</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the Cloud Storage object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfig">ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStep">ConfigPatchDeploymentSpecPatchConfigPostStep</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>allowedSuccessCodes</code><br/>
+<em>
+[]int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>gcsObject</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfigGcsObject">
+ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfigGcsObject
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A Cloud Storage object containing the executable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>interpreter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The script interpreter to use to run the script. If no interpreter is specified the script will
+be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: [&quot;SHELL&quot;, &quot;POWERSHELL&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>localPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An absolute path to the executable on the VM.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfigGcsObject">ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfigGcsObject
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfig">ConfigPatchDeploymentSpecPatchConfigPostStepWindowsExecStepConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>bucket</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Bucket of the Cloud Storage object.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>generationNumber</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>object</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the Cloud Storage object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStep">ConfigPatchDeploymentSpecPatchConfigPreStep
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">ConfigPatchDeploymentSpecPatchConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>linuxExecStepConfig</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfig">
+ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ExecStepConfig for all Linux VMs targeted by the PatchJob.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>windowsExecStepConfig</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfig">
+ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ExecStepConfig for all Windows VMs targeted by the PatchJob.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfig">ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStep">ConfigPatchDeploymentSpecPatchConfigPreStep</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>allowedSuccessCodes</code><br/>
+<em>
+[]int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>gcsObject</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfigGcsObject">
+ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfigGcsObject
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A Cloud Storage object containing the executable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>interpreter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The script interpreter to use to run the script. If no interpreter is specified the script will
+be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: [&quot;SHELL&quot;, &quot;POWERSHELL&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>localPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An absolute path to the executable on the VM.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfigGcsObject">ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfigGcsObject
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfig">ConfigPatchDeploymentSpecPatchConfigPreStepLinuxExecStepConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>bucket</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Bucket of the Cloud Storage object.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>generationNumber</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>object</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the Cloud Storage object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfig">ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStep">ConfigPatchDeploymentSpecPatchConfigPreStep</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>allowedSuccessCodes</code><br/>
+<em>
+[]int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defaults to [0]. A list of possible return values that the execution can return to indicate a success.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>gcsObject</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfigGcsObject">
+ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfigGcsObject
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A Cloud Storage object containing the executable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>interpreter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The script interpreter to use to run the script. If no interpreter is specified the script will
+be executed directly, which will likely only succeed for scripts with shebang lines. Possible values: [&quot;SHELL&quot;, &quot;POWERSHELL&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>localPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An absolute path to the executable on the VM.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfigGcsObject">ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfigGcsObject
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfig">ConfigPatchDeploymentSpecPatchConfigPreStepWindowsExecStepConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>bucket</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Bucket of the Cloud Storage object.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>generationNumber</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Generation number of the Cloud Storage object. This is used to ensure that the ExecStep specified by this PatchJob does not change.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>object</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the Cloud Storage object.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigWindowsUpdate">ConfigPatchDeploymentSpecPatchConfigWindowsUpdate
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">ConfigPatchDeploymentSpecPatchConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>classifications</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Only apply updates of these windows update classifications. If empty, all updates are applied. Possible values: [&quot;CRITICAL&quot;, &quot;SECURITY&quot;, &quot;DEFINITION&quot;, &quot;DRIVER&quot;, &quot;FEATURE_PACK&quot;, &quot;SERVICE_PACK&quot;, &quot;TOOL&quot;, &quot;UPDATE_ROLLUP&quot;, &quot;UPDATE&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>excludes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of KBs to exclude from update.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exclusivePatches</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An exclusive list of kbs to be updated. These are the only patches that will be updated.
+This field must not be used with other patch configurations.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigYum">ConfigPatchDeploymentSpecPatchConfigYum
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">ConfigPatchDeploymentSpecPatchConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>excludes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of packages to exclude from update. These packages will be excluded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exclusivePackages</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An exclusive list of packages to be updated. These are the only packages that will be updated.
+If these packages are not installed, they will be ignored. This field cannot be specified with
+any other patch configuration fields.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minimal</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Will cause patch to run yum update-minimal instead.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>security</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Adds the --security flag to yum update. Not supported on all platforms.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfigZypper">ConfigPatchDeploymentSpecPatchConfigZypper
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">ConfigPatchDeploymentSpecPatchConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>categories</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Install only patches with these categories. Common categories include security, recommended, and feature.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>excludes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of packages to exclude from update.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exclusivePatches</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An exclusive list of patches to be updated. These are the only patches that will be installed using 'zypper patch patch:' command.
+This field must not be used with any other patch configuration fields.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>severities</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Install only patches with these severities. Common severities include critical, important, moderate, and low.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>withOptional</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Adds the --with-optional flag to zypper patch.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>withUpdate</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Adds the --with-update flag, to zypper patch.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringSchedule">ConfigPatchDeploymentSpecRecurringSchedule
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">ConfigPatchDeploymentSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>endTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The end time at which a recurring patch deployment schedule is no longer active.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds. Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>lastExecuteTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time the last patch job ran successfully.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds. Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>monthly</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleMonthly">
+ConfigPatchDeploymentSpecRecurringScheduleMonthly
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Schedule with monthly executions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>nextExecuteTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time the next patch job is scheduled to run.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds. Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>startTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time that the recurring schedule becomes effective. Defaults to createTime of the patch deployment.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds. Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeOfDay</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleTimeOfDay">
+ConfigPatchDeploymentSpecRecurringScheduleTimeOfDay
+</a>
+</em>
+</td>
+<td>
+<p>Time of the day to run a recurring deployment.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeZone</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleTimeZone">
+ConfigPatchDeploymentSpecRecurringScheduleTimeZone
+</a>
+</em>
+</td>
+<td>
+<p>Defines the time zone that timeOfDay is relative to. The rules for daylight saving time are
+determined by the chosen time zone.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>weekly</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleWeekly">
+ConfigPatchDeploymentSpecRecurringScheduleWeekly
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Schedule with weekly executions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleMonthly">ConfigPatchDeploymentSpecRecurringScheduleMonthly
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringSchedule">ConfigPatchDeploymentSpecRecurringSchedule</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>monthDay</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>One day of the month. 1-31 indicates the 1st to the 31st day. -1 indicates the last day of the month.
+Months without the target day will be skipped. For example, a schedule to run &quot;every month on the 31st&quot;
+will not run in February, April, June, etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>weekDayOfMonth</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleMonthlyWeekDayOfMonth">
+ConfigPatchDeploymentSpecRecurringScheduleMonthlyWeekDayOfMonth
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Week day in a month.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleMonthlyWeekDayOfMonth">ConfigPatchDeploymentSpecRecurringScheduleMonthlyWeekDayOfMonth
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleMonthly">ConfigPatchDeploymentSpecRecurringScheduleMonthly</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>dayOfWeek</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A day of the week. Possible values: [&quot;MONDAY&quot;, &quot;TUESDAY&quot;, &quot;WEDNESDAY&quot;, &quot;THURSDAY&quot;, &quot;FRIDAY&quot;, &quot;SATURDAY&quot;, &quot;SUNDAY&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>weekOrdinal</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Week number in a month. 1-4 indicates the 1st to 4th week of the month. -1 indicates the last week of the month.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleTimeOfDay">ConfigPatchDeploymentSpecRecurringScheduleTimeOfDay
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringSchedule">ConfigPatchDeploymentSpecRecurringSchedule</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>hours</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Hours of day in 24 hour format. Should be from 0 to 23.
+An API may choose to allow the value &quot;24:00:00&quot; for scenarios like business closing time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minutes</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Minutes of hour of day. Must be from 0 to 59.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>nanos</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>seconds</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Seconds of minutes of the time. Must normally be from 0 to 59. An API may allow the value 60 if it allows leap-seconds.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleTimeZone">ConfigPatchDeploymentSpecRecurringScheduleTimeZone
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringSchedule">ConfigPatchDeploymentSpecRecurringSchedule</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>ID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>IANA Time Zone Database time zone, e.g. &quot;America/New_York&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>IANA Time Zone Database version number, e.g. &quot;2019a&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringScheduleWeekly">ConfigPatchDeploymentSpecRecurringScheduleWeekly
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringSchedule">ConfigPatchDeploymentSpecRecurringSchedule</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>dayOfWeek</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>IANA Time Zone Database time zone, e.g. &quot;America/New_York&quot;. Possible values: [&quot;MONDAY&quot;, &quot;TUESDAY&quot;, &quot;WEDNESDAY&quot;, &quot;THURSDAY&quot;, &quot;FRIDAY&quot;, &quot;SATURDAY&quot;, &quot;SUNDAY&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">ConfigPatchDeploymentSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpec">ConfigPatchDeploymentSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>createTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Time the patch deployment was created. Timestamp is in RFC3339 text format.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds. Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Description of the patch deployment. Length of the description is limited to 1024 characters.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>duration</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Duration of the patch. After the duration ends, the patch times out.
+A duration in seconds with up to nine fractional digits, terminated by 's'. Example: &quot;3.5s&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>instanceFilter</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecInstanceFilter">
+ConfigPatchDeploymentSpecInstanceFilter
+</a>
+</em>
+</td>
+<td>
+<p>VM instances to patch.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>lastExecuteTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The last time a patch job was started by this deployment. Timestamp is in RFC3339 text format.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds. Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Unique name for the patch deployment resource in a project.
+The patch deployment name is in the form: projects/{project_id}/patchDeployments/{patchDeploymentId}.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>oneTimeSchedule</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecOneTimeSchedule">
+ConfigPatchDeploymentSpecOneTimeSchedule
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Schedule a one-time execution.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>patchConfig</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecPatchConfig">
+ConfigPatchDeploymentSpecPatchConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Patch configuration that is applied.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>patchDeploymentID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A name for the patch deployment in the project. When creating a name the following rules apply:</p>
+<ul>
+<li>Must contain only lowercase letters, numbers, and hyphens.</li>
+<li>Must start with a letter.</li>
+<li>Must be between 1-63 characters.</li>
+<li>Must end with a number or a letter.</li>
+<li>Must be unique within the project.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>recurringSchedule</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRecurringSchedule">
+ConfigPatchDeploymentSpecRecurringSchedule
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Schedule recurring executions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>rollout</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRollout">
+ConfigPatchDeploymentSpecRollout
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Rollout strategy of the patch job.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>updateTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Time the patch deployment was last updated. Timestamp is in RFC3339 text format.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, accurate to nanoseconds. Example: &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRollout">ConfigPatchDeploymentSpecRollout
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecResource">ConfigPatchDeploymentSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>disruptionBudget</code><br/>
+<em>
+<a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRolloutDisruptionBudget">
+ConfigPatchDeploymentSpecRolloutDisruptionBudget
+</a>
+</em>
+</td>
+<td>
+<p>The maximum number (or percentage) of VMs per zone to disrupt at any given moment. The number of VMs calculated from multiplying the percentage by the total number of VMs in a zone is rounded up.
+During patching, a VM is considered disrupted from the time the agent is notified to begin until patching has completed. This disruption time includes the time to complete reboot and any post-patch steps.
+A VM contributes to the disruption budget if its patching operation fails either when applying the patches, running pre or post patch steps, or if it fails to respond with a success notification before timing out. VMs that are not running or do not have an active agent do not count toward this disruption budget.
+For zone-by-zone rollouts, if the disruption budget in a zone is exceeded, the patch job stops, because continuing to the next zone requires completion of the patch process in the previous zone.
+For example, if the disruption budget has a fixed value of 10, and 8 VMs fail to patch in the current zone, the patch job continues to patch 2 VMs at a time until the zone is completed. When that zone is completed successfully, patching begins with 10 VMs at a time in the next zone. If 10 VMs in the next zone fail to patch, the patch job stops.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>mode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Mode of the patch rollout. Possible values: [&quot;ZONE_BY_ZONE&quot;, &quot;CONCURRENT_ZONES&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRolloutDisruptionBudget">ConfigPatchDeploymentSpecRolloutDisruptionBudget
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentSpecRollout">ConfigPatchDeploymentSpecRollout</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>fixed</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies a fixed value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>percentage</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the relative value defined as a percentage, which will be multiplied by a reference value.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="os.google.kubeform.com/v1alpha1.ConfigPatchDeploymentStatus">ConfigPatchDeploymentStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#os.google.kubeform.com/v1alpha1.ConfigPatchDeployment">ConfigPatchDeployment</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

@@ -1,0 +1,685 @@
+<h3 id="cloud.google.kubeform.com/v1alpha1.TasksQueue">TasksQueue
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+cloud.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>TasksQueue</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpec">
+TasksQueueSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">
+TasksQueueSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">
+TasksQueueSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueStatus">
+TasksQueueStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloud.google.kubeform.com/v1alpha1.TasksQueueSpec">TasksQueueSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloud.google.kubeform.com/v1alpha1.TasksQueue">TasksQueue</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">
+TasksQueueSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">
+TasksQueueSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloud.google.kubeform.com/v1alpha1.TasksQueueSpecAppEngineRoutingOverride">TasksQueueSpecAppEngineRoutingOverride
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">TasksQueueSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>host</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The host that the task is sent to.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>instance</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>App instance.</p>
+<p>By default, the task is sent to an instance which is available when the task is attempted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>service</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>App service.</p>
+<p>By default, the task is sent to the service which is the default service when the task is attempted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>App version.</p>
+<p>By default, the task is sent to the version which is the default version when the task is attempted.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloud.google.kubeform.com/v1alpha1.TasksQueueSpecRateLimits">TasksQueueSpecRateLimits
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">TasksQueueSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>maxBurstSize</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The max burst size.</p>
+<p>Max burst size limits how fast tasks in queue are processed when many tasks are
+in the queue and the rate is high. This field allows the queue to have a high
+rate so processing starts shortly after a task is enqueued, but still limits
+resource usage when many tasks are enqueued in a short period of time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxConcurrentDispatches</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The maximum number of concurrent tasks that Cloud Tasks allows to
+be dispatched for this queue. After this threshold has been
+reached, Cloud Tasks stops dispatching tasks until the number of
+concurrent requests decreases.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxDispatchesPerSecond</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The maximum rate at which tasks are dispatched from this queue.</p>
+<p>If unspecified when the queue is created, Cloud Tasks will pick the default.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">TasksQueueSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpec">TasksQueueSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>appEngineRoutingOverride</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecAppEngineRoutingOverride">
+TasksQueueSpecAppEngineRoutingOverride
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Overrides for task-level appEngineRouting. These settings apply only
+to App Engine tasks in this queue</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>location</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The location of the queue</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The queue name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>rateLimits</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecRateLimits">
+TasksQueueSpecRateLimits
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Rate limits for task dispatches.</p>
+<p>The queue's actual dispatch rate is the result of:</p>
+<ul>
+<li>Number of tasks in the queue</li>
+<li>User-specified throttling: rateLimits, retryConfig, and the queue's state.</li>
+<li>System throttling due to 429 (Too Many Requests) or 503 (Service
+Unavailable) responses from the worker, high error rates, or to
+smooth sudden large traffic spikes.</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<code>retryConfig</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecRetryConfig">
+TasksQueueSpecRetryConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Settings that determine the retry behavior.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stackdriverLoggingConfig</code><br/>
+<em>
+<a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecStackdriverLoggingConfig">
+TasksQueueSpecStackdriverLoggingConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Configuration options for writing logs to Stackdriver Logging.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloud.google.kubeform.com/v1alpha1.TasksQueueSpecRetryConfig">TasksQueueSpecRetryConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">TasksQueueSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>maxAttempts</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of attempts per task.</p>
+<p>Cloud Tasks will attempt the task maxAttempts times (that is, if
+the first attempt fails, then there will be maxAttempts - 1
+retries). Must be &gt;= -1.</p>
+<p>If unspecified when the queue is created, Cloud Tasks will pick
+the default.</p>
+<p>-1 indicates unlimited attempts.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxBackoff</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A task will be scheduled for retry between minBackoff and
+maxBackoff duration after it fails, if the queue's RetryConfig
+specifies that the task should be retried.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxDoublings</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time between retries will double maxDoublings times.</p>
+<p>A task's retry interval starts at minBackoff, then doubles maxDoublings times,
+then increases linearly, and finally retries retries at intervals of maxBackoff
+up to maxAttempts times.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxRetryDuration</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If positive, maxRetryDuration specifies the time limit for
+retrying a failed task, measured from when the task was first
+attempted. Once maxRetryDuration time has passed and the task has
+been attempted maxAttempts times, no further attempts will be
+made and the task will be deleted.</p>
+<p>If zero, then the task age is unlimited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minBackoff</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A task will be scheduled for retry between minBackoff and
+maxBackoff duration after it fails, if the queue's RetryConfig
+specifies that the task should be retried.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloud.google.kubeform.com/v1alpha1.TasksQueueSpecStackdriverLoggingConfig">TasksQueueSpecStackdriverLoggingConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloud.google.kubeform.com/v1alpha1.TasksQueueSpecResource">TasksQueueSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>samplingRatio</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<p>Specifies the fraction of operations to write to Stackdriver Logging.
+This field may contain any value between 0.0 and 1.0, inclusive. 0.0 is the
+default and means that no operations are logged.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cloud.google.kubeform.com/v1alpha1.TasksQueueStatus">TasksQueueStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#cloud.google.kubeform.com/v1alpha1.TasksQueue">TasksQueue</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

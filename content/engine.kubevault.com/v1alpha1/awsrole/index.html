@@ -1,0 +1,373 @@
+<h3 id="engine.kubevault.com/v1alpha1.AWSRole">AWSRole
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+engine.kubevault.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>AWSRole</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.AWSRoleSpec">
+AWSRoleSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>secretEngineRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>SecretEngineRef is the name of a Secret Engine</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>credentialType</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.AWSCredentialType">
+AWSCredentialType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the type of credential to be used when retrieving credentials from the role</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>roleARNs</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>Specifies the ARNs of the AWS roles this Vault role is allowed to assume.
+Required when credential_type is assumed_role and prohibited otherwise</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyARNs</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>Specifies the ARNs of the AWS managed policies to be attached to IAM users when they are requested.
+Valid only when credential_type is iam_user. When credential_type is iam_user,
+at least one of policy_arns or policy_document must be specified.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyDocument</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IAM policy document for the role. The behavior depends on the credential type.
+With iam_user, the policy document will be attached to the IAM user generated and
+augment the permissions the IAM user has. With assumed_role and federation_token,
+the policy document will act as a filter on what the credentials can do.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policy</code><br/>
+<em>
+k8s.io/apimachinery/pkg/runtime.RawExtension
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the IAM policy in JSON format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>defaultSTSTTL</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The default TTL for STS credentials. When a TTL is not specified when STS credentials are requested,
+and a default TTL is specified on the role, then this default TTL will be used.
+Valid only when credential_type is one of assumed_role or federation_token</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxSTSTTL</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The max allowed TTL for STS credentials (credentials TTL are capped to max_sts_ttl).
+Valid only when credential_type is one of assumed_role or federation_token</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.RoleStatus">
+RoleStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.RolePhase">
+RolePhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>ObservedGeneration is the most recent generation observed for this MySQLRole. It corresponds to the
+MySQLRole's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<p>Represents the latest available observations of a MySQLRole current state.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyRef</code><br/>
+<em>
+kmodules.xyz/client-go/api/v1.ObjectReference
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="engine.kubevault.com/v1alpha1.AWSCredentialType">AWSCredentialType
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#engine.kubevault.com/v1alpha1.AWSRoleSpec">AWSRoleSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;assumed_role&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;federation_token&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;iam_user&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="engine.kubevault.com/v1alpha1.AWSRoleSpec">AWSRoleSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#engine.kubevault.com/v1alpha1.AWSRole">AWSRole</a>)
+</p>
+<div>
+<p>AWSRoleSpec contains connection information, AWS role info, etc
+More info: https://www.vaultproject.io/api/secret/aws/index.html#parameters-3</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>secretEngineRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>SecretEngineRef is the name of a Secret Engine</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>credentialType</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.AWSCredentialType">
+AWSCredentialType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the type of credential to be used when retrieving credentials from the role</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>roleARNs</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>Specifies the ARNs of the AWS roles this Vault role is allowed to assume.
+Required when credential_type is assumed_role and prohibited otherwise</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyARNs</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>Specifies the ARNs of the AWS managed policies to be attached to IAM users when they are requested.
+Valid only when credential_type is iam_user. When credential_type is iam_user,
+at least one of policy_arns or policy_document must be specified.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyDocument</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The IAM policy document for the role. The behavior depends on the credential type.
+With iam_user, the policy document will be attached to the IAM user generated and
+augment the permissions the IAM user has. With assumed_role and federation_token,
+the policy document will act as a filter on what the credentials can do.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policy</code><br/>
+<em>
+k8s.io/apimachinery/pkg/runtime.RawExtension
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the IAM policy in JSON format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>defaultSTSTTL</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The default TTL for STS credentials. When a TTL is not specified when STS credentials are requested,
+and a default TTL is specified on the role, then this default TTL will be used.
+Valid only when credential_type is one of assumed_role or federation_token</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxSTSTTL</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The max allowed TTL for STS credentials (credentials TTL are capped to max_sts_ttl).
+Valid only when credential_type is one of assumed_role or federation_token</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>311cc741</code>.
+</em></p>

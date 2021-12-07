@@ -1,0 +1,291 @@
+<h3 id="catalog.kubedb.com/v1alpha1.ProxySQLVersion">ProxySQLVersion
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+catalog.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ProxySQLVersion</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionSpec">
+ProxySQLVersionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>proxysql</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionProxysql">
+ProxySQLVersionProxysql
+</a>
+</em>
+</td>
+<td>
+<p>Proxysql Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionExporter">
+ProxySQLVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicies</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionPodSecurityPolicy">
+ProxySQLVersionPodSecurityPolicy
+</a>
+</em>
+</td>
+<td>
+<p>PSP names</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ProxySQLVersionExporter">ProxySQLVersionExporter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionSpec">ProxySQLVersionSpec</a>)
+</p>
+<div>
+<p>ProxySQLVersionExporter is the image for the ProxySQL exporter</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ProxySQLVersionPodSecurityPolicy">ProxySQLVersionPodSecurityPolicy
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionSpec">ProxySQLVersionSpec</a>)
+</p>
+<div>
+<p>ProxySQLVersionPodSecurityPolicy is the ProxySQL pod security policies</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databasePolicyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ProxySQLVersionProxysql">ProxySQLVersionProxysql
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionSpec">ProxySQLVersionSpec</a>)
+</p>
+<div>
+<p>ProxySQLVersionProxysql is the proxysql image</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.ProxySQLVersionSpec">ProxySQLVersionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersion">ProxySQLVersion</a>)
+</p>
+<div>
+<p>ProxySQLVersionSpec is the spec for ProxySQL version</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>proxysql</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionProxysql">
+ProxySQLVersionProxysql
+</a>
+</em>
+</td>
+<td>
+<p>Proxysql Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionExporter">
+ProxySQLVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicies</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ProxySQLVersionPodSecurityPolicy">
+ProxySQLVersionPodSecurityPolicy
+</a>
+</em>
+</td>
+<td>
+<p>PSP names</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

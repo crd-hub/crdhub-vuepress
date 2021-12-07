@@ -1,0 +1,445 @@
+<h3 id="autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscaler">ElasticsearchAutoscaler
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+autoscaling.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ElasticsearchAutoscaler</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>metadata is the standard object metadata.
+More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata</p>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerSpec">
+ElasticsearchAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>spec is the specification for the behaviour of the autoscaler.
+More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.</p>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>compute</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeAutoscalerSpec">
+ElasticsearchComputeAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>storage</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageAutoscalerSpec">
+ElasticsearchStorageAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerStatus">
+ElasticsearchAutoscalerStatus
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>status is the current information about the autoscaler.</p>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed by this autoscaler.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions is the set of conditions required for this autoscaler to scale its target,
+and indicates whether or not those conditions are met.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerSpec">ElasticsearchAutoscalerSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscaler">ElasticsearchAutoscaler</a>)
+</p>
+<div>
+<p>ElasticsearchAutoscalerSpec is the specification of the behavior of the autoscaler.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>compute</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeAutoscalerSpec">
+ElasticsearchComputeAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>storage</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageAutoscalerSpec">
+ElasticsearchStorageAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerStatus">ElasticsearchAutoscalerStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscaler">ElasticsearchAutoscaler</a>)
+</p>
+<div>
+<p>ElasticsearchAutoscalerStatus describes the runtime state of the autoscaler.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed by this autoscaler.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions is the set of conditions required for this autoscaler to scale its target,
+and indicates whether or not those conditions are met.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeAutoscalerSpec">ElasticsearchComputeAutoscalerSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerSpec">ElasticsearchAutoscalerSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>node</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ComputeAutoscalerSpec">
+ComputeAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>topology</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeTopologyAutoscalerSpec">
+ElasticsearchComputeTopologyAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>disableScaleDown</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeTopologyAutoscalerSpec">ElasticsearchComputeTopologyAutoscalerSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchComputeAutoscalerSpec">ElasticsearchComputeAutoscalerSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>master</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ComputeAutoscalerSpec">
+ComputeAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>data</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ComputeAutoscalerSpec">
+ComputeAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>ingest</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ComputeAutoscalerSpec">
+ComputeAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageAutoscalerSpec">ElasticsearchStorageAutoscalerSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchAutoscalerSpec">ElasticsearchAutoscalerSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>node</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.StorageAutoscalerSpec">
+StorageAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>topology</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageTopologyAutoscalerSpec">
+ElasticsearchStorageTopologyAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageTopologyAutoscalerSpec">ElasticsearchStorageTopologyAutoscalerSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#autoscaling.kubedb.com/v1alpha1.ElasticsearchStorageAutoscalerSpec">ElasticsearchStorageAutoscalerSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>master</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.StorageAutoscalerSpec">
+StorageAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>data</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.StorageAutoscalerSpec">
+StorageAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>ingest</code><br/>
+<em>
+<a href="#autoscaling.kubedb.com/v1alpha1.StorageAutoscalerSpec">
+StorageAutoscalerSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

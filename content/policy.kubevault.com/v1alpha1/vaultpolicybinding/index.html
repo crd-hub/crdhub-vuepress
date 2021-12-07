@@ -1,0 +1,1121 @@
+<h3 id="policy.kubevault.com/v1alpha1.VaultPolicyBinding">VaultPolicyBinding
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+policy.kubevault.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>VaultPolicyBinding</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.VaultPolicyBindingSpec">
+VaultPolicyBindingSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>vaultRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>VaultRef is the name of a AppBinding referencing to a Vault Server</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>vaultRoleName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>VaultRoleName is the role name which will be bound of the policies
+This defaults to following format: k8s.${cluster}.${metadata.namespace}.${metadata.name}
+xref: https://www.vaultproject.io/api/auth/kubernetes/index.html#create-role</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policies</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.PolicyIdentifier">
+[]PolicyIdentifier
+</a>
+</em>
+</td>
+<td>
+<p>Policies is a list of Vault policy identifiers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>subjectRef</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.SubjectRef">
+SubjectRef
+</a>
+</em>
+</td>
+<td>
+<p>SubjectRef refers to Vault users who will be granted policies.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.VaultPolicyBindingStatus">
+VaultPolicyBindingStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ObservedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.PolicyBindingPhase">
+PolicyBindingPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Phase indicates whether successfully bind the policy to service account in vault or not or in progress</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Represents the latest available observations of a VaultPolicyBinding.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.AppRoleSubjectRef">AppRoleSubjectRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.SubjectRef">SubjectRef</a>)
+</p>
+<div>
+<p>More info: https://www.vaultproject.io/api-docs/auth/approle#create-update-approle</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the path where approle auth is enabled
+default : approle</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>roleName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>RoleName is the Name of the AppRole
+This defaults to following format: k8s.${cluster}.${metadata.namespace}.${metadata.name}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>bindSecretID</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>Require secret_id to be presented when logging in using this AppRole.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secretIdBoundCidrs</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of CIDR blocks; if set, specifies blocks of IP addresses which can perform the login operation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secretIdNumUses</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Number of times any particular SecretID can be used to fetch a token from this AppRole, after which the SecretID will expire. A value of zero will allow unlimited uses.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secretIdTTL</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Duration in either an integer number of seconds (3600) or an integer time unit (60m) after which any SecretID expires.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>enableLocalSecretIds</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>If set, the secret IDs generated using this role will be cluster local. This can only be set during role creation and once set, it can't be reset later.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenTTL</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The incremental lifetime for generated tokens. This current value of this will be referenced at renewal time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenMaxTTL</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The maximum lifetime for generated tokens. This current value of this will be referenced at renewal time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenPolicies</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of policies to encode onto generated tokens. Depending on the auth method, this list may be supplemented by user/group/other values.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenBoundCidrs</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of CIDR blocks; if set, specifies blocks of IP addresses which can authenticate successfully, and ties the resulting token to these blocks as well.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenExplicitMaxTTL</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>If set, will encode an explicit max TTL onto the token. This is a hard cap even if token_ttl and token_max_ttl would otherwise allow a renewal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenNoDefaultPolicy</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>If set, the default policy will not be set on generated tokens; otherwise it will be added to the policies set in token_policies.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenNumUses</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The maximum number of times a generated token may be used (within its lifetime); 0 means unlimited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenPeriod</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The period, if any, to set on the token.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The type of token that should be generated. Can be service, batch, or default to use the mount's tuned default (which unless changed will be service tokens). For token store roles, there are two additional possibilities: default-service and default-batch which specify the type to return unless the client requests a different type at generation time.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.JWTSubjectRef">JWTSubjectRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.SubjectRef">SubjectRef</a>)
+</p>
+<div>
+<p>More info: https://www.vaultproject.io/api-docs/auth/jwt#create-role</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the path where jwt/oidc auth is enabled
+default : jwt</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the role.
+This defaults to following format: k8s.${cluster}.${metadata.namespace}.${metadata.name}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>roleType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Type of role, either &quot;oidc&quot; (default) or &quot;jwt&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>boundAudiences</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of aud claims to match against. Any match is sufficient. Required for &quot;jwt&quot; roles, optional for &quot;oidc&quot; roles.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>userClaim</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The claim to use to uniquely identify the user; this will be used as the name for the Identity entity alias created due to a successful login. The claim value must be a string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>boundSubject</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>If set, requires that the sub claim matches this value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>boundClaims</code><br/>
+<em>
+map[string]string
+</em>
+</td>
+<td>
+<p>If set, a map of claims/values to match against. The expected value may be a single string or a list of strings. The interpretation of the bound claim values is configured with bound_claims_type.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>boundClaimsType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Configures the interpretation of the bound_claims values. If &quot;string&quot; (the default), the values will treated as string literals and must match exactly. If set to &quot;glob&quot;, the values will be interpreted as globs, with * matching any number of characters.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>groupClaim</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The claim to use to uniquely identify the set of groups to which the user belongs; this will be used as the names for the Identity group aliases created due to a successful login. The claim value must be a list of strings.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>claimMappings</code><br/>
+<em>
+map[string]string
+</em>
+</td>
+<td>
+<p>If set, a map of claims (keys) to be copied to specified metadata fields (values).</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>oidcScopes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>If set, a list of OIDC scopes to be used with an OIDC role. The standard scope &quot;openid&quot; is automatically included and need not be specified.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>allowedRedirectUris</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>The list of allowed values for redirect_uri during OIDC logins.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verboseOidcLogging</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenTTL</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The incremental lifetime for generated tokens. This current value of this will be referenced at renewal time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenMaxTTL</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The maximum lifetime for generated tokens. This current value of this will be referenced at renewal time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenPolicies</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of policies to encode onto generated tokens. Depending on the auth method, this list may be supplemented by user/group/other values.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenBoundCidrs</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of CIDR blocks; if set, specifies blocks of IP addresses which can authenticate successfully, and ties the resulting token to these blocks as well.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenExplicitMaxTTL</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>If set, will encode an explicit max TTL onto the token. This is a hard cap even if token_ttl and token_max_ttl would otherwise allow a renewal.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenNoDefaultPolicy</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>If set, the default policy will not be set on generated tokens; otherwise it will be added to the policies set in token_policies.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenNumUses</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The maximum number of times a generated token may be used (within its lifetime); 0 means unlimited.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenPeriod</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The period, if any, to set on the token.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tokenType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The type of token that should be generated. Can be service, batch, or default to use the mount's tuned default (which unless changed will be service tokens). For token store roles, there are two additional possibilities: default-service and default-batch which specify the type to return unless the client requests a different type at generation time.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.KubernetesSubjectRef">KubernetesSubjectRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.SubjectRef">SubjectRef</a>)
+</p>
+<div>
+<p>More info: https://www.vaultproject.io/api/auth/kubernetes/index.html#create-role</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the path where kubernetes auth is enabled
+default : kubernetes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the role</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serviceAccountNames</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>Specifies the names of the service account to bind with policy</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>serviceAccountNamespaces</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>Specifies the namespaces of the service account</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ttl</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the TTL period of tokens issued using this role in seconds.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxTTL</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the maximum allowed lifetime of tokens issued in seconds using this role.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>period</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If set, indicates that the token generated using this role should never expire.
+The token should be renewed within the duration specified by this value.
+At each renewal, the token's TTL will be set to the value of this parameter.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.LdapGroupSubjectRef">LdapGroupSubjectRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.SubjectRef">SubjectRef</a>)
+</p>
+<div>
+<p>More info: https://www.vaultproject.io/api-docs/auth/ldap#create-update-ldap-group</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the path where ldap groups auth is enabled
+default : ldap/groups</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name of the LDAP group</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policies</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of policies to encode onto generated tokens. Depending on the auth method, this list may be supplemented by user/group/other values.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.LdapUserSubjectRef">LdapUserSubjectRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.SubjectRef">SubjectRef</a>)
+</p>
+<div>
+<p>More info: https://www.vaultproject.io/api-docs/auth/ldap#create-update-ldap-user</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies the path where ldap groups auth is enabled
+default : ldap/users</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>username</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The username of the LDAP user</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policies</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of policies to encode onto generated tokens. Depending on the auth method, this list may be supplemented by user/group/other values.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>groups</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of groups associated to the user.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.PolicyBindingPhase">PolicyBindingPhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.VaultPolicyBindingStatus">VaultPolicyBindingStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Failed&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Success&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.PolicyIdentifier">PolicyIdentifier
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.VaultPolicyBindingSpec">VaultPolicyBindingSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name is a Vault server policy name. This name should be returned by <code>vault read sys/policy</code> command.
+More info: https://www.vaultproject.io/docs/concepts/policies.html#listing-policies</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ref</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Ref is name of a VaultPolicy crd object. Actual vault policy name is spec.vaultRoleName field.
+More info: https://www.vaultproject.io/docs/concepts/policies.html#listing-policies</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.SubjectRef">SubjectRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.VaultPolicyBindingSpec">VaultPolicyBindingSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>kubernetes</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.KubernetesSubjectRef">
+KubernetesSubjectRef
+</a>
+</em>
+</td>
+<td>
+<p>Kubernetes refers to Vault users who are authenticated via Kubernetes auth method
+More info: https://www.vaultproject.io/docs/auth/kubernetes.html#configuration</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>appRole</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.AppRoleSubjectRef">
+AppRoleSubjectRef
+</a>
+</em>
+</td>
+<td>
+<p>More info: https://www.vaultproject.io/docs/auth/approle#configuration</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ldapGroup</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.LdapGroupSubjectRef">
+LdapGroupSubjectRef
+</a>
+</em>
+</td>
+<td>
+<p>More info: https://www.vaultproject.io/api-docs/auth/ldap#configure-ldap</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ldapUser</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.LdapUserSubjectRef">
+LdapUserSubjectRef
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>jwt</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.JWTSubjectRef">
+JWTSubjectRef
+</a>
+</em>
+</td>
+<td>
+<p>More info: https://www.vaultproject.io/api-docs/auth/jwt#configure</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.VaultPolicyBindingSpec">VaultPolicyBindingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.VaultPolicyBinding">VaultPolicyBinding</a>)
+</p>
+<div>
+<p>links: https://www.vaultproject.io/api/auth/kubernetes/index.html#parameters-1</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>vaultRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>VaultRef is the name of a AppBinding referencing to a Vault Server</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>vaultRoleName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>VaultRoleName is the role name which will be bound of the policies
+This defaults to following format: k8s.${cluster}.${metadata.namespace}.${metadata.name}
+xref: https://www.vaultproject.io/api/auth/kubernetes/index.html#create-role</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policies</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.PolicyIdentifier">
+[]PolicyIdentifier
+</a>
+</em>
+</td>
+<td>
+<p>Policies is a list of Vault policy identifiers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>subjectRef</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.SubjectRef">
+SubjectRef
+</a>
+</em>
+</td>
+<td>
+<p>SubjectRef refers to Vault users who will be granted policies.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.VaultPolicyBindingStatus">VaultPolicyBindingStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.VaultPolicyBinding">VaultPolicyBinding</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ObservedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.PolicyBindingPhase">
+PolicyBindingPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Phase indicates whether successfully bind the policy to service account in vault or not or in progress</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Represents the latest available observations of a VaultPolicyBinding.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>311cc741</code>.
+</em></p>

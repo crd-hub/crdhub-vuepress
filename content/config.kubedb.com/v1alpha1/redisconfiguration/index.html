@@ -1,0 +1,81 @@
+<h3 id="config.kubedb.com/v1alpha1.RedisConfiguration">RedisConfiguration
+</h3>
+<div>
+<p>RedisConfiguration defines a Redis appBinding configuration.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+config.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>RedisConfiguration</code></td>
+</tr>
+<tr>
+<td>
+<code>clientCertSecret</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ClientCertSecret is the client secret name which needs to provide when the Redis client need to authenticate with client key and cert.
+It will be used when <code>tls-auth-clients</code> value is set to <code>required</code> or <code>yes</code>.</p>
+<br/>
+<br/>
+<table>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>stash</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashAddonSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stash defines backup and restore task definitions.</p>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>addon</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashTaskSpec
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

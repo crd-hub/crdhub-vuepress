@@ -1,0 +1,637 @@
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterNAT">RouterNAT
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+compute.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>RouterNAT</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpec">
+RouterNATSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpecResource">
+RouterNATSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpecResource">
+RouterNATSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterNATStatus">
+RouterNATStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterNATSpec">RouterNATSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RouterNAT">RouterNAT</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpecResource">
+RouterNATSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpecResource">
+RouterNATSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterNATSpecLogConfig">RouterNATSpecLogConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpecResource">RouterNATSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>enable</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>Indicates whether or not to export logs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Specifies the desired filtering of logs on this NAT. Possible values: [&quot;ERRORS_ONLY&quot;, &quot;TRANSLATIONS_ONLY&quot;, &quot;ALL&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterNATSpecResource">RouterNATSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpec">RouterNATSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>drainNATIPS</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of URLs of the IP resources to be drained. These IPs must be
+valid static external IPs that have been assigned to the NAT.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>enableEndpointIndependentMapping</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Specifies if endpoint independent mapping is enabled. This is enabled by default. For more information
+see the <a href="https://cloud.google.com/nat/docs/overview#specs-rfcs">official documentation</a>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>icmpIdleTimeoutSec</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Timeout (in seconds) for ICMP connections. Defaults to 30s if not set.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>logConfig</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpecLogConfig">
+RouterNATSpecLogConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Configuration for logging on NAT</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minPortsPerVm</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Minimum number of ports allocated to a VM from this NAT.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the NAT service. The name must be 1-63 characters long and
+comply with RFC1035.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>natIPAllocateOption</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>How external IPs should be allocated for this NAT. Valid values are
+'AUTO_ONLY' for only allowing NAT IPs allocated by Google Cloud
+Platform, or 'MANUAL_ONLY' for only user-allocated NAT IP addresses. Possible values: [&quot;MANUAL_ONLY&quot;, &quot;AUTO_ONLY&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>natIPS</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Self-links of NAT IPs. Only valid if natIpAllocateOption
+is set to MANUAL_ONLY.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>region</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Region where the router and NAT reside.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>router</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name of the Cloud Router in which this NAT will be configured.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceSubnetworkIPRangesToNAT</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>How NAT should be configured per Subnetwork.
+If 'ALL_SUBNETWORKS_ALL_IP_RANGES', all of the
+IP ranges in every Subnetwork are allowed to Nat.
+If 'ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES', all of the primary IP
+ranges in every Subnetwork are allowed to Nat.
+'LIST_OF_SUBNETWORKS': A list of Subnetworks are allowed to Nat
+(specified in the field subnetwork below). Note that if this field
+contains ALL_SUBNETWORKS_ALL_IP_RANGES or
+ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES, then there should not be any
+other RouterNat section in any Router for this network in this region. Possible values: [&quot;ALL_SUBNETWORKS_ALL_IP_RANGES&quot;, &quot;ALL_SUBNETWORKS_ALL_PRIMARY_IP_RANGES&quot;, &quot;LIST_OF_SUBNETWORKS&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>subnetwork</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpecSubnetwork">
+[]RouterNATSpecSubnetwork
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>One or more subnetwork NAT configurations. Only used if
+'source_subnetwork_ip_ranges_to_nat' is set to 'LIST_OF_SUBNETWORKS'</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tcpEstablishedIdleTimeoutSec</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Timeout (in seconds) for TCP established connections.
+Defaults to 1200s if not set.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tcpTransitoryIdleTimeoutSec</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Timeout (in seconds) for TCP transitory connections.
+Defaults to 30s if not set.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>udpIdleTimeoutSec</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Timeout (in seconds) for UDP connections. Defaults to 30s if not set.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterNATSpecSubnetwork">RouterNATSpecSubnetwork
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RouterNATSpecResource">RouterNATSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Self-link of subnetwork to NAT</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secondaryIPRangeNames</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of the secondary ranges of the subnetwork that are allowed
+to use NAT. This can be populated only if
+'LIST_OF_SECONDARY_IP_RANGES' is one of the values in
+sourceIpRangesToNat</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceIPRangesToNAT</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of options for which source IPs in the subnetwork
+should have NAT enabled. Supported values include:
+'ALL_IP_RANGES', 'LIST_OF_SECONDARY_IP_RANGES',
+'PRIMARY_IP_RANGE'.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RouterNATStatus">RouterNATStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RouterNAT">RouterNAT</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

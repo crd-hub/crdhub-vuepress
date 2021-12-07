@@ -1,0 +1,132 @@
+<h2 id="mysql.oci.kubeform.com/v1alpha1">mysql.oci.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.AnalyticsCluster">AnalyticsCluster</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.Channel">Channel</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.HeatWaveCluster">HeatWaveCluster</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackup">MysqlBackup</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystem">MysqlDbSystem</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.AnalyticsCluster">AnalyticsCluster</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.Channel">Channel</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.HeatWaveCluster">HeatWaveCluster</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackup">MysqlBackup</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystem">MysqlDbSystem</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.AnalyticsClusterSpec">AnalyticsClusterSpec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.AnalyticsClusterSpecClusterNodes">AnalyticsClusterSpecClusterNodes</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.AnalyticsClusterSpecResource">AnalyticsClusterSpecResource</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.AnalyticsClusterStatus">AnalyticsClusterStatus</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelSpec">ChannelSpec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelSpecResource">ChannelSpecResource</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelSpecSource">ChannelSpecSource</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelSpecSourceCodec">ChannelSpecSourceCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelSpecSourceSslCaCertificate">ChannelSpecSourceSslCaCertificate</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelSpecSourceSslCaCertificateCodec">ChannelSpecSourceSslCaCertificateCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelSpecTarget">ChannelSpecTarget</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelSpecTargetCodec">ChannelSpecTargetCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.ChannelStatus">ChannelStatus</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.HeatWaveClusterSpec">HeatWaveClusterSpec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.HeatWaveClusterSpecClusterNodes">HeatWaveClusterSpecClusterNodes</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.HeatWaveClusterSpecResource">HeatWaveClusterSpecResource</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.HeatWaveClusterStatus">HeatWaveClusterStatus</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpec">MysqlBackupSpec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpecDbSystemSnapshot">MysqlBackupSpecDbSystemSnapshot</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpecDbSystemSnapshotBackupPolicy">MysqlBackupSpecDbSystemSnapshotBackupPolicy</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpecDbSystemSnapshotBackupPolicyCodec">MysqlBackupSpecDbSystemSnapshotBackupPolicyCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpecDbSystemSnapshotCodec">MysqlBackupSpecDbSystemSnapshotCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpecDbSystemSnapshotEndpoints">MysqlBackupSpecDbSystemSnapshotEndpoints</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpecDbSystemSnapshotMaintenance">MysqlBackupSpecDbSystemSnapshotMaintenance</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpecDbSystemSnapshotMaintenanceCodec">MysqlBackupSpecDbSystemSnapshotMaintenanceCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupSpecResource">MysqlBackupSpecResource</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlBackupStatus">MysqlBackupStatus</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpec">MysqlDbSystemSpec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecAnalyticsCluster">MysqlDbSystemSpecAnalyticsCluster</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecAnalyticsClusterCodec">MysqlDbSystemSpecAnalyticsClusterCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecBackupPolicy">MysqlDbSystemSpecBackupPolicy</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecBackupPolicyCodec">MysqlDbSystemSpecBackupPolicyCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecChannels">MysqlDbSystemSpecChannels</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecChannelsSource">MysqlDbSystemSpecChannelsSource</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecChannelsSourceCodec">MysqlDbSystemSpecChannelsSourceCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecChannelsSourceSslCaCertificate">MysqlDbSystemSpecChannelsSourceSslCaCertificate</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecChannelsSourceSslCaCertificateCodec">MysqlDbSystemSpecChannelsSourceSslCaCertificateCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecChannelsTarget">MysqlDbSystemSpecChannelsTarget</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecChannelsTargetCodec">MysqlDbSystemSpecChannelsTargetCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecCurrentPlacement">MysqlDbSystemSpecCurrentPlacement</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecCurrentPlacementCodec">MysqlDbSystemSpecCurrentPlacementCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecEndpoints">MysqlDbSystemSpecEndpoints</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecHeatWaveCluster">MysqlDbSystemSpecHeatWaveCluster</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecHeatWaveClusterCodec">MysqlDbSystemSpecHeatWaveClusterCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecMaintenance">MysqlDbSystemSpecMaintenance</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecMaintenanceCodec">MysqlDbSystemSpecMaintenanceCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecResource">MysqlDbSystemSpecResource</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecSource">MysqlDbSystemSpecSource</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemSpecSourceCodec">MysqlDbSystemSpecSourceCodec</a>
+</li><li>
+<a href="#mysql.oci.kubeform.com/v1alpha1.MysqlDbSystemStatus">MysqlDbSystemStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>96b0f4e</code>.
+</em></p>

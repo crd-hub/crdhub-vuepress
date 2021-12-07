@@ -1,0 +1,230 @@
+<h2 id="apigateway.oci.kubeform.com/v1alpha1">apigateway.oci.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.Api">Api</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.Certificate">Certificate</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.Deployment">Deployment</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.Gateway">Gateway</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.Api">Api</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.Certificate">Certificate</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.Deployment">Deployment</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.Gateway">Gateway</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.ApiSpec">ApiSpec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.ApiSpecResource">ApiSpecResource</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.ApiSpecValidationResults">ApiSpecValidationResults</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.ApiStatus">ApiStatus</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.CertificateSpec">CertificateSpec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.CertificateSpecResource">CertificateSpecResource</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.CertificateStatus">CertificateStatus</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpec">DeploymentSpec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecResource">DeploymentSpecResource</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecification">DeploymentSpecSpecification</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationCodec">DeploymentSpecSpecificationCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationLoggingPolicies">DeploymentSpecSpecificationLoggingPolicies</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationLoggingPoliciesAccessLog">DeploymentSpecSpecificationLoggingPoliciesAccessLog</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationLoggingPoliciesAccessLogCodec">DeploymentSpecSpecificationLoggingPoliciesAccessLogCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationLoggingPoliciesCodec">DeploymentSpecSpecificationLoggingPoliciesCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationLoggingPoliciesExecutionLog">DeploymentSpecSpecificationLoggingPoliciesExecutionLog</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationLoggingPoliciesExecutionLogCodec">DeploymentSpecSpecificationLoggingPoliciesExecutionLogCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPolicies">DeploymentSpecSpecificationRequestPolicies</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesAuthentication">DeploymentSpecSpecificationRequestPoliciesAuthentication</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesAuthenticationCodec">DeploymentSpecSpecificationRequestPoliciesAuthenticationCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesAuthenticationPublicKeys">DeploymentSpecSpecificationRequestPoliciesAuthenticationPublicKeys</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesAuthenticationPublicKeysCodec">DeploymentSpecSpecificationRequestPoliciesAuthenticationPublicKeysCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesAuthenticationPublicKeysKeys">DeploymentSpecSpecificationRequestPoliciesAuthenticationPublicKeysKeys</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesAuthenticationVerifyClaims">DeploymentSpecSpecificationRequestPoliciesAuthenticationVerifyClaims</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesCodec">DeploymentSpecSpecificationRequestPoliciesCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesCors">DeploymentSpecSpecificationRequestPoliciesCors</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesCorsCodec">DeploymentSpecSpecificationRequestPoliciesCorsCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesRateLimiting">DeploymentSpecSpecificationRequestPoliciesRateLimiting</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRequestPoliciesRateLimitingCodec">DeploymentSpecSpecificationRequestPoliciesRateLimitingCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutes">DeploymentSpecSpecificationRoutes</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesBackend">DeploymentSpecSpecificationRoutesBackend</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesBackendCodec">DeploymentSpecSpecificationRoutesBackendCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesBackendHeaders">DeploymentSpecSpecificationRoutesBackendHeaders</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesLoggingPolicies">DeploymentSpecSpecificationRoutesLoggingPolicies</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesLoggingPoliciesAccessLog">DeploymentSpecSpecificationRoutesLoggingPoliciesAccessLog</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesLoggingPoliciesAccessLogCodec">DeploymentSpecSpecificationRoutesLoggingPoliciesAccessLogCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesLoggingPoliciesCodec">DeploymentSpecSpecificationRoutesLoggingPoliciesCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesLoggingPoliciesExecutionLog">DeploymentSpecSpecificationRoutesLoggingPoliciesExecutionLog</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesLoggingPoliciesExecutionLogCodec">DeploymentSpecSpecificationRoutesLoggingPoliciesExecutionLogCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPolicies">DeploymentSpecSpecificationRoutesRequestPolicies</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesAuthorization">DeploymentSpecSpecificationRoutesRequestPoliciesAuthorization</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesAuthorizationCodec">DeploymentSpecSpecificationRoutesRequestPoliciesAuthorizationCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesBodyValidation">DeploymentSpecSpecificationRoutesRequestPoliciesBodyValidation</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesBodyValidationCodec">DeploymentSpecSpecificationRoutesRequestPoliciesBodyValidationCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesBodyValidationContent">DeploymentSpecSpecificationRoutesRequestPoliciesBodyValidationContent</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesCodec">DeploymentSpecSpecificationRoutesRequestPoliciesCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesCors">DeploymentSpecSpecificationRoutesRequestPoliciesCors</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesCorsCodec">DeploymentSpecSpecificationRoutesRequestPoliciesCorsCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformations">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformations</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsCodec">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsFilterHeaders">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsFilterHeaders</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsFilterHeadersCodec">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsFilterHeadersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsFilterHeadersItems">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsFilterHeadersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsRenameHeaders">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsRenameHeaders</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsRenameHeadersCodec">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsRenameHeadersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsRenameHeadersItems">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsRenameHeadersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsSetHeaders">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsSetHeaders</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsSetHeadersCodec">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsSetHeadersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsSetHeadersItems">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderTransformationsSetHeadersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderValidations">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderValidations</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderValidationsCodec">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderValidationsCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesHeaderValidationsHeaders">DeploymentSpecSpecificationRoutesRequestPoliciesHeaderValidationsHeaders</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformations">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformations</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsCodec">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsFilterQueryParameters">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsFilterQueryParameters</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsFilterQueryParametersCodec">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsFilterQueryParametersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsFilterQueryParametersItems">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsFilterQueryParametersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsRenameQueryParameters">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsRenameQueryParameters</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsRenameQueryParametersCodec">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsRenameQueryParametersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsRenameQueryParametersItems">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsRenameQueryParametersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsSetQueryParameters">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsSetQueryParameters</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsSetQueryParametersCodec">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsSetQueryParametersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsSetQueryParametersItems">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterTransformationsSetQueryParametersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterValidations">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterValidations</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterValidationsCodec">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterValidationsCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterValidationsParameters">DeploymentSpecSpecificationRoutesRequestPoliciesQueryParameterValidationsParameters</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesResponseCacheLookup">DeploymentSpecSpecificationRoutesRequestPoliciesResponseCacheLookup</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesRequestPoliciesResponseCacheLookupCodec">DeploymentSpecSpecificationRoutesRequestPoliciesResponseCacheLookupCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePolicies">DeploymentSpecSpecificationRoutesResponsePolicies</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesCodec">DeploymentSpecSpecificationRoutesResponsePoliciesCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformations">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformations</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsCodec">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsFilterHeaders">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsFilterHeaders</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsFilterHeadersCodec">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsFilterHeadersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsFilterHeadersItems">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsFilterHeadersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsRenameHeaders">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsRenameHeaders</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsRenameHeadersCodec">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsRenameHeadersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsRenameHeadersItems">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsRenameHeadersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsSetHeaders">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsSetHeaders</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsSetHeadersCodec">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsSetHeadersCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsSetHeadersItems">DeploymentSpecSpecificationRoutesResponsePoliciesHeaderTransformationsSetHeadersItems</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesResponseCacheStore">DeploymentSpecSpecificationRoutesResponsePoliciesResponseCacheStore</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentSpecSpecificationRoutesResponsePoliciesResponseCacheStoreCodec">DeploymentSpecSpecificationRoutesResponsePoliciesResponseCacheStoreCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.DeploymentStatus">DeploymentStatus</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.GatewaySpec">GatewaySpec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.GatewaySpecIpAddresses">GatewaySpecIpAddresses</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.GatewaySpecResource">GatewaySpecResource</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.GatewaySpecResponseCacheDetails">GatewaySpecResponseCacheDetails</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.GatewaySpecResponseCacheDetailsCodec">GatewaySpecResponseCacheDetailsCodec</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.GatewaySpecResponseCacheDetailsServers">GatewaySpecResponseCacheDetailsServers</a>
+</li><li>
+<a href="#apigateway.oci.kubeform.com/v1alpha1.GatewayStatus">GatewayStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>96b0f4e</code>.
+</em></p>

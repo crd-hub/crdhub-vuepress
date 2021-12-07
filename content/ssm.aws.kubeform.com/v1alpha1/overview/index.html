@@ -1,0 +1,170 @@
+<h2 id="ssm.aws.kubeform.com/v1alpha1">ssm.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.Activation">Activation</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.Association">Association</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.Document">Document</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindow">MaintenanceWindow</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTarget">MaintenanceWindowTarget</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTask">MaintenanceWindowTask</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.Parameter">Parameter</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaseline">PatchBaseline</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchGroup">PatchGroup</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ResourceDataSync">ResourceDataSync</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.Activation">Activation</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.Association">Association</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.Document">Document</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindow">MaintenanceWindow</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTarget">MaintenanceWindowTarget</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTask">MaintenanceWindowTask</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.Parameter">Parameter</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaseline">PatchBaseline</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchGroup">PatchGroup</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ResourceDataSync">ResourceDataSync</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ActivationSpec">ActivationSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ActivationSpecResource">ActivationSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ActivationStatus">ActivationStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.AssociationSpec">AssociationSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.AssociationSpecOutputLocation">AssociationSpecOutputLocation</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.AssociationSpecOutputLocationCodec">AssociationSpecOutputLocationCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.AssociationSpecResource">AssociationSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.AssociationSpecTargets">AssociationSpecTargets</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.AssociationStatus">AssociationStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.DocumentSpec">DocumentSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.DocumentSpecAttachmentsSource">DocumentSpecAttachmentsSource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.DocumentSpecParameter">DocumentSpecParameter</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.DocumentSpecResource">DocumentSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.DocumentStatus">DocumentStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowSpec">MaintenanceWindowSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowSpecResource">MaintenanceWindowSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowStatus">MaintenanceWindowStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTargetSpec">MaintenanceWindowTargetSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTargetSpecResource">MaintenanceWindowTargetSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTargetSpecTargets">MaintenanceWindowTargetSpecTargets</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTargetStatus">MaintenanceWindowTargetStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpec">MaintenanceWindowTaskSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecResource">MaintenanceWindowTaskSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTargets">MaintenanceWindowTaskSpecTargets</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParameters">MaintenanceWindowTaskSpecTaskInvocationParameters</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersAutomationParameters">MaintenanceWindowTaskSpecTaskInvocationParametersAutomationParameters</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersAutomationParametersCodec">MaintenanceWindowTaskSpecTaskInvocationParametersAutomationParametersCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersAutomationParametersParameter">MaintenanceWindowTaskSpecTaskInvocationParametersAutomationParametersParameter</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersCodec">MaintenanceWindowTaskSpecTaskInvocationParametersCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersLambdaParameters">MaintenanceWindowTaskSpecTaskInvocationParametersLambdaParameters</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersLambdaParametersCodec">MaintenanceWindowTaskSpecTaskInvocationParametersLambdaParametersCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParameters">MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParameters</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersCloudwatchConfig">MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersCloudwatchConfig</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersCloudwatchConfigCodec">MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersCloudwatchConfigCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersCodec">MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersNotificationConfig">MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersNotificationConfig</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersNotificationConfigCodec">MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersNotificationConfigCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersParameter">MaintenanceWindowTaskSpecTaskInvocationParametersRunCommandParametersParameter</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersStepFunctionsParameters">MaintenanceWindowTaskSpecTaskInvocationParametersStepFunctionsParameters</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskSpecTaskInvocationParametersStepFunctionsParametersCodec">MaintenanceWindowTaskSpecTaskInvocationParametersStepFunctionsParametersCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.MaintenanceWindowTaskStatus">MaintenanceWindowTaskStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ParameterSpec">ParameterSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ParameterSpecResource">ParameterSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ParameterStatus">ParameterStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaselineSpec">PatchBaselineSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaselineSpecApprovalRule">PatchBaselineSpecApprovalRule</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaselineSpecApprovalRulePatchFilter">PatchBaselineSpecApprovalRulePatchFilter</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaselineSpecGlobalFilter">PatchBaselineSpecGlobalFilter</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaselineSpecResource">PatchBaselineSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaselineSpecSource">PatchBaselineSpecSource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchBaselineStatus">PatchBaselineStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchGroupSpec">PatchGroupSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchGroupSpecResource">PatchGroupSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.PatchGroupStatus">PatchGroupStatus</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ResourceDataSyncSpec">ResourceDataSyncSpec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ResourceDataSyncSpecResource">ResourceDataSyncSpecResource</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ResourceDataSyncSpecS3Destination">ResourceDataSyncSpecS3Destination</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ResourceDataSyncSpecS3DestinationCodec">ResourceDataSyncSpecS3DestinationCodec</a>
+</li><li>
+<a href="#ssm.aws.kubeform.com/v1alpha1.ResourceDataSyncStatus">ResourceDataSyncStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

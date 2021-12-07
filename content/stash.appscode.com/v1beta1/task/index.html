@@ -1,0 +1,176 @@
+<h3 id="stash.appscode.com/v1beta1.Task">Task
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+stash.appscode.com/v1beta1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Task</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.TaskSpec">
+TaskSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>steps</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.FunctionRef">
+[]FunctionRef
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumes</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#volume-v1-core">
+[]Kubernetes core/v1.Volume
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of volumes that can be mounted by containers belonging to the pod created for this task.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.FunctionRef">FunctionRef
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.TaskSpec">TaskSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name indicates the name of Function crd</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>params</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.Param">
+[]Param
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Inputs specifies the inputs of respective Function</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="stash.appscode.com/v1beta1.TaskSpec">TaskSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#stash.appscode.com/v1beta1.Task">Task</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>steps</code><br/>
+<em>
+<a href="#stash.appscode.com/v1beta1.FunctionRef">
+[]FunctionRef
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumes</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#volume-v1-core">
+[]Kubernetes core/v1.Volume
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of volumes that can be mounted by containers belonging to the pod created for this task.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>dce6be25</code>.
+</em></p>

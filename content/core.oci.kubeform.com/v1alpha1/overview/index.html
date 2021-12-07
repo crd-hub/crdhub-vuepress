@@ -1,0 +1,958 @@
+<h2 id="core.oci.kubeform.com/v1alpha1">core.oci.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogListingResourceVersionAgreement">AppCatalogListingResourceVersionAgreement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogSubscription">AppCatalogSubscription</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolume">BootVolume</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeBackup">BootVolumeBackup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetwork">ClusterNetwork</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeCapacityReservation">ComputeCapacityReservation</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeImageCapabilitySchema">ComputeImageCapabilitySchema</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ConsoleHistory">ConsoleHistory</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Cpe">Cpe</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnect">CrossConnect</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnectGroup">CrossConnectGroup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DedicatedVmHost">DedicatedVmHost</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultDHCPOptions">DefaultDHCPOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultRouteTable">DefaultRouteTable</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DhcpOptions">DhcpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Drg">Drg</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachment">DrgAttachment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentManagement">DrgAttachmentManagement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistribution">DrgRouteDistribution</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionStatement">DrgRouteDistributionStatement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTable">DrgRouteTable</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTableRouteRule">DrgRouteTableRouteRule</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Image">Image</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Instance">Instance</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfiguration">InstanceConfiguration</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConsoleConnection">InstanceConsoleConnection</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePool">InstancePool</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolInstance">InstancePoolInstance</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InternetGateway">InternetGateway</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Ipsec">Ipsec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecConnectionTunnelManagement">IpsecConnectionTunnelManagement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Ipv6">Ipv6</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ListingResourceVersionAgreement">ListingResourceVersionAgreement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.LocalPeeringGateway">LocalPeeringGateway</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NatGateway">NatGateway</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroup">NetworkSecurityGroup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PrivateIP">PrivateIP</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIP">PublicIP</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPool">PublicIPPool</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPoolCapacity">PublicIPPoolCapacity</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RemotePeeringConnection">RemotePeeringConnection</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTable">RouteTable</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableAttachment">RouteTableAttachment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ServiceGateway">ServiceGateway</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ShapeManagement">ShapeManagement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Subnet">Subnet</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Vcn">Vcn</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualCircuit">VirtualCircuit</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualNetwork">VirtualNetwork</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Vlan">Vlan</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VnicAttachment">VnicAttachment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Volume">Volume</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeAttachment">VolumeAttachment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackup">VolumeBackup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicy">VolumeBackupPolicy</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicyAssignment">VolumeBackupPolicyAssignment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroup">VolumeGroup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupBackup">VolumeGroupBackup</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogListingResourceVersionAgreement">AppCatalogListingResourceVersionAgreement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogSubscription">AppCatalogSubscription</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolume">BootVolume</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeBackup">BootVolumeBackup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetwork">ClusterNetwork</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeCapacityReservation">ComputeCapacityReservation</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeImageCapabilitySchema">ComputeImageCapabilitySchema</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ConsoleHistory">ConsoleHistory</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Cpe">Cpe</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnect">CrossConnect</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnectGroup">CrossConnectGroup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DedicatedVmHost">DedicatedVmHost</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultDHCPOptions">DefaultDHCPOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultRouteTable">DefaultRouteTable</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DhcpOptions">DhcpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Drg">Drg</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachment">DrgAttachment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentManagement">DrgAttachmentManagement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistribution">DrgRouteDistribution</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionStatement">DrgRouteDistributionStatement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTable">DrgRouteTable</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTableRouteRule">DrgRouteTableRouteRule</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Image">Image</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Instance">Instance</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfiguration">InstanceConfiguration</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConsoleConnection">InstanceConsoleConnection</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePool">InstancePool</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolInstance">InstancePoolInstance</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InternetGateway">InternetGateway</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Ipsec">Ipsec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecConnectionTunnelManagement">IpsecConnectionTunnelManagement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Ipv6">Ipv6</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ListingResourceVersionAgreement">ListingResourceVersionAgreement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.LocalPeeringGateway">LocalPeeringGateway</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NatGateway">NatGateway</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroup">NetworkSecurityGroup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRule">NetworkSecurityGroupSecurityRule</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PrivateIP">PrivateIP</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIP">PublicIP</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPool">PublicIPPool</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPoolCapacity">PublicIPPoolCapacity</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RemotePeeringConnection">RemotePeeringConnection</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTable">RouteTable</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableAttachment">RouteTableAttachment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ServiceGateway">ServiceGateway</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ShapeManagement">ShapeManagement</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Subnet">Subnet</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Vcn">Vcn</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualCircuit">VirtualCircuit</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualNetwork">VirtualNetwork</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Vlan">Vlan</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VnicAttachment">VnicAttachment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Volume">Volume</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeAttachment">VolumeAttachment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackup">VolumeBackup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicy">VolumeBackupPolicy</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicyAssignment">VolumeBackupPolicyAssignment</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroup">VolumeGroup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupBackup">VolumeGroupBackup</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogListingResourceVersionAgreementSpec">AppCatalogListingResourceVersionAgreementSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogListingResourceVersionAgreementSpecResource">AppCatalogListingResourceVersionAgreementSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogListingResourceVersionAgreementStatus">AppCatalogListingResourceVersionAgreementStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogSubscriptionSpec">AppCatalogSubscriptionSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogSubscriptionSpecResource">AppCatalogSubscriptionSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.AppCatalogSubscriptionStatus">AppCatalogSubscriptionStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeBackupSpec">BootVolumeBackupSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeBackupSpecResource">BootVolumeBackupSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeBackupSpecSourceDetails">BootVolumeBackupSpecSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeBackupSpecSourceDetailsCodec">BootVolumeBackupSpecSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeBackupStatus">BootVolumeBackupStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeSpec">BootVolumeSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeSpecBootVolumeReplicas">BootVolumeSpecBootVolumeReplicas</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeSpecResource">BootVolumeSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeSpecSourceDetails">BootVolumeSpecSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeSpecSourceDetailsCodec">BootVolumeSpecSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.BootVolumeStatus">BootVolumeStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpec">ClusterNetworkSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpecInstancePools">ClusterNetworkSpecInstancePools</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpecInstancePoolsLoadBalancers">ClusterNetworkSpecInstancePoolsLoadBalancers</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpecInstancePoolsPlacementConfigurations">ClusterNetworkSpecInstancePoolsPlacementConfigurations</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpecInstancePoolsPlacementConfigurationsSecondaryVnicSubnets">ClusterNetworkSpecInstancePoolsPlacementConfigurationsSecondaryVnicSubnets</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpecPlacementConfiguration">ClusterNetworkSpecPlacementConfiguration</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpecPlacementConfigurationCodec">ClusterNetworkSpecPlacementConfigurationCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpecPlacementConfigurationSecondaryVnicSubnets">ClusterNetworkSpecPlacementConfigurationSecondaryVnicSubnets</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkSpecResource">ClusterNetworkSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ClusterNetworkStatus">ClusterNetworkStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeCapacityReservationSpec">ComputeCapacityReservationSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeCapacityReservationSpecInstanceReservationConfigs">ComputeCapacityReservationSpecInstanceReservationConfigs</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeCapacityReservationSpecInstanceReservationConfigsInstanceShapeConfig">ComputeCapacityReservationSpecInstanceReservationConfigsInstanceShapeConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeCapacityReservationSpecInstanceReservationConfigsInstanceShapeConfigCodec">ComputeCapacityReservationSpecInstanceReservationConfigsInstanceShapeConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeCapacityReservationSpecResource">ComputeCapacityReservationSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeCapacityReservationStatus">ComputeCapacityReservationStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeImageCapabilitySchemaSpec">ComputeImageCapabilitySchemaSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeImageCapabilitySchemaSpecResource">ComputeImageCapabilitySchemaSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ComputeImageCapabilitySchemaStatus">ComputeImageCapabilitySchemaStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ConsoleHistorySpec">ConsoleHistorySpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ConsoleHistorySpecResource">ConsoleHistorySpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ConsoleHistoryStatus">ConsoleHistoryStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CpeSpec">CpeSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CpeSpecResource">CpeSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CpeStatus">CpeStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnectGroupSpec">CrossConnectGroupSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnectGroupSpecResource">CrossConnectGroupSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnectGroupStatus">CrossConnectGroupStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnectSpec">CrossConnectSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnectSpecResource">CrossConnectSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.CrossConnectStatus">CrossConnectStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DedicatedVmHostSpec">DedicatedVmHostSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DedicatedVmHostSpecResource">DedicatedVmHostSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DedicatedVmHostStatus">DedicatedVmHostStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultDHCPOptionsSpec">DefaultDHCPOptionsSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultDHCPOptionsSpecOptions">DefaultDHCPOptionsSpecOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultDHCPOptionsSpecResource">DefaultDHCPOptionsSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultDHCPOptionsStatus">DefaultDHCPOptionsStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultRouteTableSpec">DefaultRouteTableSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultRouteTableSpecResource">DefaultRouteTableSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultRouteTableSpecRouteRules">DefaultRouteTableSpecRouteRules</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultRouteTableStatus">DefaultRouteTableStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpec">DefaultSecurityListSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRules">DefaultSecurityListSpecEgressSecurityRules</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesIcmpOptions">DefaultSecurityListSpecEgressSecurityRulesIcmpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesIcmpOptionsCodec">DefaultSecurityListSpecEgressSecurityRulesIcmpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesTcpOptions">DefaultSecurityListSpecEgressSecurityRulesTcpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesTcpOptionsCodec">DefaultSecurityListSpecEgressSecurityRulesTcpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesTcpOptionsSourcePortRange">DefaultSecurityListSpecEgressSecurityRulesTcpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesTcpOptionsSourcePortRangeCodec">DefaultSecurityListSpecEgressSecurityRulesTcpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesUdpOptions">DefaultSecurityListSpecEgressSecurityRulesUdpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesUdpOptionsCodec">DefaultSecurityListSpecEgressSecurityRulesUdpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesUdpOptionsSourcePortRange">DefaultSecurityListSpecEgressSecurityRulesUdpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecEgressSecurityRulesUdpOptionsSourcePortRangeCodec">DefaultSecurityListSpecEgressSecurityRulesUdpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRules">DefaultSecurityListSpecIngressSecurityRules</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesIcmpOptions">DefaultSecurityListSpecIngressSecurityRulesIcmpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesIcmpOptionsCodec">DefaultSecurityListSpecIngressSecurityRulesIcmpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesTcpOptions">DefaultSecurityListSpecIngressSecurityRulesTcpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesTcpOptionsCodec">DefaultSecurityListSpecIngressSecurityRulesTcpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesTcpOptionsSourcePortRange">DefaultSecurityListSpecIngressSecurityRulesTcpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesTcpOptionsSourcePortRangeCodec">DefaultSecurityListSpecIngressSecurityRulesTcpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesUdpOptions">DefaultSecurityListSpecIngressSecurityRulesUdpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesUdpOptionsCodec">DefaultSecurityListSpecIngressSecurityRulesUdpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesUdpOptionsSourcePortRange">DefaultSecurityListSpecIngressSecurityRulesUdpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecIngressSecurityRulesUdpOptionsSourcePortRangeCodec">DefaultSecurityListSpecIngressSecurityRulesUdpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListSpecResource">DefaultSecurityListSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DefaultSecurityListStatus">DefaultSecurityListStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DhcpOptionsSpec">DhcpOptionsSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DhcpOptionsSpecOptions">DhcpOptionsSpecOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DhcpOptionsSpecResource">DhcpOptionsSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DhcpOptionsStatus">DhcpOptionsStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentManagementSpec">DrgAttachmentManagementSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentManagementSpecNetworkDetails">DrgAttachmentManagementSpecNetworkDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentManagementSpecNetworkDetailsCodec">DrgAttachmentManagementSpecNetworkDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentManagementSpecResource">DrgAttachmentManagementSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentManagementStatus">DrgAttachmentManagementStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentSpec">DrgAttachmentSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentSpecNetworkDetails">DrgAttachmentSpecNetworkDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentSpecNetworkDetailsCodec">DrgAttachmentSpecNetworkDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentSpecResource">DrgAttachmentSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentStatus">DrgAttachmentStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentsListSpec">DrgAttachmentsListSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentsListSpecDrgAllAttachments">DrgAttachmentsListSpecDrgAllAttachments</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentsListSpecResource">DrgAttachmentsListSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgAttachmentsListStatus">DrgAttachmentsListStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionSpec">DrgRouteDistributionSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionSpecResource">DrgRouteDistributionSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionStatementSpec">DrgRouteDistributionStatementSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionStatementSpecMatchCriteria">DrgRouteDistributionStatementSpecMatchCriteria</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionStatementSpecMatchCriteriaCodec">DrgRouteDistributionStatementSpecMatchCriteriaCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionStatementSpecResource">DrgRouteDistributionStatementSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionStatementStatus">DrgRouteDistributionStatementStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteDistributionStatus">DrgRouteDistributionStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTableRouteRuleSpec">DrgRouteTableRouteRuleSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTableRouteRuleSpecResource">DrgRouteTableRouteRuleSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTableRouteRuleStatus">DrgRouteTableRouteRuleStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTableSpec">DrgRouteTableSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTableSpecResource">DrgRouteTableSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgRouteTableStatus">DrgRouteTableStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgSpec">DrgSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgSpecDefaultDrgRouteTables">DrgSpecDefaultDrgRouteTables</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgSpecDefaultDrgRouteTablesCodec">DrgSpecDefaultDrgRouteTablesCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgSpecResource">DrgSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.DrgStatus">DrgStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageSpec">ImageSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageSpecAgentFeatures">ImageSpecAgentFeatures</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageSpecAgentFeaturesCodec">ImageSpecAgentFeaturesCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageSpecImageSourceDetails">ImageSpecImageSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageSpecImageSourceDetailsCodec">ImageSpecImageSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageSpecLaunchOptions">ImageSpecLaunchOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageSpecLaunchOptionsCodec">ImageSpecLaunchOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageSpecResource">ImageSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ImageStatus">ImageStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpec">InstanceConfigurationSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetails">InstanceConfigurationSpecInstanceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsBlockVolumes">InstanceConfigurationSpecInstanceDetailsBlockVolumes</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsBlockVolumesAttachDetails">InstanceConfigurationSpecInstanceDetailsBlockVolumesAttachDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsBlockVolumesAttachDetailsCodec">InstanceConfigurationSpecInstanceDetailsBlockVolumesAttachDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsBlockVolumesCreateDetails">InstanceConfigurationSpecInstanceDetailsBlockVolumesCreateDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsBlockVolumesCreateDetailsCodec">InstanceConfigurationSpecInstanceDetailsBlockVolumesCreateDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsBlockVolumesCreateDetailsSourceDetails">InstanceConfigurationSpecInstanceDetailsBlockVolumesCreateDetailsSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsBlockVolumesCreateDetailsSourceDetailsCodec">InstanceConfigurationSpecInstanceDetailsBlockVolumesCreateDetailsSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsCodec">InstanceConfigurationSpecInstanceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetails">InstanceConfigurationSpecInstanceDetailsLaunchDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsAgentConfig">InstanceConfigurationSpecInstanceDetailsLaunchDetailsAgentConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsAgentConfigCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsAgentConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsAgentConfigPluginsConfig">InstanceConfigurationSpecInstanceDetailsLaunchDetailsAgentConfigPluginsConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsAvailabilityConfig">InstanceConfigurationSpecInstanceDetailsLaunchDetailsAvailabilityConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsAvailabilityConfigCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsAvailabilityConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsCreateVnicDetails">InstanceConfigurationSpecInstanceDetailsLaunchDetailsCreateVnicDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsCreateVnicDetailsCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsCreateVnicDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsInstanceOptions">InstanceConfigurationSpecInstanceDetailsLaunchDetailsInstanceOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsInstanceOptionsCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsInstanceOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsLaunchOptions">InstanceConfigurationSpecInstanceDetailsLaunchDetailsLaunchOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsLaunchOptionsCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsLaunchOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsPlatformConfig">InstanceConfigurationSpecInstanceDetailsLaunchDetailsPlatformConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsPlatformConfigCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsPlatformConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsPreemptibleInstanceConfig">InstanceConfigurationSpecInstanceDetailsLaunchDetailsPreemptibleInstanceConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsPreemptibleInstanceConfigCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsPreemptibleInstanceConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsPreemptibleInstanceConfigPreemptionAction">InstanceConfigurationSpecInstanceDetailsLaunchDetailsPreemptibleInstanceConfigPreemptionAction</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsPreemptibleInstanceConfigPreemptionActionCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsPreemptibleInstanceConfigPreemptionActionCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsShapeConfig">InstanceConfigurationSpecInstanceDetailsLaunchDetailsShapeConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsShapeConfigCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsShapeConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsSourceDetails">InstanceConfigurationSpecInstanceDetailsLaunchDetailsSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsLaunchDetailsSourceDetailsCodec">InstanceConfigurationSpecInstanceDetailsLaunchDetailsSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsSecondaryVnics">InstanceConfigurationSpecInstanceDetailsSecondaryVnics</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsSecondaryVnicsCreateVnicDetails">InstanceConfigurationSpecInstanceDetailsSecondaryVnicsCreateVnicDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecInstanceDetailsSecondaryVnicsCreateVnicDetailsCodec">InstanceConfigurationSpecInstanceDetailsSecondaryVnicsCreateVnicDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationSpecResource">InstanceConfigurationSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConfigurationStatus">InstanceConfigurationStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConsoleConnectionSpec">InstanceConsoleConnectionSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConsoleConnectionSpecResource">InstanceConsoleConnectionSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceConsoleConnectionStatus">InstanceConsoleConnectionStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolInstanceSpec">InstancePoolInstanceSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolInstanceSpecLoadBalancerBackends">InstancePoolInstanceSpecLoadBalancerBackends</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolInstanceSpecResource">InstancePoolInstanceSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolInstanceStatus">InstancePoolInstanceStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolSpec">InstancePoolSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolSpecLoadBalancers">InstancePoolSpecLoadBalancers</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolSpecPlacementConfigurations">InstancePoolSpecPlacementConfigurations</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolSpecPlacementConfigurationsSecondaryVnicSubnets">InstancePoolSpecPlacementConfigurationsSecondaryVnicSubnets</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolSpecResource">InstancePoolSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstancePoolStatus">InstancePoolStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpec">InstanceSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecAgentConfig">InstanceSpecAgentConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecAgentConfigCodec">InstanceSpecAgentConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecAgentConfigPluginsConfig">InstanceSpecAgentConfigPluginsConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecAvailabilityConfig">InstanceSpecAvailabilityConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecAvailabilityConfigCodec">InstanceSpecAvailabilityConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecCreateVnicDetails">InstanceSpecCreateVnicDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecCreateVnicDetailsCodec">InstanceSpecCreateVnicDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecInstanceOptions">InstanceSpecInstanceOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecInstanceOptionsCodec">InstanceSpecInstanceOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecLaunchOptions">InstanceSpecLaunchOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecLaunchOptionsCodec">InstanceSpecLaunchOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecPlatformConfig">InstanceSpecPlatformConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecPlatformConfigCodec">InstanceSpecPlatformConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecPreemptibleInstanceConfig">InstanceSpecPreemptibleInstanceConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecPreemptibleInstanceConfigCodec">InstanceSpecPreemptibleInstanceConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecPreemptibleInstanceConfigPreemptionAction">InstanceSpecPreemptibleInstanceConfigPreemptionAction</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecPreemptibleInstanceConfigPreemptionActionCodec">InstanceSpecPreemptibleInstanceConfigPreemptionActionCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecResource">InstanceSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecShapeConfig">InstanceSpecShapeConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecShapeConfigCodec">InstanceSpecShapeConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecSourceDetails">InstanceSpecSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceSpecSourceDetailsCodec">InstanceSpecSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InstanceStatus">InstanceStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InternetGatewaySpec">InternetGatewaySpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InternetGatewaySpecResource">InternetGatewaySpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.InternetGatewayStatus">InternetGatewayStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecConnectionTunnelManagementSpec">IpsecConnectionTunnelManagementSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecConnectionTunnelManagementSpecBgpSessionInfo">IpsecConnectionTunnelManagementSpecBgpSessionInfo</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecConnectionTunnelManagementSpecEncryptionDomainConfig">IpsecConnectionTunnelManagementSpecEncryptionDomainConfig</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecConnectionTunnelManagementSpecEncryptionDomainConfigCodec">IpsecConnectionTunnelManagementSpecEncryptionDomainConfigCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecConnectionTunnelManagementSpecResource">IpsecConnectionTunnelManagementSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecConnectionTunnelManagementStatus">IpsecConnectionTunnelManagementStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecSpec">IpsecSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecSpecResource">IpsecSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.IpsecStatus">IpsecStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Ipv6Spec">Ipv6Spec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Ipv6SpecResource">Ipv6SpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.Ipv6Status">Ipv6Status</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ListingResourceVersionAgreementSpec">ListingResourceVersionAgreementSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ListingResourceVersionAgreementSpecResource">ListingResourceVersionAgreementSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ListingResourceVersionAgreementStatus">ListingResourceVersionAgreementStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.LocalPeeringGatewaySpec">LocalPeeringGatewaySpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.LocalPeeringGatewaySpecResource">LocalPeeringGatewaySpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.LocalPeeringGatewayStatus">LocalPeeringGatewayStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NatGatewaySpec">NatGatewaySpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NatGatewaySpecResource">NatGatewaySpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NatGatewayStatus">NatGatewayStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpec">NetworkSecurityGroupSecurityRuleSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecIcmpOptions">NetworkSecurityGroupSecurityRuleSpecIcmpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecIcmpOptionsCodec">NetworkSecurityGroupSecurityRuleSpecIcmpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecResource">NetworkSecurityGroupSecurityRuleSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecTcpOptions">NetworkSecurityGroupSecurityRuleSpecTcpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecTcpOptionsCodec">NetworkSecurityGroupSecurityRuleSpecTcpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecTcpOptionsDestinationPortRange">NetworkSecurityGroupSecurityRuleSpecTcpOptionsDestinationPortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecTcpOptionsDestinationPortRangeCodec">NetworkSecurityGroupSecurityRuleSpecTcpOptionsDestinationPortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecTcpOptionsSourcePortRange">NetworkSecurityGroupSecurityRuleSpecTcpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecTcpOptionsSourcePortRangeCodec">NetworkSecurityGroupSecurityRuleSpecTcpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecUdpOptions">NetworkSecurityGroupSecurityRuleSpecUdpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecUdpOptionsCodec">NetworkSecurityGroupSecurityRuleSpecUdpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecUdpOptionsDestinationPortRange">NetworkSecurityGroupSecurityRuleSpecUdpOptionsDestinationPortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecUdpOptionsDestinationPortRangeCodec">NetworkSecurityGroupSecurityRuleSpecUdpOptionsDestinationPortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecUdpOptionsSourcePortRange">NetworkSecurityGroupSecurityRuleSpecUdpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleSpecUdpOptionsSourcePortRangeCodec">NetworkSecurityGroupSecurityRuleSpecUdpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSecurityRuleStatus">NetworkSecurityGroupSecurityRuleStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSpec">NetworkSecurityGroupSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupSpecResource">NetworkSecurityGroupSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.NetworkSecurityGroupStatus">NetworkSecurityGroupStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PrivateIPSpec">PrivateIPSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PrivateIPSpecResource">PrivateIPSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PrivateIPStatus">PrivateIPStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPoolCapacitySpec">PublicIPPoolCapacitySpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPoolCapacitySpecResource">PublicIPPoolCapacitySpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPoolCapacityStatus">PublicIPPoolCapacityStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPoolSpec">PublicIPPoolSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPoolSpecResource">PublicIPPoolSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPPoolStatus">PublicIPPoolStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPSpec">PublicIPSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPSpecResource">PublicIPSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.PublicIPStatus">PublicIPStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RemotePeeringConnectionSpec">RemotePeeringConnectionSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RemotePeeringConnectionSpecResource">RemotePeeringConnectionSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RemotePeeringConnectionStatus">RemotePeeringConnectionStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableAttachmentSpec">RouteTableAttachmentSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableAttachmentSpecResource">RouteTableAttachmentSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableAttachmentStatus">RouteTableAttachmentStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableSpec">RouteTableSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableSpecResource">RouteTableSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableSpecRouteRules">RouteTableSpecRouteRules</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.RouteTableStatus">RouteTableStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpec">SecurityListSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRules">SecurityListSpecEgressSecurityRules</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesIcmpOptions">SecurityListSpecEgressSecurityRulesIcmpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesIcmpOptionsCodec">SecurityListSpecEgressSecurityRulesIcmpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesTcpOptions">SecurityListSpecEgressSecurityRulesTcpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesTcpOptionsCodec">SecurityListSpecEgressSecurityRulesTcpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesTcpOptionsSourcePortRange">SecurityListSpecEgressSecurityRulesTcpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesTcpOptionsSourcePortRangeCodec">SecurityListSpecEgressSecurityRulesTcpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesUdpOptions">SecurityListSpecEgressSecurityRulesUdpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesUdpOptionsCodec">SecurityListSpecEgressSecurityRulesUdpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesUdpOptionsSourcePortRange">SecurityListSpecEgressSecurityRulesUdpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecEgressSecurityRulesUdpOptionsSourcePortRangeCodec">SecurityListSpecEgressSecurityRulesUdpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRules">SecurityListSpecIngressSecurityRules</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesIcmpOptions">SecurityListSpecIngressSecurityRulesIcmpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesIcmpOptionsCodec">SecurityListSpecIngressSecurityRulesIcmpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesTcpOptions">SecurityListSpecIngressSecurityRulesTcpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesTcpOptionsCodec">SecurityListSpecIngressSecurityRulesTcpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesTcpOptionsSourcePortRange">SecurityListSpecIngressSecurityRulesTcpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesTcpOptionsSourcePortRangeCodec">SecurityListSpecIngressSecurityRulesTcpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesUdpOptions">SecurityListSpecIngressSecurityRulesUdpOptions</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesUdpOptionsCodec">SecurityListSpecIngressSecurityRulesUdpOptionsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesUdpOptionsSourcePortRange">SecurityListSpecIngressSecurityRulesUdpOptionsSourcePortRange</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecIngressSecurityRulesUdpOptionsSourcePortRangeCodec">SecurityListSpecIngressSecurityRulesUdpOptionsSourcePortRangeCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListSpecResource">SecurityListSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SecurityListStatus">SecurityListStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ServiceGatewaySpec">ServiceGatewaySpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ServiceGatewaySpecResource">ServiceGatewaySpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ServiceGatewaySpecServices">ServiceGatewaySpecServices</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ServiceGatewayStatus">ServiceGatewayStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ShapeManagementSpec">ShapeManagementSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ShapeManagementSpecResource">ShapeManagementSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.ShapeManagementStatus">ShapeManagementStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SubnetSpec">SubnetSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SubnetSpecResource">SubnetSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.SubnetStatus">SubnetStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VcnSpec">VcnSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VcnSpecResource">VcnSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VcnStatus">VcnStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualCircuitSpec">VirtualCircuitSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualCircuitSpecCrossConnectMappings">VirtualCircuitSpecCrossConnectMappings</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualCircuitSpecPublicPrefixes">VirtualCircuitSpecPublicPrefixes</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualCircuitSpecResource">VirtualCircuitSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualCircuitStatus">VirtualCircuitStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualNetworkSpec">VirtualNetworkSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualNetworkSpecResource">VirtualNetworkSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VirtualNetworkStatus">VirtualNetworkStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VlanSpec">VlanSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VlanSpecResource">VlanSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VlanStatus">VlanStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VnicAttachmentSpec">VnicAttachmentSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VnicAttachmentSpecCreateVnicDetails">VnicAttachmentSpecCreateVnicDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VnicAttachmentSpecCreateVnicDetailsCodec">VnicAttachmentSpecCreateVnicDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VnicAttachmentSpecResource">VnicAttachmentSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VnicAttachmentStatus">VnicAttachmentStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeAttachmentSpec">VolumeAttachmentSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeAttachmentSpecMultipathDevices">VolumeAttachmentSpecMultipathDevices</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeAttachmentSpecResource">VolumeAttachmentSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeAttachmentStatus">VolumeAttachmentStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicyAssignmentSpec">VolumeBackupPolicyAssignmentSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicyAssignmentSpecResource">VolumeBackupPolicyAssignmentSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicyAssignmentStatus">VolumeBackupPolicyAssignmentStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicySpec">VolumeBackupPolicySpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicySpecResource">VolumeBackupPolicySpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicySpecSchedules">VolumeBackupPolicySpecSchedules</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupPolicyStatus">VolumeBackupPolicyStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupSpec">VolumeBackupSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupSpecResource">VolumeBackupSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupSpecSourceDetails">VolumeBackupSpecSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupSpecSourceDetailsCodec">VolumeBackupSpecSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeBackupStatus">VolumeBackupStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupBackupSpec">VolumeGroupBackupSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupBackupSpecResource">VolumeGroupBackupSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupBackupStatus">VolumeGroupBackupStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupSpec">VolumeGroupSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupSpecResource">VolumeGroupSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupSpecSourceDetails">VolumeGroupSpecSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupSpecSourceDetailsCodec">VolumeGroupSpecSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeGroupStatus">VolumeGroupStatus</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeSpec">VolumeSpec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeSpecBlockVolumeReplicas">VolumeSpecBlockVolumeReplicas</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeSpecResource">VolumeSpecResource</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeSpecSourceDetails">VolumeSpecSourceDetails</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeSpecSourceDetailsCodec">VolumeSpecSourceDetailsCodec</a>
+</li><li>
+<a href="#core.oci.kubeform.com/v1alpha1.VolumeStatus">VolumeStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>96b0f4e</code>.
+</em></p>

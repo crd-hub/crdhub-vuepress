@@ -1,0 +1,516 @@
+<h2 id="kubedb.com/v1alpha2">kubedb.com/v1alpha2</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#kubedb.com/v1alpha2.Elasticsearch">Elasticsearch</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Etcd">Etcd</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MariaDB">MariaDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Memcached">Memcached</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDB">MongoDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQL">MySQL</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PerconaXtraDB">PerconaXtraDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PgBouncer">PgBouncer</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Postgres">Postgres</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ProxySQL">ProxySQL</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Redis">Redis</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisSentinel">RedisSentinel</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#kubedb.com/v1alpha2.Elasticsearch">Elasticsearch</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Etcd">Etcd</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MariaDB">MariaDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Memcached">Memcached</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDB">MongoDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQL">MySQL</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PerconaXtraDB">PerconaXtraDB</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PgBouncer">PgBouncer</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Postgres">Postgres</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ProxySQL">ProxySQL</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Redis">Redis</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisSentinel">RedisSentinel</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.AddressType">AddressType</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ClusterAuthMode">ClusterAuthMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ConnectionPoolConfig">ConnectionPoolConfig</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.CoordinatorSpec">CoordinatorSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.DatabasePhase">DatabasePhase</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.Databases">Databases</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchCertificateAlias">ElasticsearchCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchClusterTopology">ElasticsearchClusterTopology</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchInternalUser">ElasticsearchInternalUser</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchNode">ElasticsearchNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchNodeRoleType">ElasticsearchNodeRoleType</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchRoleMapSpec">ElasticsearchRoleMapSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchSpec">ElasticsearchSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchStatus">ElasticsearchStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ElasticsearchUserSpec">ElasticsearchUserSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.EtcdSpec">EtcdSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.EtcdStatus">EtcdStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.InitSpec">InitSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.KernelSettings">KernelSettings</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.LoadBalanceMode">LoadBalanceMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MariaDBCertificateAlias">MariaDBCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MariaDBSpec">MariaDBSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MariaDBStatus">MariaDBStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MemberSecret">MemberSecret</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MemcachedCertificateAlias">MemcachedCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MemcachedSpec">MemcachedSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MemcachedStatus">MemcachedStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBCertificateAlias">MongoDBCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBConfigNode">MongoDBConfigNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBMongosNode">MongoDBMongosNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBNode">MongoDBNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBReplicaSet">MongoDBReplicaSet</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBShardNode">MongoDBShardNode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBShardingTopology">MongoDBShardingTopology</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBSpec">MongoDBSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MongoDBStatus">MongoDBStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLCertificateAlias">MySQLCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLClusterMode">MySQLClusterMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLClusterTopology">MySQLClusterTopology</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLGroupMode">MySQLGroupMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLGroupSpec">MySQLGroupSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLInnoDBClusterSpec">MySQLInnoDBClusterSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLRouterSpec">MySQLRouterSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLSpec">MySQLSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.MySQLStatus">MySQLStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.NamedServiceTemplateSpec">NamedServiceTemplateSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PerconaXtraDBCertificateAlias">PerconaXtraDBCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PerconaXtraDBSpec">PerconaXtraDBSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PerconaXtraDBStatus">PerconaXtraDBStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PgBouncerCertificateAlias">PgBouncerCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PgBouncerSpec">PgBouncerSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PgBouncerStatus">PgBouncerStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PostgreLeaderElectionConfig">PostgreLeaderElectionConfig</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PostgresCertificateAlias">PostgresCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PostgresClientAuthMode">PostgresClientAuthMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PostgresSSLMode">PostgresSSLMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PostgresSpec">PostgresSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PostgresStandbyMode">PostgresStandbyMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PostgresStatus">PostgresStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.PostgresStreamingMode">PostgresStreamingMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ProxySQLBackendSpec">ProxySQLBackendSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ProxySQLCertificateAlias">ProxySQLCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ProxySQLSpec">ProxySQLSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ProxySQLStatus">ProxySQLStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RecoveryTarget">RecoveryTarget</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisCertificateAlias">RedisCertificateAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisClusterSpec">RedisClusterSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisMode">RedisMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisSentinelRef">RedisSentinelRef</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisSentinelSpec">RedisSentinelSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisSentinelStatus">RedisSentinelStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisSpec">RedisSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.RedisStatus">RedisStatus</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.SSLMode">SSLMode</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ScriptSourceSpec">ScriptSourceSpec</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.ServiceAlias">ServiceAlias</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.StorageEngine">StorageEngine</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.StorageType">StorageType</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.TLSPolicy">TLSPolicy</a>
+</li><li>
+<a href="#kubedb.com/v1alpha2.TerminationPolicy">TerminationPolicy</a>
+</li></ul>
+<h3 id="kubedb.com/v1alpha2.CoordinatorSpec">CoordinatorSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha2.MariaDBSpec">MariaDBSpec</a>, <a href="#kubedb.com/v1alpha2.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha2.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha2.PostgresSpec">PostgresSpec</a>, <a href="#kubedb.com/v1alpha2.RedisSpec">RedisSpec</a>)
+</p>
+<div>
+<p>CoordinatorSpec defines attributes of the coordinator container</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>resources</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#resourcerequirements-v1-core">
+Kubernetes core/v1.ResourceRequirements
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Compute Resources required by coordinator container.
+Cannot be updated.
+More info: https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>securityContext</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#securitycontext-v1-core">
+Kubernetes core/v1.SecurityContext
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Security options the coordinator container should run with.
+More info: https://kubernetes.io/docs/concepts/policy/security-context/
+More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha2.DatabasePhase">DatabasePhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha2.ElasticsearchStatus">ElasticsearchStatus</a>, <a href="#kubedb.com/v1alpha2.EtcdStatus">EtcdStatus</a>, <a href="#kubedb.com/v1alpha2.MariaDBStatus">MariaDBStatus</a>, <a href="#kubedb.com/v1alpha2.MemcachedStatus">MemcachedStatus</a>, <a href="#kubedb.com/v1alpha2.MongoDBStatus">MongoDBStatus</a>, <a href="#kubedb.com/v1alpha2.MySQLStatus">MySQLStatus</a>, <a href="#kubedb.com/v1alpha2.PerconaXtraDBStatus">PerconaXtraDBStatus</a>, <a href="#kubedb.com/v1alpha2.PgBouncerStatus">PgBouncerStatus</a>, <a href="#kubedb.com/v1alpha2.PostgresStatus">PostgresStatus</a>, <a href="#kubedb.com/v1alpha2.ProxySQLStatus">ProxySQLStatus</a>, <a href="#kubedb.com/v1alpha2.RedisSentinelStatus">RedisSentinelStatus</a>, <a href="#kubedb.com/v1alpha2.RedisStatus">RedisStatus</a>, <a href="#ui.kubedb.com/v1alpha1.MongoDBOverviewSpec">MongoDBOverviewSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Critical&#34;</p></td>
+<td><p>used for Databases that can connect, ReplicaReady == false || Ready == false (eg, ES yellow)</p>
+</td>
+</tr><tr><td><p>&#34;DataRestoring&#34;</p></td>
+<td><p>used for Databases for which data is currently restoring</p>
+</td>
+</tr><tr><td><p>&#34;Halted&#34;</p></td>
+<td><p>used for Databases that are halted</p>
+</td>
+</tr><tr><td><p>&#34;NotReady&#34;</p></td>
+<td><p>used for Databases that can't connect</p>
+</td>
+</tr><tr><td><p>&#34;Provisioning&#34;</p></td>
+<td><p>used for Databases that are currently provisioning</p>
+</td>
+</tr><tr><td><p>&#34;Ready&#34;</p></td>
+<td><p>used for Databases that are currently ReplicaReady, AcceptingConnection and Ready</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="kubedb.com/v1alpha2.InitSpec">InitSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha2.ElasticsearchSpec">ElasticsearchSpec</a>, <a href="#kubedb.com/v1alpha2.EtcdSpec">EtcdSpec</a>, <a href="#kubedb.com/v1alpha2.MariaDBSpec">MariaDBSpec</a>, <a href="#kubedb.com/v1alpha2.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha2.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha2.PerconaXtraDBSpec">PerconaXtraDBSpec</a>, <a href="#kubedb.com/v1alpha2.PostgresSpec">PostgresSpec</a>, <a href="#kubedb.com/v1alpha2.RedisSpec">RedisSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>initialized</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>Initialized indicates that this database has been initialized.
+This will be set by the operator when status.conditions[&quot;Provisioned&quot;] is set to ensure
+that database is not mistakenly reset when recovered using disaster recovery tools.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>waitForInitialRestore</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>Wait for initial DataRestore condition</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>script</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha2.ScriptSourceSpec">
+ScriptSourceSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha2.NamedServiceTemplateSpec">NamedServiceTemplateSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha2.ElasticsearchSpec">ElasticsearchSpec</a>, <a href="#kubedb.com/v1alpha2.EtcdSpec">EtcdSpec</a>, <a href="#kubedb.com/v1alpha2.MariaDBSpec">MariaDBSpec</a>, <a href="#kubedb.com/v1alpha2.MemcachedSpec">MemcachedSpec</a>, <a href="#kubedb.com/v1alpha2.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha2.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha2.PerconaXtraDBSpec">PerconaXtraDBSpec</a>, <a href="#kubedb.com/v1alpha2.PgBouncerSpec">PgBouncerSpec</a>, <a href="#kubedb.com/v1alpha2.PostgresSpec">PostgresSpec</a>, <a href="#kubedb.com/v1alpha2.ProxySQLSpec">ProxySQLSpec</a>, <a href="#kubedb.com/v1alpha2.RedisSentinelSpec">RedisSentinelSpec</a>, <a href="#kubedb.com/v1alpha2.RedisSpec">RedisSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>alias</code><br/>
+<em>
+<a href="#kubedb.com/v1alpha2.ServiceAlias">
+ServiceAlias
+</a>
+</em>
+</td>
+<td>
+<p>Alias represents the identifier of the service.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ServiceTemplateSpec</code><br/>
+<em>
+kmodules.xyz/offshoot-api/api/v1.ServiceTemplateSpec
+</em>
+</td>
+<td>
+<p>
+(Members of <code>ServiceTemplateSpec</code> are embedded into this type.)
+</p>
+<em>(Optional)</em>
+<p>ServiceTemplate is an optional configuration for a service used to expose database</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha2.ScriptSourceSpec">ScriptSourceSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha2.InitSpec">InitSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>scriptPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>VolumeSource</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#volumesource-v1-core">
+Kubernetes core/v1.VolumeSource
+</a>
+</em>
+</td>
+<td>
+<p>
+(Members of <code>VolumeSource</code> are embedded into this type.)
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="kubedb.com/v1alpha2.ServiceAlias">ServiceAlias
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha2.NamedServiceTemplateSpec">NamedServiceTemplateSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;primary&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;standby&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;stats&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="kubedb.com/v1alpha2.StorageType">StorageType
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha2.ElasticsearchSpec">ElasticsearchSpec</a>, <a href="#kubedb.com/v1alpha2.EtcdSpec">EtcdSpec</a>, <a href="#kubedb.com/v1alpha2.MariaDBSpec">MariaDBSpec</a>, <a href="#kubedb.com/v1alpha2.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha2.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha2.PerconaXtraDBSpec">PerconaXtraDBSpec</a>, <a href="#kubedb.com/v1alpha2.PostgresSpec">PostgresSpec</a>, <a href="#kubedb.com/v1alpha2.RedisSentinelSpec">RedisSentinelSpec</a>, <a href="#kubedb.com/v1alpha2.RedisSpec">RedisSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Durable&#34;</p></td>
+<td><p>default storage type and requires spec.storage to be configured</p>
+</td>
+</tr><tr><td><p>&#34;Ephemeral&#34;</p></td>
+<td><p>Uses emptyDir as storage</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="kubedb.com/v1alpha2.TerminationPolicy">TerminationPolicy
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#kubedb.com/v1alpha2.ElasticsearchSpec">ElasticsearchSpec</a>, <a href="#kubedb.com/v1alpha2.EtcdSpec">EtcdSpec</a>, <a href="#kubedb.com/v1alpha2.MariaDBSpec">MariaDBSpec</a>, <a href="#kubedb.com/v1alpha2.MemcachedSpec">MemcachedSpec</a>, <a href="#kubedb.com/v1alpha2.MongoDBSpec">MongoDBSpec</a>, <a href="#kubedb.com/v1alpha2.MySQLSpec">MySQLSpec</a>, <a href="#kubedb.com/v1alpha2.PerconaXtraDBSpec">PerconaXtraDBSpec</a>, <a href="#kubedb.com/v1alpha2.PostgresSpec">PostgresSpec</a>, <a href="#kubedb.com/v1alpha2.RedisSentinelSpec">RedisSentinelSpec</a>, <a href="#kubedb.com/v1alpha2.RedisSpec">RedisSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Delete&#34;</p></td>
+<td><p>Deletes database pods, service, pvcs but leave the stash backup data intact.</p>
+</td>
+</tr><tr><td><p>&#34;DoNotTerminate&#34;</p></td>
+<td><p>Rejects attempt to delete database using ValidationWebhook.</p>
+</td>
+</tr><tr><td><p>&#34;Halt&#34;</p></td>
+<td><p>Deletes database pods, service but leave the PVCs and stash backup data intact.</p>
+</td>
+</tr><tr><td><p>&#34;WipeOut&#34;</p></td>
+<td><p>Deletes database pods, service, pvcs and stash backup data.</p>
+</td>
+</tr></tbody>
+</table>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

@@ -1,0 +1,744 @@
+<h3 id="compute.google.kubeform.com/v1alpha1.Firewall">Firewall
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+compute.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Firewall</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallSpec">
+FirewallSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecResource">
+FirewallSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecResource">
+FirewallSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallStatus">
+FirewallStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.FirewallSpec">FirewallSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.Firewall">Firewall</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecResource">
+FirewallSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecResource">
+FirewallSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.FirewallSpecAllow">FirewallSpecAllow
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecResource">FirewallSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>ports</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An optional list of ports to which this rule applies. This field
+is only applicable for UDP or TCP protocol. Each entry must be
+either an integer or a range. If not specified, this rule
+applies to connections through any port.</p>
+<p>Example inputs include: [&quot;22&quot;], [&quot;80&quot;,&quot;443&quot;], and
+[&quot;12345-12349&quot;].</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>protocol</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The IP protocol to which this rule applies. The protocol type is
+required when creating a firewall rule. This value can either be
+one of the following well known protocol strings (tcp, udp,
+icmp, esp, ah, sctp, ipip, all), or the IP protocol number.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.FirewallSpecDeny">FirewallSpecDeny
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecResource">FirewallSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>ports</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An optional list of ports to which this rule applies. This field
+is only applicable for UDP or TCP protocol. Each entry must be
+either an integer or a range. If not specified, this rule
+applies to connections through any port.</p>
+<p>Example inputs include: [&quot;22&quot;], [&quot;80&quot;,&quot;443&quot;], and
+[&quot;12345-12349&quot;].</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>protocol</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The IP protocol to which this rule applies. The protocol type is
+required when creating a firewall rule. This value can either be
+one of the following well known protocol strings (tcp, udp,
+icmp, esp, ah, sctp, ipip, all), or the IP protocol number.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.FirewallSpecLogConfig">FirewallSpecLogConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecResource">FirewallSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>This field denotes whether to include or exclude metadata for firewall logs. Possible values: [&quot;EXCLUDE_ALL_METADATA&quot;, &quot;INCLUDE_ALL_METADATA&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.FirewallSpecResource">FirewallSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.FirewallSpec">FirewallSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>allow</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecAllow">
+[]FirewallSpecAllow
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The list of ALLOW rules specified by this firewall. Each rule
+specifies a protocol and port-range tuple that describes a permitted
+connection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>creationTimestamp</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Creation timestamp in RFC3339 text format.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deny</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecDeny">
+[]FirewallSpecDeny
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The list of DENY rules specified by this firewall. Each rule specifies
+a protocol and port-range tuple that describes a denied connection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An optional description of this resource. Provide this property when
+you create the resource.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>destinationRanges</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If destination ranges are specified, the firewall will apply only to
+traffic that has destination IP address in these ranges. These ranges
+must be expressed in CIDR format. Only IPv4 is supported.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>direction</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Direction of traffic to which this firewall applies; default is
+INGRESS. Note: For INGRESS traffic, it is NOT supported to specify
+destinationRanges; For EGRESS traffic, it is NOT supported to specify
+sourceRanges OR sourceTags. Possible values: [&quot;INGRESS&quot;, &quot;EGRESS&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>disabled</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Denotes whether the firewall rule is disabled, i.e not applied to the
+network it is associated with. When set to true, the firewall rule is
+not enforced and the network behaves as if it did not exist. If this
+is unspecified, the firewall rule will be enabled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>enableLogging</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>This field denotes whether to enable logging for a particular firewall rule. If logging is enabled, logs will be exported to Stackdriver.
+Deprecated</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>logConfig</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.FirewallSpecLogConfig">
+FirewallSpecLogConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>This field denotes the logging options for a particular firewall rule.
+If defined, logging is enabled, and logs will be exported to Cloud Logging.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the resource. Provided by the client when the resource is
+created. The name must be 1-63 characters long, and comply with
+RFC1035. Specifically, the name must be 1-63 characters long and match
+the regular expression '<a href="%5B-a-z0-9%5D*%5Ba-z0-9%5D">a-z</a>?' which means the
+first character must be a lowercase letter, and all following
+characters must be a dash, lowercase letter, or digit, except the last
+character, which cannot be a dash.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>network</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name or self_link of the network to attach this firewall to.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>priority</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Priority for this rule. This is an integer between 0 and 65535, both
+inclusive. When not specified, the value assumed is 1000. Relative
+priorities determine precedence of conflicting rules. Lower value of
+priority implies higher precedence (eg, a rule with priority 0 has
+higher precedence than a rule with priority 1). DENY rules take
+precedence over ALLOW rules having equal priority.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>selfLink</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceRanges</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If source ranges are specified, the firewall will apply only to
+traffic that has source IP address in these ranges. These ranges must
+be expressed in CIDR format. One or both of sourceRanges and
+sourceTags may be set. If both properties are set, the firewall will
+apply to traffic that has source IP address within sourceRanges OR the
+source IP that belongs to a tag listed in the sourceTags property. The
+connection does not need to match both properties for the firewall to
+apply. Only IPv4 is supported.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceServiceAccounts</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If source service accounts are specified, the firewall will apply only
+to traffic originating from an instance with a service account in this
+list. Source service accounts cannot be used to control traffic to an
+instance's external IP address because service accounts are associated
+with an instance, not an IP address. sourceRanges can be set at the
+same time as sourceServiceAccounts. If both are set, the firewall will
+apply to traffic that has source IP address within sourceRanges OR the
+source IP belongs to an instance with service account listed in
+sourceServiceAccount. The connection does not need to match both
+properties for the firewall to apply. sourceServiceAccounts cannot be
+used at the same time as sourceTags or targetTags.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceTags</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If source tags are specified, the firewall will apply only to traffic
+with source IP that belongs to a tag listed in source tags. Source
+tags cannot be used to control traffic to an instance's external IP
+address. Because tags are associated with an instance, not an IP
+address. One or both of sourceRanges and sourceTags may be set. If
+both properties are set, the firewall will apply to traffic that has
+source IP address within sourceRanges OR the source IP that belongs to
+a tag listed in the sourceTags property. The connection does not need
+to match both properties for the firewall to apply.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetServiceAccounts</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of service accounts indicating sets of instances located in the
+network that may make network connections as specified in allowed[].
+targetServiceAccounts cannot be used at the same time as targetTags or
+sourceTags. If neither targetServiceAccounts nor targetTags are
+specified, the firewall rule applies to all instances on the specified
+network.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetTags</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of instance tags indicating sets of instances located in the
+network that may make network connections as specified in allowed[].
+If no targetTags are specified, the firewall rule applies to all
+instances on the specified network.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.FirewallStatus">FirewallStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.Firewall">Firewall</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

@@ -1,0 +1,583 @@
+<h3 id="monitoring.google.kubeform.com/v1alpha1.MetricDescriptor">MetricDescriptor
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+monitoring.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>MetricDescriptor</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpec">
+MetricDescriptorSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecResource">
+MetricDescriptorSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecResource">
+MetricDescriptorSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorStatus">
+MetricDescriptorStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpec">MetricDescriptorSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptor">MetricDescriptor</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecResource">
+MetricDescriptorSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecResource">
+MetricDescriptorSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecLabels">MetricDescriptorSpecLabels
+</h3>
+<p>
+(<em>Appears on:</em><a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecResource">MetricDescriptorSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A human-readable description for the label.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The key for this label. The key must not exceed 100 characters. The first character of the key must be an upper- or lower-case letter, the remaining characters must be letters, digits or underscores, and the key must match the regular expression [a-zA-Z][a-zA-Z0-9_]*</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>valueType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The type of data that can be assigned to the label. Default value: &quot;STRING&quot; Possible values: [&quot;STRING&quot;, &quot;BOOL&quot;, &quot;INT64&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecMetadata">MetricDescriptorSpecMetadata
+</h3>
+<p>
+(<em>Appears on:</em><a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecResource">MetricDescriptorSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>ingestDelay</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The delay of data points caused by ingestion. Data points older than this age are guaranteed to be ingested and available to be read, excluding data loss due to errors. In '<a href="https://developers.google.com/protocol-buffers/docs/reference/google.protobuf?&amp;_ga=2.264881487.1507873253.1593446723-935052455.1591817775#google.protobuf.Duration">duration format</a>'.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>samplePeriod</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The sampling period of metric data points. For metrics which are written periodically, consecutive data points are stored at this time interval, excluding data loss due to errors. Metrics with a higher granularity have a smaller sampling period. In '<a href="https://developers.google.com/protocol-buffers/docs/reference/google.protobuf?&amp;_ga=2.264881487.1507873253.1593446723-935052455.1591817775#google.protobuf.Duration">duration format</a>'.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecResource">MetricDescriptorSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpec">MetricDescriptorSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A detailed description of the metric, which can be used in documentation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>displayName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A concise name for the metric, which can be displayed in user interfaces. Use sentence case without an ending period, for example &quot;Request count&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>labels</code><br/>
+<em>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecLabels">
+[]MetricDescriptorSpecLabels
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The set of labels that can be used to describe a specific instance of this metric type. In order to delete a label, the entire resource must be deleted, then created with the desired labels.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>launchStage</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The launch stage of the metric definition. Possible values: [&quot;LAUNCH_STAGE_UNSPECIFIED&quot;, &quot;UNIMPLEMENTED&quot;, &quot;PRELAUNCH&quot;, &quot;EARLY_ACCESS&quot;, &quot;ALPHA&quot;, &quot;BETA&quot;, &quot;GA&quot;, &quot;DEPRECATED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptorSpecMetadata">
+MetricDescriptorSpecMetadata
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Metadata which can be used to guide usage of the metric.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metricKind</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Whether the metric records instantaneous values, changes to a value, etc. Some combinations of metricKind and valueType might not be supported. Possible values: [&quot;METRIC_KIND_UNSPECIFIED&quot;, &quot;GAUGE&quot;, &quot;DELTA&quot;, &quot;CUMULATIVE&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>monitoredResourceTypes</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If present, then a time series, which is identified partially by a metric type and a MonitoredResourceDescriptor, that is associated with this metric type can only be associated with one of the monitored resource types listed here. This field allows time series to be associated with the intersection of this metric type and the monitored resource types in this list.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The resource name of the metric descriptor.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The metric type, including its DNS name prefix. The type is not URL-encoded. All service defined metrics must be prefixed with the service name, in the format of {service name}/{relative metric name}, such as cloudsql.googleapis.com/database/cpu/utilization. The relative metric name must have only upper and lower-case letters, digits, '/' and underscores '_' are allowed. Additionally, the maximum number of characters allowed for the relative_metric_name is 100. All user-defined metric types have the DNS name custom.googleapis.com, external.googleapis.com, or logging.googleapis.com/user/.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unit</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The units in which the metric value is reported. It is only applicable if the
+valueType is INT64, DOUBLE, or DISTRIBUTION. The unit defines the representation of
+the stored metric values.</p>
+<p>Different systems may scale the values to be more easily displayed (so a value of
+0.02KBy might be displayed as 20By, and a value of 3523KBy might be displayed as
+3.5MBy). However, if the unit is KBy, then the value of the metric is always in
+thousands of bytes, no matter how it may be displayed.</p>
+<p>If you want a custom metric to record the exact number of CPU-seconds used by a job,
+you can create an INT64 CUMULATIVE metric whose unit is s{CPU} (or equivalently
+1s{CPU} or just s). If the job uses 12,005 CPU-seconds, then the value is written as
+12005.</p>
+<p>Alternatively, if you want a custom metric to record data in a more granular way, you
+can create a DOUBLE CUMULATIVE metric whose unit is ks{CPU}, and then write the value
+12.005 (which is 12005/1000), or use Kis{CPU} and write 11.723 (which is 12005/1024).
+The supported units are a subset of The Unified Code for Units of Measure standard.
+More info can be found in the API documentation
+(https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.metricDescriptors).</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>valueType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Whether the measurement is an integer, a floating-point number, etc. Some combinations of metricKind and valueType might not be supported. Possible values: [&quot;BOOL&quot;, &quot;INT64&quot;, &quot;DOUBLE&quot;, &quot;STRING&quot;, &quot;DISTRIBUTION&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="monitoring.google.kubeform.com/v1alpha1.MetricDescriptorStatus">MetricDescriptorStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#monitoring.google.kubeform.com/v1alpha1.MetricDescriptor">MetricDescriptor</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

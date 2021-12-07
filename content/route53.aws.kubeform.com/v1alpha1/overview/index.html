@@ -1,0 +1,224 @@
+<h2 id="route53.aws.kubeform.com/v1alpha1">route53.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.DelegationSet">DelegationSet</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HealthCheck">HealthCheck</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HostedZoneDnssec">HostedZoneDnssec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.KeySigningKey">KeySigningKey</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.QueryLog">QueryLog</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.Record">Record</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverDnssecConfig">ResolverDnssecConfig</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverEndpoint">ResolverEndpoint</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallConfig">ResolverFirewallConfig</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRule">ResolverFirewallRule</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroup">ResolverFirewallRuleGroup</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroupAssociation">ResolverFirewallRuleGroupAssociation</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfig">ResolverQueryLogConfig</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfigAssociation">ResolverQueryLogConfigAssociation</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRule">ResolverRule</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleAssociation">ResolverRuleAssociation</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.VpcAssociationAuthorization">VpcAssociationAuthorization</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.Zone">Zone</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneAssociation">ZoneAssociation</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.DelegationSet">DelegationSet</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HealthCheck">HealthCheck</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HostedZoneDnssec">HostedZoneDnssec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.KeySigningKey">KeySigningKey</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.QueryLog">QueryLog</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.Record">Record</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverDnssecConfig">ResolverDnssecConfig</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverEndpoint">ResolverEndpoint</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallConfig">ResolverFirewallConfig</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRule">ResolverFirewallRule</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroup">ResolverFirewallRuleGroup</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroupAssociation">ResolverFirewallRuleGroupAssociation</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfig">ResolverQueryLogConfig</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfigAssociation">ResolverQueryLogConfigAssociation</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRule">ResolverRule</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleAssociation">ResolverRuleAssociation</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.VpcAssociationAuthorization">VpcAssociationAuthorization</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.Zone">Zone</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneAssociation">ZoneAssociation</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.DelegationSetSpec">DelegationSetSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.DelegationSetSpecResource">DelegationSetSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.DelegationSetStatus">DelegationSetStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HealthCheckSpec">HealthCheckSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HealthCheckSpecResource">HealthCheckSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HealthCheckStatus">HealthCheckStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HostedZoneDnssecSpec">HostedZoneDnssecSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HostedZoneDnssecSpecResource">HostedZoneDnssecSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.HostedZoneDnssecStatus">HostedZoneDnssecStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.KeySigningKeySpec">KeySigningKeySpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.KeySigningKeySpecResource">KeySigningKeySpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.KeySigningKeyStatus">KeySigningKeyStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.QueryLogSpec">QueryLogSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.QueryLogSpecResource">QueryLogSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.QueryLogStatus">QueryLogStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.RecordSpec">RecordSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.RecordSpecAlias">RecordSpecAlias</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.RecordSpecFailoverRoutingPolicy">RecordSpecFailoverRoutingPolicy</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.RecordSpecGeolocationRoutingPolicy">RecordSpecGeolocationRoutingPolicy</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.RecordSpecLatencyRoutingPolicy">RecordSpecLatencyRoutingPolicy</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.RecordSpecResource">RecordSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.RecordSpecWeightedRoutingPolicy">RecordSpecWeightedRoutingPolicy</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.RecordStatus">RecordStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverDnssecConfigSpec">ResolverDnssecConfigSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverDnssecConfigSpecResource">ResolverDnssecConfigSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverDnssecConfigStatus">ResolverDnssecConfigStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverEndpointSpec">ResolverEndpointSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverEndpointSpecIpAddress">ResolverEndpointSpecIpAddress</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverEndpointSpecResource">ResolverEndpointSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverEndpointStatus">ResolverEndpointStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallConfigSpec">ResolverFirewallConfigSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallConfigSpecResource">ResolverFirewallConfigSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallConfigStatus">ResolverFirewallConfigStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallDomainListSpec">ResolverFirewallDomainListSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallDomainListSpecResource">ResolverFirewallDomainListSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallDomainListStatus">ResolverFirewallDomainListStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroupAssociationSpec">ResolverFirewallRuleGroupAssociationSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroupAssociationSpecResource">ResolverFirewallRuleGroupAssociationSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroupAssociationStatus">ResolverFirewallRuleGroupAssociationStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroupSpec">ResolverFirewallRuleGroupSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroupSpecResource">ResolverFirewallRuleGroupSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleGroupStatus">ResolverFirewallRuleGroupStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleSpec">ResolverFirewallRuleSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleSpecResource">ResolverFirewallRuleSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverFirewallRuleStatus">ResolverFirewallRuleStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfigAssociationSpec">ResolverQueryLogConfigAssociationSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfigAssociationSpecResource">ResolverQueryLogConfigAssociationSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfigAssociationStatus">ResolverQueryLogConfigAssociationStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfigSpec">ResolverQueryLogConfigSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfigSpecResource">ResolverQueryLogConfigSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverQueryLogConfigStatus">ResolverQueryLogConfigStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleAssociationSpec">ResolverRuleAssociationSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleAssociationSpecResource">ResolverRuleAssociationSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleAssociationStatus">ResolverRuleAssociationStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleSpec">ResolverRuleSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleSpecResource">ResolverRuleSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleSpecTargetIP">ResolverRuleSpecTargetIP</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ResolverRuleStatus">ResolverRuleStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.VpcAssociationAuthorizationSpec">VpcAssociationAuthorizationSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.VpcAssociationAuthorizationSpecResource">VpcAssociationAuthorizationSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.VpcAssociationAuthorizationStatus">VpcAssociationAuthorizationStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneAssociationSpec">ZoneAssociationSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneAssociationSpecResource">ZoneAssociationSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneAssociationStatus">ZoneAssociationStatus</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneSpec">ZoneSpec</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneSpecResource">ZoneSpecResource</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneSpecVpc">ZoneSpecVpc</a>
+</li><li>
+<a href="#route53.aws.kubeform.com/v1alpha1.ZoneStatus">ZoneStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

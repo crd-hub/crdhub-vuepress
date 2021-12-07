@@ -1,0 +1,244 @@
+<h2 id="iam.aws.kubeform.com/v1alpha1">iam.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccessKey">AccessKey</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountAlias">AccountAlias</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountPasswordPolicy">AccountPasswordPolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.Group">Group</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupMembership">GroupMembership</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicy">GroupPolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicyAttachment">GroupPolicyAttachment</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.InstanceProfile">InstanceProfile</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.OpenidConnectProvider">OpenidConnectProvider</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.Policy">Policy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.PolicyAttachment">PolicyAttachment</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.Role">Role</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicy">RolePolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicyAttachment">RolePolicyAttachment</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.SamlProvider">SamlProvider</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServerCertificate">ServerCertificate</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServiceLinkedRole">ServiceLinkedRole</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.User">User</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserGroupMembership">UserGroupMembership</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserLoginProfile">UserLoginProfile</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicy">UserPolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicyAttachment">UserPolicyAttachment</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserSSHKey">UserSSHKey</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccessKey">AccessKey</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountAlias">AccountAlias</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountPasswordPolicy">AccountPasswordPolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.Group">Group</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupMembership">GroupMembership</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicy">GroupPolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicyAttachment">GroupPolicyAttachment</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.InstanceProfile">InstanceProfile</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.OpenidConnectProvider">OpenidConnectProvider</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.Policy">Policy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.PolicyAttachment">PolicyAttachment</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.Role">Role</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicy">RolePolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicyAttachment">RolePolicyAttachment</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.SamlProvider">SamlProvider</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServerCertificate">ServerCertificate</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServiceLinkedRole">ServiceLinkedRole</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.User">User</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserGroupMembership">UserGroupMembership</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserLoginProfile">UserLoginProfile</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicy">UserPolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicyAttachment">UserPolicyAttachment</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserSSHKey">UserSSHKey</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccessKeySpec">AccessKeySpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccessKeySpecResource">AccessKeySpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccessKeyStatus">AccessKeyStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountAliasSpec">AccountAliasSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountAliasSpecResource">AccountAliasSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountAliasStatus">AccountAliasStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountPasswordPolicySpec">AccountPasswordPolicySpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountPasswordPolicySpecResource">AccountPasswordPolicySpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.AccountPasswordPolicyStatus">AccountPasswordPolicyStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupMembershipSpec">GroupMembershipSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupMembershipSpecResource">GroupMembershipSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupMembershipStatus">GroupMembershipStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicyAttachmentSpec">GroupPolicyAttachmentSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicyAttachmentSpecResource">GroupPolicyAttachmentSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicyAttachmentStatus">GroupPolicyAttachmentStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicySpec">GroupPolicySpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicySpecResource">GroupPolicySpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupPolicyStatus">GroupPolicyStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupSpec">GroupSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupSpecResource">GroupSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.GroupStatus">GroupStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.InstanceProfileSpec">InstanceProfileSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.InstanceProfileSpecResource">InstanceProfileSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.InstanceProfileStatus">InstanceProfileStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.OpenidConnectProviderSpec">OpenidConnectProviderSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.OpenidConnectProviderSpecResource">OpenidConnectProviderSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.OpenidConnectProviderStatus">OpenidConnectProviderStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.PolicyAttachmentSpec">PolicyAttachmentSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.PolicyAttachmentSpecResource">PolicyAttachmentSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.PolicyAttachmentStatus">PolicyAttachmentStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.PolicySpec">PolicySpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.PolicySpecResource">PolicySpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.PolicyStatus">PolicyStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicyAttachmentSpec">RolePolicyAttachmentSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicyAttachmentSpecResource">RolePolicyAttachmentSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicyAttachmentStatus">RolePolicyAttachmentStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicySpec">RolePolicySpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicySpecResource">RolePolicySpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RolePolicyStatus">RolePolicyStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RoleSpec">RoleSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RoleSpecInlinePolicy">RoleSpecInlinePolicy</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RoleSpecResource">RoleSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.RoleStatus">RoleStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.SamlProviderSpec">SamlProviderSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.SamlProviderSpecResource">SamlProviderSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.SamlProviderStatus">SamlProviderStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServerCertificateSpec">ServerCertificateSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServerCertificateSpecResource">ServerCertificateSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServerCertificateStatus">ServerCertificateStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServiceLinkedRoleSpec">ServiceLinkedRoleSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServiceLinkedRoleSpecResource">ServiceLinkedRoleSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.ServiceLinkedRoleStatus">ServiceLinkedRoleStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserGroupMembershipSpec">UserGroupMembershipSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserGroupMembershipSpecResource">UserGroupMembershipSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserGroupMembershipStatus">UserGroupMembershipStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserLoginProfileSpec">UserLoginProfileSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserLoginProfileSpecResource">UserLoginProfileSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserLoginProfileStatus">UserLoginProfileStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicyAttachmentSpec">UserPolicyAttachmentSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicyAttachmentSpecResource">UserPolicyAttachmentSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicyAttachmentStatus">UserPolicyAttachmentStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicySpec">UserPolicySpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicySpecResource">UserPolicySpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserPolicyStatus">UserPolicyStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserSSHKeySpec">UserSSHKeySpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserSSHKeySpecResource">UserSSHKeySpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserSSHKeyStatus">UserSSHKeyStatus</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserSpec">UserSpec</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserSpecResource">UserSpecResource</a>
+</li><li>
+<a href="#iam.aws.kubeform.com/v1alpha1.UserStatus">UserStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

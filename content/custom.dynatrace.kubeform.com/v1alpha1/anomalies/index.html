@@ -1,0 +1,1894 @@
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.Anomalies">Anomalies
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+custom.dynatrace.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Anomalies</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpec">
+AnomaliesSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">
+AnomaliesSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">
+AnomaliesSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesStatus">
+AnomaliesStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpec">AnomaliesSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.Anomalies">Anomalies</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">
+AnomaliesSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">
+AnomaliesSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensions">AnomaliesSpecDimensions
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>dimension</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsDimension">
+[]AnomaliesSpecDimensionsDimension
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A generic definition for a filter</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>entity</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsEntity">
+[]AnomaliesSpecDimensionsEntity
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A filter for the metrics entity dimensions</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>string</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsString">
+[]AnomaliesSpecDimensionsString
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A filter for the metrics string dimensions</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsDimension">AnomaliesSpecDimensionsDimension
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensions">AnomaliesSpecDimensions</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The dimensions key on the metric</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Defines the actual set of fields depending on the value</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsEntity">AnomaliesSpecDimensionsEntity
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensions">AnomaliesSpecDimensions</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsEntityFilter">
+AnomaliesSpecDimensionsEntityFilter
+</a>
+</em>
+</td>
+<td>
+<p>A filter for a string value based on the given operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The dimensions key on the metric</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsEntityFilter">AnomaliesSpecDimensionsEntityFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsEntity">AnomaliesSpecDimensionsEntity</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The operator to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The value to match on</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsString">AnomaliesSpecDimensionsString
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensions">AnomaliesSpecDimensions</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsStringFilter">
+AnomaliesSpecDimensionsStringFilter
+</a>
+</em>
+</td>
+<td>
+<p>A filter for a string value based on the given operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The dimensions key on the metric</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsStringFilter">AnomaliesSpecDimensionsStringFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensionsString">AnomaliesSpecDimensionsString</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The operator to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The value to match on</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpec">AnomaliesSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>aggregationType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>How the metric data points are aggregated for the evaluation. The timeseries must support this aggregation</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The description of the metric event</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dimensions</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecDimensions">
+[]AnomaliesSpecDimensions
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines the dimensions of the metric to alert on. The filters are combined by conjunction</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>disabledReason</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The reason of automatic disabling.  The <code>NONE</code> means config was not disabled automatically. Possible values are <code>METRIC_DEFINITION_INCONSISTENCY</code>, <code>NONE</code>, <code>TOO_MANY_DIMS</code> and <code>TOPX_FORCIBLY_DEACTIVATED</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>enabled</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>The metric event is enabled (<code>true</code>) or disabled (<code>false</code>)</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>metricID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The ID of the metric evaluated by the metric event</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The name of the metric event displayed in the UI</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>primaryDimensionKey</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines which dimension key should be used for the <strong>alertingScope</strong></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scopes</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">
+[]AnomaliesSpecScopes
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Defines the scope of the metric event. Only one filter is allowed per filter type, except for tags, where up to 3 are allowed. The filters are combined by conjunction</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>severity</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The type of the event to trigger on the threshold violation.  The <code>CUSTOM_ALERT</code> type is not correlated with other alerts. The <code>INFO</code> type does not open a problem</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>strategy</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategy">
+AnomaliesSpecStrategy
+</a>
+</em>
+</td>
+<td>
+<p>A monitoring strategy for a metric event config. This is the base version of the monitoring strategy, depending on the type,  the actual JSON may contain additional fields</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>warningReason</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The reason of a warning set on the config. The <code>NONE</code> means config has no warnings. The other supported value is <code>TOO_MANY_DIMS</code></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>customDeviceGroupName</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesCustomDeviceGroupName">
+[]AnomaliesSpecScopesCustomDeviceGroupName
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for the related custom device group name</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>entity</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesEntity">
+[]AnomaliesSpecScopesEntity
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for a monitored entity identifier</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>hostGroupName</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostGroupName">
+[]AnomaliesSpecScopesHostGroupName
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for the related host group name</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>hostName</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostName">
+[]AnomaliesSpecScopesHostName
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for the related host name</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>managementZone</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesManagementZone">
+[]AnomaliesSpecScopesManagementZone
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for a management zone identifier</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesName">
+[]AnomaliesSpecScopesName
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for a monitored entity name</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>processGroupID</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesProcessGroupID">
+[]AnomaliesSpecScopesProcessGroupID
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for a process group identifier</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>processGroupName</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesProcessGroupName">
+[]AnomaliesSpecScopesProcessGroupName
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for the related process group name</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scope</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesScope">
+[]AnomaliesSpecScopesScope
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A generic scope filter</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tag</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesTag">
+[]AnomaliesSpecScopesTag
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A scope filter for tags on entities</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesCustomDeviceGroupName">AnomaliesSpecScopesCustomDeviceGroupName
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesCustomDeviceGroupNameFilter">
+AnomaliesSpecScopesCustomDeviceGroupNameFilter
+</a>
+</em>
+</td>
+<td>
+<p>A filter for a string value based on the given operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesCustomDeviceGroupNameFilter">AnomaliesSpecScopesCustomDeviceGroupNameFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesCustomDeviceGroupName">AnomaliesSpecScopesCustomDeviceGroupName</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The operator to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The value to match on</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesEntity">AnomaliesSpecScopesEntity
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>ID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The monitored entities id to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostGroupName">AnomaliesSpecScopesHostGroupName
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostGroupNameFilter">
+AnomaliesSpecScopesHostGroupNameFilter
+</a>
+</em>
+</td>
+<td>
+<p>A filter for a string value based on the given operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostGroupNameFilter">AnomaliesSpecScopesHostGroupNameFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostGroupName">AnomaliesSpecScopesHostGroupName</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The operator to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The value to match on</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostName">AnomaliesSpecScopesHostName
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostNameFilter">
+AnomaliesSpecScopesHostNameFilter
+</a>
+</em>
+</td>
+<td>
+<p>A filter for a string value based on the given operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostNameFilter">AnomaliesSpecScopesHostNameFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesHostName">AnomaliesSpecScopesHostName</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The operator to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The value to match on</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesManagementZone">AnomaliesSpecScopesManagementZone
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>ID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The management zone id to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesName">AnomaliesSpecScopesName
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesNameFilter">
+AnomaliesSpecScopesNameFilter
+</a>
+</em>
+</td>
+<td>
+<p>A filter for a string value based on the given operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesNameFilter">AnomaliesSpecScopesNameFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesName">AnomaliesSpecScopesName</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The operator to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The value to match on</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesProcessGroupID">AnomaliesSpecScopesProcessGroupID
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>ID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The process groups id to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesProcessGroupName">AnomaliesSpecScopesProcessGroupName
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesProcessGroupNameFilter">
+AnomaliesSpecScopesProcessGroupNameFilter
+</a>
+</em>
+</td>
+<td>
+<p>A filter for a string value based on the given operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesProcessGroupNameFilter">AnomaliesSpecScopesProcessGroupNameFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesProcessGroupName">AnomaliesSpecScopesProcessGroupName</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>operator</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The operator to match on</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The value to match on</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesScope">AnomaliesSpecScopesScope
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Defines the actual set of fields depending on the value</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesTag">AnomaliesSpecScopesTag
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopes">AnomaliesSpecScopes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filter</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesTagFilter">
+AnomaliesSpecScopesTagFilter
+</a>
+</em>
+</td>
+<td>
+<p>A filter for a string value based on the given operator</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesTagFilter">AnomaliesSpecScopesTagFilter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecScopesTag">AnomaliesSpecScopesTag</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>context</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The origin of the tag, such as AWS or Cloud Foundry. Custom tags use the <code>CONTEXTLESS</code> value</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The key of the tag. Custom tags have the tag value here</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>value</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The value of the tag. Not applicable to custom tags</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategy">AnomaliesSpecStrategy
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>auto</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategyAuto">
+AnomaliesSpecStrategyAuto
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An auto-adaptive baseline strategy to detect anomalies within metrics that show a regular change over time, as the baseline is also updated automatically. An example is to detect an anomaly in the number of received network packets or within the number of user actions over time</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>generic</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategyGeneric">
+[]AnomaliesSpecStrategyGeneric
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A generic monitoring strategy</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>static</code><br/>
+<em>
+<a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategyStatic">
+AnomaliesSpecStrategyStatic
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A static threshold monitoring strategy to alert on hard limits within a given metric. An example is the violation of a critical memory limit</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategyAuto">AnomaliesSpecStrategyAuto
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategy">AnomaliesSpecStrategy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>alertCondition</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The condition for the <strong>threshold</strong> value check: <code>ABOVE</code> or <code>BELOW</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>alertingOnMissingData</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If true, also one-minute samples without data are counted as violating samples</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dealertingSamples</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The number of one-minute samples within the evaluation window that must go back to normal to close the event</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>samples</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The number of one-minute samples that form the sliding evaluation window</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>signalFluctuations</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<p>Defines the factor of how many signal fluctuations are valid. Values above the baseline plus the signal fluctuation times the number of tolerated signal fluctuations are alerted</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>violatingSamples</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The number of one-minute samples within the evaluation window that must violate the threshold to trigger an event</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategyGeneric">AnomaliesSpecStrategyGeneric
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategy">AnomaliesSpecStrategy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Defines the actual set of fields depending on the value</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategyStatic">AnomaliesSpecStrategyStatic
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecStrategy">AnomaliesSpecStrategy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>alertCondition</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The condition for the <strong>threshold</strong> value check: <code>ABOVE</code> or <code>BELOW</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>alertingOnMissingData</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>If true, also one-minute samples without data are counted as violating samples</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dealertingSamples</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The number of one-minute samples within the evaluation window that must go back to normal to close the event</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>samples</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The number of one-minute samples that form the sliding evaluation window</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>threshold</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<p>The value of the static threshold based on the specified unit</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unit</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The unit of the threshold, matching the metric definition</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>violatingSamples</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>The number of one-minute samples within the evaluation window that must violate the threshold to trigger an event</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom.dynatrace.kubeform.com/v1alpha1.AnomaliesStatus">AnomaliesStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#custom.dynatrace.kubeform.com/v1alpha1.Anomalies">Anomalies</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>e4a0042</code>.
+</em></p>

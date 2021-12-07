@@ -1,0 +1,761 @@
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersion">MySQLVersion
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+catalog.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>MySQLVersion</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">
+MySQLVersionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>distribution</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLDistro">
+MySQLDistro
+</a>
+</em>
+</td>
+<td>
+<p>Distribution</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>db</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionDatabase">
+MySQLVersionDatabase
+</a>
+</em>
+</td>
+<td>
+<p>Database Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionExporter">
+MySQLVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinator</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionCoordinator">
+MySQLVersionCoordinator
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Coordinator Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>replicationModeDetector</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ReplicationModeDetector">
+ReplicationModeDetector
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ReplicationModeDetector Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>initContainer</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionInitContainer">
+MySQLVersionInitContainer
+</a>
+</em>
+</td>
+<td>
+<p>Init container Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicies</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionPodSecurityPolicy">
+MySQLVersionPodSecurityPolicy
+</a>
+</em>
+</td>
+<td>
+<p>PSP names</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgradeConstraints</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLUpgradeConstraints">
+MySQLUpgradeConstraints
+</a>
+</em>
+</td>
+<td>
+<p>upgrade constraints</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stash</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashAddonSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stash defines backup and restore task definitions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>router</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionRouter">
+MySQLVersionRouter
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Router image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>routerInitContainer</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionRouterInitContainer">
+MySQLVersionRouterInitContainer
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.Allowlist">Allowlist
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLUpgradeConstraints">MySQLUpgradeConstraints</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>standalone</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of all accepted versions for upgrade request of a Standalone server. empty indicates all accepted</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>groupReplication</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of all accepted versions for upgrade request of a GroupReplication cluster. empty indicates all accepted</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.Denylist">Denylist
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLUpgradeConstraints">MySQLUpgradeConstraints</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>standalone</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of all rejected versions for upgrade request of a Standalone server</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>groupReplication</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<p>List of all rejected versions for upgrade request of a GroupReplication cluster</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLDistro">MySQLDistro
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;KubeDB&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;MySQL&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Official&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Percona&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLUpgradeConstraints">MySQLUpgradeConstraints
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>allowlist</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.Allowlist">
+Allowlist
+</a>
+</em>
+</td>
+<td>
+<p>List of all accepted versions for uprade request</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>denylist</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.Denylist">
+Denylist
+</a>
+</em>
+</td>
+<td>
+<p>List of all rejected versions for uprade request</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersionCoordinator">MySQLVersionCoordinator
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+<p>MySQLVersionCoordinator is the image for coordinator</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersionDatabase">MySQLVersionDatabase
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+<p>MySQLVersionDatabase is the MySQL Database image</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersionExporter">MySQLVersionExporter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+<p>MySQLVersionExporter is the image for the MySQL exporter</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersionInitContainer">MySQLVersionInitContainer
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+<p>MySQLVersionInitContainer is the MySQL Container initializer</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersionPodSecurityPolicy">MySQLVersionPodSecurityPolicy
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+<p>MySQLVersionPodSecurityPolicy is the MySQL pod security policies</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databasePolicyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersionRouter">MySQLVersionRouter
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+<p>MySQLVersionRouter is the MySQL Router lightweight middleware
+that provides transparent routing between your application and back-end MySQL Servers</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersionRouterInitContainer">MySQLVersionRouterInitContainer
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec</a>)
+</p>
+<div>
+<p>MySQLVersionRouterInitContainer is mysql router init container</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="catalog.kubedb.com/v1alpha1.MySQLVersionSpec">MySQLVersionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#catalog.kubedb.com/v1alpha1.MySQLVersion">MySQLVersion</a>)
+</p>
+<div>
+<p>MySQLVersionSpec is the spec for MySQL version</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Version</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>distribution</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLDistro">
+MySQLDistro
+</a>
+</em>
+</td>
+<td>
+<p>Distribution</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>db</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionDatabase">
+MySQLVersionDatabase
+</a>
+</em>
+</td>
+<td>
+<p>Database Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>exporter</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionExporter">
+MySQLVersionExporter
+</a>
+</em>
+</td>
+<td>
+<p>Exporter Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>coordinator</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionCoordinator">
+MySQLVersionCoordinator
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Coordinator Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>replicationModeDetector</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.ReplicationModeDetector">
+ReplicationModeDetector
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ReplicationModeDetector Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deprecated</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Deprecated versions usable but regarded as obsolete and best avoided, typically due to having been superseded.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>initContainer</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionInitContainer">
+MySQLVersionInitContainer
+</a>
+</em>
+</td>
+<td>
+<p>Init container Image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>podSecurityPolicies</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionPodSecurityPolicy">
+MySQLVersionPodSecurityPolicy
+</a>
+</em>
+</td>
+<td>
+<p>PSP names</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgradeConstraints</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLUpgradeConstraints">
+MySQLUpgradeConstraints
+</a>
+</em>
+</td>
+<td>
+<p>upgrade constraints</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stash</code><br/>
+<em>
+kmodules.xyz/custom-resources/apis/appcatalog/v1alpha1.StashAddonSpec
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Stash defines backup and restore task definitions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>router</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionRouter">
+MySQLVersionRouter
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Router image</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>routerInitContainer</code><br/>
+<em>
+<a href="#catalog.kubedb.com/v1alpha1.MySQLVersionRouterInitContainer">
+MySQLVersionRouterInitContainer
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

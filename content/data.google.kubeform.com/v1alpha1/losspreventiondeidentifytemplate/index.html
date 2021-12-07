@@ -1,0 +1,955 @@
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplate">LossPreventionDeidentifyTemplate
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+data.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>LossPreventionDeidentifyTemplate</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpec">
+LossPreventionDeidentifyTemplateSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecResource">
+LossPreventionDeidentifyTemplateSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecResource">
+LossPreventionDeidentifyTemplateSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateStatus">
+LossPreventionDeidentifyTemplateStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpec">LossPreventionDeidentifyTemplateSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplate">LossPreventionDeidentifyTemplate</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecResource">
+LossPreventionDeidentifyTemplateSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecResource">
+LossPreventionDeidentifyTemplateSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfig">LossPreventionDeidentifyTemplateSpecDeidentifyConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecResource">LossPreventionDeidentifyTemplateSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>infoTypeTransformations</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformations">
+LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformations
+</a>
+</em>
+</td>
+<td>
+<p>Specifies free-text based transformations to be applied to the dataset.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformations">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformations
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfig">LossPreventionDeidentifyTemplateSpecDeidentifyConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>transformations</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformations">
+[]LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformations
+</a>
+</em>
+</td>
+<td>
+<p>Transformation for each infoType. Cannot specify more than one for a given infoType.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformations">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformations
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformations">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformations</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>infoTypes</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypes">
+[]LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypes
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>InfoTypes to apply the transformation to. Leaving this empty will apply the transformation to apply to
+all findings that correspond to infoTypes that were requested in InspectConfig.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>primitiveTransformation</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation">
+LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation
+</a>
+</em>
+</td>
+<td>
+<p>Primitive transformation to apply to the infoType.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypes">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsInfoTypes
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformations">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformations</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the information type.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformations">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformations</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>characterMaskConfig</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfig">
+LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Partially mask a string by replacing a given number of characters with a fixed character.
+Masking can start from the beginning or end of the string.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>replaceConfig</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfig">
+LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Replace each input value with a given value.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfig">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>charactersToIgnore</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore">
+[]LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Characters to skip when doing de-identification of a value. These will be left alone and skipped.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maskingCharacter</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Character to use to mask the sensitive values—for example, * for an alphabetic string such as a name, or 0 for a numeric string
+such as ZIP code or credit card number. This string must have a length of 1. If not supplied, this value defaults to * for
+strings, and 0 for digits.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>numberToMask</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of characters to mask. If not set, all matching chars will be masked. Skipped characters do not count towards this tally.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>reverseOrder</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Mask characters in reverse order. For example, if masking_character is 0, number_to_mask is 14, and reverse_order is 'false', then the
+input string '1234-5678-9012-3456' is masked as '00000000000000-3456'.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfigCharactersToIgnore
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfig">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationCharacterMaskConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>characterToSkip</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Characters to not transform when masking.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>commonCharactersToIgnore</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Common characters to not transform when masking. Useful to avoid removing punctuation. Possible values: [&quot;NUMERIC&quot;, &quot;ALPHA_UPPER_CASE&quot;, &quot;ALPHA_LOWER_CASE&quot;, &quot;PUNCTUATION&quot;, &quot;WHITESPACE&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfig">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformation</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>newValue</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValue">
+LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValue
+</a>
+</em>
+</td>
+<td>
+<p>Replace each input value with a given value.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValue">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValue
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfig">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfig</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>booleanValue</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A boolean value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dateValue</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueDateValue">
+LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueDateValue
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Represents a whole or partial calendar date.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>dayOfWeekValue</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Represents a day of the week. Possible values: [&quot;MONDAY&quot;, &quot;TUESDAY&quot;, &quot;WEDNESDAY&quot;, &quot;THURSDAY&quot;, &quot;FRIDAY&quot;, &quot;SATURDAY&quot;, &quot;SUNDAY&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>floatValue</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A float value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>integerValue</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An integer value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>stringValue</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A string value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeValue</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueTimeValue">
+LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueTimeValue
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Represents a time of day.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timestampValue</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits.
+Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueDateValue">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueDateValue
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValue">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValue</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>day</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Day of month. Must be from 1 to 31 and valid for the year and month, or 0 if specifying a
+year by itself or a year and month where the day is not significant.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>month</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Month of year. Must be from 1 to 12, or 0 if specifying a year without a month and day.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>year</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Year of date. Must be from 1 to 9999, or 0 if specifying a date without a year.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueTimeValue">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValueTimeValue
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValue">LossPreventionDeidentifyTemplateSpecDeidentifyConfigInfoTypeTransformationsTransformationsPrimitiveTransformationReplaceConfigNewValue</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>hours</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Hours of day in 24 hour format. Should be from 0 to 23.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minutes</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Minutes of hour of day. Must be from 0 to 59.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>nanos</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Fractions of seconds in nanoseconds. Must be from 0 to 999,999,999.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>seconds</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Seconds of minutes of the time. Must normally be from 0 to 59.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecResource">LossPreventionDeidentifyTemplateSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpec">LossPreventionDeidentifyTemplateSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>deidentifyConfig</code><br/>
+<em>
+<a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateSpecDeidentifyConfig">
+LossPreventionDeidentifyTemplateSpecDeidentifyConfig
+</a>
+</em>
+</td>
+<td>
+<p>Configuration of the deidentify template</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A description of the template.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>displayName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>User set display name of the template.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The resource name of the template. Set by the server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>parent</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The parent of the template in any of the following formats:</p>
+<ul>
+<li>'projects/{{project}}'</li>
+<li>'projects/{{project}}/locations/{{location}}'</li>
+<li>'organizations/{{organization_id}}'</li>
+<li>'organizations/{{organization_id}}/locations/{{location}}'</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplateStatus">LossPreventionDeidentifyTemplateStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#data.google.kubeform.com/v1alpha1.LossPreventionDeidentifyTemplate">LossPreventionDeidentifyTemplate</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

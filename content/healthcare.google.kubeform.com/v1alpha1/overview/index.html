@@ -1,0 +1,280 @@
+<h2 id="healthcare.google.kubeform.com/v1alpha1">healthcare.google.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStore">ConsentStore</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamBinding">ConsentStoreIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamMember">ConsentStoreIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamPolicy">ConsentStoreIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Dataset">Dataset</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamBinding">DatasetIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamMember">DatasetIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamPolicy">DatasetIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStore">DicomStore</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamBinding">DicomStoreIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamMember">DicomStoreIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamPolicy">DicomStoreIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStore">FhirStore</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamBinding">FhirStoreIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamMember">FhirStoreIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamPolicy">FhirStoreIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2Store">Hl7V2Store</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamBinding">Hl7V2StoreIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamMember">Hl7V2StoreIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamPolicy">Hl7V2StoreIamPolicy</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStore">ConsentStore</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamBinding">ConsentStoreIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamMember">ConsentStoreIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamPolicy">ConsentStoreIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Dataset">Dataset</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamBinding">DatasetIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamMember">DatasetIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamPolicy">DatasetIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStore">DicomStore</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamBinding">DicomStoreIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamMember">DicomStoreIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamPolicy">DicomStoreIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStore">FhirStore</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamBinding">FhirStoreIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamMember">FhirStoreIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamPolicy">FhirStoreIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2Store">Hl7V2Store</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamBinding">Hl7V2StoreIamBinding</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamMember">Hl7V2StoreIamMember</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamPolicy">Hl7V2StoreIamPolicy</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamBindingSpec">ConsentStoreIamBindingSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamBindingSpecCondition">ConsentStoreIamBindingSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamBindingSpecConditionCodec">ConsentStoreIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamBindingSpecResource">ConsentStoreIamBindingSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamBindingStatus">ConsentStoreIamBindingStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamMemberSpec">ConsentStoreIamMemberSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamMemberSpecCondition">ConsentStoreIamMemberSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamMemberSpecConditionCodec">ConsentStoreIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamMemberSpecResource">ConsentStoreIamMemberSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamMemberStatus">ConsentStoreIamMemberStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamPolicySpec">ConsentStoreIamPolicySpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamPolicySpecResource">ConsentStoreIamPolicySpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreIamPolicyStatus">ConsentStoreIamPolicyStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreSpec">ConsentStoreSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreSpecResource">ConsentStoreSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.ConsentStoreStatus">ConsentStoreStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamBindingSpec">DatasetIamBindingSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamBindingSpecCondition">DatasetIamBindingSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamBindingSpecConditionCodec">DatasetIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamBindingSpecResource">DatasetIamBindingSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamBindingStatus">DatasetIamBindingStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamMemberSpec">DatasetIamMemberSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamMemberSpecCondition">DatasetIamMemberSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamMemberSpecConditionCodec">DatasetIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamMemberSpecResource">DatasetIamMemberSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamMemberStatus">DatasetIamMemberStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamPolicySpec">DatasetIamPolicySpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamPolicySpecResource">DatasetIamPolicySpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetIamPolicyStatus">DatasetIamPolicyStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetSpec">DatasetSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetSpecResource">DatasetSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DatasetStatus">DatasetStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamBindingSpec">DicomStoreIamBindingSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamBindingSpecCondition">DicomStoreIamBindingSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamBindingSpecConditionCodec">DicomStoreIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamBindingSpecResource">DicomStoreIamBindingSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamBindingStatus">DicomStoreIamBindingStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamMemberSpec">DicomStoreIamMemberSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamMemberSpecCondition">DicomStoreIamMemberSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamMemberSpecConditionCodec">DicomStoreIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamMemberSpecResource">DicomStoreIamMemberSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamMemberStatus">DicomStoreIamMemberStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamPolicySpec">DicomStoreIamPolicySpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamPolicySpecResource">DicomStoreIamPolicySpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreIamPolicyStatus">DicomStoreIamPolicyStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreSpec">DicomStoreSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreSpecNotificationConfig">DicomStoreSpecNotificationConfig</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreSpecNotificationConfigCodec">DicomStoreSpecNotificationConfigCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreSpecResource">DicomStoreSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.DicomStoreStatus">DicomStoreStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamBindingSpec">FhirStoreIamBindingSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamBindingSpecCondition">FhirStoreIamBindingSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamBindingSpecConditionCodec">FhirStoreIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamBindingSpecResource">FhirStoreIamBindingSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamBindingStatus">FhirStoreIamBindingStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamMemberSpec">FhirStoreIamMemberSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamMemberSpecCondition">FhirStoreIamMemberSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamMemberSpecConditionCodec">FhirStoreIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamMemberSpecResource">FhirStoreIamMemberSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamMemberStatus">FhirStoreIamMemberStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamPolicySpec">FhirStoreIamPolicySpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamPolicySpecResource">FhirStoreIamPolicySpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreIamPolicyStatus">FhirStoreIamPolicyStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpec">FhirStoreSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpecNotificationConfig">FhirStoreSpecNotificationConfig</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpecNotificationConfigCodec">FhirStoreSpecNotificationConfigCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpecResource">FhirStoreSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpecStreamConfigs">FhirStoreSpecStreamConfigs</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpecStreamConfigsBigqueryDestination">FhirStoreSpecStreamConfigsBigqueryDestination</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpecStreamConfigsBigqueryDestinationCodec">FhirStoreSpecStreamConfigsBigqueryDestinationCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpecStreamConfigsBigqueryDestinationSchemaConfig">FhirStoreSpecStreamConfigsBigqueryDestinationSchemaConfig</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreSpecStreamConfigsBigqueryDestinationSchemaConfigCodec">FhirStoreSpecStreamConfigsBigqueryDestinationSchemaConfigCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.FhirStoreStatus">FhirStoreStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamBindingSpec">Hl7V2StoreIamBindingSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamBindingSpecCondition">Hl7V2StoreIamBindingSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamBindingSpecConditionCodec">Hl7V2StoreIamBindingSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamBindingSpecResource">Hl7V2StoreIamBindingSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamBindingStatus">Hl7V2StoreIamBindingStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamMemberSpec">Hl7V2StoreIamMemberSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamMemberSpecCondition">Hl7V2StoreIamMemberSpecCondition</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamMemberSpecConditionCodec">Hl7V2StoreIamMemberSpecConditionCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamMemberSpecResource">Hl7V2StoreIamMemberSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamMemberStatus">Hl7V2StoreIamMemberStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamPolicySpec">Hl7V2StoreIamPolicySpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamPolicySpecResource">Hl7V2StoreIamPolicySpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreIamPolicyStatus">Hl7V2StoreIamPolicyStatus</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreSpec">Hl7V2StoreSpec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreSpecNotificationConfig">Hl7V2StoreSpecNotificationConfig</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreSpecNotificationConfigCodec">Hl7V2StoreSpecNotificationConfigCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreSpecNotificationConfigs">Hl7V2StoreSpecNotificationConfigs</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreSpecParserConfig">Hl7V2StoreSpecParserConfig</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreSpecParserConfigCodec">Hl7V2StoreSpecParserConfigCodec</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreSpecResource">Hl7V2StoreSpecResource</a>
+</li><li>
+<a href="#healthcare.google.kubeform.com/v1alpha1.Hl7V2StoreStatus">Hl7V2StoreStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

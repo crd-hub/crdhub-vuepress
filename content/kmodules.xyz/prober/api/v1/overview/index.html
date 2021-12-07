@@ -1,0 +1,254 @@
+<h2 id="/v1">/v1</h2>
+<div>
+</div>
+Resource Types:
+<ul></ul>
+All Types:
+<ul><li>
+<a href="#/v1.FormEntry">FormEntry</a>
+</li><li>
+<a href="#/v1.HTTPPostAction">HTTPPostAction</a>
+</li><li>
+<a href="#/v1.Handler">Handler</a>
+</li></ul>
+<h3 id="/v1.FormEntry">FormEntry
+</h3>
+<p>
+(<em>Appears on:</em><a href="#/v1.HTTPPostAction">HTTPPostAction</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>key</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>values</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="/v1.HTTPPostAction">HTTPPostAction
+</h3>
+<p>
+(<em>Appears on:</em><a href="#/v1.Handler">Handler</a>)
+</p>
+<div>
+<p>HTTPPostAction describes an action based on HTTP Post requests.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Path to access on the HTTP server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>port</code><br/>
+<em>
+k8s.io/apimachinery/pkg/util/intstr.IntOrString
+</em>
+</td>
+<td>
+<p>Name or number of the port to access on the container.
+Number must be in the range 1 to 65535.
+Name must be an IANA_SVC_NAME.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>host</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Host name to connect to, defaults to the pod IP. You probably want to set
+&quot;Host&quot; in httpHeaders instead.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>scheme</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#urischeme-v1-core">
+Kubernetes core/v1.URIScheme
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Scheme to use for connecting to the host.
+Defaults to HTTP.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>httpHeaders</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#httpheader-v1-core">
+[]Kubernetes core/v1.HTTPHeader
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Custom headers to set in the request. HTTP allows repeated headers.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>body</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Body to set in the request.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>form</code><br/>
+<em>
+<a href="#/v1.FormEntry">
+[]FormEntry
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Form to set in the request body.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="/v1.Handler">Handler
+</h3>
+<div>
+<p>Handler defines a specific action that should be taken
+TODO: pass structured data to these actions, and document that data here.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>exec</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#execaction-v1-core">
+Kubernetes core/v1.ExecAction
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>One and only one of the following should be specified.
+Exec specifies the action to take.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>httpGet</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#httpgetaction-v1-core">
+Kubernetes core/v1.HTTPGetAction
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>HTTPGet specifies the http Get request to perform.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>httpPost</code><br/>
+<em>
+<a href="#/v1.HTTPPostAction">
+HTTPPostAction
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>HTTPPost specifies the http Post request to perform.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tcpSocket</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#tcpsocketaction-v1-core">
+Kubernetes core/v1.TCPSocketAction
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>TCPSocket specifies an action involving a TCP port.
+TCP hooks not yet supported
+TODO: implement a realistic TCP lifecycle hook</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>containerName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ContainerName specifies the name of the container where to execute the commands for Exec probe
+or where to find the port for HTTP or TCP probe</p>
+</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>44f2ab3</code>.
+</em></p>

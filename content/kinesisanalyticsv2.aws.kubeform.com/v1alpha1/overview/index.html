@@ -1,0 +1,194 @@
+<h2 id="kinesisanalyticsv2.aws.kubeform.com/v1alpha1">kinesisanalyticsv2.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.Application">Application</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSnapshot">ApplicationSnapshot</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.Application">Application</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSnapshot">ApplicationSnapshot</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSnapshotSpec">ApplicationSnapshotSpec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSnapshotSpecResource">ApplicationSnapshotSpecResource</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSnapshotStatus">ApplicationSnapshotStatus</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpec">ApplicationSpec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfiguration">ApplicationSpecApplicationConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationApplicationCodeConfiguration">ApplicationSpecApplicationConfigurationApplicationCodeConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodeContent">ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodeContent</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodeContentCodec">ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodeContentCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation">ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationCodec">ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodec">ApplicationSpecApplicationConfigurationApplicationCodeConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationApplicationSnapshotConfiguration">ApplicationSpecApplicationConfigurationApplicationSnapshotConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationApplicationSnapshotConfigurationCodec">ApplicationSpecApplicationConfigurationApplicationSnapshotConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationCodec">ApplicationSpecApplicationConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationEnvironmentProperties">ApplicationSpecApplicationConfigurationEnvironmentProperties</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationEnvironmentPropertiesCodec">ApplicationSpecApplicationConfigurationEnvironmentPropertiesCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationEnvironmentPropertiesPropertyGroup">ApplicationSpecApplicationConfigurationEnvironmentPropertiesPropertyGroup</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationFlinkApplicationConfiguration">ApplicationSpecApplicationConfigurationFlinkApplicationConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration">ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationCheckpointConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationCodec">ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationCheckpointConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationCodec">ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration">ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationMonitoringConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationCodec">ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationMonitoringConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration">ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationParallelismConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationCodec">ApplicationSpecApplicationConfigurationFlinkApplicationConfigurationParallelismConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationRunConfiguration">ApplicationSpecApplicationConfigurationRunConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationRunConfigurationApplicationRestoreConfiguration">ApplicationSpecApplicationConfigurationRunConfigurationApplicationRestoreConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationRunConfigurationApplicationRestoreConfigurationCodec">ApplicationSpecApplicationConfigurationRunConfigurationApplicationRestoreConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationRunConfigurationCodec">ApplicationSpecApplicationConfigurationRunConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationRunConfigurationFlinkRunConfiguration">ApplicationSpecApplicationConfigurationRunConfigurationFlinkRunConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationRunConfigurationFlinkRunConfigurationCodec">ApplicationSpecApplicationConfigurationRunConfigurationFlinkRunConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfiguration">ApplicationSpecApplicationConfigurationSqlApplicationConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInput">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInput</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputParallelism">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputParallelism</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputParallelismCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputParallelismCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessor</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfigurationInputLambdaProcessorCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchema">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchema</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParameters</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParameters</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersCsvMappingParametersCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParameters</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormatMappingParametersJsonMappingParametersCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInputCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInputCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutput">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutput</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchemaCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchemaCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutputCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutputCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutputCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutputCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSource">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSource</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchema</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordColumn</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormat</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParameters</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParameters</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersCsvMappingParametersCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParameters</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceReferenceSchemaRecordFormatMappingParametersJsonMappingParametersCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSource</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceCodec">ApplicationSpecApplicationConfigurationSqlApplicationConfigurationReferenceDataSourceS3ReferenceDataSourceCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationVpcConfiguration">ApplicationSpecApplicationConfigurationVpcConfiguration</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecApplicationConfigurationVpcConfigurationCodec">ApplicationSpecApplicationConfigurationVpcConfigurationCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecCloudwatchLoggingOptions">ApplicationSpecCloudwatchLoggingOptions</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecCloudwatchLoggingOptionsCodec">ApplicationSpecCloudwatchLoggingOptionsCodec</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationSpecResource">ApplicationSpecResource</a>
+</li><li>
+<a href="#kinesisanalyticsv2.aws.kubeform.com/v1alpha1.ApplicationStatus">ApplicationStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

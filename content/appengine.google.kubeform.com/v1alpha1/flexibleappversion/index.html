@@ -1,0 +1,2194 @@
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersion">FlexibleAppVersion
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+appengine.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>FlexibleAppVersion</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpec">
+FlexibleAppVersionSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">
+FlexibleAppVersionSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">
+FlexibleAppVersionSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionStatus">
+FlexibleAppVersionStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpec">FlexibleAppVersionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersion">FlexibleAppVersion</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">
+FlexibleAppVersionSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">
+FlexibleAppVersionSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecApiConfig">FlexibleAppVersionSpecApiConfig
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>authFailAction</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Action to take when users access resources that require authentication. Default value: &quot;AUTH_FAIL_ACTION_REDIRECT&quot; Possible values: [&quot;AUTH_FAIL_ACTION_REDIRECT&quot;, &quot;AUTH_FAIL_ACTION_UNAUTHORIZED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>login</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Level of login required to access this resource. Default value: &quot;LOGIN_OPTIONAL&quot; Possible values: [&quot;LOGIN_OPTIONAL&quot;, &quot;LOGIN_ADMIN&quot;, &quot;LOGIN_REQUIRED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>script</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Path to the script from the application root directory.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>securityLevel</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Security (HTTPS) enforcement for this URL. Possible values: [&quot;SECURE_DEFAULT&quot;, &quot;SECURE_NEVER&quot;, &quot;SECURE_OPTIONAL&quot;, &quot;SECURE_ALWAYS&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>url</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>URL to serve the endpoint at.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScaling">FlexibleAppVersionSpecAutomaticScaling
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>coolDownPeriod</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time period that the Autoscaler should wait before it starts collecting information from a new instance.
+This prevents the autoscaler from collecting information when the instance is initializing,
+during which the collected usage would not be reliable. Default: 120s</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>cpuUtilization</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScalingCpuUtilization">
+FlexibleAppVersionSpecAutomaticScalingCpuUtilization
+</a>
+</em>
+</td>
+<td>
+<p>Target scaling by CPU usage.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>diskUtilization</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScalingDiskUtilization">
+FlexibleAppVersionSpecAutomaticScalingDiskUtilization
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target scaling by disk usage.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxConcurrentRequests</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of concurrent requests an automatic scaling instance can accept before the scheduler spawns a new instance.</p>
+<p>Defaults to a runtime-specific value.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxIdleInstances</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Maximum number of idle instances that should be maintained for this version.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxPendingLatency</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Maximum amount of time that a request should wait in the pending queue before starting a new instance to handle it.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>maxTotalInstances</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Maximum number of instances that should be started to handle requests for this version. Default: 20</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minIdleInstances</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Minimum number of idle instances that should be maintained for this version. Only applicable for the default version of a service.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minPendingLatency</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Minimum amount of time a request should wait in the pending queue before starting a new instance to handle it.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>minTotalInstances</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Minimum number of running instances that should be maintained for this version. Default: 2</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>networkUtilization</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScalingNetworkUtilization">
+FlexibleAppVersionSpecAutomaticScalingNetworkUtilization
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target scaling by network usage.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requestUtilization</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScalingRequestUtilization">
+FlexibleAppVersionSpecAutomaticScalingRequestUtilization
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target scaling by request utilization.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScalingCpuUtilization">FlexibleAppVersionSpecAutomaticScalingCpuUtilization
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScaling">FlexibleAppVersionSpecAutomaticScaling</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>aggregationWindowLength</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Period of time over which CPU utilization is calculated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetUtilization</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<p>Target CPU utilization ratio to maintain when scaling. Must be between 0 and 1.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScalingDiskUtilization">FlexibleAppVersionSpecAutomaticScalingDiskUtilization
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScaling">FlexibleAppVersionSpecAutomaticScaling</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetReadBytesPerSecond</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target bytes read per second.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetReadOpsPerSecond</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target ops read per seconds.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetWriteBytesPerSecond</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target bytes written per second.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetWriteOpsPerSecond</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target ops written per second.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScalingNetworkUtilization">FlexibleAppVersionSpecAutomaticScalingNetworkUtilization
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScaling">FlexibleAppVersionSpecAutomaticScaling</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetReceivedBytesPerSecond</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target bytes received per second.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetReceivedPacketsPerSecond</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target packets received per second.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetSentBytesPerSecond</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target bytes sent per second.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetSentPacketsPerSecond</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target packets sent per second.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScalingRequestUtilization">FlexibleAppVersionSpecAutomaticScalingRequestUtilization
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScaling">FlexibleAppVersionSpecAutomaticScaling</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetConcurrentRequests</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target number of concurrent requests.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>targetRequestCountPerSecond</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Target requests per second.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeployment">FlexibleAppVersionSpecDeployment
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>cloudBuildOptions</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeploymentCloudBuildOptions">
+FlexibleAppVersionSpecDeploymentCloudBuildOptions
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Options for the build operations performed as a part of the version deployment. Only applicable when creating a version using source code directly.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>container</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeploymentContainer">
+FlexibleAppVersionSpecDeploymentContainer
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The Docker image for the container that runs the version.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>files</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeploymentFiles">
+[]FlexibleAppVersionSpecDeploymentFiles
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Manifest of the files stored in Google Cloud Storage that are included as part of this version.
+All files must be readable using the credentials supplied with this call.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>zip</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeploymentZip">
+FlexibleAppVersionSpecDeploymentZip
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Zip File</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeploymentCloudBuildOptions">FlexibleAppVersionSpecDeploymentCloudBuildOptions
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeployment">FlexibleAppVersionSpecDeployment</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>appYamlPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Path to the yaml file used in deployment, used to determine runtime configuration details.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>cloudBuildTimeout</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The Cloud Build timeout used as part of any dependent builds performed by version creation. Defaults to 10 minutes.</p>
+<p>A duration in seconds with up to nine fractional digits, terminated by 's'. Example: &quot;3.5s&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeploymentContainer">FlexibleAppVersionSpecDeploymentContainer
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeployment">FlexibleAppVersionSpecDeployment</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>image</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>URI to the hosted container image in Google Container Registry. The URI must be fully qualified and include a tag or digest.
+Examples: &quot;gcr.io/my-project/image:tag&quot; or &quot;gcr.io/my-project/image@digest&quot;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeploymentFiles">FlexibleAppVersionSpecDeploymentFiles
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeployment">FlexibleAppVersionSpecDeployment</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>sha1Sum</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>SHA1 checksum of the file</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceURL</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Source URL</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeploymentZip">FlexibleAppVersionSpecDeploymentZip
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeployment">FlexibleAppVersionSpecDeployment</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>filesCount</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>files count</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sourceURL</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Source URL</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecEndpointsAPIService">FlexibleAppVersionSpecEndpointsAPIService
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>configID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Endpoints service configuration ID as specified by the Service Management API. For example &quot;2016-09-19r1&quot;.</p>
+<p>By default, the rollout strategy for Endpoints is &quot;FIXED&quot;. This means that Endpoints starts up with a particular configuration ID.
+When a new configuration is rolled out, Endpoints must be given the new configuration ID. The configId field is used to give the configuration ID
+and is required in this case.</p>
+<p>Endpoints also has a rollout strategy called &quot;MANAGED&quot;. When using this, Endpoints fetches the latest configuration and does not need
+the configuration ID. In this case, configId must be omitted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>disableTraceSampling</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Enable or disable trace sampling. By default, this is set to false for enabled.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Endpoints service name which is the name of the &quot;service&quot; resource in the Service Management API.
+For example &quot;myapi.endpoints.myproject.cloud.goog&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>rolloutStrategy</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Endpoints rollout strategy. If FIXED, configId must be specified. If MANAGED, configId must be omitted. Default value: &quot;FIXED&quot; Possible values: [&quot;FIXED&quot;, &quot;MANAGED&quot;]</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecEntrypoint">FlexibleAppVersionSpecEntrypoint
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>shell</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The format should be a shell command that can be fed to bash -c.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecHandlers">FlexibleAppVersionSpecHandlers
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>authFailAction</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Actions to take when the user is not logged in. Possible values: [&quot;AUTH_FAIL_ACTION_REDIRECT&quot;, &quot;AUTH_FAIL_ACTION_UNAUTHORIZED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>login</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Methods to restrict access to a URL based on login status. Possible values: [&quot;LOGIN_OPTIONAL&quot;, &quot;LOGIN_ADMIN&quot;, &quot;LOGIN_REQUIRED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>redirectHTTPResponseCode</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>30x code to use when performing redirects for the secure field. Possible values: [&quot;REDIRECT_HTTP_RESPONSE_CODE_301&quot;, &quot;REDIRECT_HTTP_RESPONSE_CODE_302&quot;, &quot;REDIRECT_HTTP_RESPONSE_CODE_303&quot;, &quot;REDIRECT_HTTP_RESPONSE_CODE_307&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>script</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecHandlersScript">
+FlexibleAppVersionSpecHandlersScript
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Executes a script to handle the requests that match this URL pattern.
+Only the auto value is supported for Node.js in the App Engine standard environment, for example &quot;script:&quot; &quot;auto&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>securityLevel</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Security (HTTPS) enforcement for this URL. Possible values: [&quot;SECURE_DEFAULT&quot;, &quot;SECURE_NEVER&quot;, &quot;SECURE_OPTIONAL&quot;, &quot;SECURE_ALWAYS&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>staticFiles</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecHandlersStaticFiles">
+FlexibleAppVersionSpecHandlersStaticFiles
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Files served directly to the user for a given URL, such as images, CSS stylesheets, or JavaScript source files.
+Static file handlers describe which files in the application directory are static files, and which URLs serve them.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>urlRegex</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>URL prefix. Uses regular expression syntax, which means regexp special characters must be escaped, but should not contain groupings.
+All URLs that begin with this prefix are handled by this handler, using the portion of the URL after the prefix as part of the file path.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecHandlersScript">FlexibleAppVersionSpecHandlersScript
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecHandlers">FlexibleAppVersionSpecHandlers</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>scriptPath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Path to the script from the application root directory.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecHandlersStaticFiles">FlexibleAppVersionSpecHandlersStaticFiles
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecHandlers">FlexibleAppVersionSpecHandlers</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>applicationReadable</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether files should also be uploaded as code data. By default, files declared in static file handlers are
+uploaded as static data and are only served to end users; they cannot be read by the application. If enabled,
+uploads are charged against both your code and static data storage resource quotas.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>expiration</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Time a static file served by this handler should be cached by web proxies and browsers.
+A duration in seconds with up to nine fractional digits, terminated by 's'. Example &quot;3.5s&quot;.
+Default is '0s'</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>httpHeaders</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>HTTP headers to use for all responses from these URLs.
+An object containing a list of &quot;key:value&quot; value pairs.&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>mimeType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>MIME type used to serve all files served by this handler.
+Defaults to file-specific MIME types, which are derived from each file's filename extension.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Path to the static files matched by the URL pattern, from the application root directory.
+The path can refer to text matched in groupings in the URL pattern.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>requireMatchingFile</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Whether this handler should match the request if the file referenced by the handler does not exist.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>uploadPathRegex</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Regular expression that matches the file paths for all files that should be referenced by this handler.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecLivenessCheck">FlexibleAppVersionSpecLivenessCheck
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>checkInterval</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Interval between health checks.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>failureThreshold</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of consecutive failed checks required before considering the VM unhealthy. Default: 4.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>host</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Host header to send when performing a HTTP Readiness check. Example: &quot;myapp.appspot.com&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>initialDelay</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The initial delay before starting to execute the checks. Default: &quot;300s&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The request path.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>successThreshold</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of consecutive successful checks required before considering the VM healthy. Default: 2.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Time before the check is considered failed. Default: &quot;4s&quot;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecManualScaling">FlexibleAppVersionSpecManualScaling
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>instances</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Number of instances to assign to the service at the start.</p>
+<p><strong>Note:</strong> When managing the number of instances at runtime through the App Engine Admin API or the (now deprecated) Python 2
+Modules API set_num_instances() you must use 'lifecycle.ignore_changes = [&quot;manual_scaling&quot;[0].instances]' to prevent drift detection.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecNetwork">FlexibleAppVersionSpecNetwork
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>forwardedPorts</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of ports, or port pairs, to forward from the virtual machine to the application container.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>instanceTag</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Tag to apply to the instance during creation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Google Compute Engine network where the virtual machines are created. Specify the short name, not the resource path.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sessionAffinity</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Enable session affinity.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>subnetwork</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Google Cloud Platform sub-network where the virtual machines are created. Specify the short name, not the resource path.</p>
+<p>If the network that the instance is being created in is a Legacy network, then the IP address is allocated from the IPv4Range.
+If the network that the instance is being created in is an auto Subnet Mode Network, then only network name should be specified (not the subnetworkName) and the IP address is created from the IPCidrRange of the subnetwork that exists in that zone for that network.
+If the network that the instance is being created in is a custom Subnet Mode Network, then the subnetworkName must be specified and the IP address is created from the IPCidrRange of the subnetwork.
+If specified, the subnetwork must exist in the same region as the App Engine flexible environment application.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecReadinessCheck">FlexibleAppVersionSpecReadinessCheck
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>appStartTimeout</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A maximum time limit on application initialization, measured from moment the application successfully
+replies to a healthcheck until it is ready to serve traffic. Default: &quot;300s&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>checkInterval</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Interval between health checks.  Default: &quot;5s&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>failureThreshold</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of consecutive failed checks required before removing traffic. Default: 2.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>host</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Host header to send when performing a HTTP Readiness check. Example: &quot;myapp.appspot.com&quot;</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>path</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The request path.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>successThreshold</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of consecutive successful checks required before receiving traffic. Default: 2.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>timeout</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Time before the check is considered failed. Default: &quot;4s&quot;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpec">FlexibleAppVersionSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>apiConfig</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecApiConfig">
+FlexibleAppVersionSpecApiConfig
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Serving configuration for Google Cloud Endpoints.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>automaticScaling</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecAutomaticScaling">
+FlexibleAppVersionSpecAutomaticScaling
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Automatic scaling is based on request rate, response latencies, and other application metrics.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>betaSettings</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Metadata settings that are supplied to this version to enable beta runtime features.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>defaultExpiration</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Duration that static files should be cached by web proxies and browsers.
+Only applicable if the corresponding StaticFilesHandler does not specify its own expiration time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>deleteServiceOnDestroy</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>deployment</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecDeployment">
+FlexibleAppVersionSpecDeployment
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Code and application artifacts that make up this version.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>endpointsAPIService</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecEndpointsAPIService">
+FlexibleAppVersionSpecEndpointsAPIService
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Code and application artifacts that make up this version.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>entrypoint</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecEntrypoint">
+FlexibleAppVersionSpecEntrypoint
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The entrypoint for the application.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>envVariables</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Environment variables available to the application.  As these are not returned in the API request, Terraform will not detect any changes made outside of the Terraform config.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>handlers</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecHandlers">
+[]FlexibleAppVersionSpecHandlers
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An ordered list of URL-matching patterns that should be applied to incoming requests.
+The first matching URL handles the request and other request handlers are not attempted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>inboundServices</code><br/>
+<em>
+[]string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of the types of messages that this application is able to receive. Possible values: [&quot;INBOUND_SERVICE_MAIL&quot;, &quot;INBOUND_SERVICE_MAIL_BOUNCE&quot;, &quot;INBOUND_SERVICE_XMPP_ERROR&quot;, &quot;INBOUND_SERVICE_XMPP_MESSAGE&quot;, &quot;INBOUND_SERVICE_XMPP_SUBSCRIBE&quot;, &quot;INBOUND_SERVICE_XMPP_PRESENCE&quot;, &quot;INBOUND_SERVICE_CHANNEL_PRESENCE&quot;, &quot;INBOUND_SERVICE_WARMUP&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>instanceClass</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Instance class that is used to run this version. Valid values are
+AutomaticScaling: F1, F2, F4, F4_1G
+ManualScaling: B1, B2, B4, B8, B4_1G
+Defaults to F1 for AutomaticScaling and B1 for ManualScaling.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>livenessCheck</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecLivenessCheck">
+FlexibleAppVersionSpecLivenessCheck
+</a>
+</em>
+</td>
+<td>
+<p>Health checking configuration for VM instances. Unhealthy instances are killed and replaced with new instances.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>manualScaling</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecManualScaling">
+FlexibleAppVersionSpecManualScaling
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A service with manual scaling runs continuously, allowing you to perform complex initialization and rely on the state of its memory over time.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Full path to the Version resource in the API. Example, &quot;v1&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>network</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecNetwork">
+FlexibleAppVersionSpecNetwork
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Extra network settings</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>nobuildFilesRegex</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Files that match this pattern will not be built into this version. Only applicable for Go runtimes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>noopOnDestroy</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>readinessCheck</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecReadinessCheck">
+FlexibleAppVersionSpecReadinessCheck
+</a>
+</em>
+</td>
+<td>
+<p>Configures readiness health checking for instances. Unhealthy instances are not put into the backend traffic rotation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>resources</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResources">
+FlexibleAppVersionSpecResources
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Machine resources for a version.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>runtime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Desired runtime. Example python27.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>runtimeAPIVersion</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The version of the API in the given runtime environment.
+Please see the app.yaml reference for valid values at https://cloud.google.com/appengine/docs/standard//config/appref</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>runtimeChannel</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The channel of the runtime to use. Only available for some runtimes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>runtimeMainExecutablePath</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The path or name of the app's main executable.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>service</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>AppEngine service resource. Can contain numbers, letters, and hyphens.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>servingStatus</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Current serving status of this version. Only the versions with a SERVING status create instances and can be billed. Default value: &quot;SERVING&quot; Possible values: [&quot;SERVING&quot;, &quot;STOPPED&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>versionID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Relative name of the version within the service. For example, 'v1'. Version names can contain only lowercase letters, numbers, or hyphens.
+Reserved names,&quot;default&quot;, &quot;latest&quot;, and any name with the prefix &quot;ah-&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>vpcAccessConnector</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecVpcAccessConnector">
+FlexibleAppVersionSpecVpcAccessConnector
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Enables VPC connectivity for standard apps.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResources">FlexibleAppVersionSpecResources
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>cpu</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Number of CPU cores needed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>diskGb</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Disk size (GB) needed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>memoryGb</code><br/>
+<em>
+float64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Memory (GB) needed.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumes</code><br/>
+<em>
+<a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResourcesVolumes">
+[]FlexibleAppVersionSpecResourcesVolumes
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>List of ports, or port pairs, to forward from the virtual machine to the application container.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResourcesVolumes">FlexibleAppVersionSpecResourcesVolumes
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResources">FlexibleAppVersionSpecResources</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Unique name for the volume.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sizeGb</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Volume size in gigabytes.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Underlying volume type, e.g. 'tmpfs'.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecVpcAccessConnector">FlexibleAppVersionSpecVpcAccessConnector
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionSpecResource">FlexibleAppVersionSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Full Serverless VPC Access Connector name e.g. /projects/my-project/locations/us-central1/connectors/c1.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="appengine.google.kubeform.com/v1alpha1.FlexibleAppVersionStatus">FlexibleAppVersionStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#appengine.google.kubeform.com/v1alpha1.FlexibleAppVersion">FlexibleAppVersion</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

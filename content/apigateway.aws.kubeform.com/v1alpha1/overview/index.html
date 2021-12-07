@@ -1,0 +1,292 @@
+<h2 id="apigateway.aws.kubeform.com/v1alpha1">apigateway.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Account">Account</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApiKey">ApiKey</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApigatewayResource">ApigatewayResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Authorizer">Authorizer</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.BasePathMapping">BasePathMapping</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ClientCertificate">ClientCertificate</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Deployment">Deployment</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationPart">DocumentationPart</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationVersion">DocumentationVersion</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainName">DomainName</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.GatewayResponse">GatewayResponse</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Integration">Integration</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationResponse">IntegrationResponse</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Method">Method</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodResponse">MethodResponse</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSettings">MethodSettings</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Model">Model</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RequestValidator">RequestValidator</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPI">RestAPI</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPIPolicy">RestAPIPolicy</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Stage">Stage</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlan">UsagePlan</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanKey">UsagePlanKey</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.VpcLink">VpcLink</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Account">Account</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApiKey">ApiKey</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApigatewayResource">ApigatewayResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Authorizer">Authorizer</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.BasePathMapping">BasePathMapping</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ClientCertificate">ClientCertificate</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Deployment">Deployment</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationPart">DocumentationPart</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationVersion">DocumentationVersion</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainName">DomainName</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.GatewayResponse">GatewayResponse</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Integration">Integration</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationResponse">IntegrationResponse</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Method">Method</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodResponse">MethodResponse</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSettings">MethodSettings</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Model">Model</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RequestValidator">RequestValidator</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPI">RestAPI</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPIPolicy">RestAPIPolicy</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.Stage">Stage</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlan">UsagePlan</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanKey">UsagePlanKey</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.VpcLink">VpcLink</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.AccountSpec">AccountSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.AccountSpecResource">AccountSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.AccountSpecThrottleSettings">AccountSpecThrottleSettings</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.AccountStatus">AccountStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApiKeySpec">ApiKeySpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApiKeySpecResource">ApiKeySpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApiKeyStatus">ApiKeyStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApigatewayResourceSpec">ApigatewayResourceSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApigatewayResourceSpecResource">ApigatewayResourceSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ApigatewayResourceStatus">ApigatewayResourceStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.AuthorizerSpec">AuthorizerSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.AuthorizerSpecResource">AuthorizerSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.AuthorizerStatus">AuthorizerStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.BasePathMappingSpec">BasePathMappingSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.BasePathMappingSpecResource">BasePathMappingSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.BasePathMappingStatus">BasePathMappingStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ClientCertificateSpec">ClientCertificateSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ClientCertificateSpecResource">ClientCertificateSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ClientCertificateStatus">ClientCertificateStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DeploymentSpec">DeploymentSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DeploymentSpecResource">DeploymentSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DeploymentStatus">DeploymentStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationPartSpec">DocumentationPartSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationPartSpecLocation">DocumentationPartSpecLocation</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationPartSpecLocationCodec">DocumentationPartSpecLocationCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationPartSpecResource">DocumentationPartSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationPartStatus">DocumentationPartStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationVersionSpec">DocumentationVersionSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationVersionSpecResource">DocumentationVersionSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DocumentationVersionStatus">DocumentationVersionStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainNameSpec">DomainNameSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainNameSpecEndpointConfiguration">DomainNameSpecEndpointConfiguration</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainNameSpecEndpointConfigurationCodec">DomainNameSpecEndpointConfigurationCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainNameSpecMutualTlsAuthentication">DomainNameSpecMutualTlsAuthentication</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainNameSpecMutualTlsAuthenticationCodec">DomainNameSpecMutualTlsAuthenticationCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainNameSpecResource">DomainNameSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.DomainNameStatus">DomainNameStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.GatewayResponseSpec">GatewayResponseSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.GatewayResponseSpecResource">GatewayResponseSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.GatewayResponseStatus">GatewayResponseStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationResponseSpec">IntegrationResponseSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationResponseSpecResource">IntegrationResponseSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationResponseStatus">IntegrationResponseStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationSpec">IntegrationSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationSpecResource">IntegrationSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationSpecTlsConfig">IntegrationSpecTlsConfig</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationSpecTlsConfigCodec">IntegrationSpecTlsConfigCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.IntegrationStatus">IntegrationStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodResponseSpec">MethodResponseSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodResponseSpecResource">MethodResponseSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodResponseStatus">MethodResponseStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSettingsSpec">MethodSettingsSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSettingsSpecResource">MethodSettingsSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSettingsSpecSettings">MethodSettingsSpecSettings</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSettingsSpecSettingsCodec">MethodSettingsSpecSettingsCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSettingsStatus">MethodSettingsStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSpec">MethodSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodSpecResource">MethodSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.MethodStatus">MethodStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ModelSpec">ModelSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ModelSpecResource">ModelSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.ModelStatus">ModelStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RequestValidatorSpec">RequestValidatorSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RequestValidatorSpecResource">RequestValidatorSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RequestValidatorStatus">RequestValidatorStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPIPolicySpec">RestAPIPolicySpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPIPolicySpecResource">RestAPIPolicySpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPIPolicyStatus">RestAPIPolicyStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPISpec">RestAPISpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPISpecEndpointConfiguration">RestAPISpecEndpointConfiguration</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPISpecEndpointConfigurationCodec">RestAPISpecEndpointConfigurationCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPISpecResource">RestAPISpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.RestAPIStatus">RestAPIStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.StageSpec">StageSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.StageSpecAccessLogSettings">StageSpecAccessLogSettings</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.StageSpecAccessLogSettingsCodec">StageSpecAccessLogSettingsCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.StageSpecResource">StageSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.StageStatus">StageStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanKeySpec">UsagePlanKeySpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanKeySpecResource">UsagePlanKeySpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanKeyStatus">UsagePlanKeyStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanSpec">UsagePlanSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanSpecApiStages">UsagePlanSpecApiStages</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanSpecQuotaSettings">UsagePlanSpecQuotaSettings</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanSpecQuotaSettingsCodec">UsagePlanSpecQuotaSettingsCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanSpecResource">UsagePlanSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanSpecThrottleSettings">UsagePlanSpecThrottleSettings</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanSpecThrottleSettingsCodec">UsagePlanSpecThrottleSettingsCodec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.UsagePlanStatus">UsagePlanStatus</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.VpcLinkSpec">VpcLinkSpec</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.VpcLinkSpecResource">VpcLinkSpecResource</a>
+</li><li>
+<a href="#apigateway.aws.kubeform.com/v1alpha1.VpcLinkStatus">VpcLinkStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

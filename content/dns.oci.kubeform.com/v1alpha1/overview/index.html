@@ -1,0 +1,124 @@
+<h2 id="dns.oci.kubeform.com/v1alpha1">dns.oci.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.Record">Record</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.Resolver">Resolver</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverEndpoint">ResolverEndpoint</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.Rrset">Rrset</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicy">SteeringPolicy</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicyAttachment">SteeringPolicyAttachment</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.TsigKey">TsigKey</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.View">View</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.Zone">Zone</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.Record">Record</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.Resolver">Resolver</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverEndpoint">ResolverEndpoint</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.Rrset">Rrset</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicy">SteeringPolicy</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicyAttachment">SteeringPolicyAttachment</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.TsigKey">TsigKey</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.View">View</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.Zone">Zone</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.RecordSpec">RecordSpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.RecordSpecResource">RecordSpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.RecordStatus">RecordStatus</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverEndpointSpec">ResolverEndpointSpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverEndpointSpecResource">ResolverEndpointSpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverEndpointStatus">ResolverEndpointStatus</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverSpec">ResolverSpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverSpecAttachedViews">ResolverSpecAttachedViews</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverSpecEndpoints">ResolverSpecEndpoints</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverSpecResource">ResolverSpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverSpecRules">ResolverSpecRules</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ResolverStatus">ResolverStatus</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.RrsetSpec">RrsetSpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.RrsetSpecItems">RrsetSpecItems</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.RrsetSpecResource">RrsetSpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.RrsetStatus">RrsetStatus</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicyAttachmentSpec">SteeringPolicyAttachmentSpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicyAttachmentSpecResource">SteeringPolicyAttachmentSpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicyAttachmentStatus">SteeringPolicyAttachmentStatus</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicySpec">SteeringPolicySpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicySpecAnswers">SteeringPolicySpecAnswers</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicySpecResource">SteeringPolicySpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicySpecRules">SteeringPolicySpecRules</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicySpecRulesCases">SteeringPolicySpecRulesCases</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicySpecRulesCasesAnswerData">SteeringPolicySpecRulesCasesAnswerData</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicySpecRulesDefaultAnswerData">SteeringPolicySpecRulesDefaultAnswerData</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.SteeringPolicyStatus">SteeringPolicyStatus</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.TsigKeySpec">TsigKeySpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.TsigKeySpecResource">TsigKeySpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.TsigKeyStatus">TsigKeyStatus</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ViewSpec">ViewSpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ViewSpecResource">ViewSpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ViewStatus">ViewStatus</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ZoneSpec">ZoneSpec</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ZoneSpecExternalMasters">ZoneSpecExternalMasters</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ZoneSpecNameservers">ZoneSpecNameservers</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ZoneSpecResource">ZoneSpecResource</a>
+</li><li>
+<a href="#dns.oci.kubeform.com/v1alpha1.ZoneStatus">ZoneStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>96b0f4e</code>.
+</em></p>

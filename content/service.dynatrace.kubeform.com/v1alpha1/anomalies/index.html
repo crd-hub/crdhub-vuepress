@@ -1,0 +1,907 @@
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.Anomalies">Anomalies
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+service.dynatrace.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Anomalies</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpec">
+AnomaliesSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">
+AnomaliesSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">
+AnomaliesSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesStatus">
+AnomaliesStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpec">AnomaliesSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.Anomalies">Anomalies</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">
+AnomaliesSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">
+AnomaliesSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRates">AnomaliesSpecFailureRates
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>auto</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesAuto">
+AnomaliesSpecFailureRatesAuto
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Parameters of failure rate increase auto-detection. Example: If the expected error rate is 1.5%, and you set an absolute increase of 1%, and a relative increase of 50%, the thresholds will be:  Absolute: 1.5% + <strong>1%</strong> = 2.5%  Relative: 1.5% + 1.5% * <strong>50%</strong> = 2.25%</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>thresholds</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesThresholds">
+AnomaliesSpecFailureRatesThresholds
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Fixed thresholds for failure rate increase detection</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesAuto">AnomaliesSpecFailureRatesAuto
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRates">AnomaliesSpecFailureRates</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>absolute</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Absolute increase of failing service calls to trigger an alert, %</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>relative</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Relative increase of failing service calls to trigger an alert, %</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRatesThresholds">AnomaliesSpecFailureRatesThresholds
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRates">AnomaliesSpecFailureRates</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>sensitivity</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Sensitivity of the threshold.  With <code>low</code> sensitivity, high statistical confidence is used. Brief violations (for example, due to a surge in load) won't trigger alerts.  With <code>high</code> sensitivity, no statistical confidence is used. Each violation triggers alert</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>threshold</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Failure rate during any 5-minute period to trigger an alert, %</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoad">AnomaliesSpecLoad
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>drops</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadDrops">
+AnomaliesSpecLoadDrops
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The configuration of traffic drops detection</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>spikes</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadSpikes">
+AnomaliesSpecLoadSpikes
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The configuration of traffic spikes detection</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadDrops">AnomaliesSpecLoadDrops
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoad">AnomaliesSpecLoad</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>minutes</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Alert if the service stays in abnormal state for at least <em>X</em> minutes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>percent</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Alert if the observed load is more than <em>X</em> % of the expected value</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadDrops2">AnomaliesSpecLoadDrops2
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>minutes</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Alert if the service stays in abnormal state for at least <em>X</em> minutes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>percent</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Alert if the observed load is more than <em>X</em> % of the expected value</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadSpikes">AnomaliesSpecLoadSpikes
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoad">AnomaliesSpecLoad</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>minutes</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Alert if the service stays in abnormal state for at least <em>X</em> minutes</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>percent</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Alert if the observed load is more than <em>X</em> % of the expected value</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpec">AnomaliesSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>failureRates</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecFailureRates">
+AnomaliesSpecFailureRates
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Configuration of failure rate increase detection. Detecting failure rate increases will be disabled if this block is omitted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>load</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoad">
+AnomaliesSpecLoad
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The configuration of load spikes detection. Detecting load spikes will be disabled if this block is omitted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>loadDrops</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecLoadDrops2">
+AnomaliesSpecLoadDrops2
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The configuration of load drops detection. Detecting load drops will be disabled if this block is omitted.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>responseTimes</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimes">
+AnomaliesSpecResponseTimes
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Configuration of response time degradation detection. Detecting response time degradation will be disabled if this block is omitted.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimes">AnomaliesSpecResponseTimes
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResource">AnomaliesSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>auto</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesAuto">
+AnomaliesSpecResponseTimesAuto
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Parameters of the response time degradation auto-detection. Violation of <strong>any</strong> criterion triggers an alert</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>thresholds</code><br/>
+<em>
+<a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesThresholds">
+AnomaliesSpecResponseTimesThresholds
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Fixed thresholds for response time degradation detection</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesAuto">AnomaliesSpecResponseTimesAuto
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimes">AnomaliesSpecResponseTimes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>load</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Minimal service load to detect response time degradation. Response time degradation of services with smaller load won't trigger alerts. Possible values are <code>FIFTEEN_REQUESTS_PER_MINUTE</code>, <code>FIVE_REQUESTS_PER_MINUTE</code>, <code>ONE_REQUEST_PER_MINUTE</code> and <code>TEN_REQUESTS_PER_MINUTE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>milliseconds</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Alert if the response time degrades by more than <em>X</em> milliseconds</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>percent</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Alert if the response time degrades by more than <em>X</em> %</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>slowestMilliseconds</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Alert if the response time of the slowest 10% degrades by more than <em>X</em> milliseconds</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>slowestPercent</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Alert if the response time of the slowest 10% degrades by more than <em>X</em> milliseconds</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimesThresholds">AnomaliesSpecResponseTimesThresholds
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.AnomaliesSpecResponseTimes">AnomaliesSpecResponseTimes</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>load</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Minimal service load to detect response time degradation. Response time degradation of services with smaller load won't trigger alerts. Possible values are <code>FIFTEEN_REQUESTS_PER_MINUTE</code>, <code>FIVE_REQUESTS_PER_MINUTE</code>, <code>ONE_REQUEST_PER_MINUTE</code> and <code>TEN_REQUESTS_PER_MINUTE</code></p>
+</td>
+</tr>
+<tr>
+<td>
+<code>milliseconds</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Response time during any 5-minute period to trigger an alert, in milliseconds</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>sensitivity</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Sensitivity of the threshold.  With <code>low</code> sensitivity, high statistical confidence is used. Brief violations (for example, due to a surge in load) won't trigger alerts.  With <code>high</code> sensitivity, no statistical confidence is used. Each violation triggers an alert</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>slowestMilliseconds</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>Response time of the 10% slowest during any 5-minute period to trigger an alert, in milliseconds</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>unknowns</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>allows for configuring properties that are not explicitly supported by the current version of this provider</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="service.dynatrace.kubeform.com/v1alpha1.AnomaliesStatus">AnomaliesStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#service.dynatrace.kubeform.com/v1alpha1.Anomalies">Anomalies</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>e4a0042</code>.
+</em></p>

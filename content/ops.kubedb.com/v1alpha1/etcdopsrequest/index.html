@@ -1,0 +1,527 @@
+<h3 id="ops.kubedb.com/v1alpha1.EtcdOpsRequest">EtcdOpsRequest
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+ops.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>EtcdOpsRequest</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">
+EtcdOpsRequestSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the Etcd reference</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">
+OpsRequestType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the ops request type: Upgrade, HorizontalScaling, VerticalScaling etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgrade</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdUpgradeSpec">
+EtcdUpgradeSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for upgrading Etcd</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>horizontalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdHorizontalScalingSpec">
+EtcdHorizontalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for horizontal scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verticalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdVerticalScalingSpec">
+EtcdVerticalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for vertical scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeExpansion</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdVolumeExpansionSpec">
+EtcdVolumeExpansionSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for volume expansion</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>configuration</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdCustomConfigurationSpec">
+EtcdCustomConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for custom configuration of Etcd</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tls</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.TLSSpec">
+TLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for configuring TLS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>restart</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">
+RestartSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for restarting database</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestStatus">
+EtcdOpsRequestStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">
+OpsRequestPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.EtcdCustomConfigurationSpec">EtcdCustomConfigurationSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<h3 id="ops.kubedb.com/v1alpha1.EtcdHorizontalScalingSpec">EtcdHorizontalScalingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>)
+</p>
+<div>
+<p>HorizontalScaling is the spec for Etcd horizontal scaling</p>
+</div>
+<h3 id="ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequest">EtcdOpsRequest</a>)
+</p>
+<div>
+<p>EtcdOpsRequestSpec is the spec for EtcdOpsRequest</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>databaseRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the Etcd reference</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>type</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestType">
+OpsRequestType
+</a>
+</em>
+</td>
+<td>
+<p>Specifies the ops request type: Upgrade, HorizontalScaling, VerticalScaling etc.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>upgrade</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdUpgradeSpec">
+EtcdUpgradeSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for upgrading Etcd</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>horizontalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdHorizontalScalingSpec">
+EtcdHorizontalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for horizontal scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>verticalScaling</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdVerticalScalingSpec">
+EtcdVerticalScalingSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for vertical scaling</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>volumeExpansion</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdVolumeExpansionSpec">
+EtcdVolumeExpansionSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for volume expansion</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>configuration</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdCustomConfigurationSpec">
+EtcdCustomConfigurationSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for custom configuration of Etcd</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tls</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.TLSSpec">
+TLSSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for configuring TLS</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>restart</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.RestartSpec">
+RestartSpec
+</a>
+</em>
+</td>
+<td>
+<p>Specifies information necessary for restarting database</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.EtcdOpsRequestStatus">EtcdOpsRequestStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequest">EtcdOpsRequest</a>)
+</p>
+<div>
+<p>EtcdOpsRequestStatus is the status for EtcdOpsRequest</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.OpsRequestPhase">
+OpsRequestPhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>observedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Conditions applied to the request, such as approval or denial.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.EtcdReplicaReadinessCriteria">EtcdReplicaReadinessCriteria
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.EtcdUpgradeSpec">EtcdUpgradeSpec</a>, <a href="#ops.kubedb.com/v1alpha1.EtcdVerticalScalingSpec">EtcdVerticalScalingSpec</a>)
+</p>
+<div>
+<p>EtcdReplicaReadinessCriteria is the criteria for checking readiness of a Etcd pod
+after updating, horizontal scaling etc.</p>
+</div>
+<h3 id="ops.kubedb.com/v1alpha1.EtcdUpgradeSpec">EtcdUpgradeSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>targetVersion</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Specifies the target version name from catalog</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>readinessCriteria</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdReplicaReadinessCriteria">
+EtcdReplicaReadinessCriteria
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.EtcdVerticalScalingSpec">EtcdVerticalScalingSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>)
+</p>
+<div>
+<p>EtcdVerticalScalingSpec is the spec for Etcd vertical scaling</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>readinessCriteria</code><br/>
+<em>
+<a href="#ops.kubedb.com/v1alpha1.EtcdReplicaReadinessCriteria">
+EtcdReplicaReadinessCriteria
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ops.kubedb.com/v1alpha1.EtcdVolumeExpansionSpec">EtcdVolumeExpansionSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ops.kubedb.com/v1alpha1.EtcdOpsRequestSpec">EtcdOpsRequestSpec</a>)
+</p>
+<div>
+<p>EtcdVolumeExpansionSpec is the spec for Etcd volume expansion</p>
+</div>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

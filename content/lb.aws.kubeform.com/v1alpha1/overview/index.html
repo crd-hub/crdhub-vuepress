@@ -1,0 +1,188 @@
+<h2 id="lb.aws.kubeform.com/v1alpha1">lb.aws.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.CookieStickinessPolicy">CookieStickinessPolicy</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.Lb">Lb</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.Listener">Listener</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerCertificate">ListenerCertificate</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRule">ListenerRule</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.SslNegotiationPolicy">SslNegotiationPolicy</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroup">TargetGroup</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupAttachment">TargetGroupAttachment</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.CookieStickinessPolicy">CookieStickinessPolicy</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.Lb">Lb</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.Listener">Listener</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerCertificate">ListenerCertificate</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRule">ListenerRule</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.SslNegotiationPolicy">SslNegotiationPolicy</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroup">TargetGroup</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupAttachment">TargetGroupAttachment</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.CookieStickinessPolicySpec">CookieStickinessPolicySpec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.CookieStickinessPolicySpecResource">CookieStickinessPolicySpecResource</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.CookieStickinessPolicyStatus">CookieStickinessPolicyStatus</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.LbSpec">LbSpec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.LbSpecAccessLogs">LbSpecAccessLogs</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.LbSpecAccessLogsCodec">LbSpecAccessLogsCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.LbSpecResource">LbSpecResource</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.LbSpecSubnetMapping">LbSpecSubnetMapping</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.LbStatus">LbStatus</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerCertificateSpec">ListenerCertificateSpec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerCertificateSpecResource">ListenerCertificateSpecResource</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerCertificateStatus">ListenerCertificateStatus</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpec">ListenerRuleSpec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecAction">ListenerRuleSpecAction</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionAuthenticateCognito">ListenerRuleSpecActionAuthenticateCognito</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionAuthenticateCognitoCodec">ListenerRuleSpecActionAuthenticateCognitoCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionAuthenticateOidc">ListenerRuleSpecActionAuthenticateOidc</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionAuthenticateOidcCodec">ListenerRuleSpecActionAuthenticateOidcCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionFixedResponse">ListenerRuleSpecActionFixedResponse</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionFixedResponseCodec">ListenerRuleSpecActionFixedResponseCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionForward">ListenerRuleSpecActionForward</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionForwardCodec">ListenerRuleSpecActionForwardCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionForwardStickiness">ListenerRuleSpecActionForwardStickiness</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionForwardStickinessCodec">ListenerRuleSpecActionForwardStickinessCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionForwardTargetGroup">ListenerRuleSpecActionForwardTargetGroup</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionRedirect">ListenerRuleSpecActionRedirect</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecActionRedirectCodec">ListenerRuleSpecActionRedirectCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecCondition">ListenerRuleSpecCondition</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionHostHeader">ListenerRuleSpecConditionHostHeader</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionHostHeaderCodec">ListenerRuleSpecConditionHostHeaderCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionHttpHeader">ListenerRuleSpecConditionHttpHeader</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionHttpHeaderCodec">ListenerRuleSpecConditionHttpHeaderCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionHttpRequestMethod">ListenerRuleSpecConditionHttpRequestMethod</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionHttpRequestMethodCodec">ListenerRuleSpecConditionHttpRequestMethodCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionPathPattern">ListenerRuleSpecConditionPathPattern</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionPathPatternCodec">ListenerRuleSpecConditionPathPatternCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionQueryString">ListenerRuleSpecConditionQueryString</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionSourceIP">ListenerRuleSpecConditionSourceIP</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecConditionSourceIPCodec">ListenerRuleSpecConditionSourceIPCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleSpecResource">ListenerRuleSpecResource</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerRuleStatus">ListenerRuleStatus</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpec">ListenerSpec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultAction">ListenerSpecDefaultAction</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionAuthenticateCognito">ListenerSpecDefaultActionAuthenticateCognito</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionAuthenticateCognitoCodec">ListenerSpecDefaultActionAuthenticateCognitoCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionAuthenticateOidc">ListenerSpecDefaultActionAuthenticateOidc</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionAuthenticateOidcCodec">ListenerSpecDefaultActionAuthenticateOidcCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionFixedResponse">ListenerSpecDefaultActionFixedResponse</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionFixedResponseCodec">ListenerSpecDefaultActionFixedResponseCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionForward">ListenerSpecDefaultActionForward</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionForwardCodec">ListenerSpecDefaultActionForwardCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionForwardStickiness">ListenerSpecDefaultActionForwardStickiness</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionForwardStickinessCodec">ListenerSpecDefaultActionForwardStickinessCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionForwardTargetGroup">ListenerSpecDefaultActionForwardTargetGroup</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionRedirect">ListenerSpecDefaultActionRedirect</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecDefaultActionRedirectCodec">ListenerSpecDefaultActionRedirectCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerSpecResource">ListenerSpecResource</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.ListenerStatus">ListenerStatus</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.SslNegotiationPolicySpec">SslNegotiationPolicySpec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.SslNegotiationPolicySpecAttribute">SslNegotiationPolicySpecAttribute</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.SslNegotiationPolicySpecResource">SslNegotiationPolicySpecResource</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.SslNegotiationPolicyStatus">SslNegotiationPolicyStatus</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupAttachmentSpec">TargetGroupAttachmentSpec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupAttachmentSpecResource">TargetGroupAttachmentSpecResource</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupAttachmentStatus">TargetGroupAttachmentStatus</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupSpec">TargetGroupSpec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupSpecHealthCheck">TargetGroupSpecHealthCheck</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupSpecHealthCheckCodec">TargetGroupSpecHealthCheckCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupSpecResource">TargetGroupSpecResource</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupSpecStickiness">TargetGroupSpecStickiness</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupSpecStickinessCodec">TargetGroupSpecStickinessCodec</a>
+</li><li>
+<a href="#lb.aws.kubeform.com/v1alpha1.TargetGroupStatus">TargetGroupStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>90f67b88</code>.
+</em></p>

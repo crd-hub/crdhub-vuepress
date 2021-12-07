@@ -1,0 +1,584 @@
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.Attestor">Attestor
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+binaryauthorization.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>Attestor</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpec">
+AttestorSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecResource">
+AttestorSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecResource">
+AttestorSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorStatus">
+AttestorStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpec">AttestorSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.Attestor">Attestor</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecResource">
+AttestorSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecResource">
+AttestorSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecAttestationAuthorityNote">AttestorSpecAttestationAuthorityNote
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecResource">AttestorSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>delegationServiceAccountEmail</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>This field will contain the service account email address that
+this Attestor will use as the principal when querying Container
+Analysis. Attestor administrators must grant this service account
+the IAM role needed to read attestations from the noteReference in
+Container Analysis (containeranalysis.notes.occurrences.viewer).
+This email address is fixed for the lifetime of the Attestor, but
+callers should not make any other assumptions about the service
+account email; future versions may use an email based on a
+different naming pattern.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>noteReference</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The resource name of a ATTESTATION_AUTHORITY Note, created by the
+user. If the Note is in a different project from the Attestor, it
+should be specified in the format 'projects/<em>/notes/</em>' (or the legacy
+'providers/<em>/notes/</em>'). This field may not be updated.
+An attestation by this attestor is stored as a Container Analysis
+ATTESTATION_AUTHORITY Occurrence that names a container image
+and that links to this Note.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>publicKeys</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecAttestationAuthorityNotePublicKeys">
+[]AttestorSpecAttestationAuthorityNotePublicKeys
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Public keys that verify attestations signed by this attestor. This
+field may be updated.
+If this field is non-empty, one of the specified public keys must
+verify that an attestation was signed by this attestor for the
+image specified in the admission request.
+If this field is empty, this attestor always returns that no valid
+attestations exist.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecAttestationAuthorityNotePublicKeys">AttestorSpecAttestationAuthorityNotePublicKeys
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecAttestationAuthorityNote">AttestorSpecAttestationAuthorityNote</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>asciiArmoredPgpPublicKey</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ASCII-armored representation of a PGP public key, as the
+entire output by the command
+'gpg --export --armor foo@example.com' (either LF or CRLF
+line endings). When using this field, id should be left
+blank. The BinAuthz API handlers will calculate the ID
+and fill it in automatically. BinAuthz computes this ID
+as the OpenPGP RFC4880 V4 fingerprint, represented as
+upper-case hex. If id is provided by the caller, it will
+be overwritten by the API-calculated ID.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>comment</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A descriptive comment. This field may be updated.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The ID of this public key. Signatures verified by BinAuthz
+must include the ID of the public key that can be used to
+verify them, and that ID must match the contents of this
+field exactly. Additional restrictions on this field can
+be imposed based on which public key type is encapsulated.
+See the documentation on publicKey cases below for details.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>pkixPublicKey</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecAttestationAuthorityNotePublicKeysPkixPublicKey">
+AttestorSpecAttestationAuthorityNotePublicKeysPkixPublicKey
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A raw PKIX SubjectPublicKeyInfo format public key.</p>
+<p>NOTE: id may be explicitly provided by the caller when using this
+type of public key, but it MUST be a valid RFC3986 URI. If id is left
+blank, a default one will be computed based on the digest of the DER
+encoding of the public key.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecAttestationAuthorityNotePublicKeysPkixPublicKey">AttestorSpecAttestationAuthorityNotePublicKeysPkixPublicKey
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecAttestationAuthorityNotePublicKeys">AttestorSpecAttestationAuthorityNotePublicKeys</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>publicKeyPem</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A PEM-encoded public key, as described in
+'https://tools.ietf.org/html/rfc7468#section-13'</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>signatureAlgorithm</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The signature algorithm used to verify a message against
+a signature using this key. These signature algorithm must
+match the structure and any object identifiers encoded in
+publicKeyPem (i.e. this algorithm must match that of the
+public key).</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecResource">AttestorSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpec">AttestorSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>attestationAuthorityNote</code><br/>
+<em>
+<a href="#binaryauthorization.google.kubeform.com/v1alpha1.AttestorSpecAttestationAuthorityNote">
+AttestorSpecAttestationAuthorityNote
+</a>
+</em>
+</td>
+<td>
+<p>A Container Analysis ATTESTATION_AUTHORITY Note, created by the user.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A descriptive comment. This field may be updated. The field may be
+displayed in chooser dialogs.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The resource name.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="binaryauthorization.google.kubeform.com/v1alpha1.AttestorStatus">AttestorStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#binaryauthorization.google.kubeform.com/v1alpha1.Attestor">Attestor</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

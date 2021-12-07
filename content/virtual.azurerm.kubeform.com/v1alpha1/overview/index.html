@@ -1,0 +1,404 @@
+<h2 id="virtual.azurerm.kubeform.com/v1alpha1">virtual.azurerm.kubeform.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplication">DesktopApplication</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplicationGroup">DesktopApplicationGroup</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopHostPool">DesktopHostPool</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspace">DesktopWorkspace</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspaceApplicationGroupAssociation">DesktopWorkspaceApplicationGroupAssociation</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.Hub">Hub</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubBGPConnection">HubBGPConnection</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnection">HubConnection</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubIP">HubIP</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubRouteTable">HubRouteTable</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubSecurityPartnerProvider">HubSecurityPartnerProvider</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.Machine">Machine</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineConfigurationPolicyAssignment">MachineConfigurationPolicyAssignment</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineDataDiskAttachment">MachineDataDiskAttachment</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineExtension">MachineExtension</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSet">MachineScaleSet</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetExtension">MachineScaleSetExtension</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.Network">Network</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGateway">NetworkGateway</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnection">NetworkGatewayConnection</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkPeering">NetworkPeering</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.Wan">Wan</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplication">DesktopApplication</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplicationGroup">DesktopApplicationGroup</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopHostPool">DesktopHostPool</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspace">DesktopWorkspace</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspaceApplicationGroupAssociation">DesktopWorkspaceApplicationGroupAssociation</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.Hub">Hub</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubBGPConnection">HubBGPConnection</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnection">HubConnection</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubIP">HubIP</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubRouteTable">HubRouteTable</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubSecurityPartnerProvider">HubSecurityPartnerProvider</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.Machine">Machine</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineConfigurationPolicyAssignment">MachineConfigurationPolicyAssignment</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineDataDiskAttachment">MachineDataDiskAttachment</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineExtension">MachineExtension</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSet">MachineScaleSet</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetExtension">MachineScaleSetExtension</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.Network">Network</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGateway">NetworkGateway</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnection">NetworkGatewayConnection</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkPeering">NetworkPeering</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.Wan">Wan</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplicationGroupSpec">DesktopApplicationGroupSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplicationGroupSpecResource">DesktopApplicationGroupSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplicationGroupStatus">DesktopApplicationGroupStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplicationSpec">DesktopApplicationSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplicationSpecResource">DesktopApplicationSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopApplicationStatus">DesktopApplicationStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopHostPoolSpec">DesktopHostPoolSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopHostPoolSpecRegistrationInfo">DesktopHostPoolSpecRegistrationInfo</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopHostPoolSpecRegistrationInfoCodec">DesktopHostPoolSpecRegistrationInfoCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopHostPoolSpecResource">DesktopHostPoolSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopHostPoolStatus">DesktopHostPoolStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspaceApplicationGroupAssociationSpec">DesktopWorkspaceApplicationGroupAssociationSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspaceApplicationGroupAssociationSpecResource">DesktopWorkspaceApplicationGroupAssociationSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspaceApplicationGroupAssociationStatus">DesktopWorkspaceApplicationGroupAssociationStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspaceSpec">DesktopWorkspaceSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspaceSpecResource">DesktopWorkspaceSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.DesktopWorkspaceStatus">DesktopWorkspaceStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubBGPConnectionSpec">HubBGPConnectionSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubBGPConnectionSpecResource">HubBGPConnectionSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubBGPConnectionStatus">HubBGPConnectionStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnectionSpec">HubConnectionSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnectionSpecResource">HubConnectionSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnectionSpecRouting">HubConnectionSpecRouting</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnectionSpecRoutingCodec">HubConnectionSpecRoutingCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnectionSpecRoutingPropagatedRouteTable">HubConnectionSpecRoutingPropagatedRouteTable</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnectionSpecRoutingPropagatedRouteTableCodec">HubConnectionSpecRoutingPropagatedRouteTableCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnectionSpecRoutingStaticVnetRoute">HubConnectionSpecRoutingStaticVnetRoute</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubConnectionStatus">HubConnectionStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubIPSpec">HubIPSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubIPSpecResource">HubIPSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubIPStatus">HubIPStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubRouteTableSpec">HubRouteTableSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubRouteTableSpecResource">HubRouteTableSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubRouteTableSpecRoute">HubRouteTableSpecRoute</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubRouteTableStatus">HubRouteTableStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubSecurityPartnerProviderSpec">HubSecurityPartnerProviderSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubSecurityPartnerProviderSpecResource">HubSecurityPartnerProviderSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubSecurityPartnerProviderStatus">HubSecurityPartnerProviderStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubSpec">HubSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubSpecResource">HubSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubSpecRoute">HubSpecRoute</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.HubStatus">HubStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineConfigurationPolicyAssignmentSpec">MachineConfigurationPolicyAssignmentSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineConfigurationPolicyAssignmentSpecConfiguration">MachineConfigurationPolicyAssignmentSpecConfiguration</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineConfigurationPolicyAssignmentSpecConfigurationCodec">MachineConfigurationPolicyAssignmentSpecConfigurationCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineConfigurationPolicyAssignmentSpecConfigurationParameter">MachineConfigurationPolicyAssignmentSpecConfigurationParameter</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineConfigurationPolicyAssignmentSpecResource">MachineConfigurationPolicyAssignmentSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineConfigurationPolicyAssignmentStatus">MachineConfigurationPolicyAssignmentStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineDataDiskAttachmentSpec">MachineDataDiskAttachmentSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineDataDiskAttachmentSpecResource">MachineDataDiskAttachmentSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineDataDiskAttachmentStatus">MachineDataDiskAttachmentStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineExtensionSpec">MachineExtensionSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineExtensionSpecResource">MachineExtensionSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineExtensionStatus">MachineExtensionStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetExtensionSpec">MachineScaleSetExtensionSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetExtensionSpecResource">MachineScaleSetExtensionSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetExtensionStatus">MachineScaleSetExtensionStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpec">MachineScaleSetSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecBootDiagnostics">MachineScaleSetSpecBootDiagnostics</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecBootDiagnosticsCodec">MachineScaleSetSpecBootDiagnosticsCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecExtension">MachineScaleSetSpecExtension</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecIdentity">MachineScaleSetSpecIdentity</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecIdentityCodec">MachineScaleSetSpecIdentityCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecNetworkProfile">MachineScaleSetSpecNetworkProfile</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecNetworkProfileDnsSettings">MachineScaleSetSpecNetworkProfileDnsSettings</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecNetworkProfileDnsSettingsCodec">MachineScaleSetSpecNetworkProfileDnsSettingsCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecNetworkProfileIpConfiguration">MachineScaleSetSpecNetworkProfileIpConfiguration</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecNetworkProfileIpConfigurationPublicIPAddressConfiguration">MachineScaleSetSpecNetworkProfileIpConfigurationPublicIPAddressConfiguration</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecNetworkProfileIpConfigurationPublicIPAddressConfigurationCodec">MachineScaleSetSpecNetworkProfileIpConfigurationPublicIPAddressConfigurationCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfile">MachineScaleSetSpecOsProfile</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileCodec">MachineScaleSetSpecOsProfileCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileLinuxConfig">MachineScaleSetSpecOsProfileLinuxConfig</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileLinuxConfigCodec">MachineScaleSetSpecOsProfileLinuxConfigCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileLinuxConfigSshKeys">MachineScaleSetSpecOsProfileLinuxConfigSshKeys</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileSecrets">MachineScaleSetSpecOsProfileSecrets</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileSecretsVaultCertificates">MachineScaleSetSpecOsProfileSecretsVaultCertificates</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileWindowsConfig">MachineScaleSetSpecOsProfileWindowsConfig</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileWindowsConfigAdditionalUnattendConfig">MachineScaleSetSpecOsProfileWindowsConfigAdditionalUnattendConfig</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileWindowsConfigCodec">MachineScaleSetSpecOsProfileWindowsConfigCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecOsProfileWindowsConfigWinrm">MachineScaleSetSpecOsProfileWindowsConfigWinrm</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecPlan">MachineScaleSetSpecPlan</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecPlanCodec">MachineScaleSetSpecPlanCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecResource">MachineScaleSetSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecRollingUpgradePolicy">MachineScaleSetSpecRollingUpgradePolicy</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecRollingUpgradePolicyCodec">MachineScaleSetSpecRollingUpgradePolicyCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecSku">MachineScaleSetSpecSku</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecSkuCodec">MachineScaleSetSpecSkuCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecStorageProfileDataDisk">MachineScaleSetSpecStorageProfileDataDisk</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecStorageProfileImageReference">MachineScaleSetSpecStorageProfileImageReference</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecStorageProfileImageReferenceCodec">MachineScaleSetSpecStorageProfileImageReferenceCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecStorageProfileOsDisk">MachineScaleSetSpecStorageProfileOsDisk</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetSpecStorageProfileOsDiskCodec">MachineScaleSetSpecStorageProfileOsDiskCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineScaleSetStatus">MachineScaleSetStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpec">MachineSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecAdditionalCapabilities">MachineSpecAdditionalCapabilities</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecAdditionalCapabilitiesCodec">MachineSpecAdditionalCapabilitiesCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecBootDiagnostics">MachineSpecBootDiagnostics</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecBootDiagnosticsCodec">MachineSpecBootDiagnosticsCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecIdentity">MachineSpecIdentity</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecIdentityCodec">MachineSpecIdentityCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfile">MachineSpecOsProfile</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileCodec">MachineSpecOsProfileCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileLinuxConfig">MachineSpecOsProfileLinuxConfig</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileLinuxConfigCodec">MachineSpecOsProfileLinuxConfigCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileLinuxConfigSshKeys">MachineSpecOsProfileLinuxConfigSshKeys</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileSecrets">MachineSpecOsProfileSecrets</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileSecretsVaultCertificates">MachineSpecOsProfileSecretsVaultCertificates</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileWindowsConfig">MachineSpecOsProfileWindowsConfig</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileWindowsConfigAdditionalUnattendConfig">MachineSpecOsProfileWindowsConfigAdditionalUnattendConfig</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileWindowsConfigCodec">MachineSpecOsProfileWindowsConfigCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecOsProfileWindowsConfigWinrm">MachineSpecOsProfileWindowsConfigWinrm</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecPlan">MachineSpecPlan</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecPlanCodec">MachineSpecPlanCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecResource">MachineSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecStorageDataDisk">MachineSpecStorageDataDisk</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecStorageImageReference">MachineSpecStorageImageReference</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecStorageImageReferenceCodec">MachineSpecStorageImageReferenceCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecStorageOsDisk">MachineSpecStorageOsDisk</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineSpecStorageOsDiskCodec">MachineSpecStorageOsDiskCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.MachineStatus">MachineStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnectionSpec">NetworkGatewayConnectionSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnectionSpecIpsecPolicy">NetworkGatewayConnectionSpecIpsecPolicy</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnectionSpecIpsecPolicyCodec">NetworkGatewayConnectionSpecIpsecPolicyCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnectionSpecResource">NetworkGatewayConnectionSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnectionSpecTrafficSelectorPolicy">NetworkGatewayConnectionSpecTrafficSelectorPolicy</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnectionSpecTrafficSelectorPolicyCodec">NetworkGatewayConnectionSpecTrafficSelectorPolicyCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayConnectionStatus">NetworkGatewayConnectionStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpec">NetworkGatewaySpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecBgpSettings">NetworkGatewaySpecBgpSettings</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecBgpSettingsCodec">NetworkGatewaySpecBgpSettingsCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecBgpSettingsPeeringAddresses">NetworkGatewaySpecBgpSettingsPeeringAddresses</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecCustomRoute">NetworkGatewaySpecCustomRoute</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecCustomRouteCodec">NetworkGatewaySpecCustomRouteCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecIpConfiguration">NetworkGatewaySpecIpConfiguration</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecResource">NetworkGatewaySpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecVpnClientConfiguration">NetworkGatewaySpecVpnClientConfiguration</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecVpnClientConfigurationCodec">NetworkGatewaySpecVpnClientConfigurationCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecVpnClientConfigurationRevokedCertificate">NetworkGatewaySpecVpnClientConfigurationRevokedCertificate</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewaySpecVpnClientConfigurationRootCertificate">NetworkGatewaySpecVpnClientConfigurationRootCertificate</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkGatewayStatus">NetworkGatewayStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkPeeringSpec">NetworkPeeringSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkPeeringSpecResource">NetworkPeeringSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkPeeringStatus">NetworkPeeringStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkSpec">NetworkSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkSpecDdosProtectionPlan">NetworkSpecDdosProtectionPlan</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkSpecDdosProtectionPlanCodec">NetworkSpecDdosProtectionPlanCodec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkSpecResource">NetworkSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkSpecSubnet">NetworkSpecSubnet</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.NetworkStatus">NetworkStatus</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.WanSpec">WanSpec</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.WanSpecResource">WanSpecResource</a>
+</li><li>
+<a href="#virtual.azurerm.kubeform.com/v1alpha1.WanStatus">WanStatus</a>
+</li></ul>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>d6ee7ab</code>.
+</em></p>

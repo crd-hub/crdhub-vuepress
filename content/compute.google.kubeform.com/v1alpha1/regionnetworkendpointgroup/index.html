@@ -1,0 +1,627 @@
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroup">RegionNetworkEndpointGroup
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+compute.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>RegionNetworkEndpointGroup</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpec">
+RegionNetworkEndpointGroupSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecResource">
+RegionNetworkEndpointGroupSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecResource">
+RegionNetworkEndpointGroupSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupStatus">
+RegionNetworkEndpointGroupStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpec">RegionNetworkEndpointGroupSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroup">RegionNetworkEndpointGroup</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecResource">
+RegionNetworkEndpointGroupSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecResource">
+RegionNetworkEndpointGroupSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecAppEngine">RegionNetworkEndpointGroupSpecAppEngine
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecResource">RegionNetworkEndpointGroupSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>service</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Optional serving service.
+The service name must be 1-63 characters long, and comply with RFC1035.
+Example value: &quot;default&quot;, &quot;my-service&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>urlMask</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A template to parse service and version fields from a request URL.
+URL mask allows for routing to multiple App Engine services without
+having to create multiple Network Endpoint Groups and backend services.</p>
+<p>For example, the request URLs &quot;foo1-dot-appname.appspot.com/v1&quot; and
+&quot;foo1-dot-appname.appspot.com/v2&quot; can be backed by the same Serverless NEG with
+URL mask &quot;-dot-appname.appspot.com/&quot;. The URL mask will parse
+them to { service = &quot;foo1&quot;, version = &quot;v1&quot; } and { service = &quot;foo1&quot;, version = &quot;v2&quot; } respectively.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>version</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Optional serving version.
+The version must be 1-63 characters long, and comply with RFC1035.
+Example value: &quot;v1&quot;, &quot;v2&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecCloudFunction">RegionNetworkEndpointGroupSpecCloudFunction
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecResource">RegionNetworkEndpointGroupSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>function</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A user-defined name of the Cloud Function.
+The function name is case-sensitive and must be 1-63 characters long.
+Example value: &quot;func1&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>urlMask</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A template to parse function field from a request URL. URL mask allows
+for routing to multiple Cloud Functions without having to create
+multiple Network Endpoint Groups and backend services.</p>
+<p>For example, request URLs &quot;mydomain.com/function1&quot; and &quot;mydomain.com/function2&quot;
+can be backed by the same Serverless NEG with URL mask &quot;/&quot;. The URL mask
+will parse them to { function = &quot;function1&quot; } and { function = &quot;function2&quot; } respectively.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecCloudRun">RegionNetworkEndpointGroupSpecCloudRun
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecResource">RegionNetworkEndpointGroupSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>service</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Cloud Run service is the main resource of Cloud Run.
+The service must be 1-63 characters long, and comply with RFC1035.
+Example value: &quot;run-service&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>tag</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Cloud Run tag represents the &quot;named-revision&quot; to provide
+additional fine-grained traffic routing information.
+The tag must be 1-63 characters long, and comply with RFC1035.
+Example value: &quot;revision-0010&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>urlMask</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A template to parse service and tag fields from a request URL.
+URL mask allows for routing to multiple Run services without having
+to create multiple network endpoint groups and backend services.</p>
+<p>For example, request URLs &quot;foo1.domain.com/bar1&quot; and &quot;foo1.domain.com/bar2&quot;
+an be backed by the same Serverless Network Endpoint Group (NEG) with
+URL mask &quot;.domain.com/&quot;. The URL mask will parse them to { service=&quot;bar1&quot;, tag=&quot;foo1&quot; }
+and { service=&quot;bar2&quot;, tag=&quot;foo2&quot; } respectively.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecResource">RegionNetworkEndpointGroupSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpec">RegionNetworkEndpointGroupSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>appEngine</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecAppEngine">
+RegionNetworkEndpointGroupSpecAppEngine
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Only valid when networkEndpointType is &quot;SERVERLESS&quot;.
+Only one of cloud_run, app_engine or cloud_function may be set.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>cloudFunction</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecCloudFunction">
+RegionNetworkEndpointGroupSpecCloudFunction
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Only valid when networkEndpointType is &quot;SERVERLESS&quot;.
+Only one of cloud_run, app_engine or cloud_function may be set.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>cloudRun</code><br/>
+<em>
+<a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupSpecCloudRun">
+RegionNetworkEndpointGroupSpecCloudRun
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Only valid when networkEndpointType is &quot;SERVERLESS&quot;.
+Only one of cloud_run, app_engine or cloud_function may be set.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>description</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>An optional description of this resource. Provide this property when
+you create the resource.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Name of the resource; provided by the client when the resource is
+created. The name must be 1-63 characters long, and comply with
+RFC1035. Specifically, the name must be 1-63 characters long and match
+the regular expression '<a href="%5B-a-z0-9%5D*%5Ba-z0-9%5D">a-z</a>?' which means the
+first character must be a lowercase letter, and all following
+characters must be a dash, lowercase letter, or digit, except the last
+character, which cannot be a dash.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>networkEndpointType</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Type of network endpoints in this network endpoint group. Defaults to SERVERLESS Default value: &quot;SERVERLESS&quot; Possible values: [&quot;SERVERLESS&quot;]</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>region</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>A reference to the region where the Serverless NEGs Reside.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>selfLink</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroupStatus">RegionNetworkEndpointGroupStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#compute.google.kubeform.com/v1alpha1.RegionNetworkEndpointGroup">RegionNetworkEndpointGroup</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>

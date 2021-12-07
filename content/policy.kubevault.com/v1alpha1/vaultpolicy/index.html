@@ -1,0 +1,322 @@
+<h3 id="policy.kubevault.com/v1alpha1.VaultPolicy">VaultPolicy
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+policy.kubevault.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>VaultPolicy</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.VaultPolicySpec">
+VaultPolicySpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>vaultRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>VaultRef is the name of a AppBinding referencing to a Vault Server</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>vaultPolicyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>VaultPolicyName is the policy name set inside Vault.
+This defaults to following format: k8s.${cluster}.${metadata.namespace}.${metadata.name}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyDocument</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>PolicyDocument specifies a vault policy in hcl format.
+For example:
+path &quot;secret/*&quot; {
+capabilities = [&quot;create&quot;, &quot;read&quot;, &quot;update&quot;, &quot;delete&quot;, &quot;list&quot;]
+}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policy</code><br/>
+<em>
+k8s.io/apimachinery/pkg/runtime.RawExtension
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Policy specifies a vault policy in json format.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.VaultPolicyStatus">
+VaultPolicyStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ObservedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.PolicyPhase">
+PolicyPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Phase indicates whether the policy successfully applied in vault or not or in progress</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Represents the latest available observations of a VaultPolicy.</p>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.PolicyPhase">PolicyPhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.VaultPolicyStatus">VaultPolicyStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Failed&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Success&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.VaultPolicySpec">VaultPolicySpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.VaultPolicy">VaultPolicy</a>)
+</p>
+<div>
+<p>More info: https://www.vaultproject.io/docs/concepts/policies.html</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>vaultRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+<p>VaultRef is the name of a AppBinding referencing to a Vault Server</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>vaultPolicyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>VaultPolicyName is the policy name set inside Vault.
+This defaults to following format: k8s.${cluster}.${metadata.namespace}.${metadata.name}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyDocument</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>PolicyDocument specifies a vault policy in hcl format.
+For example:
+path &quot;secret/*&quot; {
+capabilities = [&quot;create&quot;, &quot;read&quot;, &quot;update&quot;, &quot;delete&quot;, &quot;list&quot;]
+}</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policy</code><br/>
+<em>
+k8s.io/apimachinery/pkg/runtime.RawExtension
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Policy specifies a vault policy in json format.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="policy.kubevault.com/v1alpha1.VaultPolicyStatus">VaultPolicyStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#policy.kubevault.com/v1alpha1.VaultPolicy">VaultPolicy</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>ObservedGeneration is the most recent generation observed for this resource. It corresponds to the
+resource's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#policy.kubevault.com/v1alpha1.PolicyPhase">
+PolicyPhase
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Phase indicates whether the policy successfully applied in vault or not or in progress</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Represents the latest available observations of a VaultPolicy.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>311cc741</code>.
+</em></p>

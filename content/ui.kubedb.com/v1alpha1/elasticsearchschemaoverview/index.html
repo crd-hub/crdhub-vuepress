@@ -1,0 +1,154 @@
+<h3 id="ui.kubedb.com/v1alpha1.ElasticsearchSchemaOverview">ElasticsearchSchemaOverview
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+ui.kubedb.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ElasticsearchSchemaOverview</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#ui.kubedb.com/v1alpha1.ElasticsearchSchemaOverviewSpec">
+ElasticsearchSchemaOverviewSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>indices</code><br/>
+<em>
+<a href="#ui.kubedb.com/v1alpha1.ElasticsearchIndexSpec">
+[]ElasticsearchIndexSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ui.kubedb.com/v1alpha1.ElasticsearchIndexSpec">ElasticsearchIndexSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ui.kubedb.com/v1alpha1.ElasticsearchSchemaOverviewSpec">ElasticsearchSchemaOverviewSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>indexName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>primaryStoreSizeInBytes</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>totalStoreSizeInBytes</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ui.kubedb.com/v1alpha1.ElasticsearchSchemaOverviewSpec">ElasticsearchSchemaOverviewSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#ui.kubedb.com/v1alpha1.ElasticsearchSchemaOverview">ElasticsearchSchemaOverview</a>)
+</p>
+<div>
+<p>ElasticsearchSchemaOverviewSpec defines the desired state of ElasticsearchSchemaOverview</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>indices</code><br/>
+<em>
+<a href="#ui.kubedb.com/v1alpha1.ElasticsearchIndexSpec">
+[]ElasticsearchIndexSpec
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>fe94664c</code>.
+</em></p>

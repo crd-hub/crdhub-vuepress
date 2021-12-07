@@ -1,0 +1,279 @@
+<h2 id="engine.kubevault.com/v1alpha1">engine.kubevault.com/v1alpha1</h2>
+<div>
+</div>
+Resource Types:
+<ul><li>
+<a href="#engine.kubevault.com/v1alpha1.AWSRole">AWSRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AzureRole">AzureRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.ElasticsearchRole">ElasticsearchRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.GCPRole">GCPRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.MongoDBRole">MongoDBRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.MySQLRole">MySQLRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.PostgresRole">PostgresRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretAccessRequest">SecretAccessRequest</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretEngine">SecretEngine</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretRoleBinding">SecretRoleBinding</a>
+</li></ul>
+All Types:
+<ul><li>
+<a href="#engine.kubevault.com/v1alpha1.AWSRole">AWSRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AzureRole">AzureRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.ElasticsearchRole">ElasticsearchRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.GCPRole">GCPRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.MongoDBRole">MongoDBRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.MySQLRole">MySQLRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.PostgresRole">PostgresRole</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretAccessRequest">SecretAccessRequest</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretEngine">SecretEngine</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretRoleBinding">SecretRoleBinding</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AWSAccessRequestConfiguration">AWSAccessRequestConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AWSConfiguration">AWSConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AWSCredentialType">AWSCredentialType</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AWSRoleSpec">AWSRoleSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AzureConfiguration">AzureConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AzureRoleSpec">AzureRoleSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.AzureSecretType">AzureSecretType</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.ElasticsearchConfiguration">ElasticsearchConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.ElasticsearchRoleSpec">ElasticsearchRoleSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.GCPAccessRequestConfiguration">GCPAccessRequestConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.GCPConfiguration">GCPConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.GCPRoleSpec">GCPRoleSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.GCPSecretType">GCPSecretType</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.KVConfiguration">KVConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.Lease">Lease</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.LeaseConfig">LeaseConfig</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.MongoDBConfiguration">MongoDBConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.MongoDBRoleSpec">MongoDBRoleSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.MySQLConfiguration">MySQLConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.MySQLRoleSpec">MySQLRoleSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.PostgresConfiguration">PostgresConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.PostgresRoleSpec">PostgresRoleSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.RequestStatusPhase">RequestStatusPhase</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.RolePhase">RolePhase</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.RoleStatus">RoleStatus</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretAccessRequestConfiguration">SecretAccessRequestConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretAccessRequestSpec">SecretAccessRequestSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretAccessRequestStatus">SecretAccessRequestStatus</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretEngineConfiguration">SecretEngineConfiguration</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretEnginePhase">SecretEnginePhase</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretEngineSpec">SecretEngineSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretEngineStatus">SecretEngineStatus</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretRoleBindingSpec">SecretRoleBindingSpec</a>
+</li><li>
+<a href="#engine.kubevault.com/v1alpha1.SecretRoleBindingStatus">SecretRoleBindingStatus</a>
+</li></ul>
+<h3 id="engine.kubevault.com/v1alpha1.Lease">Lease
+</h3>
+<p>
+(<em>Appears on:</em><a href="#engine.kubevault.com/v1alpha1.SecretAccessRequestStatus">SecretAccessRequestStatus</a>, <a href="#engine.kubevault.com/v1alpha1.SecretRoleBindingStatus">SecretRoleBindingStatus</a>)
+</p>
+<div>
+<p>Lease contains lease info</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>lease id</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>duration</code><br/>
+<em>
+<a href="https://pkg.go.dev/k8s.io/apimachinery/pkg/apis/meta/v1#Duration">
+Kubernetes meta/v1.Duration
+</a>
+</em>
+</td>
+<td>
+<p>lease duration</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>renewable</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<p>Specifies whether this lease is renewable</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="engine.kubevault.com/v1alpha1.RequestStatusPhase">RequestStatusPhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#engine.kubevault.com/v1alpha1.SecretAccessRequestStatus">SecretAccessRequestStatus</a>, <a href="#engine.kubevault.com/v1alpha1.SecretRoleBindingStatus">SecretRoleBindingStatus</a>)
+</p>
+<div>
+<p>Specifies the access key request phase</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Failed&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Processing&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Success&#34;</p></td>
+<td></td>
+</tr></tbody>
+</table>
+<h3 id="engine.kubevault.com/v1alpha1.RolePhase">RolePhase
+(<code>string</code> alias)</h3>
+<p>
+(<em>Appears on:</em><a href="#engine.kubevault.com/v1alpha1.RoleStatus">RoleStatus</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr><td><p>&#34;Processing&#34;</p></td>
+<td></td>
+</tr><tr><td><p>&#34;Success&#34;</p></td>
+<td><p>RolePhase constants</p>
+</td>
+</tr></tbody>
+</table>
+<h3 id="engine.kubevault.com/v1alpha1.RoleStatus">RoleStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#engine.kubevault.com/v1alpha1.AWSRole">AWSRole</a>, <a href="#engine.kubevault.com/v1alpha1.AzureRole">AzureRole</a>, <a href="#engine.kubevault.com/v1alpha1.ElasticsearchRole">ElasticsearchRole</a>, <a href="#engine.kubevault.com/v1alpha1.GCPRole">GCPRole</a>, <a href="#engine.kubevault.com/v1alpha1.MongoDBRole">MongoDBRole</a>, <a href="#engine.kubevault.com/v1alpha1.MySQLRole">MySQLRole</a>, <a href="#engine.kubevault.com/v1alpha1.PostgresRole">PostgresRole</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+<a href="#engine.kubevault.com/v1alpha1.RolePhase">
+RolePhase
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<p>ObservedGeneration is the most recent generation observed for this MySQLRole. It corresponds to the
+MySQLRole's generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<p>Represents the latest available observations of a MySQLRole current state.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>policyRef</code><br/>
+<em>
+kmodules.xyz/client-go/api/v1.ObjectReference
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<hr/>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>311cc741</code>.
+</em></p>

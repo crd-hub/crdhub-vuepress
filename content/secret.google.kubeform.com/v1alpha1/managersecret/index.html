@@ -1,0 +1,681 @@
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecret">ManagerSecret
+</h3>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>apiVersion</code><br/>
+string</td>
+<td>
+<code>
+secret.google.kubeform.com/v1alpha1
+</code>
+</td>
+</tr>
+<tr>
+<td>
+<code>kind</code><br/>
+string
+</td>
+<td><code>ManagerSecret</code></td>
+</tr>
+<tr>
+<td>
+<code>metadata</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#objectmeta-v1-meta">
+Kubernetes meta/v1.ObjectMeta
+</a>
+</em>
+</td>
+<td>
+Refer to the Kubernetes API documentation for the fields of the
+<code>metadata</code> field.
+</td>
+</tr>
+<tr>
+<td>
+<code>spec</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpec">
+ManagerSecretSpec
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecResource">
+ManagerSecretSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecResource">
+ManagerSecretSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<code>status</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretStatus">
+ManagerSecretStatus
+</a>
+</em>
+</td>
+<td>
+<br/>
+<br/>
+<table>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretSpec">ManagerSecretSpec
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecret">ManagerSecret</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>state</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecResource">
+ManagerSecretSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>resource</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecResource">
+ManagerSecretSpecResource
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>updatePolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.UpdatePolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>terminationPolicy</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.TerminationPolicy
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>providerRef</code><br/>
+<em>
+<a href="https://v1-21.docs.kubernetes.io/docs/reference/generated/kubernetes-api/v1.21/#localobjectreference-v1-core">
+Kubernetes core/v1.LocalObjectReference
+</a>
+</em>
+</td>
+<td>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplication">ManagerSecretSpecReplication
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecResource">ManagerSecretSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>automatic</code><br/>
+<em>
+bool
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The Secret will automatically be replicated without any restrictions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>userManaged</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplicationUserManaged">
+ManagerSecretSpecReplicationUserManaged
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The Secret will automatically be replicated without any restrictions.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplicationUserManaged">ManagerSecretSpecReplicationUserManaged
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplication">ManagerSecretSpecReplication</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>replicas</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplicationUserManagedReplicas">
+[]ManagerSecretSpecReplicationUserManagedReplicas
+</a>
+</em>
+</td>
+<td>
+<p>The list of Replicas for this Secret. Cannot be empty.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplicationUserManagedReplicas">ManagerSecretSpecReplicationUserManagedReplicas
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplicationUserManaged">ManagerSecretSpecReplicationUserManaged</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>customerManagedEncryption</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplicationUserManagedReplicasCustomerManagedEncryption">
+ManagerSecretSpecReplicationUserManagedReplicasCustomerManagedEncryption
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Customer Managed Encryption for the secret.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>location</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The canonical IDs of the location to replicate data. For example: &quot;us-east1&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplicationUserManagedReplicasCustomerManagedEncryption">ManagerSecretSpecReplicationUserManagedReplicasCustomerManagedEncryption
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplicationUserManagedReplicas">ManagerSecretSpecReplicationUserManagedReplicas</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>kmsKeyName</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>Describes the Cloud KMS encryption key that will be used to protect destination secret.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretSpecResource">ManagerSecretSpecResource
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpec">ManagerSecretSpec</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>timeouts</code><br/>
+<em>
+kubeform.dev/apimachinery/api/v1alpha1.ResourceTimeout
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>id</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td>
+<code>createTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The time at which the Secret was created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>expireTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Timestamp in UTC when the Secret is scheduled to expire. This is always provided on output, regardless of what was sent on input.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>labels</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The labels assigned to this Secret.</p>
+<p>Label keys must be between 1 and 63 characters long, have a UTF-8 encoding of maximum 128 bytes,
+and must conform to the following PCRE regular expression: [\p{Ll}\p{Lo}][\p{Ll}\p{Lo}\p{N}_-]{0,62}</p>
+<p>Label values must be between 0 and 63 characters long, have a UTF-8 encoding of maximum 128 bytes,
+and must conform to the following PCRE regular expression: [\p{Ll}\p{Lo}\p{N}_-]{0,63}</p>
+<p>No more than 64 labels can be assigned to a given resource.</p>
+<p>An object containing a list of &quot;key&quot;: value pairs. Example:
+{ &quot;name&quot;: &quot;wrench&quot;, &quot;mass&quot;: &quot;1.3kg&quot;, &quot;count&quot;: &quot;3&quot; }.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The resource name of the Secret. Format:
+'projects/{{project}}/secrets/{{secret_id}}'</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>project</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>replication</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecReplication">
+ManagerSecretSpecReplication
+</a>
+</em>
+</td>
+<td>
+<p>The replication policy of the secret data attached to the Secret. It cannot be changed
+after the Secret has been created.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>rotation</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecRotation">
+ManagerSecretSpecRotation
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The rotation time and period for a Secret. At 'next_rotation_time', Secret Manager will send a Pub/Sub notification to the topics configured on the Secret. 'topics' must be set to configure rotation.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>secretID</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>This must be unique within the project.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>topics</code><br/>
+<em>
+<a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecTopics">
+[]ManagerSecretSpecTopics
+</a>
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>A list of up to 10 Pub/Sub topics to which messages are published when control plane operations are called on the secret or its versions.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>ttl</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The TTL for the Secret.
+A duration in seconds with up to nine fractional digits, terminated by 's'. Example: &quot;3.5s&quot;.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretSpecRotation">ManagerSecretSpecRotation
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecResource">ManagerSecretSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>nextRotationTime</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Timestamp in UTC at which the Secret is scheduled to rotate.
+A timestamp in RFC3339 UTC &quot;Zulu&quot; format, with nanosecond resolution and up to nine fractional digits. Examples: &quot;2014-10-02T15:01:23Z&quot; and &quot;2014-10-02T15:01:23.045123456Z&quot;.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>rotationPeriod</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>The Duration between rotation notifications. Must be in seconds and at least 3600s (1h) and at most 3153600000s (100 years).
+If rotationPeriod is set, 'next_rotation_time' must be set. 'next_rotation_time' will be advanced by this period when the service automatically sends rotation notifications.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretSpecTopics">ManagerSecretSpecTopics
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecretSpecResource">ManagerSecretSpecResource</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>name</code><br/>
+<em>
+string
+</em>
+</td>
+<td>
+<p>The resource name of the Pub/Sub topic that will be published to, in the following format: projects/<em>/topics/</em>.
+For publication to succeed, the Secret Manager Service Agent service account must have pubsub.publisher permissions on the topic.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3 id="secret.google.kubeform.com/v1alpha1.ManagerSecretStatus">ManagerSecretStatus
+</h3>
+<p>
+(<em>Appears on:</em><a href="#secret.google.kubeform.com/v1alpha1.ManagerSecret">ManagerSecret</a>)
+</p>
+<div>
+</div>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>observedGeneration</code><br/>
+<em>
+int64
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+<p>Resource generation, which is updated on mutation by the API Server.</p>
+</td>
+</tr>
+<tr>
+<td>
+<code>phase</code><br/>
+<em>
+sigs.k8s.io/cli-utils/pkg/kstatus/status.Status
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+<tr>
+<td>
+<code>conditions</code><br/>
+<em>
+[]kmodules.xyz/client-go/api/v1.Condition
+</em>
+</td>
+<td>
+<em>(Optional)</em>
+</td>
+</tr>
+</tbody>
+</table>
+<p><em>
+Generated with <code>gen-api-reference-docs</code>
+on git commit <code>b0e6535</code>.
+</em></p>
