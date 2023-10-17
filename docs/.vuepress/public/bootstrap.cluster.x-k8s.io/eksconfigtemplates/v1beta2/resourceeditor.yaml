@@ -1,0 +1,26 @@
+apiVersion: ui.k8s.appscode.com/v1alpha1
+kind: ResourceEditor
+metadata:
+  creationTimestamp: null
+  labels:
+    k8s.io/group: bootstrap.cluster.x-k8s.io
+    k8s.io/kind: EKSConfigTemplate
+    k8s.io/resource: eksconfigtemplates
+    k8s.io/version: v1beta2
+  name: bootstrap.cluster.x-k8s.io-v1beta2-eksconfigtemplates
+spec:
+  resource:
+    group: bootstrap.cluster.x-k8s.io
+    kind: EKSConfigTemplate
+    name: eksconfigtemplates
+    scope: Namespaced
+    version: v1beta2
+  ui:
+    editor:
+      name: bootstrapclusterxk8sio-eksconfigtemplate-editor
+      sourceRef:
+        apiGroup: source.toolkit.fluxcd.io
+        kind: HelmRepository
+        name: bytebuilders-ui
+      version: v0.4.18
+    enforceQuota: false

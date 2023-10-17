@@ -1,0 +1,22 @@
+apiVersion: ui.k8s.appscode.com/v1alpha1
+kind: ResourceEditor
+metadata:
+  creationTimestamp: null
+  labels:
+    k8s.io/group: acme.cert-manager.io
+    k8s.io/kind: Challenge
+    k8s.io/resource: challenges
+    k8s.io/version: v1alpha2
+  name: acme.cert-manager.io-v1alpha2-challenges
+spec:
+  icons:
+  - src: https://cdn.appscode.com/k8s/icons/acme.cert-manager.io/challenges.svg
+    type: image/svg+xml
+  - src: https://cdn.appscode.com/k8s/icons/acme.cert-manager.io/challenges.png
+    type: image/png
+  resource:
+    group: acme.cert-manager.io
+    kind: Challenge
+    name: challenges
+    scope: Namespaced
+    version: v1alpha2

@@ -1,0 +1,26 @@
+apiVersion: ui.k8s.appscode.com/v1alpha1
+kind: ResourceEditor
+metadata:
+  creationTimestamp: null
+  labels:
+    k8s.io/group: openviz.dev
+    k8s.io/kind: GrafanaDashboardTemplate
+    k8s.io/resource: grafanadashboardtemplates
+    k8s.io/version: v1alpha1
+  name: openviz.dev-v1alpha1-grafanadashboardtemplates
+spec:
+  resource:
+    group: openviz.dev
+    kind: GrafanaDashboardTemplate
+    name: grafanadashboardtemplates
+    scope: Cluster
+    version: v1alpha1
+  ui:
+    editor:
+      name: openvizdev-grafanadashboardtemplate-editor
+      sourceRef:
+        apiGroup: source.toolkit.fluxcd.io
+        kind: HelmRepository
+        name: bytebuilders-ui
+      version: v0.4.18
+    enforceQuota: false

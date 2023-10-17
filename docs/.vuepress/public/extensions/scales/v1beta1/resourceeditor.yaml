@@ -1,0 +1,26 @@
+apiVersion: ui.k8s.appscode.com/v1alpha1
+kind: ResourceEditor
+metadata:
+  creationTimestamp: null
+  labels:
+    k8s.io/group: extensions
+    k8s.io/kind: Scale
+    k8s.io/resource: scales
+    k8s.io/version: v1beta1
+  name: extensions-v1beta1-scales
+spec:
+  resource:
+    group: extensions
+    kind: Scale
+    name: scales
+    scope: Namespaced
+    version: v1beta1
+  ui:
+    editor:
+      name: extensions-scale-editor
+      sourceRef:
+        apiGroup: source.toolkit.fluxcd.io
+        kind: HelmRepository
+        name: bytebuilders-ui
+      version: v0.4.18
+    enforceQuota: false

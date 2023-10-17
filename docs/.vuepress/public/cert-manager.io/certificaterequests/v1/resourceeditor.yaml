@@ -1,0 +1,39 @@
+apiVersion: ui.k8s.appscode.com/v1alpha1
+kind: ResourceEditor
+metadata:
+  creationTimestamp: null
+  labels:
+    k8s.io/group: cert-manager.io
+    k8s.io/kind: CertificateRequest
+    k8s.io/resource: certificaterequests
+    k8s.io/version: v1
+  name: cert-manager.io-v1-certificaterequests
+spec:
+  icons:
+  - src: https://cdn.appscode.com/k8s/icons/cert-manager.io/certificaterequests.svg
+    type: image/svg+xml
+  - src: https://cdn.appscode.com/k8s/icons/cert-manager.io/certificaterequests.png
+    type: image/png
+  installer:
+    chart:
+      name: cert-manager
+      sourceRef:
+        apiGroup: source.toolkit.fluxcd.io
+        kind: HelmRepository
+        name: jetstack
+      version: ""
+  resource:
+    group: cert-manager.io
+    kind: CertificateRequest
+    name: certificaterequests
+    scope: Namespaced
+    version: v1
+  ui:
+    editor:
+      name: certmanagerio-certificaterequest-editor
+      sourceRef:
+        apiGroup: source.toolkit.fluxcd.io
+        kind: HelmRepository
+        name: bytebuilders-ui
+      version: v0.4.18
+    enforceQuota: false
