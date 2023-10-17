@@ -2,7 +2,7 @@
   "hosting": [
     {
       "target": "hugo",
-      "public": "public",
+      "public": "docs/.vuepress/dist",
       "ignore": [
         "firebase.json",
         "**/.*",

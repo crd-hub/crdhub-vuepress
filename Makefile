@@ -28,7 +28,7 @@ gen-prod:
 	@yqq w -i config.yaml params.search_api_key --tag '!!str' '_replace_'
 
 .PHONY: release
-release: gen-prod
+release:
 	firebase use prod
 	firebase deploy
 	firebase use default
