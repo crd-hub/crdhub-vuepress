@@ -10,6 +10,28 @@
       ],
       "headers": [
         {
+          "headers": [
+            {
+              "key": "X-XSS-Protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            }
+          ],
+          "source": "**"
+        },
+        {
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "public, max-age=2592000"
+            }
+          ],
+          "source": "**"
+        },
+        {
           "source": "**",
           "headers": [
             {
